@@ -1,0 +1,4 @@
+.bundle/
+.jekyll-cache/
+.sass-cache/
+public/
