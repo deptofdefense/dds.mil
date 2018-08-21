@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+  <body>
+    {% include header.html %}
+    <div class="dds-site {{ page.url | replace:'index','home' | replace: '404','notfound' | replace:'.html','' | slugify }}-page">
+      <main>
+        {{ content }}
+      </main>
+      {% include footer.html %}
+    </div>
+  </body>
+</html>

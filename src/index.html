@@ -1,0 +1,171 @@
+---
+layout: index
+title: Defense Digital Service
+---
+
+<section class="jumbotron">
+  <div class="jumbotron-text">
+    <h1>
+      Transforming technology within the <br> Department of Defense
+    </h1>
+    <p class="subtitle">
+      An agency team of the <a href="https://usds.gov">U.S. Digital Service</a>, using <br> design and technology to improve the lives of American citizens.
+    </p>
+  </div>
+</section>
+
+<section id="about" class="background-statement usa-grid">
+  <div class="usa-width-one-whole">
+    <h2>By the people. For the people.</h2>
+  </div>
+
+  <div class="usa-width-one-whole">
+    <div class="page-width-70">
+      <p>
+        The Department of Defense defends and protects our nation's military and civilians across the globe. Our projects range widely, from strengthening our national security, to taking care of our Veterans, or deploying next-generation GPS for billions of people. However, oftentimes our progress is hindered by outdated tools and practices that lag far behind private sector standards.
+      </p>
+      <p>
+        Our mission is to drive a giant leap forward in the way DoD builds and deploys technology and digital services. We work alongside our public servants and service members, empowering them to incorporate private sector best practices and talent to build a better <s>future</s> now.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="our-work" class="our-work usa-grid">
+  <div class="usa-width-one-whole">
+    <h2>Our work</h2>
+    <p class="page-width-70">
+      We apply industry experience in shipping products to help deliver in-progress strategic or challenged projects. Explore some of the projects we&#8217;ve tackled:
+    </p>
+    <br>
+  </div>
+
+  <div class="dds-grid">
+  {% for project in site.data.projects %}
+    <div class="project dds-default-item">
+      <img src="{{ project.img_url }}" alt="{{ project.img_description }}">
+      <h3>{{ project.title }}</h3>
+      {{ project.project_description }}
+    </div>
+  {% endfor %}
+  </div>
+</section>
+
+<section id="our-team" class="staff-members usa-grid">
+  <div class="usa-width-one-whole">
+    <h2>Our team</h2>
+    <p class="page-width-70">
+      Government is not an abstract institution or a concept. Our government is us. Meet some members of the Defense Digital Service who have signed on for nerd tours of duty:
+    </p>
+    <br>
+  </div>
+
+  <div class="dds-grid">
+  {% for person in site.data.staff %}
+    <div class="dds-team-item">
+      <div class="staffer">
+        <div class="box">
+          <img class="photo" src="{{ person.img_url }}" alt="{{ person.alt_text }} ({{person.img_credit}})" title="({{ person.img_credit }})">
+        </div>
+        <br>
+        <h3>{{ person.name }}</h3>
+        <p>{{ person.role }}</p>
+        <p class="previously">Previously: <span class="company">{{ person.previously }}</span></p>
+        <br>
+
+      </div>
+    </div>
+  {% endfor %}
+  </div>
+</section>
+
+<section id="subteams" class="usa-grid">
+  <div class="usa-width-one-whole">
+    <h2>Announcements</h2>
+    <p class="page-width-70">
+    </p>
+    <br>
+  </div>
+
+  <div class="dds-grid">
+  {% for team in site.data.subteams %}
+    <div class="dds-subteams-item">
+      <img src="{{ team.img_url }}" alt="{{ team.img_description }}">
+      <h3>{{ team.title }}</h3>
+      {{ team.team_description }}
+    </div>
+  {% endfor %}
+  </div>
+</section>
+
+
+<section id="join" class="join-us usa-grid">
+<div class="usa-grid">
+  <div class="usa-width-one-whole">
+    <h2>Join us</h2>
+    <div class="page-width-70">
+      <p> We want YOU!</p>
+      <p>We need passionate designers, software engineers, product managers and others, who are committed to making the Department of Defense's critical systems simple, fast and easy to use.  You'll be working alongside brilliant civil servants and tech folk from across government and industry.</p>
+      <p>The Defense Digital Service is an agency team of the U.S. Digital Service headquartered at the White House, so every application goes through the USDS hiring pipeline.  When applying, please write that you are interested in joining the Defense Digital Service team in the "Anything Else" section.</p>
+      <p>We look forward to hearing from you!</p>
+    </div>
+  </div>
+</div>
+
+<br>
+<div>
+  <a class="join-button" href="https://www.usds.gov/join">Apply to USDS</a>
+</div>
+
+</section>
+
+<section id="news" class="news usa-grid">
+  <div class="usa-width-one-whole">
+    <h2>Read more</h2>
+    <p class="page-width-70">
+      Follow us on <a href="{{ site.twitter_url }}">Twitter</a> or <a href="{{ site.medium_url }}">Medium</a> to read more about our latest adventures, or see what the press has had to say:
+    </p>
+    <br>
+  </div>
+
+  <div class="press">
+    <div class="dds-grid">
+      {% for story in site.data.press limit: 6 %}
+      <div class="story dds-default-item">
+        <a href="{{ story.press_url }}">
+          {{ story.title }}<br>
+          <span class="author">{{ story.author }}</span>
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="usa-width-one-whole">
+    <br>
+    <p class="page-width-70">
+      Some photos of us doing things we find amusing.
+    </p>
+    <br>
+  </div>
+
+  <div class="dds-grid">
+    {% for photo in site.data.gallery %}
+    <div class="dds-team-item">
+      <div class="box">
+        <a href="{{ photo.full }}">
+          <img class="photo" src="{{ photo.thumb }}" alt="{{ photo.description }} ({{ photo.credit}})" title="({{ photo.credit }})">
+        </a>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+<section id="image_disclaimer" class="usa-grid">
+  <div class="usa-width-one-whole">
+    <div class="page-width-70">
+      See the <a href="/privacy.html#image-rights">Privacy Policy</a> for image credits and information on reusing images.
+    </div>
+  </div>
+</section>

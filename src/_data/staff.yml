@@ -1,0 +1,31 @@
+- name: Tim Van Name
+  img_url: assets/img/staff/tim-van-name.jpg
+  img_credit: "Tim Van Name / &copy;"
+  role: Deputy Director
+  previously: White House Information Technology
+  quote: |
+    To give real service you must add something which cannot be bought or measured with money, and that is sincerity and integrity. (Douglas Adams)
+
+- name: Chris Lynch
+  img_url: assets/img/staff/chris-lynch.jpg
+  img_credit: "Chris Lynch / &copy;"
+  role: Fearless Leader
+  previously: Serial Entrepreneur
+  quote: |
+    This is a precious moment in time.
+
+- name: Hunter Price
+  img_url: assets/img/staff/hunter-price.jpg
+  img_credit: "Hunter Price / &copy;"
+  role: Director, Air Force Digital Service
+  previously: Forsa Consulting
+  quote: |
+    To improve is to change, so to be perfect is to change often. (Sir Winston Churchill)
+
+- name: Patrick Stoddart
+  img_url: assets/img/staff/patrick-stoddart.jpg
+  img_credit: "Patrick Stoddart / &copy;"
+  role: Director, Army Digital Service
+  previously: Entrepreneur
+  quote: |
+    I have no special talents; I am only passionately curious. (Albert Einstein)

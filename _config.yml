@@ -1,0 +1,17 @@
+source: ./src
+destination: ./public
+
+host: 0.0.0.0
+
+title: Defense Digital Service
+description: An agency team of the United StatesS Digital Service, using design and technology to improve the lives of American citizens.
+
+url: https://dds.mil
+medium_url: https://medium.com/@DefenseDigitalService
+twitter_url: https://twitter.com/DefenseDigital
+
+theme: uswds-jekyll
+
+sass:
+  sass_dir: assets/_sass
+  style: compressed
