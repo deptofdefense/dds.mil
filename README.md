@@ -1,5 +1,7 @@
 # Defense Digital Service
 
+[![Build Status](https://img.shields.io/travis/com/deptofdefense/dds.mil.svg?style=for-the-badge)](https://travis-ci.com/deptofdefense/dds.mil)
+
 This repository contains the source code for [the Defense Digital Service website](https://dds.mil). This website's source code is made available to the open source community with the hope that community contributions will improve functionality, add features, and mature this work.
 
 ## Contributing
