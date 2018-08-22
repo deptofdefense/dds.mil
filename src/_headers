@@ -3,22 +3,22 @@
   Strict-Transport-Security: max-age=31536000; includeSubDomains
 
 /
-  Content-Security-Policy: default-src 'self'; style-src 'self' 'unsafe-inline'; frame-ancestors 'none';
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://dap.digitalgov.gov https://www.google-analytics.com https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; frame-ancestors 'none';
   X-Frame-Options: SAMEORIGIN
   X-XSS-Protection: 1; mode=block
 
 /marketplace/
-  Content-Security-Policy: default-src 'self'; style-src 'self' 'unsafe-inline'; frame-ancestors 'none';
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://dap.digitalgov.gov https://www.google-analytics.com https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; frame-ancestors 'none';
   X-Frame-Options: SAMEORIGIN
   X-XSS-Protection: 1; mode=block
 
 /opportunities/atat/
-  Content-Security-Policy: default-src 'self'; style-src 'self' 'unsafe-inline'; frame-ancestors 'none';
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://dap.digitalgov.gov https://www.google-analytics.com https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; frame-ancestors 'none';
   X-Frame-Options: SAMEORIGIN
   X-XSS-Protection: 1; mode=block
 
 /opportunities/atat/questions/
-  Content-Security-Policy: default-src 'self'; style-src 'self' 'unsafe-inline'; frame-ancestors 'none';
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://dap.digitalgov.gov https://www.google-analytics.com https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; frame-ancestors 'none';
   X-Frame-Options: SAMEORIGIN
   X-XSS-Protection: 1; mode=block
 
