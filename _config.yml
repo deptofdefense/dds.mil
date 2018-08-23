@@ -1,6 +1,9 @@
 source: ./src
 destination: ./public
 
+include:
+  - _headers
+
 host: 0.0.0.0
 
 title: Defense Digital Service
