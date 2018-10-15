@@ -556,6 +556,14 @@ body {
     a, a:visited {
       color: $color-white;
     }
+    
+    .join-usds {
+      float: none;
+    }
+    
+    .join-jyn {
+      margin-top: 1em;
+    }
   }
 
   section.news {
@@ -626,7 +634,6 @@ body {
     font-size: 1.3em;
     height: 60px;
     width: 200px;
-    margin-top: -30px;
     &:hover {
       background-color: $background-color-secondary;
     }
