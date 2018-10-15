@@ -59,21 +59,4 @@ $(function() {
 
   $mobileNavButton.on('click', toggleMobileNav);
 
-  $( 'a[href^="http"]:not(.target-link)' ).on( "click", function() {
-    var domain = this.href.split('/')[2];
-    var tld = domain.substring(domain.length - 3);
-    if (tld != 'gov' && tld != 'mil' && domain != 'medium.com' && domain != 'github.com' && domain != 'twitter.com') {
-      $( '.site-alert-overlay' ).show();
-      $( '.site-alert' ).show();
-      var targetLink = $( '.site-alert .target-link')
-      targetLink.text(this.href);
-      targetLink.attr("href", this.href);
-      return false;
-    }
-  });
-
-  $( '.site-alert .close, .site-alert .target-link, .site-alert-overlay' ).on( "click", function() {
-    $( '.site-alert-overlay' ).hide();
-    $( '.site-alert' ).hide();
-  });
 });
