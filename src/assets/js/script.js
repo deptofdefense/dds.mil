@@ -58,5 +58,14 @@ $(function() {
   }
 
   $mobileNavButton.on('click', toggleMobileNav);
+  
+  $('.staff-members img[title*="Noah"]').hover(
+    function() {
+      $(this).attr('src', 'assets/img/staff/noah_firth_af.jpg');
+    },
+    function() {
+      $(this).attr('src', 'assets/img/staff/noah_firth.jpg');
+    }
+  );
 
 });
