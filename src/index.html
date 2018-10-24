@@ -34,9 +34,6 @@ title: Defense Digital Service
 <section id="our-work" class="our-work usa-grid">
   <div class="usa-width-one-whole">
     <h2>Our work</h2>
-    <p class="page-width-70">
-      We apply industry experience in shipping products to help deliver in-progress strategic or challenged projects. Explore some of the projects we&#8217;ve tackled:
-    </p>
     <br>
   </div>
 
@@ -125,7 +122,7 @@ title: Defense Digital Service
 
   <div class="press">
     <div class="dds-grid">
-      {% for story in site.data.press limit: 6 %}
+      {% for story in site.data.press %}
       <div class="story dds-default-item">
         <a href="{{ story.press_url }}">
           {{ story.title }}<br>
