@@ -3,7 +3,7 @@
    img_description: Logo for the Hack the Pentagon bug bounty program
    img_credit: USGW
    project_description: |
-     The Defense Digital Service launched <a href="http://www.defense.gov/News/Article/Article/684616/dod-invites-vetted-specialists-to-hack-the-pentagon">Hack the Pentagon</a>, the first <a href="https://hackerone.com/hackthepentagon">bug bounty program</a> in the history of the federal government. The program won praise from Secretary of Defense Ash Carter, who wrote: &#8220;I am confident this innovative initiative will strengthen our digital defenses and ultimately enhance our national security.&#8221;
+     The Defense Digital Service launched <a href="http://www.defense.gov/News/Article/Article/684616/dod-invites-vetted-specialists-to-hack-the-pentagon">Hack the Pentagon</a>, the first <a href="https://hackerone.com/hackthepentagon">bug bounty program</a> in the history of the federal government. Since kicking off in 2016, the Hack the Pentagon program has engaged ethical hackers and leading security researchers across the globe to help the DOD to identify and remedy thousands of security vulnerabilities.
 
  - title: Code.mil
    img_url: assets/img/projects/code.png
