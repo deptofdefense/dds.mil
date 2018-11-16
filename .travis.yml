@@ -1,7 +1,6 @@
-os: linux
-dist: bionic
 language: ruby
-cache: bundler
+cache:
+  - bundler
 script:
   - ./scripts/test
 notifications:
