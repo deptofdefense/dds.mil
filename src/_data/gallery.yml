@@ -43,10 +43,10 @@
    description: Weaver balancing on obstacle course.
    credit: Kathy Reesey / USGW
 
- - full: assets/img/gallery/secdef-bezos-lisa.jpg
-   thumb: assets/img/gallery/thumbs/secdef-bezos-lisa.jpg
-   description: Office visit from Bezos and Secretary of Defense.
-   credit: Master Sgt. Adrian Cadiz / USGW
+ - full: assets/img/gallery/afghanistan-2018.jpg
+   thumb: assets/img/gallery/thumbs/afghanistan-2018.jpg
+   description: The team visits US forces in Afghanistan.
+   credit: Tim Van Name / USGW
 
  - full: assets/img/gallery/rebel-base.jpg
    thumb: assets/img/gallery/thumbs/rebel-base.jpg
@@ -57,3 +57,23 @@
    thumb: assets/img/gallery/thumbs/secdef-bezos-team.jpg
    description: Team photo with Bezos and Secretary of Defense.
    credit: Master Sgt. Adrian Cadiz / USGW
+
+ - full: assets/img/gallery/hack-the-usmc.jpg
+   thumb: assets/img/gallery/thumbs/hack-the-usmc.jpg
+   description: Hacking the US Marine Corps at DEFCON
+   credit: Chris Lynch / USGW
+
+ - full: assets/img/gallery/dds-day-augusta.jpg
+   thumb: assets/img/gallery/thumbs/dds-day-augusta.jpg
+   description: DDS Day in Augusta, Georgia
+   credit: Chris Lynch / USGW
+
+ - full: assets/img/gallery/team-at-sunset.jpg
+   thumb: assets/img/gallery/thumbs/team-at-sunset.jpg
+   description: Some of the DDS team at sunset
+   credit: Chris Lynch / USGW
+   
+ - full: assets/img/gallery/army-formation.jpg
+   thumb: assets/img/gallery/thumbs/army-formation.jpg
+   description: The Army in formation
+   credit: Chris Lynch / USGW
