@@ -19,13 +19,13 @@ There are several ways in which you can help improve this project:
 
 dds.mil is a [Jekyll](https://jekyllrb.com)-powered website currently deployed to and hosted on [Netlify](https://www.netlify.com). Development dependencies are managed using the [Bundler](http://bundler.io) gem.
 
-This project uses Ruby (version 2.4.3) which can be installed using a Ruby version manager like [rbenv](https://github.com/rbenv/rbenv).
+This project uses Ruby (version 2.6.2) which can be installed using a Ruby version manager like [rbenv](https://github.com/rbenv/rbenv).
 
 ```sh
-rbenv install 2.4.3
+rbenv install 2.6.2
 ```
 
-Once you've installed Ruby 2.4.3, install the Bundler gem:
+Once you've installed Ruby 2.6.2, install the Bundler gem:
 
 ```sh
 gem install bundler
