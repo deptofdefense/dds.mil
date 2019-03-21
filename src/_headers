@@ -22,6 +22,11 @@
   X-Frame-Options: SAMEORIGIN
   X-XSS-Protection: 1; mode=block
 
+/opportunities/saber/
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://dap.digitalgov.gov https://www.google-analytics.com https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.google-analytics.com; frame-ancestors 'none';
+  X-Frame-Options: SAMEORIGIN
+  X-XSS-Protection: 1; mode=block
+
 /assets/*.css
   X-Content-Type-Options: nosniff
 
