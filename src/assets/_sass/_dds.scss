@@ -556,11 +556,11 @@ body {
     a, a:visited {
       color: $color-white;
     }
-    
+
     .join-usds {
       float: none;
     }
-    
+
     .join-jyn {
       margin-top: 1em;
     }
@@ -610,13 +610,8 @@ body {
   .footer-bar {
     width: 100%;
     background-color: $color-primary-darkest;
-
-    padding-bottom: 30px;
-
-    @include media($medium-screen) {
-      padding-bottom: 60px;
-    }
-
+    margin-top: 3rem;
+    padding-bottom: 10px;
     overflow: auto;
   } // .footer-bar
 
