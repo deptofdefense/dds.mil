@@ -426,18 +426,9 @@ body {
     background-size: contain;
     position: relative;
 
-    .h1, .subtitle {
-      display: block;
-    }
     .h1 {
+      display: block;
       margin-bottom: 0;
-    }
-    .subtitle {
-      font-family: $font-sans;
-      font-size: 1.2em;
-      margin-top: .35em;
-      line-height: 1.9em;
-      font-weight: 300;
     }
     a {
       font-weight: bold;
