@@ -635,7 +635,7 @@ body {
     .eop-logo {
       max-height: 100px;
     }
-    .dds-logo {
+    .usds-logo {
       position: relative;
       left: 0px;
       bottom: 10px;
@@ -736,4 +736,8 @@ body {
 
 .usa-site-value h3{
   color: $color-primary;
+}
+
+.social-media-link {
+  margin-right: 1rem;
 }
