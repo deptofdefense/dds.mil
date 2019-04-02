@@ -482,63 +482,6 @@ body {
     }
   } // </section.our-work>
 
-  section.staff-members {
-
-    h3 {
-      margin: 5px 0;
-      font-weight: 700;
-      font-size: 0.9em;
-    }
-    p {
-      clear: both;
-      font-family: $font-serif;
-      line-height: 1.3;
-      font-size: 0.9em;
-      margin: auto;
-    }
-
-    .staffer {
-      font-size: .85em;
-      text-align: left;
-      width: 200px;
-      margin: auto;
-      padding: 0;
-
-      .previously {
-        font-weight: 500;
-        font-family: $font-sans;
-      }
-      .company {
-        font-weight: 700;
-      }
-
-      .box {
-        border: 1px solid $color-gray-light;
-        box-shadow: 0 0 5px $color-gray-light;
-      }
-
-      .quote {
-        background-color: $color-primary-alt-light;
-        width: 200px;
-        height: 200px;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        p {
-          text-align: center;
-          padding: 10px;
-          color: $color-primary-darkest;
-        }
-      }
-
-      img {
-        width: 200px;
-        height: 200px;
-        display: block;
-      }
-    }
-  }
-
   section.join-us {
     a, a:visited {
       color: $color-white;
