@@ -422,7 +422,7 @@ body {
     width: 100%;
     height: 643px;
     text-align: center;
-    background: url('../img/layout/experts.jpg') center top no-repeat;
+    background: url('../img/layout/team.jpg') center top no-repeat;
     background-size: contain;
     position: relative;
 
@@ -455,10 +455,6 @@ body {
 
       a {
         color: $color-white;
-      }
-
-      .jumbotron-text {
-        @include radial-gradient(rgba(0,0,0,0.7) 30%, rgba(0,0,0,0) 70%, $fallback: transparent);
       }
     }
   }
