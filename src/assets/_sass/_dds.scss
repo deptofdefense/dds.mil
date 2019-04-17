@@ -385,7 +385,7 @@ body {
 
 
 .dds-site {
-  text-align: center;
+  text-align: left;
   margin-top: $fixed-header-height-desktop-collapsed - 10px;
   @include media($medium-screen) {
     margin-top: $fixed-header-height-desktop - $fixed-header-height-desktop-collapsed;
@@ -422,7 +422,7 @@ body {
   .jumbotron {
     width: 100%;
     height: 643px;
-    text-align: center;
+    text-align: left;
     background: url('../img/layout/team.jpg') center top no-repeat;
     background-size: contain;
     position: relative;
