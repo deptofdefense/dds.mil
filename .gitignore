@@ -3,3 +3,4 @@
 .sass-cache/
 public/
 .DS_Store
+.ruby-gemset
