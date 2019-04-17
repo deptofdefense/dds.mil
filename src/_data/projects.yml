@@ -19,12 +19,12 @@
    project_description: |
      Built in collaboration with military familes, <a href="https://www.move.mil">Move.mil</a> is the first stop for service members, their families and Department of Defense Civilians to plan their next Permanent Change of Station, Retirement, or Separation move. The site was completely overhauled by the Air Force Digital Service with the goal of providing key information to customers throughout each phase of their move.
 
- - title: Hack The Air Force 2.0
-   img_url: assets/img/projects/htaf.png
-   img_description: Logo for the Hack The Air Force 2.0 Bug Challenge
-   img_credit: HackerOne / &copy;
+ - title: ANET
+   img_url: assets/img/projects/rs.png
+   img_description: Logo for NATO Resolute Support
+   img_credit: U.S. Central Command
    project_description: |
-     Working closely with the Department of the Air Force, the Defense Digital Service <a href="https://www.hackerone.com/blog/Hacking-US-Air-Force-again-New-York-City-subway-station">launched its fourth bug bounty program</a>, targeting unclassified Air Force systems for the second time. With the largest payout in any government bug bounty program to date, Hack The Air Force 2.0 awarded $125,000 in bounties for 110 vulnerabilities discovered. Open to hackers from 32 countries, this competition continues our work on broadening the community of hackers paid by DOD to find new vulnerabilities while building upon our partnership with Twenty-Fourth Air Force (Air Forces Cyber).
+     Over several months, a small DDS team on the ground in Afghanistan replaced a legacy system used to provide NATO advisors mission-critical information. ANET is a system used by NATO advisors deployed to Afghanistan to track engagements with their Afghan Government counterparts. The legacy system had connectivity and usability flaws hindering the mission. Using modern software development practices, DDS built a faster system with better usability that was fully deployed on a classified network to roughly 800 advisors across Afghanistan. ANET has been handed over to NATO for ongoing development and maintenance. Unclassified source code was also released on <a href="https://www.code.gov">Code.mil</a>.
 
  - title: MIRS Form Transfer
    img_url: assets/img/projects/mirs.png
