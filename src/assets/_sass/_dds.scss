@@ -66,6 +66,7 @@ body {
 
 .dds-site-header {
   @include position(fixed, 0 null null 0);
+  height: $fixed-header-height-desktop-collapsed;
   width: 100%;
   z-index: 1;
 

@@ -8,14 +8,14 @@ $(function() {
 
     if (window.innerWidth > 600) { // $medium-screen
       $header.scrollspy({
-        min: 89, // 153 (expanded header) - 64 (collapsed header)
+        min: 0, // 153 (expanded header) - 64 (collapsed header)
         max: $main.height(),
         onEnter: function() {
           $header.addClass('collapsed');
         },
         onLeave: function() {
-          $header.removeClass('collapsed');
-        }
+//          $header.removeClass('collapsed');
+       }
       });
     }
 
@@ -58,7 +58,7 @@ $(function() {
   }
 
   $mobileNavButton.on('click', toggleMobileNav);
-  
+
   $('.staff-members img[title*="Noah"]').hover(
     function() {
       $(this).attr('src', 'assets/img/staff/noah_firth_af.jpg');
