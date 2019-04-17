@@ -403,15 +403,15 @@ body {
   @media (min-width: $screen-sm-min) {
     h1 {
       font-weight: normal;
-      font-size: 2.9em;
+      font-size: 2.6em;
       font-weight: 700;
       line-height: 1.25em;
     }
     h2 {
-      font-size: 2.3em;
+      font-size: 1.8em;
     }
     h3 {
-      font-size: 1.6em;
+      font-size: 1.4em;
     }
   }
   //HACK: see https://github.com/18F/web-design-standards/issues/1120
@@ -446,7 +446,8 @@ body {
 
     .jumbotron-text {
       position: absolute;
-      left: 0; right: 0; bottom: 2em;
+      //left: 0; right: 0;
+      bottom: 2em;
       margin: 0 auto;
     }
 
@@ -630,7 +631,7 @@ body {
 
 /* CSS below this line still needs to be organized and cleaned-up */
 .page-width-70, .infographic-container {
-  text-align: center;
+  text-align: left;
   margin: auto;
   padding-left: $site-margins-mobile;
   padding-right: $site-margins-mobile;
