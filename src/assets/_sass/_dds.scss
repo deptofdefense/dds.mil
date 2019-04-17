@@ -66,7 +66,7 @@ body {
 
 .dds-site-header {
   @include position(fixed, 0 null null 0);
-  height: $fixed-header-height-desktop-collapsed;
+  height: $fixed-header-height-desktop;
   width: 100%;
   z-index: 1;
 
@@ -165,13 +165,13 @@ body {
 
     @include media($medium-screen) {
       display: block;
-      width: 124px;
+      width: 112px;
       margin-top: -14px;
     }
 
     @include media($desktop-nav-width) {
       display: block;
-      width: 202px;
+      width: 112px;
       margin-top: -26px;
     }
   }
@@ -184,7 +184,7 @@ body {
   position: relative;
 
   @include media($medium-screen) {
-    height: 96px;
+    height: 64px;
   }
 
   // Firefox fix so that navbar buttons to align right
@@ -243,7 +243,7 @@ body {
 
   @media ( min-width: $medium-screen ) {
     position: absolute;
-    top: 34px;
+    top: 18px;
     right: 12px;
     clear: both;
     display: block;
