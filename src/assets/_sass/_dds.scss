@@ -480,7 +480,7 @@ body {
       display: block;
       //font-size: .85em;
       p{
-        
+
         line-height:1.5em;
       }
 
@@ -551,7 +551,7 @@ body {
   .footer-bar {
     width: 100%;
     background-color: $color-primary-darkest;
-    margin-top: 3rem;
+    margin-top: 60px;
     padding-bottom: 10px;
     overflow: auto;
   } // .footer-bar
@@ -641,6 +641,7 @@ body {
   border-top:1px solid $color-gray-lighter;
   padding-top:60px;
 }
+
 .page-width-70, .infographic-container {
   text-align: left;
   margin: auto;
