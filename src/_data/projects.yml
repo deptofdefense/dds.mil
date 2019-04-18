@@ -24,7 +24,7 @@
    img_description: Logo for NATO Resolute Support
    img_credit: U.S. Central Command
    project_description: |
-     Over several months, a small DDS team on the ground in Afghanistan replaced a legacy system used to provide NATO advisors mission-critical information. ANET is a system used by NATO advisors deployed to Afghanistan to track engagements with their Afghan Government counterparts. The legacy system had connectivity and usability flaws hindering the mission. Using modern software development practices, DDS built a faster system with better usability that was fully deployed on a classified network to roughly 800 advisors across Afghanistan. ANET has been handed over to NATO for ongoing development and maintenance. Unclassified source code was also released on <a href="https://www.code.gov">Code.mil</a>.
+     Over several months, a small DDS team on the ground in Afghanistan replaced a legacy system used to provide NATO advisors mission-critical information. ANET is a system used by NATO advisors deployed to Afghanistan to track engagements with their Afghan Government counterparts. The legacy system had connectivity and usability flaws hindering the mission. Using modern software development practices, DDS built a faster system with better usability that was fully deployed on a classified network to roughly 800 advisors across Afghanistan. ANET has been handed over to NATO for ongoing development and maintenance. Unclassified source code was also released on <a href="https://www.code.mil">Code.mil</a>.
 
  - title: MIRS Form Transfer
    img_url: assets/img/projects/mirs.png
