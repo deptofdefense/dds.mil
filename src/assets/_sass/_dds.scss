@@ -507,7 +507,7 @@ body {
     .story {
       text-align: left;
       padding: 10px 10px 10px 10px;
-      border-top: 1px solid $color-primary-darker;
+      border-top: 1px solid $color-gray-lighter;
       h3 {
         font-style: none;
       }
@@ -632,6 +632,11 @@ body {
 
 
 /* CSS below this line still needs to be organized and cleaned-up */
+
+.section-rule{
+  border-top:1px solid $color-gray-lighter;
+  padding-top:60px;
+}
 .page-width-70, .infographic-container {
   text-align: left;
   margin: auto;
