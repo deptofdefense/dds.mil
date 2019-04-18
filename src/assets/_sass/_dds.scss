@@ -425,8 +425,8 @@ body {
   .jumbotron {
     width: 100%;
     height: 643px;
-    text-align: left;
-    background: url('../img/layout/team.jpg') center top no-repeat;
+    text-align: center;
+    background: url('../img/layout/team-lg.jpg') center top no-repeat;
     background-size: cover;
     position: relative;
     color: $color-white;
@@ -450,7 +450,7 @@ body {
 
     .jumbotron-text {
       position: absolute;
-      //left: 0; right: 0;
+      left: 5px; right: 5px;
       bottom: 2em;
       margin: 0 auto;
     }
@@ -462,6 +462,10 @@ body {
       a {
         color: $color-white;
       }
+    }
+    @media(max-width:$screen-xs-min) {
+      background: url('../img/layout/team-xs.jpg') center top no-repeat;
+      background-size: cover;
     }
   }
 
@@ -638,13 +642,16 @@ body {
 
 /* CSS below this line still needs to be organized and cleaned-up */
 
+// Mobile fix for replicating existing col offset with uswds 1.0 grid
+.usa-width-two-thirds.usa-offset-one-sixth{
+  @media (max-width: $screen-xs-min) {
+    margin-left: 0px;
+  }
+}
+
 .section-rule{
   border-top:1px solid $color-gray-lighter;
-  padding-top:60px;
-  
-  @media (max-width: $screen-xs-min) {
-    padding-top:15px;
-  }
+  padding-top:15px;
 }
 
 .page-width-70, .infographic-container {
