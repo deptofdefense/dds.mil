@@ -427,8 +427,9 @@ body {
     height: 643px;
     text-align: left;
     background: url('../img/layout/team.jpg') center top no-repeat;
-    background-size: contain;
+    background-size: cover;
     position: relative;
+    color: $color-white;
 
     .h1 {
       display: block;
@@ -640,6 +641,10 @@ body {
 .section-rule{
   border-top:1px solid $color-gray-lighter;
   padding-top:60px;
+  
+  @media (max-width: $screen-xs-min) {
+    padding-top:15px;
+  }
 }
 
 .page-width-70, .infographic-container {
