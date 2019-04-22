@@ -3,39 +3,39 @@
    img_description: Logo for the Hack the Pentagon bug bounty program
    img_credit: USGW
    project_description: |
-     The Defense Digital Service launched <a href="http://www.defense.gov/News/Article/Article/684616/dod-invites-vetted-specialists-to-hack-the-pentagon">Hack the Pentagon</a>, the first <a href="https://hackerone.com/hackthepentagon">bug bounty program</a> in the history of the federal government. Since kicking off in 2016, the Hack the Pentagon program has engaged ethical hackers and leading security researchers across the globe to help the DOD to identify and remedy thousands of security vulnerabilities.
+      The Defense Digital Service launched <a href="http://www.defense.gov/News/Article/Article/684616/dod-invites-vetted-specialists-to-hack-the-pentagon">Hack the Pentagon</a>, the first <a href="https://hackerone.com/hackthepentagon">bug bounty program</a> in the history of the federal government. Since kicking off in 2016, the Hack the Pentagon program has engaged ethical hackers and leading security researchers across the globe to help the DOD to identify and remedy thousands of security vulnerabilities.
 
  - title: Code.mil
    img_url: assets/img/projects/code.png
    img_description: The Code.gov logo; the word “Code” monospaced with an underscore after, reminescent of a terminal prompt
    img_credit: USGW
    project_description: |
-     Code.mil is an experiment in open source at the U.S. Department of Defense in cooperation with <a href="https://www.code.gov">Code.gov</a>. The goal is to foster open collaboration with the developer community around the world on DOD open source projects. During the first phase, which launched in early 2017, the Defense Digital Service wrote a strategy for open sourcing code written by DOD employees and <a href="https://www.defense.gov/News/News-Releases/News-Release-View/Article/1092364/dod-announces-the-launch-of-codemil-an-experiment-in-open-source/">called upon</a> the F/OSS developer community to help us finalize that plan.
+      Code.mil is an experiment in open source at the U.S. Department of Defense in cooperation with <a href="https://www.code.gov">Code.gov</a>. The goal is to foster open collaboration with the developer community around the world on DOD open source projects. During the first phase, which launched in early 2017, the Defense Digital Service wrote a strategy for open sourcing code written by DOD employees and <a href="https://www.defense.gov/News/News-Releases/News-Release-View/Article/1092364/dod-announces-the-launch-of-codemil-an-experiment-in-open-source/">called upon</a> the F/OSS developer community to help us finalize that plan.
 
  - title: Move.mil
    img_url: assets/img/projects/move.png
    img_description: The USTRANSCOM logo; a light blue sphere with white gridlines, a gold winged sea horse, all within a white designation band edged light blue, displaying four gold stars, two on either side of the inscription “UNITED STATES” at top and “TRANSPORTATION COMMAND” below, all black. All surmounting a light blue compass rose.
    img_credit: USGW
    project_description: |
-     Built in collaboration with military familes, <a href="https://www.move.mil">Move.mil</a> is the first stop for service members, their families and Department of Defense Civilians to plan their next Permanent Change of Station, Retirement, or Separation move. The site was completely overhauled by the Air Force Digital Service with the goal of providing key information to customers throughout each phase of their move.
+      Built in collaboration with military familes, <a href="https://www.move.mil">Move.mil</a> is the first stop for service members, their families and Department of Defense Civilians to plan their next Permanent Change of Station, Retirement, or Separation move. The site was completely overhauled by the Air Force Digital Service with the goal of providing key information to customers throughout each phase of their move.
 
  - title: ANET
    img_url: assets/img/projects/rs.png
    img_description: Logo for NATO Resolute Support
    img_credit: U.S. Central Command
    project_description: |
-      ANET is a system used by NATO advisors deployed to Afghanistan to track engagements with their Afghan Government counterparts. The legacy system had connectivity and usability flaws hindering the mission. Using modern software development practices, a small team of DDS engineers built a faster system with better usability that was fully deployed on a classified network to roughly 800 advisors across Afghanistan. ANET has been handed over to NATO for ongoing development and maintenance. Unclassified source code was also released on <a href="https://www.code.gov">Code.mil</a>.
+      ANET is a system used by NATO advisors deployed to Afghanistan to track engagements with their Afghan Government counterparts. The legacy system had connectivity and usability flaws hindering the mission. Using modern software development practices, a small team of DDS engineers built a faster system with better usability that was fully deployed on a classified network to roughly 800 advisors across Afghanistan. ANET has been handed over to NATO for ongoing development and maintenance. Unclassified source code was also released on <a href="https://www.code.mil">Code.mil</a>.
 
  - title: MIRS Form Transfer
    img_url: assets/img/projects/mirs.png
    img_description: Logo for USMEPCOM - the US Military Entrance Processing Command
    img_credit: USGW
    project_description: |
-     As part of work on the MEPCOM Integrated Resource System (MIRS), the technical system that underpins the "accessions" process by which recruits are sworn into the military, the Defense Digital Service setup electronic records transfer between the MEPCOM systems and the Army, Navy, and Air Force human resources systems. This freed recruits from having to carry frequently lost paperwork from the accessions station to boot camp --- as well as keeping staff from having to re-enter the data by hand!  Since launch in late 2017, this system has saved over 1.5 million pages of paper from being carried back and forth.
+      As part of work on the MEPCOM Integrated Resource System (MIRS), the technical system that underpins the "accessions" process by which recruits are sworn into the military, the Defense Digital Service setup electronic records transfer between the MEPCOM systems and the Army, Navy, and Air Force human resources systems. This freed recruits from having to carry frequently lost paperwork from the accessions station to boot camp --- as well as keeping staff from having to re-enter the data by hand!  Since launch in late 2017, this system has saved over 1.5 million pages of paper from being carried back and forth.
 
  - title: Army Cyber Partnership
    img_url: assets/img/layout/army-digital-service.png
    img_description: The Army Digital Service logo; a sphere with a yellow outline, a gold winged image on a black background, “DEPARTMENT OF DEFENSE” at top and “ARMY DIGITAL SERVICE” below, all white.
    img_credit: USGW
    project_description: |
-     The Defense Digital Service launched a program to engage and support technical talent within the U.S. Army Cyber Command. Through a series of collaborative projects, highly-trained Army officers and soldiers work side-by-side with DDS civilians in unclassified, collaborative, startup-like spaces. Examples of projects include <a href="https://www.wired.com/story/pentagon-dream-team-tech-savvy-soldiers/">developing drone detection technologies</a>, hunting adversaries on DOD networks, and <a href="https://www.fedscoop.com/defense-digital-service-redesigns-army-cyber-command-training/">redesigning training for cyber soldiers</a>.
+      The Defense Digital Service launched a program to engage and support technical talent within the U.S. Army Cyber Command. Through a series of collaborative projects, highly-trained Army officers and soldiers work side-by-side with DDS civilians in unclassified, collaborative, startup-like spaces. Examples of projects include <a href="https://www.wired.com/story/pentagon-dream-team-tech-savvy-soldiers/">developing drone detection technologies</a>, hunting adversaries on DOD networks, and <a href="https://www.fedscoop.com/defense-digital-service-redesigns-army-cyber-command-training/">redesigning training for cyber soldiers</a>.

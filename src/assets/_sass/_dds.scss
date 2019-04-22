@@ -645,7 +645,7 @@ body {
 // Mobile fix for replicating existing col offset with uswds 1.0 grid
 .usa-width-two-thirds.usa-offset-one-sixth{
   @media (max-width: $screen-xs-min) {
-    margin-left: 0px;
+    margin-left: 0;
   }
 }
 
