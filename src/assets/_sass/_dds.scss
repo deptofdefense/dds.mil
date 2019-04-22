@@ -478,15 +478,13 @@ body {
   section.our-work {
 
     .project {
-      margin-top:30px;
-      margin-bottom:30px;
+      margin-top: 30px;
+      margin-bottom: 30px;
       padding: 0 15px 0 15px;
-      //border-top: 6px solid $background-color-secondary;
       display: block;
-      //font-size: .85em;
-      p{
 
-        line-height:1.5em;
+      p{
+        line-height: 1.5em;
       }
 
       img {
@@ -650,8 +648,8 @@ body {
 }
 
 .section-rule{
-  border-top:1px solid $color-gray-lighter;
-  padding-top:15px;
+  border-top: 1px solid $color-gray-lighter;
+  padding-top: 15px;
 }
 
 .page-width-70, .infographic-container {
