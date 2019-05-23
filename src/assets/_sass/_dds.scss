@@ -426,7 +426,7 @@ body {
     width: 100%;
     height: 643px;
     text-align: center;
-    background: url('../img/layout/team-lg.jpg') center top no-repeat;
+    background: url('../img/layout/hero-dds-laptop.jpg') center top no-repeat;
     background-size: cover;
     position: relative;
     color: $color-white;
@@ -464,7 +464,7 @@ body {
       }
     }
     @media(max-width:$screen-xs-min) {
-      background: url('../img/layout/team-xs.jpg') center top no-repeat;
+      background: url('../img/layout/hero-dds-laptop-xs.jpg') center top no-repeat;
       background-size: cover;
     }
   }
