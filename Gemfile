@@ -6,11 +6,11 @@ gem 'jekyll', '~> 3.8'
 
 group :jekyll_plugins do
   gem 'bourbon', '~> 5.1'
-  gem 'jekyll-sitemap', '~> 1.2'
+  gem 'jekyll-sitemap', '~> 1.3'
   gem 'neat', '~> 3.0'
   gem 'uswds-jekyll', '4.1'
 end
 
 group :test do
-  gem 'html-proofer', '~> 3.10'
+  gem 'html-proofer', '~> 3.12'
 end
