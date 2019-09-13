@@ -2,3 +2,6 @@ https://dds-mil.netlify.com/* https://dds.mil/:splat 301!
 
 # AEP is the DDS/ARCYBER Advanced Education Program and is part of the Tatooine effort
 /aep https://dds.hirevue.com/signup/nCrKGCmnYGjYRFHKvmPAJX/ 301
+
+# Tatooine Grand Opening invitation redirect
+/TatooineGrandOpening https://www.eventbrite.com/e/tatooines-grand-opening-tickets-72544800451 301
