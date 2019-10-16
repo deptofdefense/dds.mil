@@ -5,3 +5,7 @@ https://dds-mil.netlify.com/* https://dds.mil/:splat 301!
 
 # Tatooine Grand Opening invitation redirect
 /TatooineGrandOpening https://www.eventbrite.com/e/tatooines-grand-opening-tickets-72544800451 301
+
+# Redirecting /join to the in-page anchor #join to appease Will.
+/join https://dds.mil#join
+
