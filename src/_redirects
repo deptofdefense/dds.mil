@@ -9,3 +9,5 @@ https://dds-mil.netlify.com/* https://dds.mil/:splat 301!
 # Redirecting /join to the in-page anchor #join to appease Will.
 /join https://dds.mil#join
 
+# Redirect to google form for us ace covid google form
+/usacecovid https://docs.google.com/forms/d/e/1FAIpQLSdWyrdmobjbXLJhKye0apU7XscoF73bTXOxd3DWSzQt3zDhlA/viewform?usp=sf_link 301
