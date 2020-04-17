@@ -11,3 +11,4 @@ https://dds-mil.netlify.com/* https://dds.mil/:splat 301!
 
 # Redirect to google form for us ace covid google form
 /usacecovid https://docs.google.com/forms/d/e/1FAIpQLSdWyrdmobjbXLJhKye0apU7XscoF73bTXOxd3DWSzQt3zDhlA/viewform?usp=sf_link 301
+/usace-ct https://docs.google.com/forms/d/e/1FAIpQLSdFhflnYUpPBnXXzwAOmsb3RHf42-9o1vZoZDISQYkSC_-MYg/viewform 301
