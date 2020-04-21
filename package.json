@@ -1,0 +1,27 @@
+{
+  "name": "dds-dot-mil",
+  "description": "Defense Digital Service",
+  "version": "1.0.0",
+  "author": "DDS",
+  "dependencies": {
+    "@types/node": "^13.13.1",
+    "@types/react": "^16.9.34",
+    "@types/react-dom": "^16.9.6",
+    "gatsby": "^2.20.28",
+    "gatsby-link": "^2.3.4",
+    "gatsby-plugin-react-helmet": "^3.2.4",
+    "gatsby-plugin-sass": "^2.2.3",
+    "gatsby-plugin-typescript": "^2.3.3",
+    "node-sass": "^4.13.1",
+    "prettier": "^2.0.5",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-helmet": "^6.0.0",
+    "uswds": "^2.6.0"
+  },
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"src/**/*.ts*\""
+  }
+}
