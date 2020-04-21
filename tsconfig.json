@@ -3,10 +3,15 @@
     "outDir": "./dist/",
     "sourceMap": true,
     "noImplicitAny": true,
-    "module": "commonjs",
-    "target": "esnext",
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "allowJs": true,
+    "target": "es5",
     "jsx": "react",
-    "lib": ["dom", "es2015", "es2017"]
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "baseUrl": "src"
   },
-  "include": ["./src/**/*", "gatsby-browser.ts"]
+  "include": ["src/**/*"]
 }
