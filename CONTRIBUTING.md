@@ -17,27 +17,21 @@ There are several ways in which you can help improve this project:
 
 ## Getting Started
 
-dds.mil is a [Jekyll](https://jekyllrb.com)-powered website currently deployed to and hosted on [Netlify](https://www.netlify.com). Development dependencies are managed using the [Bundler](http://bundler.io) gem.
+dds.mil is a [Gatsby](https://www.gatsbyjs.org/)-powered website currently deployed to and hosted on [Netlify](https://www.netlify.com). Development dependencies are managed using [node package manager](npmjs.com).
 
-This project uses Ruby (version 2.6.2) which can be installed using a Ruby version manager like [rbenv](https://github.com/rbenv/rbenv).
-
-```sh
-rbenv install 2.6.2
-```
-
-Once you've installed Ruby 2.6.2, install the Bundler gem:
+This project uses the latest LTS version of Node (version 12.16.2 at time of writing) which can be installed using a node version manager like [nvm](https://github.com/nvm-sh/nvm).
 
 ```sh
-gem install bundler
+nvm install --lts
 ```
 
-Install the project's development dependencies (as specified in the [`Gemfile`][gemfile]) by running:
+Once you've installed node, install the projects dependencies as specified in the project's `package.json` file:
 
 ```sh
-bundle install
+npm install
 ```
 
-Lastly, start the local development server by running `./scripts/serve` and opening [http://localhost:4000](http://localhost:4000) in your Web browser of choice.
+Lastly, start the local development server by running `npm run develop` and opening [http://localhost:8000](http://localhost:8000) in your Web browser of choice.
 
 ## Making Changes
 
@@ -45,17 +39,15 @@ Lastly, start the local development server by running `./scripts/serve` and open
 1. Install development dependencies as outlined above.
 1. Create a feature branch for the code changes you're looking to make: `git checkout -b your-descriptive-branch-name origin/master`.
 1. _Write some code!_
-1. Run the application and verify that your changes function as intended: `./scripts/serve`.
-1. If your changes would benefit from testing, add the necessary tests and verify everything passes by running `./scripts/test`.
+1. Run the application and verify that your changes function as intended: `npm run develop`.
+1. If your changes would benefit from testing, add the necessary tests and verify everything passes by running `npm run test`.
 1. Commit your changes: `git commit -am 'Add some new feature or fix some issue'`. _(See [this excellent article](https://chris.beams.io/posts/git-commit) for tips on writing useful Git commit messages.)_
 1. Push the branch to your fork: `git push -u origin your-descriptive-branch-name`.
 1. Create a new [pull request][pulls] and we'll review your changes.
 
 ## Code Style
 
-Code formatting conventions are defined in the `.editorconfig` file which uses the [EditorConfig](https://editorconfig.org) syntax. There are [plugins for a variety of editors](https://editorconfig.org/#download) that utilize the settings in the `.editorconfig` file. It is recommended that you install the EditorConfig plugin for your editor of choice.
-
-Your bug fix or feature addition won't be rejected if it runs afoul of any (or all) of these guidelines, but following the guidelines will definitely make everyone's lives a little easier.
+This project uses the [prettier](https://prettier.io/) code style. All files can be automatically formatted using this style by running `npm run format`.
 
 ## Legalese
 
