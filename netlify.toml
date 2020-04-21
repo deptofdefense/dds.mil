@@ -1,0 +1,6 @@
+# https://docs.netlify.com/configure-builds/file-based-configuration/
+[context.deploy-preview]
+  command = "gatsby build"
+
+[context.branch-deploy]
+  command = "gatsby build"
