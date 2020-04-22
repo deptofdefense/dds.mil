@@ -1,18 +1,18 @@
-import { Link } from "gatsby";
-import PropTypes from "prop-types";
 import React from "react";
+import { Link } from "gatsby";
+import { HeaderNavLink } from "components";
 
 interface Props {
   siteTitle: string;
 }
 
-export const Header: React.FC<Props> = ({ children, siteTitle }) => (
+export const Header: React.FC<Props> = ({ siteTitle }) => (
   <header className="usa-header usa-header--basic" role="banner">
     <div className="usa-nav-container">
       <div className="usa-navbar">
         <div className="usa-logo" id="extended-logo">
           <em className="usa-logo__text">
-            <Link to="/" title="Home" aria-label="Home">
+            <Link to="/" aria-label="Home">
               {siteTitle}
             </Link>
           </em>
@@ -24,51 +24,13 @@ export const Header: React.FC<Props> = ({ children, siteTitle }) => (
           <img src="/assets/img/close.svg" alt="close" />
         </button>
         <ul className="usa-nav__primary usa-accordion">
-          <li className="usa-nav__primary-item">
-            <button
-              className="usa-accordion__button usa-nav__link  usa-current"
-              aria-expanded="false"
-              aria-controls="basic-nav-section-one"
-            >
-              <span>Current section</span>
-            </button>
-            <ul id="basic-nav-section-one" className="usa-nav__submenu">
-              <li className="usa-nav__submenu-item">
-                <a href="#">Navigation link</a>
-              </li>
-              <li className="usa-nav__submenu-item">
-                <a href="#">Navigation link</a>
-              </li>
-              <li className="usa-nav__submenu-item">
-                <a href="#">Navigation link</a>
-              </li>
-            </ul>
-          </li>
-          <li className="usa-nav__primary-item">
-            <button
-              className="usa-accordion__button usa-nav__link"
-              aria-expanded="false"
-              aria-controls="basic-nav-section-two"
-            >
-              <span>Section</span>
-            </button>
-            <ul id="basic-nav-section-two" className="usa-nav__submenu">
-              <li className="usa-nav__submenu-item">
-                <a href="#">Navigation link</a>
-              </li>
-              <li className="usa-nav__submenu-item">
-                <a href="#">Navigation link</a>
-              </li>
-              <li className="usa-nav__submenu-item">
-                <a href="#">Navigation link</a>
-              </li>
-            </ul>
-          </li>
-          <li className="usa-nav__primary-item">
-            <a className="usa-nav__link" href="javascript:void(0)">
-              <span>Simple link</span>
-            </a>
-          </li>
+          <HeaderNavLink to="/about">About</HeaderNavLink>
+
+          <HeaderNavLink to="/media">Media</HeaderNavLink>
+
+          <HeaderNavLink to="/work">Portfolio</HeaderNavLink>
+
+          <HeaderNavLink to="/join">Join</HeaderNavLink>
         </ul>
       </nav>
     </div>

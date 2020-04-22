@@ -4,19 +4,135 @@ backend:
   site_domain: dds.mil
   repo: deptofdefense/dds.mil
 
-media_folder: static/img
-public_folder: /img
+logo_url: https://dds.mil/assets/img/layout/logo-desktop-full.png
+publish_mode: editorial_workflow
+media_folder: content/__assets/images
+public_folder: ""
 
 collections:
-  - name: "blog"
-    label: "Blog"
-    folder: "content/blog"
+  - name: "announcements"
+    label: "Announcements"
+    label_singular: "Announcement"
+    description: >
+      General annoucements from the DDS team.
+    folder: "content/announcements"
+    slug: "{{year}}-{{month}}-{{slug}}"
+    preview_path: "/announcements/{{slug}}"
+    summary: "{{title}} -- {{year}}/{{month}}/{{day}}"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     editor:
-      preview: false
+      preview: true
+    fields:
+      - { label: "Title", name: "title", widget: "string", tagname: "h1" }
+      - {
+          label: "Publish Date",
+          name: "date",
+          widget: "datetime",
+          tagname: "",
+          hint: "Determines order of announcements page",
+        }
+      - {
+          label: "Cover Image",
+          name: "cover",
+          widget: "image",
+          required: false,
+        }
+      - { label: "Summary", name: "summary", widget: "string", tagname: "" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "posts"
+    label: "Blog Posts"
+    label_singular: "Blog Post"
+    description: >
+      Blog Posts from the DDS team.
+    folder: "content/posts"
+    slug: "{{year}}-{{month}}-{{slug}}"
+    preview_path: "/blog/p/{{slug}}"
+    summary: "{{title}} -- {{year}}/{{month}}/{{day}}"
+    create: true
+    editor:
+      preview: true
+    fields:
+      - { label: "Title", name: "title", widget: "string", tagname: "h1" }
+      - {
+          label: "Publish Date",
+          name: "date",
+          widget: "datetime",
+          tagname: "",
+          hint: "Determines order of announcements page",
+        }
+      - {
+          label: "Cover Image",
+          name: "cover",
+          widget: "image",
+          required: false,
+        }
+      - {
+          label: "Author",
+          name: "author",
+          widget: "relation",
+          required: false,
+          valueField: "slug",
+          collection: "team",
+          searchFields: "name",
+          optionsLength: 5,
+        }
+      - { label: "Summary", name: "summary", widget: "string", tagname: "" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "team"
+    label: "Team Members"
+    label_singular: "Team Member"
+    description: >
+      DDS Team members.
+    folder: "content/posts"
+    slug: "{{year}}-{{month}}-{{slug}}"
+    preview_path: "/team"
+    summary: "{{name}}"
+    identifier_field: "name"
+    create: true
+    editor:
+      preview: true
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Joined", name: "joined", widget: "datetime", tagname: "" }
+      - { label: "Bio", name: "bio", widget: "string" }
+      - { label: "Photo", name: "photo", widget: "image", required: false }
+
+  - name: "news"
+    label: "DDS in the News"
+    label_singular: "News Article"
+    description: >
+      References to articles posted about DDS.
+    folder: "content/news"
+    slug: "{{year}}-{{month}}-{{slug}}"
+    preview_path: "/news"
+    summary: "{{year}}/{{month}} | {{title}}"
+    create: true
+    editor:
+      preview: true
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "External Link", name: "link", widget: "string" }
+
+  - name: "settings"
+    label: "Settings"
+    delete: false # Prevent users from deleting documents in this collection
+    editor:
+      preview: false
+    files:
+      - name: "general"
+        label: "Site Settings"
+        file: "content/_settings.json"
+        description: "General Site Settings"
+        fields:
+          - { label: "Global title", name: "siteTitle", widget: "string" }
+          - {
+              label: "Pagination Size",
+              name: "pageSize",
+              widget: number,
+              min: 1,
+            }
