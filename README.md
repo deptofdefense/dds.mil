@@ -1,13 +1,19 @@
-# gatsby-starter-typescript
-The [default Gatsby starter](https://github.com/gatsbyjs/gatsby-starter-default) converted to [TypeScript](https://www.typescriptlang.org/).
+# Defense Digital Service
 
-For an overview of the project structure please refer to the [Gatsby documentation - Building with Components](https://www.gatsbyjs.org/docs/building-with-components/)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a854eb87-cb63-4e22-b024-ca3bf861147b/deploy-status)](https://app.netlify.com/sites/dds-mil/deploys)
 
-Install this starter (assuming Gatsby is installed) by running from your CLI:
-```
-gatsby new gatsby-starter-typescript https://github.com/haysclark/gatsby-starter-typescript
-```
+This repository contains the source code for [the Defense Digital Service website](https://dds.mil). This website's source code is made available to the open source community with the hope that community contributions will improve functionality, add features, and mature this work.
 
-## Deploy
+## Contributing
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/haysclark/gatsby-starter-typescript)
+For details on setting up your development environment and contributing to this project, see [`CONTRIBUTING.md`][contributing].
+
+## License
+
+As part of the Defense Digital Service's goal of bringing technology industry practices to the U.S. Department of Defense, we welcome contributions to this repository from the open source community. If you are interested in contributing to this project, please review [`CONTRIBUTING.md`][contributing] and [`LICENSE.md`][license]. Those files describe how to contribute to this work. A list of contributors to this project is maintained in [`CONTRIBUTORS.md`][contributors].
+
+Works created by U.S. Federal employees as part of their jobs typically are not eligible for copyright in the United States. In places where the contributions of U.S. Federal employees are not eligible for copyright, this work is in the public domain. In places where it is eligible for copyright, such as some foreign jurisdictions, this work is licensed as described in [`LICENSE.md`][license].
+
+[contributing]: https://github.com/deptofdefense/dds.mil/blob/master/CONTRIBUTING.md
+[contributors]: https://github.com/deptofdefense/dds.mil/blob/master/CONTRIBUTORS.md
+[license]: https://github.com/deptofdefense/dds.mil/blob/master/LICENSE.md
