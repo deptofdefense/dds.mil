@@ -2,7 +2,7 @@ const path = require("path");
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Typescript Starter`,
+    title: `Defense Digital Service`,
   },
   plugins: [
     {
@@ -12,7 +12,6 @@ module.exports = {
         allExtensions: true,
       },
     },
-    `gatsby-plugin-sass`,
     {
       resolve: "gatsby-plugin-root-import",
       options: {
@@ -22,8 +21,50 @@ module.exports = {
       },
     },
     `gatsby-plugin-react-helmet`,
-    // Add typescript stack into webpack
-    "gatsby-plugin-sass",
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `blog`,
+        path: `${__dirname}/content/posts`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `team`,
+        path: `${__dirname}/content/team`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `team`,
+        path: `${__dirname}/content/news`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `announcements`,
+        path: `${__dirname}/content/announcements`,
+      },
+    },
     "gatsby-plugin-netlify-cms",
+    `gatsby-plugin-sass`,
+    `gatsby-plugin-sharp`,
+    `gatsby-plugin-react-helmet`,
+    {
+      resolve: "gatsby-transformer-remark",
+      options: {
+        plugins: [
+          {
+            resolve: "gatsby-remark-images",
+            options: {
+              maxWidth: 600,
+            },
+          },
+        ],
+      },
+    },
   ],
 };

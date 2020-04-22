@@ -1,0 +1,30 @@
+.usa-header {
+  background-color: color($theme-color-primary);
+}
+
+.usa-nav__primary > .usa-nav__primary-item > a,
+.usa-nav__primary > .usa-nav__primary-item > a:hover {
+  @include at-media(desktop) {
+    color: color("gray-cool-1");
+  }
+}
+
+.usa-header--basic .usa-nav__link:hover::after,
+.usa-header--basic .usa-current::after {
+  background-color: color("gray-cool-1");
+  bottom: 0em;
+}
+
+.usa-header--basic .usa-nav-container {
+  align-items: center;
+}
+
+.usa-logo {
+  @include at-media(desktop) {
+    margin: 32px 10px;
+  }
+
+  a {
+    color: color("gray-cool-1");
+  }
+}

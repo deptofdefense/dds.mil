@@ -15,8 +15,10 @@ $theme-hero-image: "#{$theme-image-path}/hero.png";
 // Your custom changes to variables go here
 // Uncomment to see this working
 // $theme-color-primary-darker: 'black';
+$theme-show-notifications: false;
 
 @import "uswds";
+@import "./header.scss";
 
 // Your custom SASS/CSS goes here
 @media screen and (min-width: 640px) {
