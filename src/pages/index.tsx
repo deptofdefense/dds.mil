@@ -1,5 +1,5 @@
-import * as React from "react";
-import Link from "gatsby-link";
+import React from "react";
+import { Layout } from "components";
 
 // Please note that you can use https://github.com/dotansimha/graphql-code-generator
 // to generate all types from graphQL schema
@@ -19,9 +19,9 @@ export default class extends React.Component<IndexPageProps, {}> {
   }
   public render() {
     return (
-      <div>
-        <h1>Defense Digital Service</h1>
-      </div>
+      <Layout>
+        <h1>home</h1>
+      </Layout>
     );
   }
 }
