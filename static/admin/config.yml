@@ -4,7 +4,9 @@ backend:
   site_domain: dds.mil
   repo: deptofdefense/dds.mil
 
-logo_url: https://dds.mil/assets/img/layout/logo-desktop-full.png
+site_url: https://dds.mil/
+display_url: DDS.mil
+logo_url: /img/logo-cms.png
 publish_mode: editorial_workflow
 media_folder: content/__assets/images
 public_folder: ""
@@ -24,6 +26,12 @@ collections:
       preview: true
     fields:
       - { label: "Title", name: "title", widget: "string", tagname: "h1" }
+      - {
+          label: "type",
+          name: "Type",
+          widget: "hidden",
+          default: "announcement",
+        }
       - {
           label: "Publish Date",
           name: "date",
@@ -54,6 +62,7 @@ collections:
       preview: true
     fields:
       - { label: "Title", name: "title", widget: "string", tagname: "h1" }
+      - { label: "type", name: "Type", widget: "hidden", default: "post" }
       - {
           label: "Publish Date",
           name: "date",
@@ -85,7 +94,7 @@ collections:
     label_singular: "Team Member"
     description: >
       DDS Team members.
-    folder: "content/posts"
+    folder: "content/team"
     slug: "{{year}}-{{month}}-{{slug}}"
     preview_path: "/team"
     summary: "{{name}}"
@@ -94,6 +103,7 @@ collections:
     editor:
       preview: true
     fields:
+      - { label: "type", name: "Type", widget: "hidden", default: "teamMember" }
       - { label: "Name", name: "name", widget: "string" }
       - { label: "Joined", name: "joined", widget: "datetime", tagname: "" }
       - { label: "Bio", name: "bio", widget: "string" }
@@ -113,9 +123,14 @@ collections:
       preview: true
     fields:
       - { label: "Title", name: "title", widget: "string" }
+      - {
+          label: "type",
+          name: "Type",
+          widget: "hidden",
+          default: "newsArticle",
+        }
       - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Description", name: "description", widget: "string" }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Summary", name: "summary", widget: "string" }
       - { label: "External Link", name: "link", widget: "string" }
 
   - name: "settings"
@@ -130,6 +145,11 @@ collections:
         description: "General Site Settings"
         fields:
           - { label: "Global title", name: "siteTitle", widget: "string" }
+          - {
+              label: "SEO Description",
+              name: "seoDescription",
+              widget: "string",
+            }
           - {
               label: "Pagination Size",
               name: "pageSize",

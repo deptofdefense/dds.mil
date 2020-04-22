@@ -1,10 +1,12 @@
-import * as React from 'react'
+import React from "react";
+import { Layout, PageHeading } from "components";
 
-const NotFoundPage = () => (
-  <div>
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-  </div>
-)
+const IndexPage: React.FC = () => (
+  <Layout>
+    <PageHeading className="width-full margin-y-9 text-center">
+      Page Not Found
+    </PageHeading>
+  </Layout>
+);
 
-export default NotFoundPage
+export default IndexPage;

@@ -24,6 +24,13 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        name: `settings`,
+        path: `${__dirname}/content/__assets/settings.json`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         name: `blog`,
         path: `${__dirname}/content/posts`,
       },
@@ -49,8 +56,16 @@ module.exports = {
         path: `${__dirname}/content/announcements`,
       },
     },
-    "gatsby-plugin-netlify-cms",
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images`,
+      },
+    },
     `gatsby-plugin-sass`,
+    "gatsby-transformer-sharp",
+    `gatsby-transformer-json`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-react-helmet`,
     {
@@ -64,6 +79,25 @@ module.exports = {
             },
           },
         ],
+      },
+    },
+    {
+      resolve: "gatsby-plugin-manifest",
+      options: {
+        name: "DDS.mil",
+        short_name: `Defense Digital Service`,
+        start_url: `/`,
+        theme_color: `#a2466c`,
+        display: `browser`,
+        icon: "src/images/logo-desktop-full.png",
+      },
+    },
+    {
+      resolve: "gatsby-plugin-netlify-cms",
+      options: {
+        enableIdentityWidget: false,
+        htmlTitle: "DDS.mil Content Manager",
+        modulePath: `${__dirname}/src/cms/cms.tsx`,
       },
     },
   ],

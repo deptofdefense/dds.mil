@@ -1,32 +1,67 @@
 import React from "react";
-import { Layout } from "components";
+import { graphql } from "gatsby";
+import { Layout, BlogPostCard, PageHeading } from "components";
 
-// Please note that you can use https://github.com/dotansimha/graphql-code-generator
-// to generate all types from graphQL schema
-// interface IndexPageProps {
-// data: {
-//   site: {
-//     siteMetadata: {
-//       title: string;
-//     };
-//   };
-// };
-// }
+interface Props {
+  data: {
+    allMarkdownRemark: {
+      nodes: {
+        html: string;
+        timeToRead: number;
+        frontmatter: {
+          title: string;
+          photo: string;
+          summary: string;
+          date: string;
+        };
+        fields: {
+          slug: string;
+        };
+      }[];
+    };
+  };
+}
 
-const BlogIndexPage: React.FC = () => (
+const NewsIndexPage: React.FC<Props> = ({
+  data: {
+    allMarkdownRemark: { nodes },
+  },
+}) => (
   <Layout>
-    <h1>Blog index</h1>
+    <div className="grid-container">
+      <PageHeading>Blog Posts</PageHeading>
+      <div className="grid-row grid-gap">
+        {nodes.map(({ frontmatter, fields: { slug } }) => (
+          <div
+            className="grid-col-12 tablet:grid-col-6 desktop:grid-col-4"
+            key={slug}
+          >
+            <BlogPostCard {...frontmatter} slug={slug} />
+          </div>
+        ))}
+      </div>
+    </div>
   </Layout>
 );
 
-export default BlogIndexPage;
+export default NewsIndexPage;
 
-// export const pageQuery = graphql`
-//   query IndexQuery {
-//     site {
-//       siteMetadata {
-//         title
-//       }
-//     }
-//   }
-// `;
+export const pageQuery = graphql`
+  query BlogPageQuery {
+    allMarkdownRemark(filter: { frontmatter: { type: { eq: "blogPost" } } }) {
+      nodes {
+        html
+        timeToRead
+        frontmatter {
+          title
+          photo
+          summary
+          date(fromNow: true)
+        }
+        fields {
+          slug
+        }
+      }
+    }
+  }
+`;
