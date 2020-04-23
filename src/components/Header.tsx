@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, useStaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
-import { FaBars } from "react-icons/fa";
+import { FaBars, FaTimes } from "react-icons/fa";
 import { HeaderNavLink } from "components";
 
 interface Props {
@@ -30,10 +30,10 @@ export const Header: React.FC<Props> = ({ siteTitle }) => {
               <Link to="/" aria-label="Home">
                 <div className="display-flex flex-row flex-align-center">
                   <Img fixed={data.file.childImageSharp.fixed} />
-                  <div className="display-flex flex-column margin-left-1">
+                  <div className="display-flex flex-column margin-left-1  flex-no-wrap">
                     <div className="text-bold text-ls-1">DEFENSE</div>
                     <div>
-                      <span className="text-semibold">DIGITAL </span>
+                      <span className="text-semibold">DIGITAL&nbsp;</span>
                       <span className="text-light">SERVICE</span>
                     </div>
                   </div>
@@ -47,16 +47,18 @@ export const Header: React.FC<Props> = ({ siteTitle }) => {
         </div>
         <nav aria-label="Primary navigation" className="usa-nav">
           <button className="usa-nav__close">
-            <img src="/assets/img/close.svg" alt="close" />
+            <FaTimes />
           </button>
           <ul className="usa-nav__primary usa-accordion">
-            <HeaderNavLink to="/about">About</HeaderNavLink>
+            <HeaderNavLink to="/about">About Us</HeaderNavLink>
+
+            <HeaderNavLink to="/portfolio">Our Work</HeaderNavLink>
+
+            <HeaderNavLink to="/team">Our Team</HeaderNavLink>
 
             <HeaderNavLink to="/media">Media</HeaderNavLink>
 
-            <HeaderNavLink to="/careers">Careers</HeaderNavLink>
-
-            <HeaderNavLink to="/portfolio">Portfolio</HeaderNavLink>
+            <HeaderNavLink to="/careers">Join Us</HeaderNavLink>
           </ul>
         </nav>
       </div>

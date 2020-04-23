@@ -1,62 +1,100 @@
 .usa-header {
   background-color: #fff;
-}
 
-.usa-nav__primary > .usa-nav__primary-item > a {
-  @include at-media(desktop) {
-    color: color($theme-color-base);
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-}
+  .usa-nav-container {
+    align-items: center;
+    padding-top: units(3);
+    padding-bottom: units(3);
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    max-width: none;
 
-.usa-nav__primary > .usa-nav__primary-item > a:hover,
-.usa-nav__primary > .usa-nav__primary-item > a.usa-current {
-  @include at-media(desktop) {
-    color: color($theme-color-accent-cool);
-  }
-}
-
-.usa-header--basic .usa-nav__link:hover::after,
-.usa-header--basic .usa-current::after {
-  background-color: color($theme-color-accent-cool);
-  bottom: 0em;
-}
-
-.usa-header--basic .usa-nav-container {
-  align-items: center;
-  padding-top: units(3);
-  padding-bottom: units(3);
-  margin-left: 0;
-  margin-right: 0;
-  width: 100%;
-  max-width: none;
-
-  @include at-media(desktop) {
-    padding-left: units(5);
-    padding-right: units(5);
-  }
-}
-
-.usa-menu-btn,
-.usa-menu-btn:hover {
-  color: color($theme-color-primary);
-  font-size: size("body", "xl");
-  font-weight: 100;
-  background-color: unset;
-  margin-right: units(2);
-}
-
-.usa-logo {
-  @include at-media(desktop) {
-    margin: 0;
-  }
-
-  a {
-    color: color($theme-color-primary);
+    @include at-media(desktop) {
+      padding-left: units(5);
+      padding-right: units(5);
+    }
   }
 }
 
 .usa-navbar {
   border: none;
+
+  .usa-menu-btn,
+  .usa-menu-btn:hover {
+    color: color($theme-color-primary);
+    font-size: size("body", "xl");
+    font-weight: 100;
+    background-color: unset;
+    margin-right: units(2);
+  }
+
+  .usa-logo {
+    @include at-media(desktop) {
+      margin: 0;
+    }
+
+    a {
+      color: color($theme-color-primary);
+    }
+  }
+}
+
+.usa-nav {
+  @media only screen and (max-width: units(desktop)) {
+    background-color: rgb(35, 120, 195);
+    color: #fff;
+  }
+  .usa-nav__primary {
+    margin-top: 0;
+
+    // @include at-media(desktop) {
+    //   margin-top: 1.5rem;
+    // }
+
+    .usa-nav__primary-item {
+      border-top: none;
+
+      a {
+        font-family: family("sans");
+        background-color: transparent;
+        color: white;
+        font-weight: $theme-font-weight-light;
+
+        @include at-media(desktop) {
+          font-weight: bold;
+          font-size: 17px;
+          color: color($theme-color-base);
+          padding-left: 30px;
+          padding-right: 30px;
+        }
+      }
+
+      a:hover,
+      a.usa-current {
+        @include at-media(desktop) {
+          color: color("blue-40v");
+        }
+      }
+
+      a:hover::after,
+      a.usa-current::after {
+        background-color: #fff;
+        width: 0.15em;
+
+        @include at-media(desktop) {
+          background-color: color("blue-40v");
+          bottom: 0em;
+          width: auto;
+        }
+      }
+    }
+  }
+
+  .usa-nav__close {
+    margin: 0;
+    margin-left: auto;
+    font-size: 1.3em;
+    font-weight: 100;
+  }
 }
