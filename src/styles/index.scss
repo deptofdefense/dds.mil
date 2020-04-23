@@ -17,9 +17,11 @@ $theme-hero-image: "#{$theme-image-path}/hero.png";
 // $theme-color-primary-darker: 'black';
 $theme-show-notifications: false;
 $theme-color-base-lightest: "gray-cool-2";
+$theme-font-weight-thin: 200;
 $theme-font-weight-heavy: 900;
 $theme-font-weight-semibold: 500;
 $theme-font-weight-light: 300;
+$theme-font-type-sans: "public-sans";
 
 @import "uswds";
 @import "./header.scss";

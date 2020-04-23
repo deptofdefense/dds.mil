@@ -1,25 +1,43 @@
 import React from "react";
+import clsx from "clsx";
 import { useStaticQuery, graphql } from "gatsby";
+import { FaTwitter, FaLinkedin } from "react-icons/fa";
 import Img from "gatsby-image";
 
 const FooterLink: React.FC<JSX.IntrinsicElements["a"]> = ({
   children,
+  className,
   ...rest
 }) => (
   <a
-    className="display-block font-ui-3xs text-no-underline hover:text-underline text-primary-darker margin-bottom-1 text-center"
+    className={clsx(
+      className,
+      "display-block font-ui-3xs text-no-underline hover:text-underline text-white margin-bottom-1"
+    )}
     {...rest}
   >
     {children}
   </a>
 );
 
+const FooterSubheader: React.FC<JSX.IntrinsicElements["div"]> = ({
+  children,
+  ...rest
+}) => (
+  <div
+    className="text-accent-cool margin-bottom-1 text-bold font-body-sm"
+    {...rest}
+  >
+    {children}
+  </div>
+);
+
 export const Footer: React.FC = () => {
   const data = useStaticQuery(graphql`
     query {
-      file(relativePath: { eq: "logo-desktop-full.png" }) {
+      file(relativePath: { eq: "DOD-logo-footer.png" }) {
         childImageSharp {
-          fluid(maxWidth: 320, maxHeight: 320) {
+          fluid(maxWidth: 327, maxHeight: 204) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -28,54 +46,95 @@ export const Footer: React.FC = () => {
   `);
 
   return (
-    <div className="bg-primary-lighter width-full padding-5">
-      <div className="grid-container">
-        <div className="grid-row">
-          <div className="grid-col-12 desktop:grid-col-6 grid-row flex-align-center margin-bottom-4 desktop:margin-bottom-2 desktop:flex-justify-start">
-            <div className="grid-col-12 desktop:grid-col-auto flex-justify">
-              <div className="width-10 tablet:width-15 margin-x-auto">
-                <Img fluid={data.file.childImageSharp.fluid} />
-              </div>
-            </div>
-            <p className="grid-col-12 desktop:grid-col-auto text-primary-dark margin-left-2 text-bold text-center desktop:text-left">
-              Powered by Defense Digital Service.
-            </p>
+    <div className="bg-base-darker width-full padding-5">
+      <div className="grid-row">
+        <div className="grid-col-12 desktop:grid-col-6 grid-row flex-align-start margin-bottom-5  flex-justify-start">
+          <div className="width-15 desktop:width-15">
+            <Img fluid={data.file.childImageSharp.fluid} />
           </div>
-          <div className="grid-col-12 desktop:grid-col-6 grid-row">
-            <div className="grid-col-12 tablet:grid-col-6">
-              <FooterLink href="https://www.defense.gov/">
-                About the DoD
-              </FooterLink>
-              <FooterLink href="https://www.foia.gov/">FOIA</FooterLink>
-              <FooterLink href="https://www.defense.gov//Resources/DOD-Information-Quality-Guidelines/">
-                Information Quality
-              </FooterLink>
-              <FooterLink href="https://www.nlrb.gov/reports/regulatory-reports-and-notices/no-fear-act">
-                No FEAR Act
-              </FooterLink>
-              <FooterLink href="https://open.defense.gov">
-                Open Government
-              </FooterLink>
-              <FooterLink href="https://www.esd.whs.mil/DD/plainlanguage/">
-                Plain Writing Act
-              </FooterLink>
-              <FooterLink href="https://dodcio.defense.gov/DoDSection508/Std_Stmt.aspx">
-                Accessibility/Section 508
-              </FooterLink>
-            </div>
-            <div className="grid-col-12 tablet:grid-col-6">
-              <FooterLink href="https://www.usa.gov/">USA.gov</FooterLink>
-              <FooterLink href="http://defense.gov/privacy">
-                Privacy Program
-              </FooterLink>
-              <FooterLink href="mailto:contact@dds.mil">Contact Us</FooterLink>
-              <FooterLink href="https://ddsfedramp.gov1.qualtrics.com/jfe/form/SV_bxxqiW4rZGi8VM1 ">
-                Send Feedback
-              </FooterLink>
-              <p className="text-base text-center font-sans-2xs">
-                &copy; 2020 All rights reserved.
-              </p>
-            </div>
+          <p className="text-white margin-left-1 margin-y-0">
+            <div className="text-thin font-body-lg">US</div>
+            <div className="text-thin font-body-lg">DEPT OF</div>
+            <div className="text-bold text-ls-1 font-body-lg">DEFENSE</div>
+          </p>
+        </div>
+        <div className="grid-col-12 desktop:grid-col-6 grid-row grid-gap">
+          <div className="grid-col-12 tablet:grid-col-4  order-last desktop:order-first">
+            <FooterSubheader>Department of Defense</FooterSubheader>
+            <FooterLink href="https://www.defense.gov/">
+              About the DoD
+            </FooterLink>
+            <FooterLink href="https://www.foia.gov/">FOIA</FooterLink>
+            <FooterLink href="https://www.defense.gov//Resources/DOD-Information-Quality-Guidelines/">
+              Information Quality
+            </FooterLink>
+            <FooterLink href="https://www.nlrb.gov/reports/regulatory-reports-and-notices/no-fear-act">
+              No FEAR Act
+            </FooterLink>
+            <FooterLink href="https://open.defense.gov/">
+              Open Government
+            </FooterLink>
+            <FooterLink href="https://www.esd.whs.mil/DD/plainlanguage/">
+              Plain Writing Act
+            </FooterLink>
+            <FooterLink href="https://www.usa.gov/">USA.gov</FooterLink>
+            <FooterLink
+              href="http://defense.gov/privacy"
+              className="margin-bottom-3 desktop:margin-bottom-0"
+            >
+              Privacy Program
+            </FooterLink>
+          </div>
+          <div className="grid-col-12 tablet:grid-col-4">
+            <FooterSubheader>General Inquiries</FooterSubheader>
+            <FooterLink
+              href="mailto:feedback@dds.mil"
+              className="margin-bottom-3"
+            >
+              feedback@dds.mil
+            </FooterLink>
+
+            <FooterSubheader>Press & Speaking Inquiries</FooterSubheader>
+            <FooterLink href="mailto:press@dds.mil" className="margin-bottom-3">
+              press@dds.mil
+            </FooterLink>
+
+            <FooterSubheader>Job Inquiries</FooterSubheader>
+            <FooterLink
+              href="mailto:rebel@dds.mil"
+              className="margin-bottom-3 desktop:margin-bottom-0"
+            >
+              rebel@dds.mil
+            </FooterLink>
+          </div>
+          <div className="grid-col-12 tablet:grid-col-4 order-first desktop:order-last">
+            <FooterSubheader>Connect with us</FooterSubheader>
+            <FooterLink
+              href="https://twitter.com/defensedigital?lang=en"
+              className="display-inline-block margin-right-2 margin-bottom-3 font-ui-md"
+            >
+              <FaTwitter />
+            </FooterLink>
+            <FooterLink
+              href="https://www.linkedin.com/company/defensedigitalservice"
+              className="display-inline-block margin-bottom-3 font-ui-md"
+            >
+              <FaLinkedin />
+            </FooterLink>
+
+            <FooterSubheader>Tech Resources</FooterSubheader>
+            <FooterLink href="https://playbook.cio.gov/">
+              Digital Services Playbook
+            </FooterLink>
+            <FooterLink href="https://designsystem.digital.gov/">
+              U.S. Web Design Standards
+            </FooterLink>
+            <FooterLink
+              href="https://playbook.cio.gov/techfar/"
+              className="margin-bottom-3"
+            >
+              TechFAR Handbook
+            </FooterLink>
           </div>
         </div>
       </div>
