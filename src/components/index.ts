@@ -9,3 +9,4 @@ export * from "./Footer";
 export * from "./BlogPostCard";
 export * from "./AnnouncementCard";
 export * from "./SEO";
+export * from "./JobListItem";

@@ -13,13 +13,13 @@ import { Layout } from "components";
 // };
 // }
 
-const WorkIndexPage: React.FC = () => (
+const PortfolioIndexPage: React.FC = () => (
   <Layout>
-    <h1>Work index</h1>
+    <h1>Portfolio index</h1>
   </Layout>
 );
 
-export default WorkIndexPage;
+export default PortfolioIndexPage;
 
 // export const pageQuery = graphql`
 //   query IndexQuery {

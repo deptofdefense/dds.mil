@@ -2,7 +2,7 @@ import React from "react";
 import CMS from "netlify-cms-app";
 import "../styles/index.scss";
 
-import { BlogPostCard, NewsArticleCard } from "components";
+import { BlogPostCard, NewsArticleCard, AnnouncementCard } from "components";
 
 interface Props {
   entry: {
@@ -44,5 +44,21 @@ const CMSNewsArticle: React.FC<Props> = ({ entry }) => {
   );
 };
 
+const CMSAnnouncement: React.FC<Props> = ({ entry }) => {
+  const props = {
+    title: entry.getIn(["data", "title"]),
+    summary: entry.getIn(["data", "summary"]),
+    date: "just now",
+    slug: "tmp-slug",
+  };
+
+  return (
+    <div className="margin-top-9 margin-x-auto maxw-mobile-lg">
+      <AnnouncementCard {...props} />
+    </div>
+  );
+};
+
 CMS.registerPreviewTemplate("posts", CMSBlog);
 CMS.registerPreviewTemplate("news", CMSNewsArticle);
+CMS.registerPreviewTemplate("announcements", CMSAnnouncement);

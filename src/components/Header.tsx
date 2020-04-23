@@ -28,9 +28,9 @@ export const Header: React.FC<Props> = ({ siteTitle }) => (
 
           <HeaderNavLink to="/media">Media</HeaderNavLink>
 
-          <HeaderNavLink to="/work">Portfolio</HeaderNavLink>
+          <HeaderNavLink to="/careers">Careers</HeaderNavLink>
 
-          <HeaderNavLink to="/join">Join</HeaderNavLink>
+          <HeaderNavLink to="/portfolio">Portfolio</HeaderNavLink>
         </ul>
       </nav>
     </div>

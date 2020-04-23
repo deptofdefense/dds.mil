@@ -63,6 +63,13 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: "gatsby-source-lever",
+      options: {
+        site: "leverdemo",
+        verboseOutput: true,
+      },
+    },
     `gatsby-plugin-sass`,
     "gatsby-transformer-sharp",
     `gatsby-transformer-json`,
