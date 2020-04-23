@@ -1,30 +1,62 @@
 .usa-header {
-  background-color: color($theme-color-primary);
+  background-color: #fff;
 }
 
-.usa-nav__primary > .usa-nav__primary-item > a,
-.usa-nav__primary > .usa-nav__primary-item > a:hover {
+.usa-nav__primary > .usa-nav__primary-item > a {
   @include at-media(desktop) {
-    color: color("gray-cool-1");
+    color: color($theme-color-base);
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+.usa-nav__primary > .usa-nav__primary-item > a:hover,
+.usa-nav__primary > .usa-nav__primary-item > a.usa-current {
+  @include at-media(desktop) {
+    color: color($theme-color-accent-cool);
   }
 }
 
 .usa-header--basic .usa-nav__link:hover::after,
 .usa-header--basic .usa-current::after {
-  background-color: color("gray-cool-1");
+  background-color: color($theme-color-accent-cool);
   bottom: 0em;
 }
 
 .usa-header--basic .usa-nav-container {
   align-items: center;
+  padding-top: units(3);
+  padding-bottom: units(3);
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+  max-width: none;
+
+  @include at-media(desktop) {
+    padding-left: units(5);
+    padding-right: units(5);
+  }
+}
+
+.usa-menu-btn,
+.usa-menu-btn:hover {
+  color: color($theme-color-primary);
+  font-size: size("body", "xl");
+  font-weight: 100;
+  background-color: unset;
+  margin-right: units(2);
 }
 
 .usa-logo {
   @include at-media(desktop) {
-    margin: 32px 10px;
+    margin: 0;
   }
 
   a {
-    color: color("gray-cool-1");
+    color: color($theme-color-primary);
   }
+}
+
+.usa-navbar {
+  border: none;
 }
