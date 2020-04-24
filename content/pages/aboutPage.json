@@ -1,0 +1,46 @@
+{
+  "heroSection": {
+    "heroImg": "hero-cropped.jpg",
+    "heroTitle": "",
+    "heroCTA": "",
+    "heroCTALink": ""
+  },
+  "textSection": {
+    "mdTextInfoMain": "**Who We Are**\n\nWe are primarily based in the Pentagon - though we also have office space on both the east and west coast - and our range of [talent](https://dds.mil/talent) includes world-class [software developers, designers, product managers, digital experts, and bureaucracy hackers](https://dds.mil/team) from both the private sector and within government. DDS focuses on high-impact projects that advance the Department of Defense's most important initiatives that are critical to the well-being of service members, civilians, and core operations of the Department.\n\n**How We Team**\nIn addition to bringing in private sector and government talent, DDS partners with military services by detailing service members to DDS teams to tackle some of the DoD's highest priority challenges.\n\n[MEET OUR TEAM](https://dds.mil/team).",
+    "mdTextInfoCallout": "**Our Mission:** To provide the best in modern technology to bolster national defense"
+  },
+  "iconSection": [
+    {
+      "icon": "hat-cowboy-side-solid.svg",
+      "heading": "Go where we're needed",
+      "cta": "",
+      "ctaLink": "",
+      "details": "Going all-in regardless of location is important. We quickly mobilize our team to go wherever we're needed."
+    },
+    {
+      "icon": "hat-cowboy-side-solid.svg",
+      "heading": "Do work that matters.",
+      "details": "We work on high-impacy technology projects that help the DoD meet the needs and improve the lives of service members and civilians."
+    },
+    {
+      "icon": "hat-cowboy-side-solid.svg",
+      "heading": "Design side by side with users.",
+      "details": "Good design is more than just design thinking. It's designing directly with users to ensure the product and supporting processes meet needs the first time."
+    },
+    {
+      "icon": "hat-cowboy-side-solid.svg",
+      "heading": "Tell the truth, and signal intent",
+      "details": "We're in the business of saving lives. We tell the truth, speak up, and signal intent within the department."
+    },
+    {
+      "icon": "hat-cowboy-side-solid.svg",
+      "heading": "Hire the best to serve the best.",
+      "details": "Our people make us unique, and it's our people who are best positioned to serve the unique needs of DOD."
+    }
+  ],
+  "ctaSection": {
+    "mdDetails": "This can be some **amazing thing about how great DDS is**, cta can be to apply now. More cool stuff goes here and voila person applies.",
+    "cta": "Apply to DDS now!",
+    "ctaLink": "/apply"
+  }
+}

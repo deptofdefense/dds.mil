@@ -19,26 +19,29 @@
 
   .info-section-item {
     max-width: none;
+    padding: 0 units(2);
     padding-bottom: units(7);
     line-height: 33px;
     font-size: size("body", "lg");
 
     @include at-media(desktop) {
+      padding-bottom: 0;
       max-width: 400px;
     }
 
     .info-section-heading {
       display: flex;
       align-items: center;
+      margin-bottom: units(2);
 
       h3 {
         font-size: size("body", "xl");
         padding-left: units(2);
-        margin-top: units(2);
         margin-bottom: 0;
       }
 
       @include at-media(desktop) {
+        margin-top: units(2);
         flex-direction: column;
         align-items: flex-start;
 
@@ -50,7 +53,7 @@
 
     p {
       font-weight: 200;
-      // margin: 0;
+      margin: 0;
     }
 
     a {
@@ -59,11 +62,42 @@
       font-size: 18px;
       font-weight: 600;
       color: #fff;
+      display: block;
+      margin: units(3) 0;
     }
 
     a:hover {
       text-decoration: underline;
       color: #fff;
+    }
+  }
+
+  .info-section-item.info-section-smaller {
+    @include at-media(desktop) {
+      font-size: 17px;
+      line-height: 25px;
+    }
+
+    .info-section-heading {
+      .info-section-icon {
+        @include at-media(desktop) {
+          height: 120px;
+          width: 120px;
+          padding: units(2);
+
+          svg {
+            height: 60px;
+            width: 60px;
+          }
+        }
+      }
+    }
+
+    h3 {
+      @include at-media(desktop) {
+        font-size: 28px;
+        line-height: 34px;
+      }
     }
   }
 }
@@ -78,19 +112,19 @@
   width: 80px;
 
   svg {
-    margin: auto;
-    width: 40px;
     height: 40px;
+    width: 40px;
+    margin: auto;
   }
 
   @include at-media(desktop) {
     height: 150px;
-    padding: units(3);
     width: 150px;
+    padding: units(3);
 
     svg {
-      width: 75px;
       height: 75px;
+      width: 75px;
     }
   }
 }

@@ -1,5 +1,6 @@
 import React from "react";
-import { useStaticQuery, graphql, Link } from "gatsby";
+import { Link } from "gatsby";
+import clsx from "clsx";
 import Img from "gatsby-image";
 
 interface Props {
@@ -17,9 +18,12 @@ export const Hero: React.FC<Props> = ({
 }) => {
   return (
     <>
-      <Img fluid={heroImgFluid} className="hero-img" />
-      {heroCTA && (
-        <div className="hero-inner">
+      <Img
+        fluid={heroImgFluid}
+        className={clsx("hero-img", { "with-hero-card": heroCTA })}
+      />
+      <div className={clsx("hero-inner", { "with-hero-card": heroCTA })}>
+        {heroCTA && (
           <div className="grid-row">
             <div className="hero-card">
               <h1 className="hero-card-header">{heroTitle}</h1>
@@ -28,8 +32,8 @@ export const Hero: React.FC<Props> = ({
               </Link>
             </div>
           </div>
-        </div>
-      )}
+        )}
+      </div>
     </>
   );
 };

@@ -29,7 +29,16 @@
       font-size: size("body", "lg");
       line-height: 33px;
       margin-top: 0;
-      margin-bottom: 0;
+      margin-bottom: units(2);
+
+      a {
+        text-decoration: none;
+        color: color("accent-cool-dark");
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
     }
   }
 

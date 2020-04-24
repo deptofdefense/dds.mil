@@ -217,6 +217,85 @@ collections:
                   required: false,
                 }
 
+      - label: "About Page"
+        name: "aboutPage"
+        file: "content/pages/aboutPage.json"
+        fields:
+          - label: "Hero Section"
+            name: "heroSection"
+            widget: "object"
+            fields:
+              - {
+                  label: "Hero Image",
+                  name: "heroImg",
+                  widget: "image",
+                  hint: "image should be high resolution with an aspect ratio appropriate for the hero image",
+                }
+              - { label: "Hero Title", name: "heroTitle", widget: "string" }
+              - { label: "Hero CTA", name: "heroCTA", widget: "string" }
+              - {
+                  label: "Hero CTA Link",
+                  name: "heroCTALink",
+                  widget: "string",
+                }
+          - label: "Text Info Section"
+            name: "textSection"
+            widget: "object"
+            fields:
+              - {
+                  label: "Main Text",
+                  name: "mdTextInfoMain",
+                  widget: "markdown",
+                  hint: "this field supports markdown, but should stick to simple things like bold, italic, etc.",
+                }
+              - {
+                  label: "Call Out",
+                  name: "mdTextInfoCallout",
+                  widget: "markdown",
+                  hint: "this field supports markdown, but should stick to simple things like bold, italic, etc.",
+                }
+          - label: "Icon Section"
+            name: "iconSection"
+            widget: "list"
+            fields:
+              - { label: "heading", widget: "string", name: "heading" }
+              - { label: "Details", widget: "string", name: "details" }
+              - {
+                  label: "icon",
+                  widget: "image",
+                  name: "icon",
+                  hint: "SVG format",
+                }
+              - { label: "CTA", widget: "string", name: "cta", required: false }
+              - {
+                  label: "CTA Link",
+                  widget: "string",
+                  name: "ctaLink",
+                  required: false,
+                }
+          - label: "CTA Section"
+            name: "ctaSection"
+            widget: "object"
+            fields:
+              - {
+                  label: "Details",
+                  name: "mdDetails",
+                  widget: "markdown",
+                  hint: "this field supports markdown, but should stick to simple things like bold, italic, etc.",
+                }
+              - {
+                  label: "CTA Text",
+                  name: "cta",
+                  widget: "string",
+                  required: false,
+                }
+              - {
+                  label: "CTA Link",
+                  name: "ctaLink",
+                  widget: "string",
+                  required: false,
+                }
+
   - name: "settings"
     label: "Settings"
     delete: false # Prevent users from deleting documents in this collection
