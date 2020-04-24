@@ -4,7 +4,6 @@ import Img from "gatsby-image";
 
 interface Props {
   heroImgFluid: any;
-  includeCta: boolean;
   heroTitle?: string;
   heroCTA?: string;
   heroCTALink?: string;
@@ -12,7 +11,6 @@ interface Props {
 
 export const Hero: React.FC<Props> = ({
   heroImgFluid,
-  includeCta,
   heroTitle,
   heroCTA,
   heroCTALink,
@@ -20,7 +18,7 @@ export const Hero: React.FC<Props> = ({
   return (
     <>
       <Img fluid={heroImgFluid} className="hero-img" />
-      {includeCta && (
+      {heroCTA && (
         <div className="hero-inner">
           <div className="grid-row height-full">
             <div className="hero-card">

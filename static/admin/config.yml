@@ -142,25 +142,39 @@ collections:
         name: "homePage"
         file: "content/pages/homePage.json"
         fields:
-          - {
-              label: "Hero Image",
-              name: "heroImg",
-              widget: "image",
-              hint: "image should be high resolution with an aspect ratio appropriate for the hero image",
-            }
-          - { label: "Hero Title", name: "heroTitle", widget: "string" }
-          - {
-              label: "Hero CTA",
-              name: "heroCTA",
-              widget: "string",
-              hint: "text for call to action button in hero",
-            }
-          - {
-              label: "Hero CTA Link",
-              name: "heroCTALink",
-              widget: "string",
-              hint: "Relative path for CTA navigation",
-            }
+          - label: "Hero Section"
+            name: "heroSection"
+            widget: "object"
+            fields:
+              - {
+                  label: "Hero Image",
+                  name: "image",
+                  widget: "image",
+                  hint: "image should be high resolution with an aspect ratio appropriate for the hero image",
+                }
+              - { label: "Hero Title", name: "ctaHeading", widget: "string" }
+              - { label: "Hero CTA", name: "heroCTA", widget: "string" }
+              - {
+                  label: "Hero CTA Link",
+                  name: "heroCTALink",
+                  widget: "string",
+                }
+          - label: "Text Info Section"
+            name: "textSection"
+            widget: "object"
+            fields:
+              - {
+                  label: "Main Text",
+                  name: "mdTextInfoMain",
+                  widget: "markdown",
+                  hint: "this field supports markdown, but should stick to simple things like bold, italic, etc.",
+                }
+              - {
+                  label: "Call Out",
+                  name: "mdTextInfoCallout",
+                  widget: "markdown",
+                  hint: "this field supports markdown, but should stick to simple things like bold, italic, etc.",
+                }
           - label: "Icon Section"
             name: "iconSection"
             widget: "list"

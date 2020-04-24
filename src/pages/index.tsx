@@ -5,26 +5,28 @@ import { Layout, Hero, TextInfoSection, IconInfoSection } from "components";
 interface Props {
   data: {
     pagesJson: {
-      heroImg: {
-        childImageSharp: {
-          fluid: any;
-        };
-      };
       fields: {
-        mdTextInfoMain: {
+        textSection_mdTextInfoMain: {
           childMarkdownRemark: {
             html: string;
           };
         };
-        mdTextInfoCallout: {
+        textSection_mdTextInfoCallout: {
           childMarkdownRemark: {
             html: string;
           };
         };
       };
-      heroCTA: string;
-      heroCTALink: string;
-      heroTitle: string;
+      heroSection: {
+        heroCTA: string;
+        heroCTALink: string;
+        heroTitle: string;
+        heroImg: {
+          childImageSharp: {
+            fluid: any;
+          };
+        };
+      };
       iconSection: {
         heading: string;
         cta: string;
@@ -42,10 +44,19 @@ interface Props {
 
 const HomePage: React.FC<Props> = ({
   data: {
-    pagesJson: { heroImg, fields, iconSection, ...rest },
+    pagesJson: { fields, heroSection, iconSection, ...rest },
   },
 }) => {
-  const { mdTextInfoMain, mdTextInfoCallout } = fields;
+  const heroProps = {
+    ...heroSection,
+    heroImgFluid: heroSection.heroImg.childImageSharp.fluid,
+  };
+
+  const textSectionProps = {
+    mainParagraph: fields.textSection_mdTextInfoMain.childMarkdownRemark.html,
+    callOut: fields.textSection_mdTextInfoCallout.childMarkdownRemark.html,
+  };
+
   const iconSections = iconSection.map((sec) => ({
     ...sec,
     rawSvg: sec.icon.childInlineSvg.rawSvg,
@@ -53,11 +64,8 @@ const HomePage: React.FC<Props> = ({
 
   return (
     <Layout>
-      <Hero includeCta heroImgFluid={heroImg.childImageSharp.fluid} {...rest} />
-      <TextInfoSection
-        callOut={mdTextInfoCallout.childMarkdownRemark.html}
-        mainParagraph={mdTextInfoMain.childMarkdownRemark.html}
-      />
+      <Hero {...heroProps} />
+      <TextInfoSection {...textSectionProps} />
       <IconInfoSection sections={iconSections} />
     </Layout>
   );
@@ -68,28 +76,30 @@ export default HomePage;
 export const pageQuery = graphql`
   query HomePageQuery {
     pagesJson(fields: { slug: { eq: "homePage" } }) {
-      heroImg {
-        childImageSharp {
-          fluid(maxWidth: 1440, quality: 90) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
       fields {
-        mdTextInfoMain {
+        textSection_mdTextInfoMain {
           childMarkdownRemark {
             html
           }
         }
-        mdTextInfoCallout {
+        textSection_mdTextInfoCallout {
           childMarkdownRemark {
             html
           }
         }
       }
-      heroCTA
-      heroCTALink
-      heroTitle
+      heroSection {
+        heroCTA
+        heroCTALink
+        heroTitle
+        heroImg {
+          childImageSharp {
+            fluid(maxWidth: 1440, quality: 90) {
+              ...GatsbyImageSharpFluid_withWebp
+            }
+          }
+        }
+      }
       iconSection {
         heading
         cta
