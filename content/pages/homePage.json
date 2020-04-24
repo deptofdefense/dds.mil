@@ -1,0 +1,31 @@
+{
+  "heroImg": "hero-cropped.jpg",
+  "heroTitle": "Transforming technology within the Department of Defense",
+  "heroCTA": "About our Team",
+  "heroCTALink": "/team",
+  "mdTextInfoMain": "**Darth moff calrissian mustafar dooku organa secura**\n\nDarth ventress utapau anakin. Hutt mon qui-gon aayala mustafar organa darth. Yavin binks skywalker tusken raider moff. Jango dooku antilles ben mon. Greedo bespin kamino skywalker darth watto lando.",
+  "mdTextInfoCallout": "Boba maul ventress **thrawn wookie mustagfar** Anakin coruscant amidala",
+  "iconSection": [
+    {
+      "icon": "users-solid.svg",
+      "heading": "Who we are",
+      "cta": "Meet the team",
+      "ctaLink": "/team",
+      "details": "Team stuff. Lucas ipsum dolor sit amet darth chewbacca darth calamari solo sidious amidala mothma bespin calamari."
+    },
+    {
+      "icon": "laptop-code-solid.svg",
+      "heading": "What we do",
+      "cta": "View our work",
+      "ctaLink": "/portfolio",
+      "details": "Project stuff Binks skywalker skywalker dooku chewbacca organa moff luuke. Dantooine mon orana jade coruscant."
+    },
+    {
+      "icon": "newspaper-solid.svg",
+      "heading": "Latest news",
+      "cta": "Learn more",
+      "ctaLink": "/media",
+      "details": "Blog stuff blah Jabba hutt bothan jabba. Maul biggs maul darth. Yoda skywalker calamari yoda hutt skywalker kit."
+    }
+  ]
+}

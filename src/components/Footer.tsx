@@ -52,11 +52,11 @@ export const Footer: React.FC = () => {
           <div className="width-15 desktop:width-15">
             <Img fluid={data.file.childImageSharp.fluid} />
           </div>
-          <p className="text-white margin-left-1 margin-y-0">
+          <div className="text-white margin-left-1 margin-y-0">
             <div className="text-thin font-body-lg">US</div>
             <div className="text-thin font-body-lg">DEPT OF</div>
             <div className="text-bold text-ls-1 font-body-lg">DEFENSE</div>
-          </p>
+          </div>
         </div>
         <div className="grid-col-12 desktop:grid-col-6 grid-row grid-gap">
           <div className="grid-col-12 tablet:grid-col-4  order-last desktop:order-first">

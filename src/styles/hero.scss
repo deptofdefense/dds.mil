@@ -1,0 +1,56 @@
+.hero-img {
+  position: relative;
+  height: 225px;
+  width: 100%;
+
+  @include at-media(tablet) {
+    height: 60vh;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    position: absolute !important;
+  }
+}
+
+.hero-inner {
+  width: 100%;
+  position: relative;
+  padding: 0;
+  z-index: 100;
+
+  @include at-media(tablet) {
+    height: 60vh;
+    padding: units(8);
+  }
+
+  .hero-card {
+    // background-color: color("blue-warm-70v");
+    background-color: rgba(color("blue-warm-70v"), 0.9);
+    width: 100%;
+    padding: units(5);
+
+    @include at-media(tablet) {
+      max-width: 500px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    .hero-card-header {
+      color: #fff;
+      font-size: size("body", "2xl");
+      margin: 0;
+      margin-bottom: units(4);
+    }
+
+    .hero-card-cta {
+      background-color: transparent;
+      color: #fff;
+      border-color: #fff;
+      border-radius: 4px;
+      padding: units(1) units(4);
+      font-weight: bold;
+      font-size: size("body", "sm");
+    }
+  }
+}

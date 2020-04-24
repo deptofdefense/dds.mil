@@ -9,14 +9,14 @@ interface Props {
 export const SEO: React.FC<Props> = ({ title, children }) => {
   const data = useStaticQuery(graphql`
     query {
-      assetsJson {
-        siteTitle
+      pagesJson(fields: { slug: { eq: "settings" } }) {
         seoDescription
+        siteTitle
       }
     }
   `);
 
-  const { siteTitle, seoDescription } = data.assetsJson;
+  const { siteTitle, seoDescription } = data.pagesJson;
 
   return (
     <Helmet

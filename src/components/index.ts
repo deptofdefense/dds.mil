@@ -10,3 +10,6 @@ export * from "./BlogPostCard";
 export * from "./AnnouncementCard";
 export * from "./SEO";
 export * from "./JobListItem";
+export * from "./Hero";
+export * from "./TextInfoSection";
+export * from "./IconInfoSection";

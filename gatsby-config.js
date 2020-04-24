@@ -25,7 +25,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `settings`,
-        path: `${__dirname}/content/__assets/settings.json`,
+        path: `${__dirname}/content/pages`,
       },
     },
     {
@@ -60,7 +60,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
+        path: `${__dirname}/content/media`,
       },
     },
     {
@@ -96,7 +96,7 @@ module.exports = {
         start_url: `/`,
         theme_color: `#a2466c`,
         display: `browser`,
-        icon: "src/images/logo-desktop-full.png",
+        icon: "content/media/logo-desktop-full.png",
       },
     },
     {
