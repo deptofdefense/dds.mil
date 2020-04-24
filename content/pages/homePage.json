@@ -26,13 +26,6 @@
       "cta": "Learn more",
       "ctaLink": "/media",
       "details": "Blog stuff blah Jabba hutt bothan jabba. Maul biggs maul darth. Yoda skywalker calamari yoda hutt skywalker kit."
-    },
-    {
-      "heading": "Test CMS media upload / svg",
-      "details": "Testing the cms integration and inline svg in gatsby",
-      "cta": "lowercase",
-      "ctaLink": "/admin",
-      "icon": "hat-cowboy-side-solid.svg"
     }
   ]
 }
