@@ -148,11 +148,11 @@ collections:
             fields:
               - {
                   label: "Hero Image",
-                  name: "image",
+                  name: "heroImg",
                   widget: "image",
                   hint: "image should be high resolution with an aspect ratio appropriate for the hero image",
                 }
-              - { label: "Hero Title", name: "ctaHeading", widget: "string" }
+              - { label: "Hero Title", name: "heroTitle", widget: "string" }
               - { label: "Hero CTA", name: "heroCTA", widget: "string" }
               - {
                   label: "Hero CTA Link",
@@ -192,6 +192,28 @@ collections:
                   label: "CTA Link",
                   widget: "string",
                   name: "ctaLink",
+                  required: false,
+                }
+          - label: "CTA Section"
+            name: "ctaSection"
+            widget: "object"
+            fields:
+              - {
+                  label: "Details",
+                  name: "mdDetails",
+                  widget: "markdown",
+                  hint: "this field supports markdown, but should stick to simple things like bold, italic, etc.",
+                }
+              - {
+                  label: "CTA Text",
+                  name: "cta",
+                  widget: "string",
+                  required: false,
+                }
+              - {
+                  label: "CTA Link",
+                  name: "ctaLink",
+                  widget: "string",
                   required: false,
                 }
 

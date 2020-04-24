@@ -20,7 +20,7 @@ export const Hero: React.FC<Props> = ({
       <Img fluid={heroImgFluid} className="hero-img" />
       {heroCTA && (
         <div className="hero-inner">
-          <div className="grid-row height-full">
+          <div className="grid-row">
             <div className="hero-card">
               <h1 className="hero-card-header">{heroTitle}</h1>
               <Link to={heroCTALink!}>

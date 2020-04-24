@@ -41,10 +41,14 @@
 }
 
 .usa-nav {
-  @media only screen and (max-width: units(desktop)) {
-    background-color: rgb(35, 120, 195);
-    color: #fff;
+  background-color: rgb(35, 120, 195);
+  color: #fff;
+
+  @include at-media(desktop) {
+    background-color: transparent;
+    color: inherit;
   }
+
   .usa-nav__primary {
     margin-top: 0;
 

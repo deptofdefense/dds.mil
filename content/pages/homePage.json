@@ -31,5 +31,10 @@
       "ctaLink": "/media",
       "details": "Blog stuff blah Jabba hutt bothan jabba. Maul biggs maul darth. Yoda skywalker calamari yoda hutt skywalker kit."
     }
-  ]
+  ],
+  "ctaSection": {
+    "mdDetails": "This can be some **amazing thing about how great DDS is**, cta can be to apply now. More cool stuff goes here and voila person applies.",
+    "cta": "Apply to DDS now!",
+    "ctaLink": "/apply"
+  }
 }

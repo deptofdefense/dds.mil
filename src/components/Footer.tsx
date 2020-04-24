@@ -46,7 +46,7 @@ export const Footer: React.FC = () => {
   `);
 
   return (
-    <div className="bg-base-darker width-full padding-5">
+    <div className="bg-base-darker width-full padding-3 tablet:padding-5">
       <div className="grid-row">
         <div className="grid-col-12 desktop:grid-col-6 grid-row flex-align-start margin-bottom-5  flex-justify-start">
           <div className="width-15 desktop:width-15">

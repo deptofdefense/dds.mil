@@ -1,6 +1,12 @@
 import React from "react";
 import { graphql } from "gatsby";
-import { Layout, Hero, TextInfoSection, IconInfoSection } from "components";
+import {
+  Layout,
+  Hero,
+  TextInfoSection,
+  IconInfoSection,
+  CtaSection,
+} from "components";
 
 interface Props {
   data: {
@@ -13,6 +19,11 @@ interface Props {
         };
         textSection_mdTextInfoCallout: {
           childMarkdownRemark: {
+            html: string;
+          };
+        };
+        ctaSection_mdDetails: {
+          childMarkdownRemark?: {
             html: string;
           };
         };
@@ -38,13 +49,17 @@ interface Props {
           };
         };
       }[];
+      ctaSection: {
+        cta: string;
+        ctaLink: string;
+      };
     };
   };
 }
 
 const HomePage: React.FC<Props> = ({
   data: {
-    pagesJson: { fields, heroSection, iconSection, ...rest },
+    pagesJson: { fields, heroSection, iconSection, ctaSection, ...rest },
   },
 }) => {
   const heroProps = {
@@ -62,11 +77,17 @@ const HomePage: React.FC<Props> = ({
     rawSvg: sec.icon.childInlineSvg.rawSvg,
   }));
 
+  const ctaSectionProps = {
+    ...ctaSection,
+    details: fields.ctaSection_mdDetails.childMarkdownRemark?.html,
+  };
+
   return (
     <Layout>
       <Hero {...heroProps} />
       <TextInfoSection {...textSectionProps} />
       <IconInfoSection sections={iconSections} />
+      <CtaSection {...ctaSectionProps} />
     </Layout>
   );
 };
@@ -83,6 +104,11 @@ export const pageQuery = graphql`
           }
         }
         textSection_mdTextInfoCallout {
+          childMarkdownRemark {
+            html
+          }
+        }
+        ctaSection_mdDetails {
           childMarkdownRemark {
             html
           }
@@ -111,6 +137,10 @@ export const pageQuery = graphql`
             rawSvg
           }
         }
+      }
+      ctaSection {
+        cta
+        ctaLink
       }
     }
   }

@@ -1,28 +1,28 @@
 .text-info {
   position: relative;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: flex-start;
   flex-wrap: wrap;
-  padding: 96px units(4);
+  padding: units(5) units(3);
+
+  @include at-media(tablet) {
+    padding: units(7) units(5);
+  }
 
   @include at-media(desktop) {
-    padding: 96px 0;
+    padding: 96px units(7);
   }
 
   .text-info-primary {
     width: 100%;
     margin-bottom: units(4);
 
-    @include at-media(tablet) {
-      width: 40%;
-      padding-top: 5px;
-      padding-right: units(1);
-      margin-bottom: 0;
-    }
     @include at-media(desktop) {
-      padding-right: 0;
-      width: 50%;
+      padding-right: units(5);
+      padding-top: 5px;
+      width: 60%;
+      margin-bottom: 0;
     }
 
     p {
@@ -36,6 +36,10 @@
   .text-info-callout {
     width: 100%;
     margin-top: units(5);
+    position: relative;
+    font-size: size("body", "xl");
+    line-height: 48px;
+    box-sizing: border-box;
 
     * {
       margin-top: 0;
@@ -44,28 +48,24 @@
       margin-bottom: 0;
     }
 
-    @include at-media(tablet) {
-      width: 40%;
-      margin-top: 0px;
-    }
-
     @include at-media(desktop) {
       margin-top: 0px;
-      width: 25%;
+      padding: 0 units(5);
+      width: 40%;
     }
-
-    position: relative;
-    font-size: size("body", "xl");
-    line-height: 48px;
   }
 
   .text-info-callout::before {
     content: "";
     position: absolute;
-    left: -20px;
-    right: 0px;
+    left: 0;
+    right: units(3);
     top: -40px;
     height: 14px;
     background-color: color($theme-color-accent-cool);
+
+    @include at-media(tablet) {
+      left: units(1);
+    }
   }
 }
