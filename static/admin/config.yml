@@ -8,7 +8,7 @@ site_url: https://dds.mil/
 display_url: DDS.mil
 logo_url: /img/logo-cms.png
 publish_mode: editorial_workflow
-media_folder: content/__assets/images
+media_folder: content/media
 public_folder: ""
 
 collections:

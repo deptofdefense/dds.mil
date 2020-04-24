@@ -23,7 +23,6 @@
     "gatsby-remark-images": "^3.2.5",
     "gatsby-source-filesystem": "^2.2.4",
     "gatsby-source-lever": "^2.2.3",
-    "gatsby-transformer-inline-svg": "0.0.7",
     "gatsby-transformer-json": "^2.3.3",
     "gatsby-transformer-remark": "^2.7.4",
     "gatsby-transformer-sharp": "^2.4.6",
