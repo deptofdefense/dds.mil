@@ -63,7 +63,8 @@
 
 .hero-inner.with-hero-card,
 .hero-img.with-hero-card {
-  display: flex;
+  display: block;
+  height: auto;
 
   @include at-media(tablet) {
     height: 40vh;

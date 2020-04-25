@@ -37,7 +37,7 @@
       h3 {
         font-size: size("body", "xl");
         padding-left: units(2);
-        margin-bottom: 0;
+        margin: 0;
       }
 
       @include at-media(desktop) {
@@ -104,6 +104,7 @@
 
 .info-section-icon {
   display: flex;
+  flex-shrink: 0;
   justify-content: center;
   align-items: center;
   border: 2px solid color("blue-warm-40v");

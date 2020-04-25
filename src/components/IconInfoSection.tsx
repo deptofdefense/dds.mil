@@ -21,7 +21,7 @@ export const IconInfoSection: React.FC<Props> = ({ sections }) => {
           className={clsx("info-section-item", {
             "info-section-smaller": sections.length > 3,
           })}
-          key={cta}
+          key={heading}
         >
           <div className="info-section-heading">
             <div
