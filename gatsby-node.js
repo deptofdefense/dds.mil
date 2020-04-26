@@ -9,10 +9,14 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
       type HeroSection {
         heroImg: File @link(by: "relativePath")
       }
+      type ImageSection {
+        image: File @link(by: "relativePath")
+        altText: String
+      }
       type PagesJson implements Node {
         iconSection: [IconSection]
         heroSection: HeroSection
-        imgSection: [File] @link(by: "relativePath")
+        imgSection: [ImageSection]
       }
     `,
   ];

@@ -145,6 +145,7 @@ collections:
           - label: "Hero Section"
             name: "heroSection"
             widget: "object"
+            collapsed: true
             fields:
               - {
                   label: "Hero Image",
@@ -162,6 +163,7 @@ collections:
           - label: "Text Info Section"
             name: "textSection"
             widget: "object"
+            collapsed: true
             fields:
               - {
                   label: "Main Text",
@@ -197,6 +199,7 @@ collections:
           - label: "CTA Section"
             name: "ctaSection"
             widget: "object"
+            collapsed: true
             fields:
               - {
                   label: "Details",
@@ -224,6 +227,7 @@ collections:
           - label: "Hero Section"
             name: "heroSection"
             widget: "object"
+            collapsed: true
             fields:
               - {
                   label: "Hero Image",
@@ -241,6 +245,7 @@ collections:
           - label: "Text Info Section"
             name: "textSection"
             widget: "object"
+            collapsed: true
             fields:
               - {
                   label: "Main Text",
@@ -276,12 +281,20 @@ collections:
           - label: "Image Section"
             name: "imgSection"
             widget: "list"
-            field:
+            fields:
               - { label: "Image", widget: "image", name: "image" }
+              - {
+                  label: "Alt Text",
+                  name: "altText",
+                  widget: "string",
+                  required: false,
+                  hint: "description of the image for screen readers",
+                }
 
           - label: "CTA Section"
             name: "ctaSection"
             widget: "object"
+            collapsed: true
             fields:
               - {
                   label: "Details",

@@ -55,9 +55,11 @@ interface Props {
         ctaLink: string;
       };
       imgSection: {
-        id: string;
-        childImageSharp: {
-          fluid: any;
+        altText: string;
+        image: {
+          childImageSharp: {
+            fluid: any;
+          };
         };
       }[];
     };
@@ -162,10 +164,12 @@ export const pageQuery = graphql`
         ctaLink
       }
       imgSection {
-        id
-        childImageSharp {
-          fluid(maxHeight: 460) {
-            ...GatsbyImageSharpFluid_withWebp
+        altText
+        image {
+          childImageSharp {
+            fluid(maxHeight: 460) {
+              ...GatsbyImageSharpFluid_withWebp
+            }
           }
         }
       }

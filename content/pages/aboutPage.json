@@ -43,5 +43,10 @@
     "cta": "Apply to DDS now!",
     "ctaLink": "/apply"
   },
-  "imgSection": ["IMG_5370.png", "IMG_5386.png", "IMG_5387.png", "IMG_5389.png"]
+  "imgSection": [
+    { "image": "IMG_5370.png", "altText": "alt text 1" },
+    { "image": "IMG_5386.png", "altText": "alt text 2" },
+    { "image": "IMG_5387.png", "altText": "alt text 3" },
+    { "image": "IMG_5389.png", "altText": "alt text 4" }
+  ]
 }
