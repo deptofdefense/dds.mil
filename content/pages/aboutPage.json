@@ -1,6 +1,6 @@
 {
   "heroSection": {
-    "heroImg": "hero-cropped.jpg",
+    "heroImg": "about_hero.png",
     "heroTitle": "",
     "heroCTA": "",
     "heroCTALink": ""
@@ -42,5 +42,6 @@
     "mdDetails": "This can be some **amazing thing about how great DDS is**, cta can be to apply now. More cool stuff goes here and voila person applies.",
     "cta": "Apply to DDS now!",
     "ctaLink": "/apply"
-  }
+  },
+  "imgSection": ["IMG_5370.png", "IMG_5386.png", "IMG_5387.png", "IMG_5389.png"]
 }

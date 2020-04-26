@@ -6,6 +6,7 @@ import {
   TextInfoSection,
   IconInfoSection,
   CtaSection,
+  ImgSection,
 } from "components";
 
 interface Props {
@@ -53,13 +54,26 @@ interface Props {
         cta: string;
         ctaLink: string;
       };
+      imgSection: {
+        id: string;
+        childImageSharp: {
+          fluid: any;
+        };
+      }[];
     };
   };
 }
 
 const AboutPage: React.FC<Props> = ({
   data: {
-    pagesJson: { fields, heroSection, iconSection, ctaSection, ...rest },
+    pagesJson: {
+      fields,
+      heroSection,
+      iconSection,
+      ctaSection,
+      imgSection,
+      ...rest
+    },
   },
 }) => {
   const heroProps = {
@@ -82,11 +96,16 @@ const AboutPage: React.FC<Props> = ({
     details: fields.ctaSection_mdDetails.childMarkdownRemark?.html,
   };
 
+  const imgSectionProps = {
+    images: imgSection,
+  };
+
   return (
     <Layout>
       <Hero {...heroProps} />
       <TextInfoSection {...textSectionProps} />
       <IconInfoSection sections={iconSections} />
+      <ImgSection {...imgSectionProps} />
       <CtaSection {...ctaSectionProps} />
     </Layout>
   );
@@ -141,6 +160,14 @@ export const pageQuery = graphql`
       ctaSection {
         cta
         ctaLink
+      }
+      imgSection {
+        id
+        childImageSharp {
+          fluid(maxHeight: 460) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
       }
     }
   }

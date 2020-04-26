@@ -273,6 +273,12 @@ collections:
                   name: "ctaLink",
                   required: false,
                 }
+          - label: "Image Section"
+            name: "imgSection"
+            widget: "list"
+            field:
+              - { label: "Image", widget: "image", name: "image" }
+
           - label: "CTA Section"
             name: "ctaSection"
             widget: "object"

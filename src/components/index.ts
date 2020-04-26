@@ -14,3 +14,4 @@ export * from "./Hero";
 export * from "./TextInfoSection";
 export * from "./IconInfoSection";
 export * from "./CtaSection";
+export * from "./ImgSection";

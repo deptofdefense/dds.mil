@@ -50,7 +50,7 @@ export const Footer: React.FC = () => {
       <div className="grid-row">
         <div className="grid-col-12 desktop:grid-col-6 grid-row flex-align-start margin-bottom-5  flex-justify-start">
           <div className="width-15 desktop:width-15">
-            <Img fluid={data.file.childImageSharp.fluid} />
+            <Img loading="eager" fluid={data.file.childImageSharp.fluid} />
           </div>
           <div className="text-white margin-left-1 margin-y-0">
             <div className="text-thin font-body-lg">US</div>
