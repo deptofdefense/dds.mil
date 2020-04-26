@@ -1,13 +1,16 @@
 # https://docs.netlify.com/configure-builds/file-based-configuration/
 [context.deploy-preview]
-  command = "gatsby build"
+  command = "GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES=true gatsby build"
 
   [context.deploy-preview.environment]
     NODE_VERSION = "12.14.0"
 
 
 [context.branch-deploy]
-  command = "gatsby build"
+  command = "GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES=true gatsby build"
 
   [context.branch-deploy.environment]
     NODE_VERSION = "12.14.0"
+
+[[plugins]]
+  package = "netlify-plugin-gatsby-cache"
