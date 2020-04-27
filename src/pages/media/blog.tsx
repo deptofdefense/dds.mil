@@ -1,5 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
+import { Helmet } from "react-helmet";
 import { Layout, BlogPostCard, PageHeading } from "components";
 
 interface Props {
@@ -28,6 +29,9 @@ const NewsIndexPage: React.FC<Props> = ({
   },
 }) => (
   <Layout>
+    <Helmet>
+      <title>Blog</title>
+    </Helmet>
     <div className="grid-container">
       <PageHeading>Blog Posts</PageHeading>
       <div className="grid-row grid-gap">

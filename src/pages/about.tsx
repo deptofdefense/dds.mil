@@ -1,6 +1,7 @@
 import React from "react";
 import { graphql } from "gatsby";
 import { Layout } from "components";
+import { Helmet } from "react-helmet";
 import { HeroSection, HeroSectionQueryResult } from "sections/HeroSection";
 import { TextSection, TextSectionQueryResult } from "sections/TextSection";
 import { IconSection, IconSectionQueryResult } from "sections/IconSection";
@@ -32,6 +33,9 @@ const AboutPage: React.FC<Props> = ({
 }) => {
   return (
     <Layout>
+      <Helmet>
+        <title>About Us</title>
+      </Helmet>
       <HeroSection result={heroSection} />
       <TextSection result={textSection} />
       <IconSection result={iconSection} />

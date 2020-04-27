@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import { graphql } from "gatsby";
 import { Layout, NewsArticleCard, PageHeading } from "components";
 
@@ -27,6 +28,9 @@ const NewsIndexPage: React.FC<Props> = ({
   },
 }) => (
   <Layout>
+    <Helmet>
+      <title>News</title>
+    </Helmet>
     <div className="grid-container">
       <PageHeading>DDS in the News</PageHeading>
       <div className="grid-row grid-gap">

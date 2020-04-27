@@ -1,5 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
+import { Helmet } from "react-helmet";
 import { Layout, AnnouncementCard, PageHeading } from "components";
 
 interface Props {
@@ -26,8 +27,11 @@ const NewsIndexPage: React.FC<Props> = ({
   },
 }) => (
   <Layout>
+    <Helmet>
+      <title>Announcements</title>
+    </Helmet>
     <div className="grid-container">
-      <PageHeading>DDS in the News</PageHeading>
+      <PageHeading>Announcements</PageHeading>
       <div className="grid-row grid-gap">
         {nodes.map(({ frontmatter, fields: { slug } }) => (
           <div

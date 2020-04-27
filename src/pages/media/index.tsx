@@ -1,9 +1,13 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import { Link } from "gatsby";
 import { Layout, PageHeading } from "components";
 
 const MediaIndexPage: React.FC = () => (
   <Layout>
+    <Helmet>
+      <title>Media</title>
+    </Helmet>
     <div className="grid-container">
       <PageHeading>DDS in the Media</PageHeading>
       <div className="grid-container">
