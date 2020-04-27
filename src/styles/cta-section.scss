@@ -3,6 +3,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  max-width: $content-max-width;
 
   @include at-media(tablet) {
     flex-direction: row;

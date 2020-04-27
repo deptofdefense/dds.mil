@@ -5,6 +5,7 @@
   align-items: flex-start;
   flex-wrap: wrap;
   padding: units(5) units(3);
+  max-width: $content-max-width;
 
   @include at-media(tablet) {
     padding: units(7) units(5);

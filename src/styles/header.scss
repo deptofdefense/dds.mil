@@ -1,14 +1,18 @@
 .usa-header {
   background-color: #fff;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 
   .usa-nav-container {
+    justify-content: space-between;
     align-items: center;
     padding-top: units(3);
     padding-bottom: units(3);
     margin-left: 0;
     margin-right: 0;
     width: 100%;
-    max-width: none;
+    max-width: $content-max-width;
 
     @include at-media(desktop) {
       padding-left: units(5);

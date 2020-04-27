@@ -46,95 +46,100 @@ export const Footer: React.FC = () => {
   `);
 
   return (
-    <div className="bg-base-darker width-full padding-3 tablet:padding-5">
-      <div className="grid-row">
-        <div className="grid-col-12 desktop:grid-col-6 grid-row flex-align-start margin-bottom-5  flex-justify-start">
-          <div className="width-15 desktop:width-15">
-            <Img loading="eager" fluid={data.file.childImageSharp.fluid} />
+    <div className="dds-container bg-base-darker">
+      <div className="width-full padding-3 tablet:padding-5 maxw-widescreen">
+        <div className="grid-row">
+          <div className="grid-col-12 desktop:grid-col-6 grid-row flex-align-start margin-bottom-5  flex-justify-start">
+            <div className="width-15 desktop:width-15">
+              <Img loading="eager" fluid={data.file.childImageSharp.fluid} />
+            </div>
+            <div className="text-white margin-left-1 margin-y-0">
+              <div className="text-thin font-body-lg">US</div>
+              <div className="text-thin font-body-lg">DEPT OF</div>
+              <div className="text-bold text-ls-1 font-body-lg">DEFENSE</div>
+            </div>
           </div>
-          <div className="text-white margin-left-1 margin-y-0">
-            <div className="text-thin font-body-lg">US</div>
-            <div className="text-thin font-body-lg">DEPT OF</div>
-            <div className="text-bold text-ls-1 font-body-lg">DEFENSE</div>
-          </div>
-        </div>
-        <div className="grid-col-12 desktop:grid-col-6 grid-row grid-gap">
-          <div className="grid-col-12 tablet:grid-col-4  order-last desktop:order-first">
-            <FooterSubheader>Department of Defense</FooterSubheader>
-            <FooterLink href="https://www.defense.gov/">
-              About the DoD
-            </FooterLink>
-            <FooterLink href="https://www.foia.gov/">FOIA</FooterLink>
-            <FooterLink href="https://www.defense.gov//Resources/DOD-Information-Quality-Guidelines/">
-              Information Quality
-            </FooterLink>
-            <FooterLink href="https://www.nlrb.gov/reports/regulatory-reports-and-notices/no-fear-act">
-              No FEAR Act
-            </FooterLink>
-            <FooterLink href="https://open.defense.gov/">
-              Open Government
-            </FooterLink>
-            <FooterLink href="https://www.esd.whs.mil/DD/plainlanguage/">
-              Plain Writing Act
-            </FooterLink>
-            <FooterLink href="https://www.usa.gov/">USA.gov</FooterLink>
-            <FooterLink
-              href="http://defense.gov/privacy"
-              className="margin-bottom-3 desktop:margin-bottom-0"
-            >
-              Privacy Program
-            </FooterLink>
-          </div>
-          <div className="grid-col-12 tablet:grid-col-4">
-            <FooterSubheader>General Inquiries</FooterSubheader>
-            <FooterLink
-              href="mailto:feedback@dds.mil"
-              className="margin-bottom-3"
-            >
-              feedback@dds.mil
-            </FooterLink>
+          <div className="grid-col-12 desktop:grid-col-6 grid-row grid-gap">
+            <div className="grid-col-12 tablet:grid-col-4  order-last desktop:order-first">
+              <FooterSubheader>Department of Defense</FooterSubheader>
+              <FooterLink href="https://www.defense.gov/">
+                About the DoD
+              </FooterLink>
+              <FooterLink href="https://www.foia.gov/">FOIA</FooterLink>
+              <FooterLink href="https://www.defense.gov//Resources/DOD-Information-Quality-Guidelines/">
+                Information Quality
+              </FooterLink>
+              <FooterLink href="https://www.nlrb.gov/reports/regulatory-reports-and-notices/no-fear-act">
+                No FEAR Act
+              </FooterLink>
+              <FooterLink href="https://open.defense.gov/">
+                Open Government
+              </FooterLink>
+              <FooterLink href="https://www.esd.whs.mil/DD/plainlanguage/">
+                Plain Writing Act
+              </FooterLink>
+              <FooterLink href="https://www.usa.gov/">USA.gov</FooterLink>
+              <FooterLink
+                href="http://defense.gov/privacy"
+                className="margin-bottom-3 desktop:margin-bottom-0"
+              >
+                Privacy Program
+              </FooterLink>
+            </div>
+            <div className="grid-col-12 tablet:grid-col-4">
+              <FooterSubheader>General Inquiries</FooterSubheader>
+              <FooterLink
+                href="mailto:feedback@dds.mil"
+                className="margin-bottom-3"
+              >
+                feedback@dds.mil
+              </FooterLink>
 
-            <FooterSubheader>Press & Speaking Inquiries</FooterSubheader>
-            <FooterLink href="mailto:press@dds.mil" className="margin-bottom-3">
-              press@dds.mil
-            </FooterLink>
+              <FooterSubheader>Press & Speaking Inquiries</FooterSubheader>
+              <FooterLink
+                href="mailto:press@dds.mil"
+                className="margin-bottom-3"
+              >
+                press@dds.mil
+              </FooterLink>
 
-            <FooterSubheader>Job Inquiries</FooterSubheader>
-            <FooterLink
-              href="mailto:rebel@dds.mil"
-              className="margin-bottom-3 desktop:margin-bottom-0"
-            >
-              rebel@dds.mil
-            </FooterLink>
-          </div>
-          <div className="grid-col-12 tablet:grid-col-4 order-first desktop:order-last">
-            <FooterSubheader>Connect with us</FooterSubheader>
-            <FooterLink
-              href="https://twitter.com/defensedigital?lang=en"
-              className="display-inline-block margin-right-2 margin-bottom-3 font-ui-md"
-            >
-              <FaTwitter />
-            </FooterLink>
-            <FooterLink
-              href="https://www.linkedin.com/company/defensedigitalservice"
-              className="display-inline-block margin-bottom-3 font-ui-md"
-            >
-              <FaLinkedin />
-            </FooterLink>
+              <FooterSubheader>Job Inquiries</FooterSubheader>
+              <FooterLink
+                href="mailto:rebel@dds.mil"
+                className="margin-bottom-3 desktop:margin-bottom-0"
+              >
+                rebel@dds.mil
+              </FooterLink>
+            </div>
+            <div className="grid-col-12 tablet:grid-col-4 order-first desktop:order-last">
+              <FooterSubheader>Connect with us</FooterSubheader>
+              <FooterLink
+                href="https://twitter.com/defensedigital?lang=en"
+                className="display-inline-block margin-right-2 margin-bottom-3 font-ui-md"
+              >
+                <FaTwitter />
+              </FooterLink>
+              <FooterLink
+                href="https://www.linkedin.com/company/defensedigitalservice"
+                className="display-inline-block margin-bottom-3 font-ui-md"
+              >
+                <FaLinkedin />
+              </FooterLink>
 
-            <FooterSubheader>Tech Resources</FooterSubheader>
-            <FooterLink href="https://playbook.cio.gov/">
-              Digital Services Playbook
-            </FooterLink>
-            <FooterLink href="https://designsystem.digital.gov/">
-              U.S. Web Design Standards
-            </FooterLink>
-            <FooterLink
-              href="https://playbook.cio.gov/techfar/"
-              className="margin-bottom-3"
-            >
-              TechFAR Handbook
-            </FooterLink>
+              <FooterSubheader>Tech Resources</FooterSubheader>
+              <FooterLink href="https://playbook.cio.gov/">
+                Digital Services Playbook
+              </FooterLink>
+              <FooterLink href="https://designsystem.digital.gov/">
+                U.S. Web Design Standards
+              </FooterLink>
+              <FooterLink
+                href="https://playbook.cio.gov/techfar/"
+                className="margin-bottom-3"
+              >
+                TechFAR Handbook
+              </FooterLink>
+            </div>
           </div>
         </div>
       </div>

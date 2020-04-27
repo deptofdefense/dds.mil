@@ -17,18 +17,20 @@ export const CtaSection: React.FC<Props> = ({
   result: { ctaLink, cta, mdDetails },
 }) => {
   return (
-    <div className="cta-section">
-      {mdDetails && (
-        <div
-          className="cta-details"
-          dangerouslySetInnerHTML={{
-            __html: mdDetails.html,
-          }}
-        />
-      )}
-      <Link to={ctaLink}>
-        <button>{cta}</button>
-      </Link>
+    <div className="dds-container">
+      <div className="cta-section">
+        {mdDetails && (
+          <div
+            className="cta-details"
+            dangerouslySetInnerHTML={{
+              __html: mdDetails.html,
+            }}
+          />
+        )}
+        <Link to={ctaLink}>
+          <button>{cta}</button>
+        </Link>
+      </div>
     </div>
   );
 };

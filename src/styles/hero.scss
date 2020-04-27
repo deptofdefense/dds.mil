@@ -13,9 +13,9 @@
   position: relative;
   padding: 0;
   z-index: 100;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   height: 225px;
   display: none;
+  max-width: $content-max-width;
 
   @include at-media(tablet) {
     padding: units(2) units(5);

@@ -18,19 +18,21 @@ export const TextSection: React.FC<TextSectionProps> = ({
   result: { mdMain, mdCallout },
 }) => {
   return (
-    <div className="text-info">
-      <div
-        className="text-info-primary"
-        dangerouslySetInnerHTML={{
-          __html: mdMain.html,
-        }}
-      />
-      <div
-        className="text-info-callout"
-        dangerouslySetInnerHTML={{
-          __html: mdCallout.html,
-        }}
-      />
+    <div className="dds-container">
+      <div className="text-info">
+        <div
+          className="text-info-primary"
+          dangerouslySetInnerHTML={{
+            __html: mdMain.html,
+          }}
+        />
+        <div
+          className="text-info-callout"
+          dangerouslySetInnerHTML={{
+            __html: mdCallout.html,
+          }}
+        />
+      </div>
     </div>
   );
 };

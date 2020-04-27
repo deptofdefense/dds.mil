@@ -27,17 +27,19 @@ export const HeroSection: React.FC<Props> = ({
         fluid={img.childImageSharp.fluid}
         className={clsx("hero-img", { "with-hero-card": cta })}
       />
-      <div className={clsx("hero-inner", { "with-hero-card": cta })}>
-        {cta && (
-          <div className="grid-row">
-            <div className="hero-card">
-              <h1 className="hero-card-header">{title}</h1>
-              <Link to={ctaLink!}>
-                <button className="hero-card-cta">{cta}</button>
-              </Link>
+      <div className="dds-container shadow">
+        <div className={clsx("hero-inner", { "with-hero-card": cta })}>
+          {cta && (
+            <div className="grid-row">
+              <div className="hero-card">
+                <h1 className="hero-card-header">{title}</h1>
+                <Link to={ctaLink!}>
+                  <button className="hero-card-cta">{cta}</button>
+                </Link>
+              </div>
             </div>
-          </div>
-        )}
+          )}
+        </div>
       </div>
     </>
   );

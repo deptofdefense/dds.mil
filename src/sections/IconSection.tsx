@@ -21,31 +21,33 @@ export interface Props {
 
 export const IconSection: React.FC<Props> = ({ result }) => {
   return (
-    <div className="info-section">
-      {result.map(({ icon, heading, cta, ctaLink, details }) => (
-        <div
-          className={clsx("info-section-item", {
-            "info-section-smaller": result.length > 3,
-          })}
-          key={heading}
-        >
-          <div className="info-section-heading">
-            <div
-              className="info-section-icon"
-              dangerouslySetInnerHTML={{
-                __html: icon.childInlineSvg.rawSvg,
-              }}
-            />
-            <h3>{heading}</h3>
+    <div className="dds-container accent-blue shadow">
+      <div className="info-section">
+        {result.map(({ icon, heading, cta, ctaLink, details }) => (
+          <div
+            className={clsx("info-section-item", {
+              "info-section-smaller": result.length > 3,
+            })}
+            key={heading}
+          >
+            <div className="info-section-heading">
+              <div
+                className="info-section-icon"
+                dangerouslySetInnerHTML={{
+                  __html: icon.childInlineSvg.rawSvg,
+                }}
+              />
+              <h3>{heading}</h3>
+            </div>
+            <p>{details}</p>
+            {cta && (
+              <Link to={ctaLink}>
+                {cta} <FaChevronRight fontSize={13} />
+              </Link>
+            )}
           </div>
-          <p>{details}</p>
-          {cta && (
-            <Link to={ctaLink}>
-              {cta} <FaChevronRight fontSize={13} />
-            </Link>
-          )}
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 };
