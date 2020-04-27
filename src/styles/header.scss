@@ -1,3 +1,11 @@
+.usa-banner__inner {
+  max-width: $content-max-width;
+
+  @include at-media(desktop) {
+    padding-left: units(5);
+  }
+}
+
 .usa-header {
   background-color: #fff;
   width: 100%;
