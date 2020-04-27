@@ -330,3 +330,9 @@ collections:
               widget: number,
               min: 1,
             }
+          - label: "Navigation Links"
+            name: "navbar"
+            widget: "list"
+            fields:
+              - { label: "Display Text", name: "text", widget: "string" }
+              - { label: "Link to", name: "link", widget: "string" }

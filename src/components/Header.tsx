@@ -4,6 +4,11 @@ import Img from "gatsby-image";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { HeaderNavLink } from "components";
 
+type NavItem = {
+  link: string;
+  text: string;
+};
+
 interface Props {
   siteTitle: string;
 }
@@ -16,6 +21,12 @@ export const Header: React.FC<Props> = ({ siteTitle }) => {
           fixed(width: 100) {
             ...GatsbyImageSharpFixed
           }
+        }
+      }
+      pagesJson(fields: { slug: { eq: "settings" } }) {
+        navbar {
+          link
+          text
         }
       }
     }
@@ -53,15 +64,11 @@ export const Header: React.FC<Props> = ({ siteTitle }) => {
             <FaTimes />
           </button>
           <ul className="usa-nav__primary usa-accordion">
-            <HeaderNavLink to="/about">About Us</HeaderNavLink>
-
-            <HeaderNavLink to="/portfolio">Our Work</HeaderNavLink>
-
-            <HeaderNavLink to="/team">Our Team</HeaderNavLink>
-
-            <HeaderNavLink to="/media">Media</HeaderNavLink>
-
-            <HeaderNavLink to="/careers">Join Us</HeaderNavLink>
+            {data.pagesJson.navbar.map(({ link, text }: NavItem) => (
+              <HeaderNavLink key={link} to={link}>
+                {text}
+              </HeaderNavLink>
+            ))}
           </ul>
         </nav>
       </div>
