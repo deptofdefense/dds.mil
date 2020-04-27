@@ -7,16 +7,25 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
         heading: String
       }
       type HeroSection {
-        heroImg: File @link(by: "relativePath")
+        img: File @link(by: "relativePath")
       }
       type ImageSection {
         image: File @link(by: "relativePath")
         altText: String
       }
+      type CtaSection {
+        mdDetails: MarkdownRemark @link(by: "rawMarkdownBody")
+      }
+      type TextSection {
+        mdMain: MarkdownRemark @link(by: "rawMarkdownBody")
+        mdCallout: MarkdownRemark @link(by: "rawMarkdownBody")
+      }
       type PagesJson implements Node {
-        iconSection: [IconSection]
         heroSection: HeroSection
+        textSection: TextSection
+        iconSection: [IconSection]
         imgSection: [ImageSection]
+        ctaSection: CtaSection
       }
     `,
   ];
@@ -47,34 +56,34 @@ exports.onCreateNode = async ({
     //  recursively create markdown nodes for any key in the json
     //  node that starts with 'md'
     //
-    const createFieldsForObject = (obj, path = "") => {
+    const createFieldsForObject = (obj, path) => {
       Object.entries(obj).forEach(([key, value]) => {
         const newPath = `${path}${key}`;
         if (typeof value === "string" && key.startsWith("md")) {
           const id = createNodeId(newPath);
-          createNode({
+          const mdNode = {
             id,
             key,
             children: [],
             parent: node.id,
             internal: {
-              type: "JsonMarkdownField",
+              type: `JsonMarkdownField`,
               mediaType: "text/markdown",
               content: value,
               contentDigest: createContentDigest(value),
             },
-          });
-          createNodeField({
-            node,
-            name: `${newPath}___NODE`,
-            value: id,
-          });
+          };
+          createNode(mdNode);
+          createParentChildLink({ parent: node, child: mdNode });
         } else if (typeof value === "object") {
           createFieldsForObject(value, `${newPath}_`);
         }
       });
     };
-    createFieldsForObject(node);
+
+    const fileNode = getNode(node.parent);
+    const fileName = fileNode.name;
+    createFieldsForObject(node, `${fileName}_`);
   }
 
   if (node.internal.mediaType === "image/svg+xml") {

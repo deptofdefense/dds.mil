@@ -1,13 +1,13 @@
 {
   "heroSection": {
-    "heroImg": "hero-cropped.jpg",
-    "heroTitle": "Transforming technology within the Department of Defense",
-    "heroCTA": "About our Team",
-    "heroCTALink": "/team"
+    "img": "hero-cropped.jpg",
+    "title": "Transforming technology within the Department of Defense",
+    "cta": "About our Team",
+    "ctaLink": "/team"
   },
   "textSection": {
-    "mdTextInfoMain": "**Darth moff calrissian mustafar dooku organa secura**\n\nDarth ventress utapau anakin. Hutt mon qui-gon aayala mustafar organa darth. Yavin binks skywalker tusken raider moff. Jango dooku antilles ben mon. Greedo bespin kamino skywalker darth watto lando.",
-    "mdTextInfoCallout": "Boba maul ventress **thrawn wookie mustagfar** Anakin coruscant amidala"
+    "mdMain": "**Darth moff calrissian mustafar dooku organa secura**\n\nDarth ventress utapau anakin. Hutt mon qui-gon aayala mustafar organa darth. Yavin binks skywalker tusken raider moff. Jango dooku antilles ben mon. Greedo bespin kamino skywalker darth watto lando.",
+    "mdCallout": "Boba maul ventress **thrawn wookie mustagfar** Anakin coruscant amidala"
   },
   "iconSection": [
     {

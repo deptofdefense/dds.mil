@@ -1,13 +1,13 @@
 {
   "heroSection": {
-    "heroImg": "about_hero.png",
-    "heroTitle": "",
-    "heroCTA": "",
-    "heroCTALink": ""
+    "img": "about_hero.png",
+    "title": "",
+    "cta": "",
+    "ctaLink": ""
   },
   "textSection": {
-    "mdTextInfoMain": "**Who We Are**\n\nWe are primarily based in the Pentagon - though we also have office space on both the east and west coast - and our range of [talent](https://dds.mil/talent) includes world-class [software developers, designers, product managers, digital experts, and bureaucracy hackers](https://dds.mil/team) from both the private sector and within government. DDS focuses on high-impact projects that advance the Department of Defense's most important initiatives that are critical to the well-being of service members, civilians, and core operations of the Department.\n\n**How We Team**\nIn addition to bringing in private sector and government talent, DDS partners with military services by detailing service members to DDS teams to tackle some of the DoD's highest priority challenges.\n\n[MEET OUR TEAM](https://dds.mil/team).",
-    "mdTextInfoCallout": "**Our Mission:** To provide the best in modern technology to bolster national defense"
+    "mdMain": "**Who We Are**\n\nWe are primarily based in the Pentagon - though we also have office space on both the east and west coast - and our range of [talent](https://dds.mil/talent) includes world-class [software developers, designers, product managers, digital experts, and bureaucracy hackers](https://dds.mil/team) from both the private sector and within government. DDS focuses on high-impact projects that advance the Department of Defense's most important initiatives that are critical to the well-being of service members, civilians, and core operations of the Department.\n\n**How We Team**\nIn addition to bringing in private sector and government talent, DDS partners with military services by detailing service members to DDS teams to tackle some of the DoD's highest priority challenges.\n\n[MEET OUR TEAM](https://dds.mil/team).",
+    "mdCallout": "**Our Mission:** To provide the best in modern technology to bolster national defense"
   },
   "iconSection": [
     {

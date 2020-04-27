@@ -149,17 +149,13 @@ collections:
             fields:
               - {
                   label: "Hero Image",
-                  name: "heroImg",
+                  name: "img",
                   widget: "image",
                   hint: "image should be high resolution with an aspect ratio appropriate for the hero image",
                 }
-              - { label: "Hero Title", name: "heroTitle", widget: "string" }
-              - { label: "Hero CTA", name: "heroCTA", widget: "string" }
-              - {
-                  label: "Hero CTA Link",
-                  name: "heroCTALink",
-                  widget: "string",
-                }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "CTA", name: "cta", widget: "string" }
+              - { label: "CTA Link", name: "ctaLink", widget: "string" }
           - label: "Text Info Section"
             name: "textSection"
             widget: "object"
@@ -167,13 +163,13 @@ collections:
             fields:
               - {
                   label: "Main Text",
-                  name: "mdTextInfoMain",
+                  name: "mdMain",
                   widget: "markdown",
                   hint: "this field supports markdown, but should stick to simple things like bold, italic, etc.",
                 }
               - {
                   label: "Call Out",
-                  name: "mdTextInfoCallout",
+                  name: "mdCallout",
                   widget: "markdown",
                   hint: "this field supports markdown, but should stick to simple things like bold, italic, etc.",
                 }
@@ -231,17 +227,13 @@ collections:
             fields:
               - {
                   label: "Hero Image",
-                  name: "heroImg",
+                  name: "img",
                   widget: "image",
                   hint: "image should be high resolution with an aspect ratio appropriate for the hero image",
                 }
-              - { label: "Hero Title", name: "heroTitle", widget: "string" }
-              - { label: "Hero CTA", name: "heroCTA", widget: "string" }
-              - {
-                  label: "Hero CTA Link",
-                  name: "heroCTALink",
-                  widget: "string",
-                }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "CTA", name: "cta", widget: "string" }
+              - { label: "CTA Link", name: "ctaLink", widget: "string" }
           - label: "Text Info Section"
             name: "textSection"
             widget: "object"
@@ -249,13 +241,13 @@ collections:
             fields:
               - {
                   label: "Main Text",
-                  name: "mdTextInfoMain",
+                  name: "mdMain",
                   widget: "markdown",
                   hint: "this field supports markdown, but should stick to simple things like bold, italic, etc.",
                 }
               - {
                   label: "Call Out",
-                  name: "mdTextInfoCallout",
+                  name: "mdCallout",
                   widget: "markdown",
                   hint: "this field supports markdown, but should stick to simple things like bold, italic, etc.",
                 }
