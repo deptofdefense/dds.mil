@@ -4,11 +4,11 @@ backend:
   site_domain: dds.mil
   repo: deptofdefense/dds.mil
 
-site_url: https://dds.mil/
+site_url: https://v2-master--dds-mil.netlify.app/
 display_url: DDS.mil
 logo_url: /img/logo-cms.png
 publish_mode: editorial_workflow
-media_folder: content/media
+media_folder: media
 public_folder: ""
 
 collections:
@@ -315,7 +315,7 @@ collections:
     files:
       - name: "general"
         label: "Site Settings"
-        file: "content/_settings.json"
+        file: "content/settings.json"
         description: "General Site Settings"
         fields:
           - { label: "Global title", name: "siteTitle", widget: "string" }

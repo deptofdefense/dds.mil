@@ -32,6 +32,8 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
   createTypes(typeDefs);
 };
 
+const typesToSlug = ["MarkdownRemark", "PagesJson", "ContentJson"];
+
 exports.onCreateNode = async ({
   node,
   getNode,
@@ -41,7 +43,7 @@ exports.onCreateNode = async ({
   createContentDigest,
 }) => {
   const { createNodeField, createParentChildLink, createNode } = actions;
-  if (["MarkdownRemark", "PagesJson"].includes(node.internal.type)) {
+  if (typesToSlug.includes(node.internal.type)) {
     const fileNode = getNode(node.parent);
     const fileName = fileNode.name;
     createNodeField({

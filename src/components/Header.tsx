@@ -23,7 +23,7 @@ export const Header: React.FC<Props> = ({ siteTitle }) => {
           }
         }
       }
-      pagesJson(fields: { slug: { eq: "settings" } }) {
+      contentJson(fields: { slug: { eq: "settings" } }) {
         navbar {
           link
           text
@@ -64,7 +64,7 @@ export const Header: React.FC<Props> = ({ siteTitle }) => {
             <FaTimes />
           </button>
           <ul className="usa-nav__primary usa-accordion">
-            {data.pagesJson.navbar.map(({ link, text }: NavItem) => (
+            {data.contentJson.navbar.map(({ link, text }: NavItem) => (
               <HeaderNavLink key={link} to={link}>
                 {text}
               </HeaderNavLink>

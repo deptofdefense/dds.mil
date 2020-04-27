@@ -25,43 +25,15 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `settings`,
-        path: `${__dirname}/content/pages`,
+        name: `content`,
+        path: `${__dirname}/content`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `blog`,
-        path: `${__dirname}/content/posts`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `team`,
-        path: `${__dirname}/content/team`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `team`,
-        path: `${__dirname}/content/news`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `announcements`,
-        path: `${__dirname}/content/announcements`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/content/media`,
+        name: `media`,
+        path: `${__dirname}/media`,
       },
     },
     {
@@ -97,7 +69,7 @@ module.exports = {
         start_url: `/`,
         theme_color: `#a2466c`,
         display: `browser`,
-        icon: "content/media/logo-desktop-full.png",
+        icon: "media/logo-desktop-full.png",
       },
     },
     {
