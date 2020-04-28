@@ -5,8 +5,8 @@ export const Layout: React.FC = ({ children }) => {
   return (
     <>
       <SEO />
-      <div className="display-flex flex-column minh-viewport display-block">
-        <div className="flex-1 margin-bottom-5 layout-content position-relative">
+      <div className="dds-layout">
+        <div className="dds-layout-content">
           <GovBanner />
           <Header siteTitle="DDS" />
           {children}

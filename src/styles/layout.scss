@@ -1,9 +1,11 @@
-.layout {
+.dds-layout {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  height: 1px;
 
-  .layout-content {
-    flex-shrink: 0;
+  .dds-layout-content {
+    flex: 1 0 auto;
+    margin-bottom: units(5);
   }
 }

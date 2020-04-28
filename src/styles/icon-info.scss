@@ -18,9 +18,9 @@
   }
 
   .info-section-item {
+    width: 100%;
     max-width: none;
     padding: 0 units(2);
-    // padding-bottom: units(7);
     line-height: 33px;
     font-size: size("body", "lg");
 
@@ -35,6 +35,7 @@
       margin-bottom: units(2);
 
       h3 {
+        width: 100%;
         font-size: size("body", "xl");
         padding-left: units(2);
         margin: 0;
