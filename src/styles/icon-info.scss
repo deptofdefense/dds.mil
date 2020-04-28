@@ -93,8 +93,8 @@
           width: 120px;
           padding: units(2);
 
-          svg {
-            height: 60px;
+          svg,
+          .info-section-image-inner {
             width: 60px;
           }
         }
@@ -120,8 +120,8 @@
   height: 80px;
   width: 80px;
 
+  .info-section-image-inner,
   svg {
-    height: 40px;
     width: 40px;
     margin: auto;
   }
@@ -131,8 +131,8 @@
     width: 150px;
     padding: units(3);
 
-    svg {
-      height: 75px;
+    svg,
+    .info-section-image-inner {
       width: 75px;
     }
   }

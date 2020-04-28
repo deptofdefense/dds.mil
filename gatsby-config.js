@@ -44,7 +44,12 @@ module.exports = {
       },
     },
     `gatsby-plugin-sass`,
-    "gatsby-transformer-sharp",
+    {
+      resolve: "gatsby-transformer-sharp",
+      options: {
+        checkSupportedExtensions: false,
+      },
+    },
     `gatsby-transformer-json`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-react-helmet`,
