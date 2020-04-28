@@ -47,6 +47,14 @@
         padding: units(3) units(8);
       }
     }
+
+    button:hover {
+      background-color: color("accent-cool-dark");
+    }
+
+    button:active {
+      background-color: color("accent-cool-darker");
+    }
   }
 
   .cta-details {
