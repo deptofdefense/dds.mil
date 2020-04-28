@@ -53,12 +53,19 @@
 
     .hero-card-cta {
       background-color: transparent;
-      color: #fff;
-      border-color: #fff;
+      color: color("base-lighter");
+      border-color: color("base-lighter");
       border-radius: 4px;
       padding: units(1) units(4);
       font-weight: bold;
       font-size: size("body", "sm");
+      cursor: pointer;
+    }
+
+    .hero-card-cta:hover,
+    .hero-card-cta:active {
+      color: #fff;
+      border-color: #fff;
     }
   }
 }
