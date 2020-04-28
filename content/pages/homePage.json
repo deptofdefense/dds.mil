@@ -18,14 +18,14 @@
       "details": "Team stuff. Lucas ipsum dolor sit amet darth chewbacca darth calamari solo sidious amidala mothma bespin calamari."
     },
     {
-      "icon": "laptop-code-solid.svg",
+      "icon": "icon-lightbulb.png",
       "heading": "What we do",
       "cta": "View our work",
       "ctaLink": "/portfolio",
       "details": "Project stuff Binks skywalker skywalker dooku chewbacca organa moff luuke. Dantooine mon orana jade coruscant."
     },
     {
-      "icon": "newspaper-solid.svg",
+      "icon": "icon-news.png",
       "heading": "Latest news",
       "cta": "Learn more",
       "ctaLink": "/media",
