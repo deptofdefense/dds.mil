@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, useStaticQuery, graphql } from "gatsby";
-import Img from "gatsby-image";
+import Img from "gatsby-image/withIEPolyfill";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { HeaderNavLink } from "components";
 

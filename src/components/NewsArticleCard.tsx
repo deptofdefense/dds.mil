@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "gatsby";
 import { Card } from "components";
 
 interface Props {

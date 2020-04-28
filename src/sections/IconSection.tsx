@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, graphql } from "gatsby";
-import Img from "gatsby-image";
+import Img from "gatsby-image/withIEPolyfill";
 import clsx from "clsx";
 import { FaChevronRight } from "react-icons/fa";
 

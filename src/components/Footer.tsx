@@ -2,7 +2,7 @@ import React from "react";
 import clsx from "clsx";
 import { useStaticQuery, graphql } from "gatsby";
 import { FaTwitter, FaLinkedin } from "react-icons/fa";
-import Img from "gatsby-image";
+import Img from "gatsby-image/withIEPolyfill";
 
 const FooterLink: React.FC<JSX.IntrinsicElements["a"]> = ({
   children,

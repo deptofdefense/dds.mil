@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, graphql } from "gatsby";
 import clsx from "clsx";
-import Img from "gatsby-image";
+import Img from "gatsby-image/withIEPolyfill";
 
 export interface HeroSectionQueryResult {
   title?: string;

@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, GatsbyLinkProps } from "gatsby";
+import { Link } from "gatsby";
 
 interface Props {
   to: string;
