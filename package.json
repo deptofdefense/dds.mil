@@ -39,5 +39,11 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"src/**/*.ts*\""
-  }
+  },
+  "browserslist": [
+    ">0.25%",
+    "not dead",
+    "ie 9",
+    "ie 11"
+  ]
 }

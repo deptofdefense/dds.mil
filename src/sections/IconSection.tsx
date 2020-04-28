@@ -1,12 +1,17 @@
 import React from "react";
 import { Link, graphql } from "gatsby";
+import Img from "gatsby-image";
 import clsx from "clsx";
 import { FaChevronRight } from "react-icons/fa";
 
 export type IconSectionQueryResult = {
   icon: {
-    childInlineSvg: {
+    childInlineSvg?: {
       rawSvg: string;
+    };
+    childImageSharp?: {
+      fixed: any;
+      fluid: any;
     };
   };
   heading: string;
@@ -31,12 +36,20 @@ export const IconSection: React.FC<Props> = ({ result }) => {
             key={heading}
           >
             <div className="info-section-heading">
-              <div
-                className="info-section-icon"
-                dangerouslySetInnerHTML={{
-                  __html: icon.childInlineSvg.rawSvg,
-                }}
-              />
+              {icon.childInlineSvg ? (
+                <div
+                  className="info-section-icon"
+                  dangerouslySetInnerHTML={{
+                    __html: icon.childInlineSvg.rawSvg,
+                  }}
+                />
+              ) : (
+                <div className="info-section-icon">
+                  <div className="info-section-image-inner">
+                    <Img fluid={icon.childImageSharp?.fluid} />
+                  </div>
+                </div>
+              )}
               <h3>{heading}</h3>
             </div>
             <p>{details}</p>
@@ -61,6 +74,11 @@ export const query = graphql`
     icon {
       childInlineSvg {
         rawSvg
+      }
+      childImageSharp {
+        fluid(maxHeight: 70, maxWidth: 100, fit: INSIDE) {
+          ...GatsbyImageSharpFluid
+        }
       }
     }
   }
