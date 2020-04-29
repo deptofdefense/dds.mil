@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, graphql } from "gatsby";
 import clsx from "clsx";
-import Img from "gatsby-image/withIEPolyfill";
+import Img from "gatsby-image";
 
 export interface HeroSectionQueryResult {
   title?: string;
@@ -22,26 +22,21 @@ export const HeroSection: React.FC<Props> = ({
   result: { title, cta, ctaLink, img },
 }) => {
   return (
-    <>
-      <Img
-        fluid={img.childImageSharp.fluid}
-        className={clsx("hero-img", { "with-hero-card": cta })}
-      />
-      <div className="dds-container shadow">
-        <div className={clsx("hero-inner", { "with-hero-card": cta })}>
-          {cta && (
-            <div className="grid-row">
-              <div className="hero-card">
-                <h1 className="hero-card-header">{title}</h1>
-                <Link to={ctaLink!}>
-                  <button className="hero-card-cta">{cta}</button>
-                </Link>
-              </div>
-            </div>
-          )}
-        </div>
+    <div className="hero">
+      <Img fluid={img.childImageSharp.fluid} />
+      <div className={clsx("hero-inner", { "hero-inner-expanded": cta })}>
+        {title && (
+          <div className="hero-card">
+            <h1>{title}</h1>
+            {cta && (
+              <Link to={ctaLink!}>
+                <button className="hero-card-cta">{cta}</button>
+              </Link>
+            )}
+          </div>
+        )}
       </div>
-    </>
+    </div>
   );
 };
 

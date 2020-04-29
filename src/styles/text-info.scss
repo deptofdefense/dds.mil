@@ -21,7 +21,6 @@
 
     @include at-media(desktop) {
       padding-right: units(5);
-      padding-top: 5px;
       width: 60%;
       margin-bottom: 0;
     }
@@ -47,21 +46,45 @@
     width: 100%;
     margin-top: units(5);
     position: relative;
-    font-size: size("body", "xl");
-    line-height: 48px;
     box-sizing: border-box;
-
-    * {
-      margin-top: 0;
-    }
-    :last-child {
-      margin-bottom: 0;
-    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     @include at-media(desktop) {
       margin-top: 0px;
-      padding: 0 units(5);
+      padding: 0 units(4);
       width: 40%;
+    }
+
+    a {
+      display: block;
+      width: 100%;
+    }
+
+    .text-info-callout-content {
+      font-size: size("body", "lg");
+      line-height: 33px;
+      width: 100%;
+
+      h1 {
+        font-size: size("body", "2xl");
+        font-weight: normal;
+        line-height: 48px;
+      }
+
+      h2 {
+        font-size: size("body", "xl");
+        font-weight: normal;
+        line-height: 48px;
+      }
+
+      * {
+        margin-top: 0;
+      }
+      :last-child {
+        margin-bottom: 0;
+      }
     }
   }
 
@@ -74,8 +97,23 @@
     height: 14px;
     background-color: color($theme-color-accent-cool);
 
-    @include at-media(tablet) {
+    @include at-media(desktop) {
       left: units(1);
+    }
+  }
+
+  .text-info-callout.force-down::before {
+    @include at-media(desktop) {
+      content: "";
+      width: 100%;
+      position: relative;
+      margin-right: units(3);
+      top: 0;
+      margin-bottom: 40px;
+      margin-top: 0;
+      height: 14px;
+      background-color: color($theme-color-accent-cool);
+      margin-left: -units(1);
     }
   }
 }

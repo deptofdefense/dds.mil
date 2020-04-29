@@ -1,5 +1,6 @@
 import React from "react";
 import CMS from "netlify-cms-app";
+import "./config";
 import "../styles/index.scss";
 
 import { BlogPostCard, NewsArticleCard, AnnouncementCard } from "components";

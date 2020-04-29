@@ -76,16 +76,6 @@ collections:
           widget: "image",
           required: false,
         }
-      - {
-          label: "Author",
-          name: "author",
-          widget: "relation",
-          required: false,
-          valueField: "slug",
-          collection: "team",
-          searchFields: "name",
-          optionsLength: 5,
-        }
       - { label: "Summary", name: "summary", widget: "string", tagname: "" }
       - { label: "Body", name: "body", widget: "markdown" }
 

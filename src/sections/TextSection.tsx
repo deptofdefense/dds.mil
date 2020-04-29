@@ -1,5 +1,7 @@
 import React from "react";
-import { graphql } from "gatsby";
+import { CtaButton } from "components";
+import { graphql, Link } from "gatsby";
+import clsx from "clsx";
 
 export type TextSectionQueryResult = {
   mdMain: {
@@ -8,6 +10,9 @@ export type TextSectionQueryResult = {
   mdCallout: {
     html: string;
   };
+  alignByText?: boolean;
+  cta?: string;
+  ctaLink?: string;
 };
 
 interface TextSectionProps {
@@ -15,7 +20,7 @@ interface TextSectionProps {
 }
 
 export const TextSection: React.FC<TextSectionProps> = ({
-  result: { mdMain, mdCallout },
+  result: { mdMain, mdCallout, alignByText, cta, ctaLink },
 }) => {
   return (
     <div className="dds-container">
@@ -27,11 +32,20 @@ export const TextSection: React.FC<TextSectionProps> = ({
           }}
         />
         <div
-          className="text-info-callout"
-          dangerouslySetInnerHTML={{
-            __html: mdCallout.html,
-          }}
-        />
+          className={clsx("text-info-callout", { "force-down": !alignByText })}
+        >
+          <div
+            className="text-info-callout-content"
+            dangerouslySetInnerHTML={{
+              __html: mdCallout.html,
+            }}
+          />
+          {cta && (
+            <Link className="padding-x-2" to={ctaLink!}>
+              <CtaButton className="margin-top-4 width-full">{cta}</CtaButton>
+            </Link>
+          )}
+        </div>
       </div>
     </div>
   );
@@ -45,5 +59,8 @@ export const query = graphql`
     mdCallout {
       html
     }
+    alignByText
+    cta
+    ctaLink
   }
 `;

@@ -1,0 +1,14 @@
+{
+  "heroSection": {
+    "img": "about_hero.png",
+    "title": "Doing work that matters by focusing our time and energy on high priority undertakings.",
+    "cta": "",
+    "ctaLink": ""
+  },
+  "textSection": {
+    "mdMain": "DDS focuses on **high-impact projects** that advance the Department of Defense's most important initiatives that are **critical to the well-being of service members, civilians, and core operations** of the Department.\n\nCurrent and past projects include reforming digital services that provide military families access to critical benefits; running bug bounty programs to identify vulnerabilities and better secure defense systems; developing drone detection technologies; hunting adversaries on defense networks; rethinking training for cyber soldiers and more.",
+    "mdCallout": "**We're focused on hiring the best to serve the best.**\n\nInterested in proving hoodies, hackers, and nerds have an important role to play in furthering national defense missions?",
+    "cta": "Apply to DDS now!",
+    "ctaLink": "/apply"
+  }
+}
