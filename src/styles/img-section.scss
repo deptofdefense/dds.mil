@@ -17,3 +17,21 @@
     }
   }
 }
+
+.img-feature-section {
+  height: 100%;
+  width: 100%;
+  max-height: 600px;
+  max-width: $content-max-width;
+  margin-bottom: units(7);
+
+  @include at-media(tablet) {
+    padding-left: units(5);
+    padding-right: units(5);
+  }
+
+  @include at-media(desktop) {
+    padding-left: units(7);
+    padding-right: units(7);
+  }
+}

@@ -218,6 +218,20 @@ const ImageCollectionSectionFields: Patch<CmsField> = {
   ],
 };
 
+const FeatureImageSectionFields: Patch<CmsField> = {
+  label: "Featured Image Section",
+  name: "featureImgSection",
+  widget: "object",
+  fields: [
+    {
+      label: "Image",
+      widget: "image",
+      name: "image",
+    },
+    { ...AltTextField, required: false },
+  ],
+};
+
 const announcementCollection: CmsCollection = {
   name: "announcements",
   label: "Announcements",
@@ -359,6 +373,22 @@ CMS.init({
               ImageCollectionSectionFields,
               CallToActionSectionFields,
             ],
+          },
+          {
+            label: "Team Page",
+            name: "teamPage",
+            file: "content/pages/teamPage.json",
+            fields: [
+              HeroSectionFields,
+              TextInfoSectionFields,
+              FeatureImageSectionFields,
+            ],
+          },
+          {
+            label: "Our Work Main Page",
+            name: "portfolioPage",
+            file: "content/pages/portfolioPage.json",
+            fields: [HeroSectionFields, TextInfoSectionFields],
           },
         ],
       },

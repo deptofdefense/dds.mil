@@ -16,6 +16,10 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
         image: File @link(by: "relativePath")
         altText: String
       }
+      type FeatureImgSection {
+        image: File @link(by: "relativePath")
+        altText: String
+      }
       type CtaSection {
         mdDetails: MarkdownRemark @link(by: "rawMarkdownBody")
       }
@@ -29,6 +33,7 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
         iconSection: IconSection
         imgSection: [ImageSection]
         ctaSection: CtaSection
+        featureImgSection: FeatureImgSection
       }
     `,
   ];
