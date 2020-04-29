@@ -70,7 +70,7 @@ const CTALinkField: Patch<CmsField> = {
 };
 
 const AltTextField: Patch<CmsField> = {
-  label: "AltText",
+  label: "Alt Text",
   name: "altText",
   widget: "string",
   hint: "Description of the image for screen readers / accessibility.",
@@ -147,6 +147,7 @@ const IconSectionFields: Patch<CmsField> = {
   label: "Icon Section",
   name: "iconSection",
   widget: "object",
+  collapsed: true,
   fields: [
     {
       ...TitleField,
@@ -206,6 +207,7 @@ const ImageCollectionSectionFields: Patch<CmsField> = {
   label: "Image Collection Section",
   name: "imgSection",
   widget: "list",
+  collapsed: true,
   fields: [
     {
       label: "Image",
@@ -222,6 +224,7 @@ const FeatureImageSectionFields: Patch<CmsField> = {
   label: "Featured Image Section",
   name: "featureImgSection",
   widget: "object",
+  collapsed: true,
   fields: [
     {
       label: "Image",
@@ -311,9 +314,9 @@ const teamCollection: CmsCollection = {
 
 const newsCollection: CmsCollection = {
   name: "news",
-  label: "DDS in the News",
+  label: "News Articles",
   label_singular: "News Article",
-  description: "References to articles posted about DDS.",
+  description: "DDS in the News",
   folder: "content/news",
   slug: "{{year}}-{{month}}-{{slug}}",
   summary: entrySummaryFormat,
@@ -332,6 +335,48 @@ const newsCollection: CmsCollection = {
   ],
 };
 
+const settingsFields: Patch<CmsField>[] = [
+  {
+    label: "Global Title",
+    name: "siteTitle",
+    widget: "string",
+    hint:
+      "Default title. Other titles preceed this title (e.g. other title | this title)",
+  },
+  {
+    label: "SEO Description",
+    name: "seoDescription",
+    widget: "string",
+    hint:
+      "Default meta description for search engines if not specified elsewhere",
+  },
+  {
+    label: "Pagination Size",
+    name: "pageSize",
+    widget: "number",
+    min: 1,
+  },
+  {
+    label: "Navigation Links",
+    name: "navbar",
+    widget: "list",
+    fields: [
+      {
+        label: "Display Text",
+        name: "text",
+        widget: "string",
+      },
+      {
+        label: "Link to",
+        name: "link",
+        widget: "string",
+        hint:
+          "This should be an internal link beginning with a '/'. Support for external links will be included soon.",
+      },
+    ],
+  },
+];
+
 CMS.init({
   config: {
     backend,
@@ -342,18 +387,15 @@ CMS.init({
     media_folder: "media",
     public_folder: "",
     collections: [
-      announcementCollection,
-      postCollection,
-      teamCollection,
-      newsCollection,
       {
+        label: "Pages",
         name: "pages",
-        label: "Content Pages",
         editor: { preview: false },
         files: [
           {
-            label: "Home Page",
+            label: "Home",
             name: "homePage",
+            description: "Home page",
             file: "content/pages/homePage.json",
             fields: [
               HeroSectionFields,
@@ -363,7 +405,7 @@ CMS.init({
             ],
           },
           {
-            label: "About Page",
+            label: "About Us",
             name: "aboutPage",
             file: "content/pages/aboutPage.json",
             fields: [
@@ -375,7 +417,13 @@ CMS.init({
             ],
           },
           {
-            label: "Team Page",
+            label: "Our Work",
+            name: "portfolioPage",
+            file: "content/pages/portfolioPage.json",
+            fields: [HeroSectionFields, TextInfoSectionFields],
+          },
+          {
+            label: "Our Team",
             name: "teamPage",
             file: "content/pages/teamPage.json",
             fields: [
@@ -384,64 +432,23 @@ CMS.init({
               FeatureImageSectionFields,
             ],
           },
-          {
-            label: "Our Work Main Page",
-            name: "portfolioPage",
-            file: "content/pages/portfolioPage.json",
-            fields: [HeroSectionFields, TextInfoSectionFields],
-          },
         ],
       },
+      announcementCollection,
+      newsCollection,
+      postCollection,
+      teamCollection,
       {
         name: "settings",
         label: "Site Settings",
+        description: "Settings to control SEO, page size, etc.",
         editor: { preview: false },
         files: [
           {
             name: "general",
             label: "General Settings",
             file: "content/settings.json",
-            fields: [
-              {
-                label: "Global Title",
-                name: "siteTitle",
-                widget: "string",
-                hint:
-                  "Default title. Other titles preceed this title (e.g. other title | this title)",
-              },
-              {
-                label: "SEO Description",
-                name: "seoDescription",
-                widget: "string",
-                hint:
-                  "Default meta description for search engines if not specified elsewhere",
-              },
-              {
-                label: "Pagination Size",
-                name: "pageSize",
-                widget: "number",
-                min: 1,
-              },
-              {
-                label: "Navigation Links",
-                name: "navbar",
-                widget: "list",
-                fields: [
-                  {
-                    label: "Display Text",
-                    name: "text",
-                    widget: "string",
-                  },
-                  {
-                    label: "Link to",
-                    name: "link",
-                    widget: "string",
-                    hint:
-                      "This should be an internal link beginning with a '/'. Support for external links will be included soon.",
-                  },
-                ],
-              },
-            ],
+            fields: settingsFields,
           },
         ],
       },
