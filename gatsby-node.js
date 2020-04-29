@@ -27,6 +27,12 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
         mdMain: MarkdownRemark @link(by: "rawMarkdownBody")
         mdCallout: MarkdownRemark @link(by: "rawMarkdownBody")
       }
+      type CategoryListSection {
+        heading: String
+        details: String
+        cta: String
+        ctaLink: String
+      }
       type PagesJson implements Node {
         heroSection: HeroSection
         textSection: TextSection
@@ -34,6 +40,7 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
         imgSection: [ImageSection]
         ctaSection: CtaSection
         featureImgSection: FeatureImgSection
+        categoryListSection: CategoryListSection
       }
     `,
   ];

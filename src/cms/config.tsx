@@ -28,8 +28,8 @@ const hiddenNavOrderField = (value: number): Patch<CmsField> => ({
   label: "navOrder",
   name: "navOrder",
   widget: "hidden",
-  default: value
-})
+  default: value,
+});
 
 const TitleField: CmsField = {
   label: "Title",
@@ -240,6 +240,47 @@ const FeatureImageSectionFields: Patch<CmsField> = {
       name: "image",
     },
     { ...AltTextField, required: false },
+  ],
+};
+
+const CategoryListSectionFields: Patch<CmsField> = {
+  label: "Featured Categories",
+  name: "categoryListSection",
+  widget: "object",
+  collapsed: true,
+  fields: [
+    {
+      label: "Section Heading",
+      name: "sectionHeading",
+      widget: "string",
+      required: false,
+    },
+    {
+      label: "Number Headings?",
+      name: "numberHeadings",
+      widget: "boolean",
+      default: true,
+      required: false,
+    },
+    {
+      label: "Categories",
+      name: "categories",
+      widget: "list",
+      collapsed: true,
+      delete: true,
+      create: true,
+      fields: [
+        TitleField,
+        {
+          label: "details",
+          name: "details",
+          widget: "string",
+          required: false
+        },
+        { ...CTAField, required: false },
+        { ...CTALinkField, required: false }
+      ],
+    },
   ],
 };
 
@@ -484,6 +525,7 @@ CMS.init({
               NavigationFields,
               HeroSectionFields,
               TextInfoSectionFields,
+              CategoryListSectionFields
             ],
           },
           {

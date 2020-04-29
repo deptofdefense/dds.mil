@@ -4,19 +4,24 @@ import { Layout } from "components";
 import { Helmet } from "react-helmet";
 import { HeroSection, HeroSectionQueryResult } from "sections/HeroSection";
 import { TextSection, TextSectionQueryResult } from "sections/TextSection";
+import {
+  CategoryListSection,
+  CategoryListSectionQueryResult,
+} from "sections/CategoryListSection";
 
 interface Props {
   data: {
     pagesJson: {
       heroSection: HeroSectionQueryResult;
       textSection: TextSectionQueryResult;
+      categoryListSection: CategoryListSectionQueryResult;
     };
   };
 }
 
 const WorkPage: React.FC<Props> = ({
   data: {
-    pagesJson: { heroSection, textSection },
+    pagesJson: { heroSection, textSection, categoryListSection },
   },
 }) => {
   return (
@@ -26,6 +31,7 @@ const WorkPage: React.FC<Props> = ({
       </Helmet>
       <HeroSection result={heroSection} />
       <TextSection result={textSection} />
+      <CategoryListSection result={categoryListSection} />
     </Layout>
   );
 };
@@ -40,6 +46,9 @@ export const pageQuery = graphql`
       }
       textSection {
         ...AllTextSection
+      }
+      categoryListSection {
+        ...AllCategoryListSection
       }
     }
   }
