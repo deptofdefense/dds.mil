@@ -1,12 +1,5 @@
 {
   "siteTitle": "Defense Digital Service",
   "pageSize": 10,
-  "seoDescription": "Home page for Defense Digital Service",
-  "navbar": [
-    { "text": "About Us", "link": "/about" },
-    { "text": "Our Work", "link": "/portfolio" },
-    { "text": "Our Team", "link": "/team" },
-    { "text": "Media", "link": "/media" },
-    { "text": "Join Us", "link": "/careers" }
-  ]
+  "seoDescription": "Home page for Defense Digital Service"
 }

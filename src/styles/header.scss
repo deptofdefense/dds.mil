@@ -55,10 +55,12 @@
 .usa-nav {
   background-color: rgb(35, 120, 195);
   color: #fff;
+  width: 17rem;
 
   @include at-media(desktop) {
     background-color: transparent;
     color: inherit;
+    width: 100%;
   }
 
   .usa-nav__primary {
@@ -84,8 +86,11 @@
 
       a:hover,
       a.usa-current {
+        font-weight: bolder;
+
         @include at-media(desktop) {
           color: color("blue-40v");
+          font-weight: bold;
         }
       }
 
@@ -99,6 +104,13 @@
           bottom: 0em;
           width: auto;
         }
+      }
+    }
+
+    .usa-nav__primary-item.header-subnav-item {
+      margin-left: units(2);
+      @include at-media(desktop) {
+        display: none;
       }
     }
   }

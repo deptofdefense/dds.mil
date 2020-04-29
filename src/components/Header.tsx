@@ -4,10 +4,21 @@ import Img from "gatsby-image/withIEPolyfill";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { HeaderNavLink } from "components";
 
-type NavItem = {
-  link: string;
-  text: string;
+type PagesJsonNode = {
+  navigation: {
+    primaryLink: string;
+    primaryText: string;
+  };
 };
+
+type ParsedNavigation = {
+  primaryLink: string;
+  primaryText: string;
+  subnav?: {
+    link: string;
+    text: string;
+  }[];
+}[];
 
 interface Props {
   siteTitle: string;
@@ -23,14 +34,28 @@ export const Header: React.FC<Props> = ({ siteTitle }) => {
           }
         }
       }
-      contentJson(fields: { slug: { eq: "settings" } }) {
-        navbar {
-          link
-          text
+      allPagesJson(
+        sort: { order: ASC, fields: navOrder }
+        filter: { navigation: { primaryText: { ne: null } } }
+      ) {
+        nodes {
+          navigation {
+            primaryText
+            primaryLink
+
+            subnav {
+              text
+              link
+            }
+          }
         }
       }
     }
   `);
+
+  const navigation: ParsedNavigation = data.allPagesJson.nodes.map(
+    ({ navigation }: PagesJsonNode) => navigation
+  );
 
   return (
     <header className="usa-header usa-header--basic" role="banner">
@@ -64,10 +89,22 @@ export const Header: React.FC<Props> = ({ siteTitle }) => {
             <FaTimes />
           </button>
           <ul className="usa-nav__primary usa-accordion">
-            {data.contentJson.navbar.map(({ link, text }: NavItem) => (
-              <HeaderNavLink key={link} to={link}>
-                {text}
-              </HeaderNavLink>
+            {navigation.map(({ primaryLink, primaryText, subnav }) => (
+              <>
+                <HeaderNavLink key={primaryLink} to={primaryLink}>
+                  {primaryText}
+                </HeaderNavLink>
+                {subnav &&
+                  subnav.map(({ text, link }) => (
+                    <HeaderNavLink
+                      className="header-subnav-item"
+                      key={`${primaryLink}${link}`}
+                      to={link}
+                    >
+                      {text}
+                    </HeaderNavLink>
+                  ))}
+              </>
             ))}
           </ul>
         </nav>

@@ -1,4 +1,9 @@
 {
+  "navOrder": 2,
+  "navigation": {
+    "primaryText": "About Us",
+    "primaryLink": "/about"
+  },
   "heroSection": {
     "img": "about_hero.png",
     "title": "Solving mission-critical problems within the Department of Defense",

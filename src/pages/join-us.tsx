@@ -2,13 +2,13 @@ import React from "react";
 import { Layout } from "components";
 import { Helmet } from "react-helmet";
 
-const CareersPage: React.FC = () => (
+const JoinUsPage: React.FC = () => (
   <Layout>
     <Helmet>
-      <title>Careers</title>
+      <title>Join Us</title>
     </Helmet>
-    <h1>Careers index</h1>
+    <h1>Join Us Index</h1>
   </Layout>
 );
 
-export default CareersPage;
+export default JoinUsPage;

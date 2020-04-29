@@ -1,0 +1,12 @@
+{
+  "navOrder": 5,
+  "navigation": {
+    "primaryText": "Media",
+    "primaryLink": "/media",
+    "subnav": [
+      { "text": "Announcements", "link": "/media/announcements" },
+      { "text": "Blog", "link": "/media/blog" },
+      { "text": "News", "link": "/media/news" }
+    ]
+  }
+}

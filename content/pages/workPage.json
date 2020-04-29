@@ -1,4 +1,17 @@
 {
+  "navOrder": 3,
+  "navigation": {
+    "primaryText": "Our Work",
+    "primaryLink": "/work",
+    "subnav": [
+      { "text": "Portfolios", "link": "/work/portfolios" },
+      { "text": "Product Development", "link": "/work/product-development" },
+      {
+        "text": "Ongoing Technical Advice",
+        "link": "/work/ongoing-technical-advice"
+      }
+    ]
+  },
   "heroSection": {
     "img": "header-ourwork.png",
     "title": "Doing work that matters by focusing our time and energy on high priority undertakings.",
