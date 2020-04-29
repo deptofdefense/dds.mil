@@ -13,14 +13,23 @@ const backend: Patch<CmsBackend> = {
   repo: "deptofdefense/dds.mil",
 };
 
+const internalLinkHint =
+  "This should be an internal link beginning with a '/'. Support for external links will be included soon.";
+
 const entrySummaryFormat = "{{year}}-{{month}} -- {{title}}";
 
-const hiddenTypeField = (x: string): Patch<CmsField> => ({
+const hiddenTypeField = (value: string): Patch<CmsField> => ({
   label: "type",
   name: "Type",
   widget: "hidden",
-  default: x,
+  default: value,
 });
+const hiddenNavOrderField = (value: number): Patch<CmsField> => ({
+  label: "navOrder",
+  name: "navOrder",
+  widget: "hidden",
+  default: value
+})
 
 const TitleField: CmsField = {
   label: "Title",
@@ -65,8 +74,7 @@ const CTALinkField: Patch<CmsField> = {
   label: "Call to action link",
   name: "ctaLink",
   widget: "string",
-  hint:
-    "This should be an internal link beginning with a '/'. Support for external links will be included soon.",
+  hint: internalLinkHint,
 };
 
 const AltTextField: Patch<CmsField> = {
@@ -335,6 +343,53 @@ const newsCollection: CmsCollection = {
   ],
 };
 
+const NavigationFields: Patch<CmsField> = {
+  label: "Navigation",
+  name: "navigation",
+  widget: "object",
+  collapsed: true,
+  fields: [
+    {
+      label: "Primary Display Text",
+      name: "primaryText",
+      widget: "string",
+      required: false,
+      hint: internalLinkHint,
+    },
+    {
+      label: "Primary Link",
+      name: "primaryLink",
+      widget: "string",
+      required: false,
+      hint: internalLinkHint,
+    },
+    {
+      label: "Sub-navigation",
+      name: "subnav",
+      widget: "list",
+      delete: true,
+      create: true,
+      hint: "Sub-navigation links included in the mobile navigation menu",
+      fields: [
+        {
+          label: "Display",
+          name: "text",
+          widget: "string",
+          required: true,
+          hint: "Text to display for the subnavigation link",
+        },
+        {
+          label: "Link",
+          name: "link",
+          widget: "string",
+          required: true,
+          hint: internalLinkHint,
+        },
+      ],
+    },
+  ],
+};
+
 const settingsFields: Patch<CmsField>[] = [
   {
     label: "Global Title",
@@ -398,6 +453,8 @@ CMS.init({
             description: "Home page",
             file: "content/pages/homePage.json",
             fields: [
+              hiddenNavOrderField(1),
+              NavigationFields,
               HeroSectionFields,
               TextInfoSectionFields,
               IconSectionFields,
@@ -409,6 +466,8 @@ CMS.init({
             name: "aboutPage",
             file: "content/pages/aboutPage.json",
             fields: [
+              hiddenNavOrderField(2),
+              NavigationFields,
               HeroSectionFields,
               TextInfoSectionFields,
               IconSectionFields,
@@ -418,15 +477,22 @@ CMS.init({
           },
           {
             label: "Our Work",
-            name: "portfolioPage",
-            file: "content/pages/portfolioPage.json",
-            fields: [HeroSectionFields, TextInfoSectionFields],
+            name: "workPage",
+            file: "content/pages/workPage.json",
+            fields: [
+              hiddenNavOrderField(3),
+              NavigationFields,
+              HeroSectionFields,
+              TextInfoSectionFields,
+            ],
           },
           {
             label: "Our Team",
             name: "teamPage",
             file: "content/pages/teamPage.json",
             fields: [
+              hiddenNavOrderField(4),
+              NavigationFields,
               HeroSectionFields,
               TextInfoSectionFields,
               FeatureImageSectionFields,

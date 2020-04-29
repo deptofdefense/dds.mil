@@ -14,7 +14,7 @@ interface Props {
   };
 }
 
-const PortfolioPage: React.FC<Props> = ({
+const WorkPage: React.FC<Props> = ({
   data: {
     pagesJson: { heroSection, textSection },
   },
@@ -30,11 +30,11 @@ const PortfolioPage: React.FC<Props> = ({
   );
 };
 
-export default PortfolioPage;
+export default WorkPage;
 
 export const pageQuery = graphql`
-  query PortfolioPageQuery {
-    pagesJson(fields: { slug: { eq: "portfolioPage" } }) {
+  query WorkPageQuery {
+    pagesJson(fields: { slug: { eq: "workPage" } }) {
       heroSection {
         ...AllHeroSection
       }

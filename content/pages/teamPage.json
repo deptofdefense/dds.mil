@@ -1,4 +1,8 @@
 {
+  "navigation": {
+    "primaryText": "Our Team",
+    "primaryLink": "/team"
+  },
   "heroSection": {
     "img": "about_hero.png",
     "title": "The unique people behind the magic.",
