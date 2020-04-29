@@ -83,6 +83,7 @@ module.exports = {
         enableIdentityWidget: false,
         htmlTitle: "DDS.mil Content Manager",
         modulePath: `${__dirname}/src/cms/cms.tsx`,
+        manualInit: true,
       },
     },
   ],

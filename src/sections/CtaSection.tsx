@@ -1,4 +1,5 @@
 import React from "react";
+import { CtaButton } from "components";
 import { Link, graphql } from "gatsby";
 
 export type CtaSectionQueryResult = {
@@ -28,7 +29,7 @@ export const CtaSection: React.FC<Props> = ({
           />
         )}
         <Link to={ctaLink}>
-          <button>{cta}</button>
+          <CtaButton>{cta}</CtaButton>
         </Link>
       </div>
     </div>

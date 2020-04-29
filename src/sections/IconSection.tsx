@@ -5,20 +5,22 @@ import clsx from "clsx";
 import { FaChevronRight } from "react-icons/fa";
 
 export type IconSectionQueryResult = {
-  icon: {
-    childInlineSvg?: {
-      rawSvg: string;
+  icons: {
+    icon: {
+      childInlineSvg?: {
+        rawSvg: string;
+      };
+      childImageSharp?: {
+        fixed: any;
+        fluid: any;
+      };
     };
-    childImageSharp?: {
-      fixed: any;
-      fluid: any;
-    };
-  };
-  heading: string;
-  cta: string;
-  ctaLink: string;
-  details: string;
-}[];
+    heading: string;
+    cta: string;
+    ctaLink: string;
+    details: string;
+  }[];
+};
 
 export interface Props {
   result: IconSectionQueryResult;
@@ -28,10 +30,10 @@ export const IconSection: React.FC<Props> = ({ result }) => {
   return (
     <div className="dds-container accent-blue shadow">
       <div className="info-section">
-        {result.map(({ icon, heading, cta, ctaLink, details }) => (
+        {result.icons.map(({ icon, heading, cta, ctaLink, details }) => (
           <div
             className={clsx("info-section-item", {
-              "info-section-smaller": result.length > 3,
+              "info-section-smaller": result.icons.length > 3,
             })}
             key={heading}
           >
@@ -67,17 +69,20 @@ export const IconSection: React.FC<Props> = ({ result }) => {
 
 export const query = graphql`
   fragment AllIconSection on IconSection {
-    heading
-    cta
-    ctaLink
-    details
-    icon {
-      childInlineSvg {
-        rawSvg
-      }
-      childImageSharp {
-        fluid(maxHeight: 70, maxWidth: 100, fit: INSIDE) {
-          ...GatsbyImageSharpFluid
+    title
+    icons {
+      heading
+      cta
+      ctaLink
+      details
+      icon {
+        childInlineSvg {
+          rawSvg
+        }
+        childImageSharp {
+          fluid(maxHeight: 70, maxWidth: 100, fit: INSIDE) {
+            ...GatsbyImageSharpFluid
+          }
         }
       }
     }

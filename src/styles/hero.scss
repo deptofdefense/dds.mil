@@ -1,89 +1,95 @@
-.hero-img {
+.hero {
   position: relative;
-  height: 225px;
-  width: 100%;
+  min-height: 225px;
 
-  @include at-media(tablet) {
-    position: absolute !important;
-  }
-}
-
-.hero-inner {
-  width: 100%;
-  position: relative;
-  padding: 0;
-  z-index: 100;
-  height: 225px;
-  display: none;
-  max-width: $content-max-width;
-
-  @include at-media(tablet) {
-    padding: units(2) units(5);
-    display: flex;
-    align-items: center;
-  }
-
-  @include at-media(desktop) {
-    padding: units(8);
-  }
-
-  .hero-card {
-    // background-color: color("blue-warm-70v");
-    background-color: rgba(color("blue-warm-70v"), 0.9);
-    width: 100%;
-    height: 100%;
-    padding: units(5) units(3);
+  .gatsby-image-wrapper {
+    height: 225px;
+    position: relative;
+    z-index: 1;
 
     @include at-media(tablet) {
-      max-width: 500px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: flex-start;
-      padding: units(5);
-    }
-
-    .hero-card-header {
-      color: #fff;
-      font-size: size("body", "2xl");
-      margin: 0;
-      margin-bottom: units(4);
+      height: 100%;
       width: 100%;
-    }
-
-    .hero-card-cta {
-      background-color: transparent;
-      color: color("base-lighter");
-      border-color: color("base-lighter");
-      border-radius: 4px;
-      padding: units(1) units(4);
-      font-weight: bold;
-      font-size: size("body", "sm");
-      cursor: pointer;
-    }
-
-    .hero-card-cta:hover,
-    .hero-card-cta:active {
-      border-color: #fff;
-    }
-
-    .hero-card-cta:active {
-      color: #fff;
+      position: absolute !important;
     }
   }
-}
 
-.hero-inner.with-hero-card,
-.hero-img.with-hero-card {
-  display: block;
-  height: auto;
-
-  @include at-media(tablet) {
+  .hero-inner {
+    width: 100%;
+    height: 100%;
+    z-index: 5;
     display: flex;
-    height: 40vh;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+
+    @include at-media(tablet) {
+      padding: units(5) 0;
+      min-height: 225px;
+    }
+
+    .hero-card {
+      background-color: rgba(color("blue-warm-70v"), 0.9);
+      padding: units(5) units(3);
+      width: 100%;
+
+      @include at-media(tablet) {
+        max-width: 75%;
+      }
+      @include at-media(desktop) {
+        max-width: 800px;
+      }
+
+      .hero-card-cta {
+        background-color: transparent;
+        color: color("base-lighter");
+        border-color: color("base-lighter");
+        border-radius: 4px;
+        padding: units(1) units(4);
+        font-weight: bold;
+        margin-top: units(4);
+        font-size: size("body", "sm");
+        cursor: pointer;
+      }
+
+      .hero-card-cta:hover,
+      .hero-card-cta:active {
+        border-color: #fff;
+      }
+
+      .hero-card-cta:active {
+        color: #fff;
+      }
+
+      h1 {
+        margin: 0;
+        color: #fff;
+        font-size: size("body", "xl");
+      }
+    }
   }
 
-  @include at-media(desktop) {
-    height: 60vh;
+  .hero-inner.hero-inner-expanded {
+    @include at-media(tablet) {
+      padding: units(2) units(5);
+      max-width: $content-max-width;
+      margin: auto;
+      height: 40vh;
+    }
+
+    @include at-media(desktop) {
+      height: 60vh;
+    }
+
+    .hero-card {
+      @include at-media(tablet) {
+        max-width: 500px;
+        padding: units(5);
+      }
+
+      h1 {
+        font-size: size("body", "2xl");
+      }
+    }
   }
 }

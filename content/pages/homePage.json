@@ -7,31 +7,34 @@
   },
   "textSection": {
     "mdMain": "***We're on a mission.***\n\nThe Defense Digital Service (DDS) was first established by the Secretary of Defense in November 2015 as a **SWAT team of nerds** to provide the **best in modern technology** to bolster national defense. We bring in talent from **both the private sector and within government** to advance critical DoD initiatives.",
-    "mdCallout": "**Doing work that matters by focusing our time and energy on high-priority undertakings.**"
+    "mdCallout": "**Doing work that matters by focusing our time and energy on high-priority undertakings.**",
+    "alignByText": true
   },
-  "iconSection": [
-    {
-      "icon": "icon-highfive.png",
-      "heading": "Who We Are",
-      "cta": "MEET THE TEAM",
-      "ctaLink": "/team",
-      "details": "We are a SWAT team of nerds that provides the best in modern technical knowledge to bolster national defense."
-    },
-    {
-      "icon": "icon-lightbulb.png",
-      "heading": "What We Do",
-      "cta": "VIEW OUR WORK",
-      "ctaLink": "/portfolio",
-      "details": "We focus on high-impact projects that advance the DoD's most important initiatives that are critical to the well-being of service members, civilians, and core operations of the Department. "
-    },
-    {
-      "icon": "icon-news.png",
-      "heading": "Media",
-      "cta": "LEARN MORE",
-      "ctaLink": "/media",
-      "details": "Check out DDS in the news, our latest announcements, our blog, and connect with us on Twitter and LinkedIn."
-    }
-  ],
+  "iconSection": {
+    "icons": [
+      {
+        "icon": "icon-highfive.png",
+        "heading": "Who We Are",
+        "cta": "MEET THE TEAM",
+        "ctaLink": "/team",
+        "details": "We are a SWAT team of nerds that provides the best in modern technical knowledge to bolster national defense."
+      },
+      {
+        "icon": "icon-lightbulb.png",
+        "heading": "What We Do",
+        "cta": "VIEW OUR WORK",
+        "ctaLink": "/portfolio",
+        "details": "We focus on high-impact projects that advance the DoD's most important initiatives that are critical to the well-being of service members, civilians, and core operations of the Department. "
+      },
+      {
+        "icon": "icon-news.png",
+        "heading": "Media",
+        "cta": "LEARN MORE",
+        "ctaLink": "/media",
+        "details": "Check out DDS in the news, our latest announcements, our blog, and connect with us on Twitter and LinkedIn."
+      }
+    ]
+  },
   "ctaSection": {
     "mdDetails": "**We're focused on hiring the best to serve the best.** \n\nInterested in proving hoodies, hackers, and nerds have an important role to play in furthering national defense missions?",
     "cta": "APPLY TO DDS TODAY",

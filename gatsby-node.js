@@ -2,9 +2,12 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
   const { createTypes } = actions;
   const typeDefs = [
     `
-      type IconSection {
+      type Icon {
         icon: File @link(by: "relativePath")
-        heading: String
+      }
+      type IconSection {
+        icons: [Icon]
+        title: String
       }
       type HeroSection {
         img: File @link(by: "relativePath")
@@ -23,7 +26,7 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
       type PagesJson implements Node {
         heroSection: HeroSection
         textSection: TextSection
-        iconSection: [IconSection]
+        iconSection: IconSection
         imgSection: [ImageSection]
         ctaSection: CtaSection
       }
