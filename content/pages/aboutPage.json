@@ -1,4 +1,5 @@
 {
+  "navOrder": 2,
   "navigation": {
     "primaryText": "About Us",
     "primaryLink": "/about"

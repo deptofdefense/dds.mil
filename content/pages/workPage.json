@@ -1,11 +1,11 @@
 {
+  "navOrder": 3,
   "navigation": {
     "primaryText": "Our Work",
     "primaryLink": "/work",
     "subnav": [
-      { "text": "Overview", "link": "/work" },
-      { "text": "Portfolios", "link": "/work/portfolio" },
-      { "text": "Product Development", "link": "/work/product-developments" },
+      { "text": "Portfolios", "link": "/work/portfolios" },
+      { "text": "Product Development", "link": "/work/product-development" },
       {
         "text": "Ongoing Technical Advice",
         "link": "/work/ongoing-technical-advice"

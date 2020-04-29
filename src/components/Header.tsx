@@ -34,7 +34,10 @@ export const Header: React.FC<Props> = ({ siteTitle }) => {
           }
         }
       }
-      allPagesJson(filter: { navigation: { primaryText: { ne: null } } }) {
+      allPagesJson(
+        sort: { order: ASC, fields: navOrder }
+        filter: { navigation: { primaryText: { ne: null } } }
+      ) {
         nodes {
           navigation {
             primaryText

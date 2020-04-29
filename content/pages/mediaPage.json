@@ -4,9 +4,9 @@
     "primaryText": "Media",
     "primaryLink": "/media",
     "subnav": [
-      { "text": "Overview", "link": "/media" },
       { "text": "Announcements", "link": "/media/announcements" },
-      { "text": "Blog", "link": "/media/blog" }
+      { "text": "Blog", "link": "/media/blog" },
+      { "text": "News", "link": "/media/news" }
     ]
   }
 }
