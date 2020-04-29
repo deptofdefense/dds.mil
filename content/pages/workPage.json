@@ -23,5 +23,29 @@
     "mdCallout": "**We're focused on hiring the best to serve the best.**\n\nInterested in proving hoodies, hackers, and nerds have an important role to play in furthering national defense missions?",
     "cta": "Apply to DDS now!",
     "ctaLink": "/apply"
+  },
+  "categoryListSection": {
+    "sectionHeading": "",
+    "numberHeadings": true,
+    "categories": [
+      {
+        "heading": "PORTFOLIOS",
+        "details": "DDS programs that are permanent enhancements of DoD's technical capabilities",
+        "cta": "Learn more",
+        "ctaLink": "/work/portfolios"
+      },
+      {
+        "heading": "PRODUCT DEVELOPMENT",
+        "details": "Undertakings where DDS develops and delivers technology to solve a problem in the DoD. Teams are staffed according to technical needs and the project ends with the successful transition of technology back to the host organization.",
+        "cta": "Learn more",
+        "ctaLink": "/work/product-development"
+      },
+      {
+        "heading": "ONGOING TECHNICAL ADVICE",
+        "details": "When DDS engages with an organization to dig into technical issues that office is facing. These engagements tend to be shorter in duration and usually results in a report that outlines findings and possible technical paths forward.",
+        "cta": "Learn more",
+        "ctaLink": "/work/ongoing-technical-advice"
+      }
+    ]
   }
 }
