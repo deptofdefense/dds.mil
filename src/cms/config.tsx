@@ -81,7 +81,7 @@ const AltTextField: Patch<CmsField> = {
   label: "Alt Text",
   name: "altText",
   widget: "string",
-  hint: "Description of the image for screen readers / accessibility.",
+  hint: "Description of the image for screen readers and accessibility.",
 };
 
 const HeroSectionFields: Patch<CmsField> = {
@@ -130,8 +130,7 @@ const TextInfoSectionFields: Patch<CmsField> = {
       label: "Call Out (right) section",
       name: "mdCallout",
       widget: "markdown",
-      hint:
-        "Use header levels 1 and 2 to control the size of the text. Note, headers may look different in the editor for now.",
+      hint: "Use header levels 1 and 2 to control the size of the text.",
     },
     {
       label: "Align By Text",
@@ -139,7 +138,7 @@ const TextInfoSectionFields: Patch<CmsField> = {
       widget: "boolean",
       required: false,
       hint:
-        "Align the callout section to the main section be the start of the text rather than the border.",
+        "Align the callout section to the main section by the start of the text rather than the border.",
     },
     {
       ...CTAField,
