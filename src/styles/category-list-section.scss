@@ -8,6 +8,7 @@
 
   h2 {
     padding: 0 units(5);
+    margin-top: 0;
     width: 100%;
 
     @include at-media(tablet) {
