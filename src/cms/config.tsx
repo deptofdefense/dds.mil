@@ -250,12 +250,6 @@ const CategoryListSectionFields: Patch<CmsField> = {
   collapsed: true,
   fields: [
     {
-      label: "Section Heading",
-      name: "sectionHeading",
-      widget: "string",
-      required: false,
-    },
-    {
       label: "Number Headings?",
       name: "numberHeadings",
       widget: "boolean",
@@ -275,11 +269,18 @@ const CategoryListSectionFields: Patch<CmsField> = {
           label: "details",
           name: "details",
           widget: "string",
-          required: false
+          required: false,
         },
         { ...CTAField, required: false },
-        { ...CTALinkField, required: false }
+        { ...CTALinkField, required: false },
       ],
+    },
+    {
+      label: "Section Heading",
+      name: "sectionHeading",
+      widget: "string",
+      required: false,
+      hint: "This doesn't do anything right now.",
     },
   ],
 };
@@ -525,7 +526,7 @@ CMS.init({
               NavigationFields,
               HeroSectionFields,
               TextInfoSectionFields,
-              CategoryListSectionFields
+              CategoryListSectionFields,
             ],
           },
           {

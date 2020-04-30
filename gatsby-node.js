@@ -92,7 +92,7 @@ exports.onCreateNode = async ({
           };
           createNode(mdNode);
           createParentChildLink({ parent: node, child: mdNode });
-        } else if (typeof value === "object") {
+        } else if (value && typeof value === "object") {
           createFieldsForObject(value, `${newPath}_`);
         }
       });
