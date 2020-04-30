@@ -14,7 +14,7 @@ const backend: Patch<CmsBackend> = {
 };
 
 const internalLinkHint =
-  "This should be an internal link beginning with a '/'. Support for external links will be included soon.";
+  "This should be an internal link beginning with a '/' to an existing page. Changing this link will not change the location of this page at this time.";
 
 const entrySummaryFormat = "{{year}}-{{month}} -- {{title}}";
 
@@ -396,7 +396,7 @@ const NavigationFields: Patch<CmsField> = {
       name: "primaryText",
       widget: "string",
       required: false,
-      hint: internalLinkHint,
+      hint: "Text to include in the navigation menus for this page.",
     },
     {
       label: "Primary Link",
@@ -453,25 +453,6 @@ const settingsFields: Patch<CmsField>[] = [
     widget: "number",
     min: 1,
   },
-  {
-    label: "Navigation Links",
-    name: "navbar",
-    widget: "list",
-    fields: [
-      {
-        label: "Display Text",
-        name: "text",
-        widget: "string",
-      },
-      {
-        label: "Link to",
-        name: "link",
-        widget: "string",
-        hint:
-          "This should be an internal link beginning with a '/'. Support for external links will be included soon.",
-      },
-    ],
-  },
 ];
 
 CMS.init({
@@ -496,7 +477,6 @@ CMS.init({
             file: "content/pages/homePage.json",
             fields: [
               hiddenNavOrderField(1),
-              NavigationFields,
               HeroSectionFields,
               TextInfoSectionFields,
               IconSectionFields,
