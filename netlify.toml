@@ -18,4 +18,4 @@
     RUBY_VERSION = "2.6.2"
 
 [[plugins]]
-package = "netlify-plugin-gatsby-cache"
+  package = "netlify-plugin-gatsby-cache"

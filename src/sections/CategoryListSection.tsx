@@ -4,6 +4,7 @@ import { FaChevronRight } from "react-icons/fa";
 
 export type CategoryListSectionQueryResult = {
   numberHeadings?: boolean;
+  sectionHeading?: string;
   categories: {
     heading: string;
     details: string;
@@ -17,11 +18,12 @@ export interface Props {
 }
 
 export const CategoryListSection: React.FC<Props> = ({ result }) => {
-  const { numberHeadings } = result;
+  const { numberHeadings, sectionHeading } = result;
 
   return (
     <div className="dds-container">
       <div className="category-list-section">
+        {sectionHeading && <h2>{sectionHeading}</h2>}
         {result.categories.map(({ heading, cta, ctaLink, details }, idx) => (
           <div className={"category-list-section-item"} key={heading}>
             <h3>
@@ -44,6 +46,7 @@ export const CategoryListSection: React.FC<Props> = ({ result }) => {
 export const query = graphql`
   fragment AllCategoryListSection on CategoryListSection {
     numberHeadings
+    sectionHeading
     categories {
       heading
       details

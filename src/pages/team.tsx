@@ -4,6 +4,7 @@ import { Layout } from "components";
 import { Helmet } from "react-helmet";
 import { HeroSection, HeroSectionQueryResult } from "sections/HeroSection";
 import { TextSection, TextSectionQueryResult } from "sections/TextSection";
+import { CtaSection, CtaSectionQueryResult } from "sections/CtaSection";
 import {
   FeatureImgSection,
   FeatureImgSectionQueryResult,
@@ -15,13 +16,14 @@ interface Props {
       heroSection: HeroSectionQueryResult;
       textSection: TextSectionQueryResult;
       featureImgSection: FeatureImgSectionQueryResult;
+      ctaSection: CtaSectionQueryResult;
     };
   };
 }
 
 const TeamPage: React.FC<Props> = ({
   data: {
-    pagesJson: { heroSection, textSection, featureImgSection },
+    pagesJson: { heroSection, textSection, featureImgSection, ctaSection },
   },
 }) => {
   return (
@@ -32,6 +34,7 @@ const TeamPage: React.FC<Props> = ({
       <HeroSection result={heroSection} />
       <TextSection result={textSection} />
       <FeatureImgSection result={featureImgSection} />
+      <CtaSection result={ctaSection} />
     </Layout>
   );
 };
@@ -49,6 +52,9 @@ export const pageQuery = graphql`
       }
       featureImgSection {
         ...AllFeatureImgSection
+      }
+      ctaSection {
+        ...AllCtaSection
       }
     }
   }

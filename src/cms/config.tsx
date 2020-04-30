@@ -506,6 +506,7 @@ CMS.init({
               HeroSectionFields,
               TextInfoSectionFields,
               CategoryListSectionFields,
+              CallToActionSectionFields,
             ],
           },
           {
@@ -518,6 +519,7 @@ CMS.init({
               HeroSectionFields,
               TextInfoSectionFields,
               FeatureImageSectionFields,
+              CallToActionSectionFields,
             ],
           },
         ],

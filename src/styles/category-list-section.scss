@@ -6,6 +6,19 @@
   align-items: flex-start;
   width: 100%;
 
+  h2 {
+    padding: 0 units(5);
+    width: 100%;
+
+    @include at-media(tablet) {
+      padding: 0;
+    }
+
+    @include at-media(desktop) {
+      padding: 0 units(3);
+    }
+  }
+
   @include at-media(tablet) {
     padding: 0 units(5);
   }
@@ -13,7 +26,7 @@
   @include at-media(desktop) {
     flex-direction: row;
     align-items: stretch;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
   }
 
   .category-list-section-item {
