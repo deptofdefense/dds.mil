@@ -20,7 +20,7 @@ const entrySummaryFormat = "{{year}}-{{month}} -- {{title}}";
 
 const hiddenTypeField = (value: string): Patch<CmsField> => ({
   label: "type",
-  name: "Type",
+  name: "type",
   widget: "hidden",
   default: value,
 });
