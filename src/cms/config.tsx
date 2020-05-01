@@ -293,7 +293,7 @@ const announcementCollection: CmsCollection = {
   slug: "{{year}}-{{month}}-{{slug}}",
   summary: entrySummaryFormat,
   create: true,
-  editor: { preview: false },
+  editor: { preview: true },
   fields: [
     hiddenTypeField("announcement"),
     TitleField,
