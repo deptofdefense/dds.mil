@@ -6,7 +6,7 @@ export const Card: React.FC<JSX.IntrinsicElements["div"]> = ({
   className,
   ...rest
 }) => (
-  <div className={clsx("shadow-1 bg-white ", className)} {...rest}>
+  <div className={clsx("shadow-2 bg-white ", className)} {...rest}>
     {children}
   </div>
 );

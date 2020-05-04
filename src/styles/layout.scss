@@ -14,20 +14,19 @@
       flex-wrap: nowrap;
       margin-left: auto;
       margin-right: auto;
-      padding: $desktop-pad-section-y units(3) 0 units(3);
+      padding: units(5) units(3);
       max-width: $content-max-width;
 
       @include at-media(tablet) {
-        padding: $desktop-pad-section-y units(5) 0 units(5);
+        padding: units(7) units(5);
       }
       @include at-media(desktop) {
-        padding: $desktop-pad-section-y units(7) 0 units(7);
+        padding: units(7) units(7);
       }
 
       .dds-sidebar {
-        flex-shrink: 0;
+        flex-shrink: 0 0 250px;
         display: none;
-        width: 250px;
 
         @media screen and (min-width: 1200px) {
           display: block;
@@ -36,6 +35,7 @@
 
       .dds-sidebar-content {
         padding: 0 0;
+        flex: 1 1 auto;
 
         :first-child {
           margin-top: 0;
@@ -50,18 +50,6 @@
         }
       }
     }
-  }
-}
-
-.markdown-body {
-  :first-child {
-    margin-top: 0;
-  }
-
-  padding: 0 units(5);
-
-  @include at-media(desktop) {
-    padding: 0 units(7);
   }
 }
 

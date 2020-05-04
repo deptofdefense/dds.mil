@@ -1,51 +1,51 @@
 import React from "react";
 import { graphql } from "gatsby";
-import { Layout } from "components";
+import { Layout, Section, Sidebar, SidebarSection } from "components";
 import { Helmet } from "react-helmet";
 
 interface Props {
   data: {
-    blogPostQuery: {
-      markdownRemark: {
-        html: string;
-        fields: {
-          slug: string;
-        };
-        frontmatter: {
-          title: string;
-          date: string;
-          image: {
-            childImageSharp: {
-              fluid: any;
-            };
+    markdownRemark: {
+      html: string;
+      fields: {
+        slug: string;
+      };
+      frontmatter: {
+        title: string;
+        date: string;
+        image: {
+          childImageSharp: {
+            fluid: any;
           };
         };
+      };
+    };
+    pagesJson: {
+      sidenav: {
+        menu: {
+          text: string;
+          link: string;
+        }[];
       };
     };
   };
 }
 
 const BlogPostPage: React.FC<Props> = ({
-  data: {
-    blogPostQuery: { markdownRemark },
-  },
+  data: { markdownRemark, pagesJson },
 }) => {
-  const {
-    html,
-    fields: { slug },
-    frontmatter,
-  } = markdownRemark;
-
+  const { html, frontmatter } = markdownRemark;
+  const { sidenav } = pagesJson;
   return (
     <Layout>
       <Helmet>
         <title>{frontmatter.title}</title>
       </Helmet>
-      <div
-        dangerouslySetInnerHTML={{
-          __html: html,
-        }}
-      />
+      <SidebarSection sidebar={<Sidebar menu={sidenav.menu} includeSocial />}>
+        <Section className="dds-post-page-section">
+          <div dangerouslySetInnerHTML={{ __html: html }} />
+        </Section>
+      </SidebarSection>
     </Layout>
   );
 };
@@ -54,7 +54,10 @@ export default BlogPostPage;
 
 export const query = graphql`
   query($slug: String!) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
+    markdownRemark(
+      fields: { slug: { eq: $slug } }
+      frontmatter: { type: { eq: "blogPost" } }
+    ) {
       html
       fields {
         slug
@@ -68,6 +71,15 @@ export const query = graphql`
               ...GatsbyImageSharpFluid
             }
           }
+        }
+      }
+    }
+
+    pagesJson(navigation: { link: { eq: "/media" } }) {
+      sidenav {
+        menu {
+          text
+          link
         }
       }
     }

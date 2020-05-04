@@ -1,11 +1,13 @@
 import React from "react";
-import { Link, graphql } from "gatsby";
+import { Link } from "gatsby";
+import { SectionBase } from "types";
 import { Section } from "components";
 import Img from "gatsby-image/withIEPolyfill";
 import clsx from "clsx";
 import { FaChevronRight } from "react-icons/fa";
 
-export type IconSectionQueryResult = {
+export interface IconSectionData extends SectionBase {
+  type: "iconSection";
   icons: {
     icon: {
       childInlineSvg?: {
@@ -16,27 +18,23 @@ export type IconSectionQueryResult = {
         fluid: any;
       };
     };
-    heading: string;
+    title: string;
     cta: string;
     ctaLink: string;
     details: string;
   }[];
-};
-
-export interface Props {
-  result: IconSectionQueryResult;
 }
 
-export const IconSection: React.FC<Props> = ({ result }) => {
+export const IconSection: React.FC<IconSectionData> = ({ icons }) => {
   return (
     <Section accentBlue shadow>
       <div className="icon-info-section">
-        {result.icons.map(({ icon, heading, cta, ctaLink, details }) => (
+        {icons.map(({ icon, title, cta, ctaLink, details }) => (
           <div
             className={clsx("icon-info-section-item", {
-              "icon-info-section-smaller": result.icons.length > 3,
+              "icon-info-section-smaller": icons.length > 3,
             })}
-            key={heading}
+            key={title}
           >
             <div className="icon-info-section-heading">
               {icon.childInlineSvg ? (
@@ -53,7 +51,7 @@ export const IconSection: React.FC<Props> = ({ result }) => {
                   </div>
                 </div>
               )}
-              <h3>{heading}</h3>
+              <h3>{title}</h3>
             </div>
             <p>{details}</p>
             {cta && (
@@ -67,25 +65,3 @@ export const IconSection: React.FC<Props> = ({ result }) => {
     </Section>
   );
 };
-
-export const query = graphql`
-  fragment AllIconSection on IconSection {
-    title
-    icons {
-      heading
-      cta
-      ctaLink
-      details
-      icon {
-        childInlineSvg {
-          rawSvg
-        }
-        childImageSharp {
-          fluid(maxHeight: 70, maxWidth: 100, fit: INSIDE) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  }
-`;

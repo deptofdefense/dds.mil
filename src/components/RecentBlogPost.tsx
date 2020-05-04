@@ -10,8 +10,8 @@ interface Props {
   title: string;
   summary: string;
   date: string;
-  slug: string;
   className: string;
+  slug: string;
 }
 
 export const RecentBlogPost: React.FC<Props> = ({
@@ -28,8 +28,8 @@ export const RecentBlogPost: React.FC<Props> = ({
       {imgFluid && <Img fluid={imgFluid} />}
       {imgSrc && <img src={imgSrc} />}
       <div className="dds-post-body">
-        <div className="text-light font-body-xs margin-bottom-1">{date}</div>
-        <Link to={`/news/${slug}`} className="dds-post-heading">
+        <div className="dds-post-date">{date}</div>
+        <Link to={`/media/blog/${slug}`} className="dds-post-heading">
           {title}
         </Link>
         <p>{summary}</p>

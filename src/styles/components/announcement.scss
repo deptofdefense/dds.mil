@@ -1,0 +1,19 @@
+.dds-announcement {
+  padding: units(3);
+  font-size: 22px;
+  line-height: 26px;
+  height: 100%;
+  border-left: 5px solid color("primary-lighter");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  a {
+    color: color("primary-vivid");
+    text-decoration: none;
+    margin-bottom: units(1);
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+}

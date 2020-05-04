@@ -4,66 +4,69 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
   const { createTypes } = actions;
   const typeDefs = [
     `
-      type Icon {
-        icon: File @link(by: "relativePath")
+      type UserLink {
+        text: String
+        link: String
       }
-      type IconSection {
-        icons: [Icon]
+
+      type Navigation {
         title: String
+        navOrder: Int
+        text: String
+        link: String
+        subnav: [UserLink]
       }
-      type HeroSection {
-        img: File @link(by: "relativePath")
+
+      type SideNav {
+        includeSidenav: Boolean
+        wrapSectionFirst: Int
+        wrapSectionLast: Int
+        menu: [UserLink]
+        includeSocial: Boolean
       }
-      type ImageSection {
-        image: File @link(by: "relativePath")
-        altText: String
-      }
-      type FeatureImgSection {
-        image: File @link(by: "relativePath")
-        altText: String
-      }
-      type CtaSection {
+
+      type IconElement {
+        icon: File @link(by: "relativePath")
+        title: String
         cta: String
         ctaLink: String
-        mdDetails: MarkdownRemark @link(by: "rawMarkdownBody")
+        details: String
       }
-      type TextSection {
-        mdMain: MarkdownRemark @link(by: "rawMarkdownBody")
-        mdCallout: MarkdownRemark @link(by: "rawMarkdownBody")
+
+      type ImageElement {
+        image: File @link(by: "relativePath")
+        altText: String
       }
-      type NavItem {
-        link: String
-        text: String
-      }
-      type NavigationSection {
-        primaryLink: String
-        primaryText: String
-        sidenav: [NavItem]
-      }
-      type CategoryListSection {
-        heading: String
+
+      type CategoryElement {
+        title: String
         details: String
         cta: String
         ctaLink: String
       }
-      type FeaturedMediaSection {
-        img: File @link(by: "relativePath")
-        mdDescription: MarkdownRemark @link(by: "rawMarkdownBody")
+
+      type Section {
+        type: String!
+        mdMain: MarkdownRemark @link(by: "rawMarkdownBody")
+        mdCallout: MarkdownRemark @link(by: "rawMarkdownBody")
+        heroImage: File @link(by: "relativePath")
+        
+        image: ImageElement
+        icons: [IconElement]
+        categories: [CategoryElement]
+        images: [ImageElement]
+
+        title: String
+        cta: String
+        ctaLink: String
+
+        numberTitles: Boolean
       }
-      type MdBodySection {
-        mdMainBody: MarkdownRemark @link(by: "rawMarkdownBody")
-      }
+
       type PagesJson implements Node {
-        heroSection: HeroSection
-        textSection: TextSection
-        iconSection: IconSection
-        imgSection: [ImageSection]
-        ctaSection: CtaSection
-        featureImgSection: FeatureImgSection
-        categoryListSection: CategoryListSection
-        navigation: NavigationSection
-        markdownBody: MdBodySection
-        featuredMediaSection: FeaturedMediaSection
+        navigation: Navigation
+        sidenav: SideNav
+        sections: [Section]
       }
 
       type Frontmatter {
@@ -77,8 +80,6 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
   createTypes(typeDefs);
 };
 
-const typesToSlug = ["MarkdownRemark", "PagesJson", "ContentJson"];
-
 exports.onCreateNode = async ({
   node,
   getNode,
@@ -88,6 +89,7 @@ exports.onCreateNode = async ({
   createContentDigest,
 }) => {
   const { createNodeField, createParentChildLink, createNode } = actions;
+  const typesToSlug = ["MarkdownRemark", "PagesJson", "ContentJson"];
   if (typesToSlug.includes(node.internal.type)) {
     const fileNode = getNode(node.parent);
     const fileName = fileNode.name;
@@ -127,10 +129,7 @@ exports.onCreateNode = async ({
         }
       });
     };
-
-    const fileNode = getNode(node.parent);
-    const fileName = fileNode.name;
-    createFieldsForObject(node, `${fileName}_`);
+    createFieldsForObject(node, `${node.id}_`);
   }
 
   if (node.internal.mediaType === "image/svg+xml") {
@@ -157,10 +156,43 @@ exports.onCreateNode = async ({
 };
 
 exports.createPages = async ({ graphql, actions: { createPage } }) => {
+  //
+  //  STATIC PAGES
+  //
+  const pagesResult = await graphql(`
+    {
+      allPagesJson {
+        nodes {
+          navigation {
+            link
+          }
+        }
+      }
+    }
+  `);
+
+  const staticPageTemplate = path.resolve("src/templates/static-page.tsx");
+  const pages = pagesResult.data.allPagesJson.nodes;
+  for (let i = 0; i < pages.length; i++) {
+    createPage({
+      path: pages[i].navigation.link,
+      component: staticPageTemplate,
+      context: {
+        link: pages[i].navigation.link,
+      },
+    });
+  }
+
+  //
+  // BLOG POSTS LiST
+  //
   const postsPerPage = 8;
   const postQueryResult = await graphql(`
     {
-      allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+      allMarkdownRemark(
+        filter: { frontmatter: { type: { eq: "blogPost" } } }
+        sort: { fields: [frontmatter___date], order: DESC }
+      ) {
         nodes {
           fields {
             slug
@@ -169,9 +201,8 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
       }
     }
   `);
-  //
+
   // create pages of posts
-  //
   const postListPage = path.resolve("src/templates/blog-post-list.tsx");
   const posts = postQueryResult.data.allMarkdownRemark.nodes;
   const numPages = Math.ceil(posts.length / postsPerPage);
@@ -185,6 +216,18 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
         skip: i * postsPerPage,
         numPages,
         currentPage: i + 1,
+      },
+    });
+  }
+
+  // create a page for each post
+  const postPage = path.resolve("src/templates/blog-post.tsx");
+  for (let i = 0; i < posts.length; i++) {
+    createPage({
+      path: `/media/blog/${posts[i].fields.slug}`,
+      component: postPage,
+      context: {
+        slug: posts[i].fields.slug,
       },
     });
   }

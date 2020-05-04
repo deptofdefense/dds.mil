@@ -4,28 +4,34 @@ import Img from "gatsby-image/withIEPolyfill";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { HeaderNavLink } from "components";
 
-type PagesJsonNode = {
-  navigation: {
-    primaryLink: string;
-    primaryText: string;
-  };
-};
-
-type ParsedNavigation = {
-  primaryLink: string;
-  primaryText: string;
+type NavigationNode = {
+  link: string;
+  text: string;
   subnav?: {
     link: string;
     text: string;
   }[];
-}[];
+};
+
+type QueryResult = {
+  allPagesJson: {
+    nodes: {
+      navigation: NavigationNode;
+    }[];
+  };
+  file: {
+    childImageSharp: {
+      fixed: any;
+    };
+  };
+};
 
 interface Props {
   siteTitle: string;
 }
 
 export const Header: React.FC<Props> = ({ siteTitle }) => {
-  const data = useStaticQuery(graphql`
+  const data: QueryResult = useStaticQuery(graphql`
     query {
       file(relativePath: { eq: "logo-banner.png" }) {
         childImageSharp {
@@ -35,14 +41,13 @@ export const Header: React.FC<Props> = ({ siteTitle }) => {
         }
       }
       allPagesJson(
-        sort: { order: ASC, fields: navOrder }
-        filter: { navigation: { primaryText: { ne: null } } }
+        sort: { order: ASC, fields: navigation___navOrder }
+        filter: { navigation: { text: { ne: null } } }
       ) {
         nodes {
           navigation {
-            primaryText
-            primaryLink
-
+            text
+            link
             subnav {
               text
               link
@@ -53,8 +58,8 @@ export const Header: React.FC<Props> = ({ siteTitle }) => {
     }
   `);
 
-  const navigation: ParsedNavigation = data.allPagesJson.nodes.map(
-    ({ navigation }: PagesJsonNode) => navigation
+  const navigation = data.allPagesJson.nodes.map(
+    ({ navigation }) => navigation
   );
 
   return (
@@ -89,22 +94,20 @@ export const Header: React.FC<Props> = ({ siteTitle }) => {
             <FaTimes />
           </button>
           <ul className="usa-nav__primary usa-accordion">
-            {navigation.map(({ primaryLink, primaryText, subnav }) => (
-              <>
-                <HeaderNavLink key={primaryLink} to={primaryLink}>
-                  {primaryText}
-                </HeaderNavLink>
+            {navigation.map(({ link, text, subnav }) => (
+              <React.Fragment key={link}>
+                <HeaderNavLink to={link}>{text}</HeaderNavLink>
                 {subnav &&
-                  subnav.map(({ text, link }) => (
+                  subnav.map((sub) => (
                     <HeaderNavLink
                       className="header-subnav-item"
-                      key={`${primaryLink}${link}`}
-                      to={link}
+                      key={`${link}${sub.link}`}
+                      to={sub.link}
                     >
-                      {text}
+                      {sub.text}
                     </HeaderNavLink>
                   ))}
-              </>
+              </React.Fragment>
             ))}
           </ul>
         </nav>

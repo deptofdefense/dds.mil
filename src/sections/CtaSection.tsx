@@ -1,24 +1,24 @@
 import React from "react";
 import clsx from "clsx";
+import { SectionBase } from "types";
 import { CtaButton, Section } from "components";
-import { Link, graphql } from "gatsby";
+import { Link } from "gatsby";
 
-export type CtaSectionQueryResult = {
+export interface CtaSectionData extends SectionBase {
+  type: "callToAction";
   ctaLink: string;
   cta: string;
-  mdDetails?: {
+  mdMain?: {
     html: string;
   };
-};
-
-interface Props {
   accent?: boolean;
-  result: CtaSectionQueryResult;
 }
 
-export const CtaSection: React.FC<Props> = ({
+export const CtaSection: React.FC<CtaSectionData> = ({
   accent,
-  result: { ctaLink, cta, mdDetails },
+  ctaLink,
+  cta,
+  mdMain,
 }) => {
   return (
     <Section accentBase={accent}>
@@ -27,11 +27,11 @@ export const CtaSection: React.FC<Props> = ({
           "has-accent": accent,
         })}
       >
-        {mdDetails && (
+        {mdMain && (
           <div
             className="cta-details"
             dangerouslySetInnerHTML={{
-              __html: mdDetails.html,
+              __html: mdMain.html,
             }}
           />
         )}
@@ -42,13 +42,3 @@ export const CtaSection: React.FC<Props> = ({
     </Section>
   );
 };
-
-export const query = graphql`
-  fragment AllCtaSection on CtaSection {
-    cta
-    ctaLink
-    mdDetails {
-      html
-    }
-  }
-`;

@@ -1,7 +1,12 @@
 import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
 import { RecentAnnouncement } from "components";
-import { Section, SectionProps } from "./Section";
+import { SectionBase } from "types";
+import { Section } from "components";
+
+export interface RecentAnnouncementsSectionData extends SectionBase {
+  type: "recentAnnouncements";
+}
 
 type AnnouncementNode = {
   frontmatter: {
@@ -9,10 +14,12 @@ type AnnouncementNode = {
     summary: string;
     date: string;
   };
-  slug: string;
+  fields: {
+    slug: string;
+  };
 };
 
-export const RecentAnnouncements: React.FC<SectionProps> = (props) => {
+export const RecentAnnouncements: React.FC<RecentAnnouncementsSectionData> = () => {
   const data = useStaticQuery(graphql`
     query {
       allMarkdownRemark(
@@ -35,11 +42,15 @@ export const RecentAnnouncements: React.FC<SectionProps> = (props) => {
   const announcements: AnnouncementNode[] = data.allMarkdownRemark.nodes;
 
   return (
-    <Section {...props}>
+    <Section>
       <h3>Recent Announcements:</h3>
       <div className="recent-media-list">
-        {announcements.map((post) => (
-          <RecentAnnouncement {...post.frontmatter} slug={post.slug} />
+        {announcements.map((announcement) => (
+          <RecentAnnouncement
+            {...announcement.frontmatter}
+            slug={announcement.fields.slug}
+            key={announcement.fields.slug}
+          />
         ))}
       </div>
     </Section>

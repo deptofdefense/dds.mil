@@ -1,0 +1,37 @@
+.recent-media-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-between;
+
+  @include at-media(tablet) {
+    margin: 0 -0.5rem;
+    flex-wrap: nowrap;
+  }
+
+  @include at-media(desktop) {
+    margin: 0 -1rem;
+  }
+
+  .recent-media-list-item {
+    width: 100%;
+    margin: 1rem 0;
+    position: relative;
+
+    @include at-media(tablet) {
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+      flex: 1 1 800px;
+      margin: 0 0.5rem;
+    }
+
+    @include at-media(desktop) {
+      margin: 0 1rem;
+    }
+
+    .gatsby-image-wrapper {
+      min-height: 150px;
+    }
+  }
+}

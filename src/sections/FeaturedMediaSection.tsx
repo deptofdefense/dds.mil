@@ -1,43 +1,41 @@
 import React from "react";
 import clsx from "clsx";
+import { SectionBase } from "types";
 import { Section } from "components";
-import { graphql } from "gatsby";
 import Img from "gatsby-image";
 
-export type FeaturedMediaSectionQueryResult = {
-  img: {
-    childImageSharp: {
-      fluid: any;
+export interface FeaturedMediaSectionData extends SectionBase {
+  type: "featuredMedia";
+  image: {
+    altText?: string;
+    image: {
+      childImageSharp: {
+        fluid: any;
+      };
     };
   };
-  mdDescription: {
+  mdMain?: {
     html: string;
   };
-};
-
-interface Props {
-  result: FeaturedMediaSectionQueryResult;
 }
 
-export const FeaturedMediaSection: React.FC<Props> = ({
-  result: {
-    mdDescription,
-    img: { childImageSharp },
-  },
+export const FeaturedMediaSection: React.FC<FeaturedMediaSectionData> = ({
+  image: { image, altText },
+  mdMain,
 }) => {
   return (
     <Section>
       <div
         className={clsx("featured-media-section", {
-          "image-only": !mdDescription,
+          "image-only": !mdMain,
         })}
       >
-        <Img fluid={childImageSharp.fluid} />
-        {mdDescription && (
+        <Img fluid={image.childImageSharp.fluid} alt={altText} />
+        {mdMain && (
           <div
             className="featured-media-description"
             dangerouslySetInnerHTML={{
-              __html: mdDescription.html,
+              __html: mdMain.html,
             }}
           />
         )}
@@ -45,18 +43,3 @@ export const FeaturedMediaSection: React.FC<Props> = ({
     </Section>
   );
 };
-
-export const query = graphql`
-  fragment AllFeaturedMediaSection on FeaturedMediaSection {
-    img {
-      childImageSharp {
-        fluid(maxWidth: 1300) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    mdDescription {
-      html
-    }
-  }
-`;

@@ -1,6 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
-import { Layout, BlogCard, Section } from "components";
+import { Layout, BlogCard, Section, SidebarSection, Sidebar } from "components";
 import { Helmet } from "react-helmet";
 
 interface Props {
@@ -22,12 +22,21 @@ interface Props {
         };
       }[];
     };
+    pagesJson: {
+      sidenav: {
+        menu: {
+          text: string;
+          link: string;
+        }[];
+      };
+    };
   };
 }
 
 const BlogList: React.FC<Props> = ({
   data: {
     allMarkdownRemark: { nodes },
+    pagesJson: { sidenav },
   },
 }) => {
   return (
@@ -35,15 +44,18 @@ const BlogList: React.FC<Props> = ({
       <Helmet>
         <title>Blog</title>
       </Helmet>
-      <Section>
-        {nodes.map(({ fields, frontmatter }) => (
-          <BlogCard
-            slug={fields.slug}
-            {...frontmatter}
-            imgFluid={frontmatter.image.childImageSharp.fluid}
-          />
-        ))}
-      </Section>
+      <SidebarSection sidebar={<Sidebar menu={sidenav.menu} includeSocial />}>
+        <Section className="post-list-section">
+          {nodes.map(({ fields, frontmatter }) => (
+            <BlogCard
+              key={fields.slug}
+              slug={fields.slug}
+              {...frontmatter}
+              imgFluid={frontmatter.image.childImageSharp.fluid}
+            />
+          ))}
+        </Section>
+      </SidebarSection>
     </Layout>
   );
 };
@@ -65,7 +77,7 @@ export const query = graphql`
         frontmatter {
           title
           summary
-          date
+          date(formatString: "MMM DD, YYYY")
           image {
             childImageSharp {
               fluid(maxWidth: 800) {
@@ -73,6 +85,15 @@ export const query = graphql`
               }
             }
           }
+        }
+      }
+    }
+
+    pagesJson(navigation: { link: { eq: "/media" } }) {
+      sidenav {
+        menu {
+          text
+          link
         }
       }
     }

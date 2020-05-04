@@ -26,10 +26,10 @@ $content-max-width: 1400px;
 $desktop-pad-section-y: 64px;
 
 @import "uswds";
+@import "./layout.scss";
 @import "./header.scss";
 @import "./sections";
-@import "./layout.scss";
-@import "./components.scss";
+@import "./components";
 
 html,
 body {

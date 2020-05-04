@@ -1,6 +1,11 @@
 import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
+import { SectionBase } from "types";
 import { RecentBlogPost, Section } from "components";
+
+export interface RecentBlogPostsSectionData extends SectionBase {
+  type: "recentBlogPosts";
+}
 
 type PostNode = {
   frontmatter: {
@@ -13,10 +18,12 @@ type PostNode = {
     summary: string;
     date: string;
   };
-  slug: string;
+  fields: {
+    slug: string;
+  };
 };
 
-export const RecentBlogPosts: React.FC = () => {
+export const RecentBlogPosts: React.FC<RecentBlogPostsSectionData> = () => {
   const data = useStaticQuery(graphql`
     query {
       allMarkdownRemark(
@@ -55,7 +62,8 @@ export const RecentBlogPosts: React.FC = () => {
             className="recent-media-list-item"
             {...post.frontmatter}
             imgFluid={post.frontmatter.image.childImageSharp.fluid}
-            slug={post.slug}
+            slug={post.fields.slug}
+            key={post.fields.slug}
           />
         ))}
       </div>

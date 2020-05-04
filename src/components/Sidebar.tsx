@@ -1,31 +1,28 @@
 import React from "react";
 import Link from "gatsby-link";
+import { ConnectCallout } from "components";
 
 export interface SidebarProps {
   menu: {
     text: string;
     link: string;
   }[];
-  overviewLink?: string;
+  includeSocial?: boolean;
 }
 
-export const Sidebar: React.FC<SidebarProps> = ({ menu, overviewLink }) => (
-  <ul className="usa-sidenav margin-bottom-4">
-    {overviewLink && (
-      <li className="usa-sidenav__item">
-        <Link to={overviewLink} activeClassName="usa-current">
-          Overview
-        </Link>
-      </li>
-    )}
-    {menu.map((item) => (
-      <li className="usa-sidenav__item">
-        <Link key={item.link} to={item.link} activeClassName="usa-current">
-          {item.text}
-        </Link>
-      </li>
-    ))}
-  </ul>
+export const Sidebar: React.FC<SidebarProps> = ({ menu, includeSocial }) => (
+  <>
+    <ul className="usa-sidenav margin-bottom-4">
+      {menu.map((item) => (
+        <li className="usa-sidenav__item" key={item.link}>
+          <Link key={item.link} to={item.link} activeClassName="usa-current">
+            {item.text}
+          </Link>
+        </li>
+      ))}
+    </ul>
+    {includeSocial && <ConnectCallout />}
+  </>
 );
 
 interface Props {

@@ -24,13 +24,15 @@ export const BlogCard: React.FC<Props> = ({
     <Card className="dds-blog-card">
       {imgFluid && <Img fluid={imgFluid} />}
       {imgSrc && <img src={imgSrc} />}
-      <div className="dds-blog-card-content">
-        <div>{date}</div>
-        <Link to={slug}>
-          <h3>{title}</h3>
+      <div className="dds-post-body">
+        <Link to={`/media/blog/${slug}`} className="dds-post-heading">
+          {title}
         </Link>
+        <div className="dds-post-date">{date}</div>
         <p>{summary}</p>
-        <Link to={slug}>READ MORE</Link>
+        <Link className="dds-post-read-now" to={`/media/blog/${slug}`}>
+          READ MORE
+        </Link>
       </div>
     </Card>
   );

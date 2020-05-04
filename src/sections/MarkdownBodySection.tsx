@@ -1,35 +1,23 @@
 import React from "react";
-import { CtaButton } from "components";
-import { graphql, Link } from "gatsby";
-import clsx from "clsx";
+import { Section } from "components";
+import { SectionBase } from "types";
 
-export type MdBodySectionQueryResult = {
-  mdMainBody: {
+export interface MarkdownBodySectionData extends SectionBase {
+  type: "markdownBody";
+  mdMain: {
     html: string;
   };
-};
-
-interface Props {
-  result: MdBodySectionQueryResult;
 }
 
-export const MarkdownBodySection: React.FC<Props> = ({
-  result: { mdMainBody },
+export const MarkdownBodySection: React.FC<MarkdownBodySectionData> = ({
+  mdMain: { html },
 }) => {
   return (
-    <div className="dds-container">
+    <Section>
       <div
-        className="markdown-body "
-        dangerouslySetInnerHTML={{ __html: mdMainBody.html }}
+        className="markdown-body usa-prose"
+        dangerouslySetInnerHTML={{ __html: html }}
       />
-    </div>
+    </Section>
   );
 };
-
-export const query = graphql`
-  fragment AllMdBodySection on MdBodySection {
-    mdMainBody {
-      html
-    }
-  }
-`;

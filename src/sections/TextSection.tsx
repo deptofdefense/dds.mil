@@ -1,9 +1,11 @@
 import React from "react";
+import { SectionBase } from "types";
 import { CtaButton, Section } from "components";
-import { graphql, Link } from "gatsby";
+import { Link } from "gatsby";
 import clsx from "clsx";
 
-export type TextSectionQueryResult = {
+export interface TextSectionData extends SectionBase {
+  type: "textWithCallout";
   mdMain: {
     html: string;
   };
@@ -13,14 +15,14 @@ export type TextSectionQueryResult = {
   alignByText?: boolean;
   cta?: string;
   ctaLink?: string;
-};
-
-interface TextSectionProps {
-  result: TextSectionQueryResult;
 }
 
-export const TextSection: React.FC<TextSectionProps> = ({
-  result: { mdMain, mdCallout, alignByText, cta, ctaLink },
+export const TextSection: React.FC<TextSectionData> = ({
+  mdMain,
+  mdCallout,
+  alignByText,
+  cta,
+  ctaLink,
 }) => {
   return (
     <Section className="text-info-section">
@@ -50,17 +52,3 @@ export const TextSection: React.FC<TextSectionProps> = ({
     </Section>
   );
 };
-
-export const query = graphql`
-  fragment AllTextSection on TextSection {
-    mdMain {
-      html
-    }
-    mdCallout {
-      html
-    }
-    alignByText
-    cta
-    ctaLink
-  }
-`;
