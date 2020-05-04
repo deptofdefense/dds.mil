@@ -1,0 +1,47 @@
+.dds-cta-btn {
+  background-color: color("accent-cool");
+  font-size: 22px;
+  border: none;
+  line-height: 26px;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  padding: units(3) 0;
+
+  @include at-media(desktop) {
+    width: auto;
+    padding: units(2) units(5);
+  }
+
+  @include at-media(desktop) {
+    width: auto;
+    padding: units(3) units(8);
+  }
+}
+
+.dds-cta-btn.width-full {
+  width: 100%;
+}
+
+.dds-connect-callout {
+  padding: units(2) units(2) units(4) units(2);
+  background-color: #ecf3fb;
+
+  h3 {
+    margin-top: units(4);
+  }
+
+  .dds-connect-social-icons {
+    font-size: 1.3rem;
+    display: flex;
+
+    a {
+      text-decoration: none;
+      color: #000;
+      margin-right: units(3);
+    }
+  }
+}

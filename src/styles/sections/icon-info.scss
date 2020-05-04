@@ -1,0 +1,128 @@
+.icon-info-section {
+  color: #fff;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  padding: 42px 0;
+  margin: -1.5rem 0;
+
+  @include at-media(desktop) {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 0 -2rem;
+  }
+
+  .icon-info-section-item {
+    width: 100%;
+    max-width: none;
+    line-height: 33px;
+    font-size: size("body", "lg");
+    margin: 1.5rem 0;
+
+    @include at-media(desktop) {
+      padding-bottom: 0;
+      margin: 0 2rem;
+    }
+
+    .icon-info-section-heading {
+      display: flex;
+      align-items: center;
+      margin-bottom: units(2);
+
+      h3 {
+        width: 100%;
+        font-size: size("body", "xl");
+        padding-left: units(2);
+        margin: 0;
+      }
+
+      @include at-media(desktop) {
+        flex-direction: column;
+        align-items: flex-start;
+
+        h3 {
+          padding-left: 0;
+          margin-top: units(2);
+        }
+      }
+    }
+
+    p {
+      font-weight: 200;
+      margin: 0;
+    }
+
+    a {
+      text-transform: uppercase;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: 600;
+      color: #fff;
+      display: block;
+      margin-top: units(3);
+    }
+
+    a:hover {
+      text-decoration: underline;
+      color: #fff;
+    }
+  }
+
+  .icon-info-section-item.icon-info-section-smaller {
+    @include at-media(desktop) {
+      font-size: 17px;
+      line-height: 25px;
+    }
+
+    .icon-info-section-heading {
+      .icon-info-section-icon {
+        @include at-media(desktop) {
+          height: 120px;
+          width: 120px;
+          padding: units(2);
+
+          svg,
+          .info-section-image-inner {
+            width: 60px;
+          }
+        }
+      }
+    }
+
+    h3 {
+      @include at-media(desktop) {
+        font-size: 28px;
+        line-height: 34px;
+      }
+    }
+  }
+}
+
+.icon-info-section-icon {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  border: 2px solid color("blue-warm-40v");
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+
+  .icon-info-section-image-inner,
+  svg {
+    width: 40px;
+    margin: auto;
+  }
+
+  @include at-media(desktop) {
+    height: 150px;
+    width: 150px;
+    padding: units(3);
+
+    svg,
+    .icon-info-section-image-inner {
+      width: 75px;
+    }
+  }
+}

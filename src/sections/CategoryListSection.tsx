@@ -1,34 +1,35 @@
 import React from "react";
-import { Link, graphql } from "gatsby";
+import { SectionBase } from "types";
+import { Section } from "components";
+import { Link } from "gatsby";
 import { FaChevronRight } from "react-icons/fa";
 
-export type CategoryListSectionQueryResult = {
-  numberHeadings?: boolean;
+export interface CategoryListSectionData extends SectionBase {
+  type: "categoryList";
+  numberTitles?: boolean;
   sectionHeading?: string;
   categories: {
-    heading: string;
+    title: string;
     details: string;
     cta: string;
     ctaLink: string;
   }[];
-};
-
-export interface Props {
-  result: CategoryListSectionQueryResult;
 }
 
-export const CategoryListSection: React.FC<Props> = ({ result }) => {
-  const { numberHeadings, sectionHeading } = result;
-
+export const CategoryListSection: React.FC<CategoryListSectionData> = ({
+  numberTitles,
+  sectionHeading,
+  categories,
+}) => {
   return (
-    <div className="dds-container">
+    <Section>
       <div className="category-list-section">
         {sectionHeading && <h2>{sectionHeading}</h2>}
-        {result.categories.map(({ heading, cta, ctaLink, details }, idx) => (
-          <div className={"category-list-section-item"} key={heading}>
+        {categories.map(({ title, cta, ctaLink, details }, idx) => (
+          <div className={"category-list-section-item"} key={title}>
             <h3>
-              {numberHeadings && <small>{idx + 1}.</small>}
-              {heading}
+              {numberTitles && <small>{idx + 1}.</small>}
+              {title}
             </h3>
             <p>{details}</p>
             {cta && (
@@ -39,19 +40,6 @@ export const CategoryListSection: React.FC<Props> = ({ result }) => {
           </div>
         ))}
       </div>
-    </div>
+    </Section>
   );
 };
-
-export const query = graphql`
-  fragment AllCategoryListSection on CategoryListSection {
-    numberHeadings
-    sectionHeading
-    categories {
-      heading
-      details
-      cta
-      ctaLink
-    }
-  }
-`;

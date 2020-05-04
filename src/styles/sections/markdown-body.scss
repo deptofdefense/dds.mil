@@ -1,0 +1,17 @@
+.markdown-body {
+  padding: 0 units(5);
+
+  @include u-font-family("sans");
+
+  @include at-media(desktop) {
+    padding: 0 units(7);
+  }
+
+  :first-child {
+    margin-top: 0;
+  }
+
+  p {
+    max-width: none;
+  }
+}

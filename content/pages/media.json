@@ -1,0 +1,53 @@
+{
+  "navigation": {
+    "navOrder": 5,
+    "title": "Media",
+    "text": "Media",
+    "link": "/media",
+    "subnav": [
+      { "link": "/media/announcements", "text": "Announcements" },
+      { "link": "/media/blog", "text": "Blog" },
+      { "link": "/media/news", "text": "DDS in the News" }
+    ]
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "heroImage": "banner-media.png",
+      "title": "Media"
+    },
+    {
+      "type": "featuredMedia",
+      "image": {
+        "image": "featured-media.png",
+        "altText": "Picture showing team members"
+      },
+      "mdMain": "**Kit zabrak darth solo. Ahsoka darth chewbacca ackbar yavin** kenobi tusken raider ackbar jade. Antilles fett palpatine solo skywalker bothan kamino.\n\nKit zabrak darth solo. Ahsoka darth chewbacc ackbar yavin kenobi tusken raider ackbar jade."
+    },
+    {
+      "type": "recentBlogPosts"
+    },
+    {
+      "type": "recentAnnouncements"
+    },
+    {
+      "type": "callToAction",
+      "cta": "APPLY TO DDS TODAY",
+      "ctaLink": "/join-us",
+      "mdMain": "**We're focused on hiring the best to serve the best.**\n\nInterested in proving hoodies, hackers, and nerds have an important role to play in furthering national defense missions?",
+      "accent": true
+    }
+  ],
+  "sidenav": {
+    "includeSidenav": true,
+    "wrapSectionFirst": 2,
+    "wrapSectionLast": 4,
+    "menu": [
+      { "link": "/media", "text": "Overview" },
+      { "link": "/media/announcements", "text": "Announcements" },
+      { "link": "/media/blog", "text": "Blog" },
+      { "link": "/media/news", "text": "DDS in the News" }
+    ],
+    "includeSocial": true
+  }
+}

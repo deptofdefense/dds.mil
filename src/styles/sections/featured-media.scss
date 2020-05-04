@@ -1,0 +1,28 @@
+.featured-media-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  .gatsby-image-wrapper {
+    flex: 1 1 40%;
+  }
+
+  .featured-media-description {
+    width: 100%;
+    line-height: 26px;
+    font-size: size("body", "md");
+    margin-top: units(2);
+
+    @include at-media(tablet) {
+      flex: 1 1 60%;
+      margin-top: 0;
+      padding-left: units(4);
+    }
+  }
+}
+
+.featured-media-section.image-only {
+  .gatsby-image-wrapper {
+    height: 600px;
+  }
+}

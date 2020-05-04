@@ -1,10 +1,13 @@
 import React from "react";
-import { Link, graphql } from "gatsby";
+import { Link } from "gatsby";
+import { SectionBase } from "types";
+import { Section } from "components";
 import Img from "gatsby-image/withIEPolyfill";
 import clsx from "clsx";
 import { FaChevronRight } from "react-icons/fa";
 
-export type IconSectionQueryResult = {
+export interface IconSectionData extends SectionBase {
+  type: "iconSection";
   icons: {
     icon: {
       childInlineSvg?: {
@@ -15,44 +18,40 @@ export type IconSectionQueryResult = {
         fluid: any;
       };
     };
-    heading: string;
+    title: string;
     cta: string;
     ctaLink: string;
     details: string;
   }[];
-};
-
-export interface Props {
-  result: IconSectionQueryResult;
 }
 
-export const IconSection: React.FC<Props> = ({ result }) => {
+export const IconSection: React.FC<IconSectionData> = ({ icons }) => {
   return (
-    <div className="dds-container accent-blue shadow">
-      <div className="info-section">
-        {result.icons.map(({ icon, heading, cta, ctaLink, details }) => (
+    <Section accentBlue shadow>
+      <div className="icon-info-section">
+        {icons.map(({ icon, title, cta, ctaLink, details }) => (
           <div
-            className={clsx("info-section-item", {
-              "info-section-smaller": result.icons.length > 3,
+            className={clsx("icon-info-section-item", {
+              "icon-info-section-smaller": icons.length > 3,
             })}
-            key={heading}
+            key={title}
           >
-            <div className="info-section-heading">
+            <div className="icon-info-section-heading">
               {icon.childInlineSvg ? (
                 <div
-                  className="info-section-icon"
+                  className="icon-info-section-icon"
                   dangerouslySetInnerHTML={{
                     __html: icon.childInlineSvg.rawSvg,
                   }}
                 />
               ) : (
-                <div className="info-section-icon">
-                  <div className="info-section-image-inner">
-                    <Img fluid={icon.childImageSharp?.fluid} />
+                <div className="icon-info-section-icon">
+                  <div className="icon-info-section-image-inner">
+                    <Img fluid={icon.childImageSharp?.fluid ?? null} />
                   </div>
                 </div>
               )}
-              <h3>{heading}</h3>
+              <h3>{title}</h3>
             </div>
             <p>{details}</p>
             {cta && (
@@ -63,28 +62,6 @@ export const IconSection: React.FC<Props> = ({ result }) => {
           </div>
         ))}
       </div>
-    </div>
+    </Section>
   );
 };
-
-export const query = graphql`
-  fragment AllIconSection on IconSection {
-    title
-    icons {
-      heading
-      cta
-      ctaLink
-      details
-      icon {
-        childInlineSvg {
-          rawSvg
-        }
-        childImageSharp {
-          fluid(maxHeight: 70, maxWidth: 100, fit: INSIDE) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  }
-`;

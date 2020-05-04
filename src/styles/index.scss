@@ -23,36 +23,19 @@ $theme-font-weight-semibold: 500;
 $theme-font-weight-light: 300;
 $theme-font-type-sans: "public-sans";
 $content-max-width: 1400px;
+$desktop-pad-section-y: 64px;
 
 @import "uswds";
-@import "./header.scss";
-@import "./hero.scss";
-@import "./text-info.scss";
-@import "./icon-info.scss";
-@import "./cta-section.scss";
-@import "./img-section.scss";
 @import "./layout.scss";
-@import "./components.scss";
-@import "./category-list-section.scss";
-@import "./cms.scss";
+@import "./header.scss";
+@import "./sections";
+@import "./components";
 
 html,
 body {
   min-height: 100%;
   width: 100%;
   background-color: color($theme-color-base-lightest);
-}
-
-.dds-container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-.dds-container.accent-blue {
-  background-color: color("blue-warm-60");
-}
-.dds-container.shadow {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 @media screen and (min-width: 640px) {

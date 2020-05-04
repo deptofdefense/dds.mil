@@ -1,0 +1,33 @@
+{
+  "navigation": {
+    "navOrder": 4,
+    "title": "Team",
+    "text": "Our Team",
+    "link": "/team"
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "title": "The unique people behind the magic.",
+      "heroImage": "about_hero.png"
+    },
+    {
+      "type": "textWithCallout",
+      "mdMain": "**Our Team**\n\nOur team includes a wide range of unique talent, including world-class software developers, engineers, designers, product managers, and digital experts from both the private sector and within government. In addition to bringing in private sector and government talent, DDS partners with military services by detailing service members to DDS teams to tackle some of the DoD’s highest priority challenges. \n\nWe currently have approximately 82 employees at DDS — a mix of civilian, military, and contractor — spread out across our permanent office spaces.",
+      "mdCallout": "**Team members manage technical projects or product releases, develop code, and rewire outdated technology approaches.**"
+    },
+    {
+      "type": "featuredMedia",
+      "image": {
+        "image": "ourteam-feature-image.jpg",
+        "altText": "Picture showing team members"
+      }
+    },
+    {
+      "type": "callToAction",
+      "cta": "APPLY TO DDS TODAY",
+      "ctaLink": "/join-us",
+      "mdMain": "**We're focused on hiring the best to serve the best.**\n\nInterested in proving hoodies, hackers, and nerds have an important role to play in furthering national defense missions?"
+    }
+  ]
+}

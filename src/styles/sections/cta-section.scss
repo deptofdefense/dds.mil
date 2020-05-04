@@ -1,0 +1,71 @@
+.cta-section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 64px;
+
+  @include at-media(tablet) {
+    flex-direction: row;
+  }
+
+  a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+
+    @include at-media(tablet) {
+      width: 40%;
+    }
+
+    button {
+      background-color: color("accent-cool");
+      font-size: 22px;
+      border: none;
+      line-height: 26px;
+      font-weight: bold;
+      color: #fff;
+      border-radius: 5px;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+      padding: units(3) 0;
+
+      @include at-media(desktop) {
+        width: auto;
+        padding: units(2) units(5);
+      }
+
+      @include at-media(desktop) {
+        width: auto;
+        padding: units(3) units(8);
+      }
+    }
+
+    button:hover {
+      background-color: color("accent-cool-dark");
+    }
+
+    button:active {
+      background-color: color("accent-cool-dark");
+    }
+  }
+
+  .cta-details {
+    width: 100%;
+    color: color("base-darkest");
+    line-height: 33px;
+    font-size: 22px;
+    margin-bottom: units(4);
+
+    @include at-media(tablet) {
+      width: 60%;
+      margin-bottom: 0;
+      padding-right: units(5);
+    }
+  }
+}
+
+.cta-section.has-accent {
+  padding-top: 64px;
+}

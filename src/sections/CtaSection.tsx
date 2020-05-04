@@ -1,30 +1,37 @@
 import React from "react";
-import { CtaButton } from "components";
-import { Link, graphql } from "gatsby";
+import clsx from "clsx";
+import { SectionBase } from "types";
+import { CtaButton, Section } from "components";
+import { Link } from "gatsby";
 
-export type CtaSectionQueryResult = {
+export interface CtaSectionData extends SectionBase {
+  type: "callToAction";
   ctaLink: string;
   cta: string;
-  mdDetails?: {
+  mdMain?: {
     html: string;
   };
-};
-
-interface Props {
-  result: CtaSectionQueryResult;
+  accent?: boolean;
 }
 
-export const CtaSection: React.FC<Props> = ({
-  result: { ctaLink, cta, mdDetails },
+export const CtaSection: React.FC<CtaSectionData> = ({
+  accent,
+  ctaLink,
+  cta,
+  mdMain,
 }) => {
   return (
-    <div className="dds-container">
-      <div className="cta-section">
-        {mdDetails && (
+    <Section accentBase={accent}>
+      <div
+        className={clsx("cta-section", {
+          "has-accent": accent,
+        })}
+      >
+        {mdMain && (
           <div
             className="cta-details"
             dangerouslySetInnerHTML={{
-              __html: mdDetails.html,
+              __html: mdMain.html,
             }}
           />
         )}
@@ -32,16 +39,6 @@ export const CtaSection: React.FC<Props> = ({
           <CtaButton>{cta}</CtaButton>
         </Link>
       </div>
-    </div>
+    </Section>
   );
 };
-
-export const query = graphql`
-  fragment AllCtaSection on CtaSection {
-    cta
-    ctaLink
-    mdDetails {
-      html
-    }
-  }
-`;
