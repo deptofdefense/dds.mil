@@ -10,7 +10,7 @@
       },
       {
         "text": "Product Developments",
-        "link": "/work/product-developments"
+        "link": "/work/product-development"
       },
       {
         "text": "Ongoing Technical Advice",
@@ -18,6 +18,14 @@
       }
     ]
   },
+  "sections": [
+    {
+      "type": "heroSection",
+      "title": "Doing work that matters by focusing our time and energy on high-priority undertakings.",
+      "cta": "",
+      "ctaLink"
+    }
+  ],
   "heroSection": {
     "img": "header-ourwork.png",
     "title": "Doing work that matters by focusing our time and energy on high-priority undertakings.",
@@ -45,7 +53,7 @@
         "heading": "PRODUCT DEVELOPMENT",
         "details": "Undertakings where DDS develops and delivers technology to solve a problem in the DoD. Teams are staffed according to technical needs and the project ends with the successful transition of technology back to the host organization.",
         "cta": "LEARN MORE",
-        "ctaLink": "/work/product-developments",
+        "ctaLink": "/work/product-development",
         "title": "PRODUCT DEVELOPMENTS"
       },
       {

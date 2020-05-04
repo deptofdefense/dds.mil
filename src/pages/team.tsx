@@ -5,17 +5,14 @@ import { Helmet } from "react-helmet";
 import { HeroSection, HeroSectionQueryResult } from "sections/HeroSection";
 import { TextSection, TextSectionQueryResult } from "sections/TextSection";
 import { CtaSection, CtaSectionQueryResult } from "sections/CtaSection";
-import {
-  FeatureImgSection,
-  FeatureImgSectionQueryResult,
-} from "sections/FeatureImgSection";
+import { FeaturedMediaSection, FeaturedMediaSectionQueryResult } from 'sections/FeaturedMediaSection';
 
 interface Props {
   data: {
     pagesJson: {
       heroSection: HeroSectionQueryResult;
       textSection: TextSectionQueryResult;
-      featureImgSection: FeatureImgSectionQueryResult;
+      featuredMediaSection: FeaturedMediaSectionQueryResult;
       ctaSection: CtaSectionQueryResult;
     };
   };
@@ -23,7 +20,7 @@ interface Props {
 
 const TeamPage: React.FC<Props> = ({
   data: {
-    pagesJson: { heroSection, textSection, featureImgSection, ctaSection },
+    pagesJson: { heroSection, textSection, featuredMediaSection, ctaSection },
   },
 }) => {
   return (
@@ -33,7 +30,7 @@ const TeamPage: React.FC<Props> = ({
       </Helmet>
       <HeroSection result={heroSection} />
       <TextSection result={textSection} />
-      <FeatureImgSection result={featureImgSection} />
+      <FeaturedMediaSection result={featuredMediaSection} />
       <CtaSection result={ctaSection} />
     </Layout>
   );
@@ -50,8 +47,8 @@ export const pageQuery = graphql`
       textSection {
         ...AllTextSection
       }
-      featureImgSection {
-        ...AllFeatureImgSection
+      featuredMediaSection {
+        ...AllFeaturedMediaSection
       }
       ctaSection {
         ...AllCtaSection

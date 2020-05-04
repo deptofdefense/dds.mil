@@ -6,6 +6,96 @@
 
   .dds-layout-content {
     flex: 1 0 auto;
-    margin-bottom: units(5);
+
+    .dds-sidebar-layout {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      flex-wrap: nowrap;
+      margin-left: auto;
+      margin-right: auto;
+      padding: $desktop-pad-section-y units(3) 0 units(3);
+      max-width: $content-max-width;
+
+      @include at-media(tablet) {
+        padding: $desktop-pad-section-y units(5) 0 units(5);
+      }
+      @include at-media(desktop) {
+        padding: $desktop-pad-section-y units(7) 0 units(7);
+      }
+
+      .dds-sidebar {
+        flex-shrink: 0;
+        display: none;
+        width: 250px;
+
+        @media screen and (min-width: 1200px) {
+          display: block;
+        }
+      }
+
+      .dds-sidebar-content {
+        padding: 0 0;
+
+        :first-child {
+          margin-top: 0;
+        }
+
+        @media screen and (min-width: 1200px) {
+          padding: 0 units(5);
+        }
+
+        .dds-section-container > .dds-section-inner {
+          padding: 0;
+        }
+      }
+    }
   }
+}
+
+.markdown-body {
+  :first-child {
+    margin-top: 0;
+  }
+
+  padding: 0 units(5);
+
+  @include at-media(desktop) {
+    padding: 0 units(7);
+  }
+}
+
+.dds-section-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: units(5);
+
+  @include at-media(desktop) {
+    margin-top: 64px;
+  }
+
+  .dds-section-inner {
+    width: 100%;
+    max-width: $content-max-width;
+    padding: 0 units(3);
+
+    @include at-media(tablet) {
+      padding: 0 units(5);
+    }
+
+    @include at-media(desktop) {
+      padding: 0 units(7);
+    }
+  }
+}
+
+.dds-section-container.accent-blue {
+  background-color: color("blue-warm-60");
+}
+.dds-section-container.accent-base {
+  background-color: color("base-lighter");
+}
+.dds-section-container.shadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }

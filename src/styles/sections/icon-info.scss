@@ -1,35 +1,32 @@
-.info-section {
+.icon-info-section {
   color: #fff;
-  padding: units(7) units(3);
   display: flex;
   align-items: flex-start;
   flex-direction: column;
   width: 100%;
-  max-width: $content-max-width;
-
-  @include at-media(tablet) {
-    padding: units(7) units(5);
-  }
+  padding: 42px 0;
+  margin: -1.5rem 0;
 
   @include at-media(desktop) {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
+    margin: 0 -2rem;
   }
 
-  .info-section-item {
+  .icon-info-section-item {
     width: 100%;
     max-width: none;
-    padding: 0 units(2);
     line-height: 33px;
     font-size: size("body", "lg");
+    margin: 1.5rem 0;
 
     @include at-media(desktop) {
       padding-bottom: 0;
-      max-width: 400px;
+      margin: 0 2rem;
     }
 
-    .info-section-heading {
+    .icon-info-section-heading {
       display: flex;
       align-items: center;
       margin-bottom: units(2);
@@ -73,22 +70,14 @@
     }
   }
 
-  .info-section-item + .info-section-item {
-    padding-top: units(7);
-
-    @include at-media(desktop) {
-      padding-top: 0;
-    }
-  }
-
-  .info-section-item.info-section-smaller {
+  .icon-info-section-item.icon-info-section-smaller {
     @include at-media(desktop) {
       font-size: 17px;
       line-height: 25px;
     }
 
-    .info-section-heading {
-      .info-section-icon {
+    .icon-info-section-heading {
+      .icon-info-section-icon {
         @include at-media(desktop) {
           height: 120px;
           width: 120px;
@@ -111,7 +100,7 @@
   }
 }
 
-.info-section-icon {
+.icon-info-section-icon {
   display: flex;
   flex-shrink: 0;
   align-items: center;
@@ -120,7 +109,7 @@
   height: 80px;
   width: 80px;
 
-  .info-section-image-inner,
+  .icon-info-section-image-inner,
   svg {
     width: 40px;
     margin: auto;
@@ -132,7 +121,7 @@
     padding: units(3);
 
     svg,
-    .info-section-image-inner {
+    .icon-info-section-image-inner {
       width: 75px;
     }
   }

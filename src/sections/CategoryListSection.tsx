@@ -1,4 +1,5 @@
 import React from "react";
+import { Section } from "components";
 import { Link, graphql } from "gatsby";
 import { FaChevronRight } from "react-icons/fa";
 
@@ -21,7 +22,7 @@ export const CategoryListSection: React.FC<Props> = ({ result }) => {
   const { numberHeadings, sectionHeading } = result;
 
   return (
-    <div className="dds-container">
+    <Section>
       <div className="category-list-section">
         {sectionHeading && <h2>{sectionHeading}</h2>}
         {result.categories.map(({ heading, cta, ctaLink, details }, idx) => (
@@ -39,7 +40,7 @@ export const CategoryListSection: React.FC<Props> = ({ result }) => {
           </div>
         ))}
       </div>
-    </div>
+    </Section>
   );
 };
 

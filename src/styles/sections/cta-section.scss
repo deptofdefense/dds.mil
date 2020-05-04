@@ -1,17 +1,11 @@
 .cta-section {
-  padding: units(6) units(3);
   display: flex;
   align-items: center;
   flex-direction: column;
-  max-width: $content-max-width;
+  padding-bottom: 64px;
 
   @include at-media(tablet) {
     flex-direction: row;
-    padding: units(7) units(5);
-  }
-
-  @include at-media(desktop) {
-    padding: 96px units(7);
   }
 
   a {
@@ -70,4 +64,8 @@
       padding-right: units(5);
     }
   }
+}
+
+.cta-section.has-accent {
+  padding-top: 64px;
 }

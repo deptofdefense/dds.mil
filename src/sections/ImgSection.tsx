@@ -17,12 +17,10 @@ interface Props {
 
 export const ImgSection: React.FC<Props> = ({ result }) => {
   return (
-    <div className="dds-container">
-      <div className="img-section">
-        {result.map(({ image, altText }, idx) => (
-          <Img fluid={image.childImageSharp.fluid} key={idx} alt={altText} />
-        ))}
-      </div>
+    <div className="img-section">
+      {result.map(({ image, altText }, idx) => (
+        <Img fluid={image.childImageSharp.fluid} key={idx} alt={altText} />
+      ))}
     </div>
   );
 };

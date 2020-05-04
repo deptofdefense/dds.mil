@@ -1,5 +1,6 @@
 import React from "react";
-import { CtaButton } from "components";
+import clsx from "clsx";
+import { CtaButton, Section } from "components";
 import { Link, graphql } from "gatsby";
 
 export type CtaSectionQueryResult = {
@@ -11,15 +12,21 @@ export type CtaSectionQueryResult = {
 };
 
 interface Props {
+  accent?: boolean;
   result: CtaSectionQueryResult;
 }
 
 export const CtaSection: React.FC<Props> = ({
+  accent,
   result: { ctaLink, cta, mdDetails },
 }) => {
   return (
-    <div className="dds-container">
-      <div className="cta-section">
+    <Section accentBase={accent}>
+      <div
+        className={clsx("cta-section", {
+          "has-accent": accent,
+        })}
+      >
         {mdDetails && (
           <div
             className="cta-details"
@@ -32,7 +39,7 @@ export const CtaSection: React.FC<Props> = ({
           <CtaButton>{cta}</CtaButton>
         </Link>
       </div>
-    </div>
+    </Section>
   );
 };
 

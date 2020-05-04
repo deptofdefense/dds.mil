@@ -1,0 +1,19 @@
+.img-section {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+
+  @include at-media(desktop) {
+    height: 230px;
+    flex-wrap: nowrap;
+  }
+
+  .gatsby-image-wrapper {
+    flex: 50% 1 1;
+
+    @include at-media(tablet) {
+      flex: 25% 1 1;
+    }
+  }
+}

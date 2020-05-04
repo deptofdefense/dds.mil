@@ -16,3 +16,10 @@ export const Layout: React.FC = ({ children }) => {
     </>
   );
 };
+
+interface Props {
+  menu: {
+    text: string;
+    link: string;
+  }[];
+}

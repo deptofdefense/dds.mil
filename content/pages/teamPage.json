@@ -16,8 +16,8 @@
     "cta": "",
     "ctaLink": ""
   },
-  "featureImgSection": {
-    "image": "ourteam-feature-image.jpg"
+  "featuredMediaSection": {
+    "img": "ourteam-feature-image.jpg"
   },
   "ctaSection": {
     "mdDetails": "**We're focused on hiring the best to serve the best.**\n\nInterested in proving hoodies, hackers, and nerds have an important role to play in furthering national defense missions?",

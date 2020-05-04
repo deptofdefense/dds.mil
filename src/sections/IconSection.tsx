@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, graphql } from "gatsby";
+import { Section } from "components";
 import Img from "gatsby-image/withIEPolyfill";
 import clsx from "clsx";
 import { FaChevronRight } from "react-icons/fa";
@@ -28,27 +29,27 @@ export interface Props {
 
 export const IconSection: React.FC<Props> = ({ result }) => {
   return (
-    <div className="dds-container accent-blue shadow">
-      <div className="info-section">
+    <Section accentBlue shadow>
+      <div className="icon-info-section">
         {result.icons.map(({ icon, heading, cta, ctaLink, details }) => (
           <div
-            className={clsx("info-section-item", {
-              "info-section-smaller": result.icons.length > 3,
+            className={clsx("icon-info-section-item", {
+              "icon-info-section-smaller": result.icons.length > 3,
             })}
             key={heading}
           >
-            <div className="info-section-heading">
+            <div className="icon-info-section-heading">
               {icon.childInlineSvg ? (
                 <div
-                  className="info-section-icon"
+                  className="icon-info-section-icon"
                   dangerouslySetInnerHTML={{
                     __html: icon.childInlineSvg.rawSvg,
                   }}
                 />
               ) : (
-                <div className="info-section-icon">
-                  <div className="info-section-image-inner">
-                    <Img fluid={icon.childImageSharp?.fluid} />
+                <div className="icon-info-section-icon">
+                  <div className="icon-info-section-image-inner">
+                    <Img fluid={icon.childImageSharp?.fluid ?? null} />
                   </div>
                 </div>
               )}
@@ -63,7 +64,7 @@ export const IconSection: React.FC<Props> = ({ result }) => {
           </div>
         ))}
       </div>
-    </div>
+    </Section>
   );
 };
 

@@ -1,21 +1,12 @@
-.text-info {
+.text-info-section {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-wrap: wrap;
-  padding: units(5) units(3);
-  max-width: $content-max-width;
+  padding-top: units(5);
 
-  @include at-media(tablet) {
-    padding: units(7) units(5);
-  }
-
-  @include at-media(desktop) {
-    padding: 96px units(7);
-  }
-
-  .text-info-primary {
+  .text-info-section-primary {
     width: 100%;
     margin-bottom: units(4);
 
@@ -42,7 +33,7 @@
     }
   }
 
-  .text-info-callout {
+  .text-info-section-callout {
     width: 100%;
     margin-top: units(5);
     position: relative;
@@ -62,7 +53,7 @@
       width: 100%;
     }
 
-    .text-info-callout-content {
+    .text-info-section-callout-content {
       font-size: size("body", "lg");
       line-height: 33px;
       width: 100%;
@@ -88,7 +79,7 @@
     }
   }
 
-  .text-info-callout::before {
+  .text-info-section-callout::before {
     content: "";
     position: absolute;
     left: 0;
@@ -102,7 +93,7 @@
     }
   }
 
-  .text-info-callout.force-down::before {
+  .text-info-section-callout.force-down::before {
     @include at-media(desktop) {
       content: "";
       width: 100%;

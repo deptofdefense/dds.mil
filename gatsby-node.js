@@ -1,3 +1,5 @@
+const path = require("path");
+
 exports.createSchemaCustomization = ({ actions, schema }) => {
   const { createTypes } = actions;
   const typeDefs = [
@@ -21,17 +23,35 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
         altText: String
       }
       type CtaSection {
+        cta: String
+        ctaLink: String
         mdDetails: MarkdownRemark @link(by: "rawMarkdownBody")
       }
       type TextSection {
         mdMain: MarkdownRemark @link(by: "rawMarkdownBody")
         mdCallout: MarkdownRemark @link(by: "rawMarkdownBody")
       }
+      type NavItem {
+        link: String
+        text: String
+      }
+      type NavigationSection {
+        primaryLink: String
+        primaryText: String
+        sidenav: [NavItem]
+      }
       type CategoryListSection {
         heading: String
         details: String
         cta: String
         ctaLink: String
+      }
+      type FeaturedMediaSection {
+        img: File @link(by: "relativePath")
+        mdDescription: MarkdownRemark @link(by: "rawMarkdownBody")
+      }
+      type MdBodySection {
+        mdMainBody: MarkdownRemark @link(by: "rawMarkdownBody")
       }
       type PagesJson implements Node {
         heroSection: HeroSection
@@ -41,6 +61,16 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
         ctaSection: CtaSection
         featureImgSection: FeatureImgSection
         categoryListSection: CategoryListSection
+        navigation: NavigationSection
+        markdownBody: MdBodySection
+        featuredMediaSection: FeaturedMediaSection
+      }
+
+      type Frontmatter {
+        image: File @link(by: "relativePath")
+      }
+      type MarkdownRemark implements Node {
+        frontmatter: Frontmatter!
       }
     `,
   ];
@@ -123,5 +153,39 @@ exports.onCreateNode = async ({
     };
     createNode(svgNode);
     createParentChildLink({ parent: node, child: svgNode });
+  }
+};
+
+exports.createPages = async ({ graphql, actions: { createPage } }) => {
+  const postsPerPage = 8;
+  const postQueryResult = await graphql(`
+    {
+      allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+        nodes {
+          fields {
+            slug
+          }
+        }
+      }
+    }
+  `);
+  //
+  // create pages of posts
+  //
+  const postListPage = path.resolve("src/templates/blog-post-list.tsx");
+  const posts = postQueryResult.data.allMarkdownRemark.nodes;
+  const numPages = Math.ceil(posts.length / postsPerPage);
+
+  for (let i = 0; i < numPages; i++) {
+    createPage({
+      path: i === 0 ? `/media/blog` : `/media/blog/${i + 1}`,
+      component: postListPage,
+      context: {
+        limit: postsPerPage,
+        skip: i * postsPerPage,
+        numPages,
+        currentPage: i + 1,
+      },
+    });
   }
 };
