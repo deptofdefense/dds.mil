@@ -7,9 +7,10 @@ interface Props {
     value: string;
   }[];
   name: string;
-  includeOther?: boolean;
   required?: boolean;
   value?: string;
+  otherValue?: string;
+  onOtherChange?: React.ChangeEventHandler<HTMLInputElement>;
   onChange?: React.ChangeEventHandler<HTMLInputElement>;
 }
 
@@ -18,20 +19,21 @@ export const RadioButtonGroup: React.FC<Props> = ({
   value,
   name,
   onChange,
-  includeOther,
+  otherValue,
+  onOtherChange,
 }) => {
-  const [otherValue, setOtherValue] = useState("");
-
   return (
     <>
       {options.map((opt) => (
         <div className="usa-radio" key={opt.value}>
           <input
             className="usa-radio__input"
-            id={opt.value}
             value={opt.value}
             name={name}
+            onChange={onChange}
+            checked={opt.value === value}
             required
+            id={opt.value}
             type="radio"
           />
           <label className="usa-radio__label" htmlFor={opt.value}>
@@ -39,22 +41,21 @@ export const RadioButtonGroup: React.FC<Props> = ({
           </label>
         </div>
       ))}
-      {includeOther && (
+      {onOtherChange && (
         <div className="usa-radio">
           <input
             className="usa-radio__input"
             id="other"
             name={name}
-            value={otherValue}
+            value="other"
+            onChange={onChange}
+            checked={value === "other"}
             required
             type="radio"
           />
           <label className="usa-radio__label" htmlFor="other">
             Other
-            <TextInput
-              value={otherValue}
-              onChange={(e) => setOtherValue(e.currentTarget.value)}
-            />
+            <TextInput value={otherValue} onChange={onOtherChange} />
           </label>
         </div>
       )}

@@ -109,10 +109,10 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
 
-    .dds-cta-btn {
-      margin-left: auto;
-      margin-right: auto;
+    .dds-cta-btn.submitting {
+      cursor: progress;
     }
   }
 }

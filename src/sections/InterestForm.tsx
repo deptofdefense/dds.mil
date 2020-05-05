@@ -1,33 +1,97 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import clsx from "clsx";
+import { navigate } from "gatsby-link";
 import { SectionBase } from "types";
 import { TextInput, RadioButtonGroup, CtaButton } from "components";
-import { FaCheck, FaPlus } from "react-icons/fa";
+import { FaCheck, FaPlus, FaSpinner } from "react-icons/fa";
 
 export interface InterestFormData extends SectionBase {
   type: "interestForm";
 }
 
-export const InterestForm: React.FC<InterestFormData> = () => {
-  const [resumeSelected, setResumeSelected] = useState("");
-  const [resumeError, setResumeError] = useState(false);
+const encode = (data: Record<string, any>) => {
+  const formData = new FormData();
 
-  const onResumeUpload: React.ChangeEventHandler<HTMLInputElement> = (e) => {
-    const paths = e.currentTarget.value.split("\\");
-    const fileName = paths[paths.length - 1];
-    let trimmed = fileName.slice(0, 30);
-    if (trimmed.length < fileName.length) {
-      trimmed = `${trimmed}...`;
+  Object.entries(data).forEach(([key, value]) => {
+    if (typeof value === "object") {
+      formData.append(key, value, value.name ?? "");
+    } else {
+      formData.append(key, value);
     }
-    setResumeSelected(trimmed);
+  });
+
+  return formData;
+};
+
+interface FormState {
+  name: string;
+  expertise: string;
+  resume: null | File;
+  linkedIn: string;
+  website: string;
+}
+
+export const InterestForm: React.FC<InterestFormData> = () => {
+  const [submitting, setSubmitting] = useState(false);
+  const [errors, setErrors] = useState<Record<string, string>>({});
+  const [otherExpertise, setOtherExpertise] = useState("");
+  const [formData, setFormData] = useState<FormState>({
+    name: "",
+    expertise: "",
+    resume: null,
+    linkedIn: "",
+    website: "",
+  });
+
+  const onChange: React.ChangeEventHandler<HTMLInputElement> = (e) => {
+    e.persist();
+    setFormData((formData) => ({
+      ...formData,
+      [e.target.name]: e.target.value,
+    }));
   };
 
-  const onSubmit: React.FormEventHandler = (e) => {
-    console.log(resumeSelected);
-    if (resumeSelected === "") {
-      e.preventDefault();
-      setResumeError(true);
+  const onAttatchment: React.ChangeEventHandler<HTMLInputElement> = (e) => {
+    e.persist();
+    const file = e.target.files ? e.target.files[0] : null;
+    setFormData((formData) => ({
+      ...formData,
+      [e.target.name]: file,
+    }));
+  };
+
+  const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.persist();
+    e.preventDefault();
+    setSubmitting(true);
+    setErrors({});
+    if (!formData.resume) {
+      setErrors((errors) => ({ ...errors, resume: "Resume is required" }));
+      return;
     }
+    try {
+      fetch("/join-us", {
+        method: "POST",
+        body: encode({
+          "form-name": "application",
+          ...formData,
+        }),
+      });
+      setSubmitting(false);
+      navigate("/join-us/success");
+    } catch (e) {
+      setErrors({
+        global: e.message,
+      });
+    }
+    setSubmitting(false);
+  };
+
+  const onOtherExpertiseChange: React.ChangeEventHandler<HTMLInputElement> = (
+    e
+  ) => {
+    e.persist();
+    setOtherExpertise(e.target.value);
   };
 
   return (
@@ -48,15 +112,27 @@ export const InterestForm: React.FC<InterestFormData> = () => {
           </label>
         </div>
         <h3>Interested in joining DDS? Apply now.</h3>
-        <TextInput required label="First & Last Name:" id="name" name="name" />
+        <TextInput
+          required
+          label="First & Last Name:"
+          id="name"
+          name="name"
+          onChange={onChange}
+          value={formData.name}
+        />
         <fieldset className="usa-fieldset">
           <div className="dds-radio-buttons-wrapper">
             <div className="dds-label-wrapper">
               <legend>Area of expertise:</legend>
             </div>
+            <label className="display-none" htmlFor="expertise">
+              Expertise
+            </label>
             <div className="dds-radio-button-section">
               <RadioButtonGroup
                 name="expertise"
+                onChange={onChange}
+                value={formData.expertise}
                 required
                 options={[
                   { value: "engineering", label: "Engineering" },
@@ -72,8 +148,11 @@ export const InterestForm: React.FC<InterestFormData> = () => {
             <div className="dds-radio-button-section">
               <RadioButtonGroup
                 name="expertise"
+                onChange={onChange}
+                value={formData.expertise}
                 required
-                includeOther
+                onOtherChange={onOtherExpertiseChange}
+                otherValue={otherExpertise}
                 options={[
                   { value: "operations", label: "Operations" },
                   { value: "administrative", label: "Administrative" },
@@ -88,13 +167,14 @@ export const InterestForm: React.FC<InterestFormData> = () => {
           </div>
           <label
             className={clsx("dds-resume-label", {
-              "dds-resume-selected": Boolean(resumeSelected),
+              "dds-resume-selected": Boolean(formData.resume?.name),
             })}
             htmlFor="resume"
           >
-            {resumeSelected ? (
+            {formData.resume?.name ? (
               <>
-                <FaCheck className="margin-right-2" /> {resumeSelected}
+                <FaCheck className="margin-right-2" />{" "}
+                {formData.resume.name.slice(0, 45)}
               </>
             ) : (
               <>
@@ -102,14 +182,15 @@ export const InterestForm: React.FC<InterestFormData> = () => {
               </>
             )}
             <input
-              onChange={onResumeUpload}
+              onChange={onAttatchment}
               id="resume"
               name="resume"
               type="file"
+              accept=".pdf,.doc,.docx"
             />
           </label>
-          {resumeError && (
-            <div className="text-red margin-left-2">Resume is required.</div>
+          {errors.resume && (
+            <div className="text-red margin-left-2">{errors.resume}</div>
           )}
         </div>
         <TextInput
@@ -117,15 +198,21 @@ export const InterestForm: React.FC<InterestFormData> = () => {
           labelSecondary="(optional)"
           name="linkedIn"
           id="linkedIn"
+          onChange={onChange}
+          value={formData.linkedIn}
         />
         <TextInput
           label="Personal website:"
           labelSecondary="(optional)"
           name="website"
           id="website"
+          onChange={onChange}
+          value={formData.website}
         />
         <div className="dds-interest-form-submit-wrapper">
-          <CtaButton type="submit">Send Application</CtaButton>
+          <CtaButton type="submit" className={clsx({ submitting })}>
+            Send Application
+          </CtaButton>
         </div>
       </form>
     </div>
