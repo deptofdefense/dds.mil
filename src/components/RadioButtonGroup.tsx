@@ -23,7 +23,7 @@ export const RadioButtonGroup: React.FC<Props> = ({
   const [otherValue, setOtherValue] = useState("");
 
   return (
-    <fieldset className="usa-fieldset">
+    <>
       {options.map((opt) => (
         <div className="usa-radio" key={opt.value}>
           <input
@@ -58,6 +58,6 @@ export const RadioButtonGroup: React.FC<Props> = ({
           </label>
         </div>
       )}
-    </fieldset>
+    </>
   );
 };

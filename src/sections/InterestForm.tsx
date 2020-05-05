@@ -49,33 +49,39 @@ export const InterestForm: React.FC<InterestFormData> = () => {
         </div>
         <h3>Interested in joining DDS? Apply now.</h3>
         <TextInput required label="First & Last Name:" id="name" name="name" />
-        <div className="dds-radio-buttons-wrapper">
-          <div className="dds-label-wrapper">
-            <label>Area of expertise:</label>
+        <fieldset className="usa-fieldset">
+          <div className="dds-radio-buttons-wrapper">
+            <div className="dds-label-wrapper">
+              <legend>Area of expertise:</legend>
+            </div>
+            <div className="dds-radio-button-section">
+              <RadioButtonGroup
+                name="expertise"
+                required
+                options={[
+                  { value: "engineering", label: "Engineering" },
+                  {
+                    value: "productManagement",
+                    label: "Product Management and something long",
+                  },
+                  { value: "designer", label: "UX/Visual Designer" },
+                  { value: "dataScience", label: "Data Science" },
+                ]}
+              />
+            </div>
+            <div className="dds-radio-button-section">
+              <RadioButtonGroup
+                name="expertise"
+                required
+                includeOther
+                options={[
+                  { value: "operations", label: "Operations" },
+                  { value: "administrative", label: "Administrative" },
+                ]}
+              />
+            </div>
           </div>
-          <RadioButtonGroup
-            name="expertise"
-            required
-            options={[
-              { value: "engineering", label: "Engineering" },
-              {
-                value: "productManagement",
-                label: "Product Management and something long",
-              },
-              { value: "designer", label: "UX/Visual Designer" },
-              { value: "dataScience", label: "Data Science" },
-            ]}
-          />
-          <RadioButtonGroup
-            name="expertise"
-            required
-            includeOther
-            options={[
-              { value: "operations", label: "Operations" },
-              { value: "administrative", label: "Administrative" },
-            ]}
-          />
-        </div>
+        </fieldset>
         <div className="dds-resume-upload">
           <div className="dds-label-wrapper">
             <label htmlFor="resume">Resume:</label>

@@ -31,7 +31,7 @@
   .dds-radio-buttons-wrapper {
     align-items: flex-start;
 
-    .usa-fieldset {
+    .dds-radio-button-section {
       padding: 0 units(1);
     }
   }
@@ -41,6 +41,8 @@
   .dds-resume-upload {
     display: flex;
     flex-wrap: wrap;
+    min-width: 0;
+    width: 100%;
     margin-bottom: units(4);
 
     @include at-media(desktop) {
@@ -51,9 +53,11 @@
       margin-bottom: units(2);
       flex: 1 0 100%;
 
-      label {
+      label,
+      legend {
         font-weight: 700;
         margin-top: 0;
+        width: 100%;
       }
 
       @include at-media(desktop) {
