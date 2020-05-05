@@ -8,9 +8,11 @@ export const ConnectCallout: React.FC = () => {
       <div className="dds-connect-social-icons">
         <a href="https://twitter.com/defensedigital?lang=en">
           <FaTwitter />
+          <span className="usa-sr-only">Defense Digital Service Twitter</span>
         </a>
         <a href="https://www.linkedin.com/company/defensedigitalservice">
           <FaLinkedin />
+          <span className="usa-sr-only">Defense Digital Service LinkedIn</span>
         </a>
       </div>
       <h3>Press/Speaking inqueries:</h3>

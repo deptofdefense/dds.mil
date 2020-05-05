@@ -90,7 +90,7 @@ export const Header: React.FC<Props> = ({ siteTitle }) => {
           </button>
         </div>
         <nav aria-label="Primary navigation" className="usa-nav">
-          <button className="usa-nav__close">
+          <button className="usa-nav__close" aria-label="Close Navigation">
             <FaTimes />
           </button>
           <ul className="usa-nav__primary usa-accordion">

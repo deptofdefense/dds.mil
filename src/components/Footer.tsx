@@ -46,7 +46,7 @@ export const Footer: React.FC = () => {
   `);
 
   return (
-    <div className="dds-container bg-base-darker">
+    <div className="dds-container dds-footer">
       <div className="width-full padding-3 tablet:padding-5 maxw-widescreen">
         <div className="grid-row">
           <div className="grid-col-12 desktop:grid-col-6 grid-row flex-align-start margin-bottom-5  flex-justify-start">
@@ -119,13 +119,18 @@ export const Footer: React.FC = () => {
                 className="display-inline-block margin-right-2 margin-bottom-3 font-ui-md"
               >
                 <FaTwitter />
+                <span className="usa-sr-only">
+                  Defense Digital Service Twitter
+                </span>
               </FooterLink>
               <FooterLink
-                aria-label="Link to DDS LinkedIn"
                 href="https://www.linkedin.com/company/defensedigitalservice"
                 className="display-inline-block margin-bottom-3 font-ui-md"
               >
                 <FaLinkedin />
+                <span className="usa-sr-only">
+                  Defense Digital Service LinkedIn
+                </span>
               </FooterLink>
 
               <FooterSubheader>Tech Resources</FooterSubheader>

@@ -89,7 +89,7 @@
         font-weight: bolder;
 
         @include at-media(desktop) {
-          color: color("blue-40v");
+          color: color("blue-50v");
           font-weight: bold;
         }
       }
