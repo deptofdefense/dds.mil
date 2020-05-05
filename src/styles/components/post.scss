@@ -64,7 +64,7 @@
 .dds-blog-card {
   display: flex;
   flex-wrap: wrap;
-  margin: units(4);
+  margin-bottom: units(4);
   min-height: 260px;
 
   @include at-media(desktop) {

@@ -18,10 +18,8 @@
     },
     {
       "type": "featuredMedia",
-      "image": {
-        "image": "featured-media.png",
-        "altText": "Picture showing team members"
-      },
+      "image": "featured-media.png",
+      "altText": "Picture showing team members",
       "mdMain": "**Kit zabrak darth solo. Ahsoka darth chewbacca ackbar yavin** kenobi tusken raider ackbar jade. Antilles fett palpatine solo skywalker bothan kamino.\n\nKit zabrak darth solo. Ahsoka darth chewbacc ackbar yavin kenobi tusken raider ackbar jade."
     },
     {
@@ -41,7 +39,7 @@
   "sidenav": {
     "includeSidenav": true,
     "wrapSectionFirst": 2,
-    "wrapSectionLast": 4,
+    "wrapSectionLast": 5,
     "menu": [
       { "link": "/media", "text": "Overview" },
       { "link": "/media/announcements", "text": "Announcements" },

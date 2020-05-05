@@ -6,12 +6,10 @@ import Img from "gatsby-image";
 
 export interface FeaturedMediaSectionData extends SectionBase {
   type: "featuredMedia";
+  altText?: string;
   image: {
-    altText?: string;
-    image: {
-      childImageSharp: {
-        fluid: any;
-      };
+    childImageSharp: {
+      fluid: any;
     };
   };
   mdMain?: {
@@ -20,7 +18,8 @@ export interface FeaturedMediaSectionData extends SectionBase {
 }
 
 export const FeaturedMediaSection: React.FC<FeaturedMediaSectionData> = ({
-  image: { image, altText },
+  image,
+  altText,
   mdMain,
 }) => {
   return (

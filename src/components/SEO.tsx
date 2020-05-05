@@ -4,9 +4,10 @@ import { useStaticQuery, graphql } from "gatsby";
 
 interface Props {
   title?: string;
+  description?: string;
 }
 
-export const SEO: React.FC<Props> = ({ title, children }) => {
+export const SEO: React.FC<Props> = ({ title, description, children }) => {
   const data = useStaticQuery(graphql`
     query {
       contentJson(fields: { slug: { eq: "settings" } }) {
@@ -24,11 +25,12 @@ export const SEO: React.FC<Props> = ({ title, children }) => {
       htmlAttributes={{
         lang: "en",
       }}
+      title={title}
       titleTemplate={`%s | ${siteTitle}`}
     >
-      <meta name="description" content={seoDescription} />
-      <meta name="og:title" content={siteTitle} />
-      <meta name="og:description" content={seoDescription} />
+      <meta name="description" content={description ?? seoDescription} />
+      <meta name="og:title" content={title ?? siteTitle} />
+      <meta name="og:description" content={description ?? seoDescription} />
       {children}
     </Helmet>
   );

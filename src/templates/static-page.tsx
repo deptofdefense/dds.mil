@@ -1,7 +1,7 @@
 import React, { useMemo } from "react";
 import { graphql } from "gatsby";
 import { Helmet } from "react-helmet";
-import { Layout, Sidebar, SidebarSection } from "components";
+import { Layout, SEO, Sidebar, SidebarSection } from "components";
 import {
   HeroSection,
   HeroSectionData,
@@ -55,6 +55,7 @@ interface Props {
       sidenav?: SidenavData;
       navigation: {
         title: string;
+        metaDescription: string;
       };
     };
   };
@@ -116,9 +117,7 @@ const StaticPage: React.FC<Props> = ({
 
   return (
     <Layout>
-      <Helmet>
-        <title>{navigation.title}</title>
-      </Helmet>
+      <SEO title={navigation.title} description={navigation.metaDescription} />
       {splitSections.beforeNav.map((section, idx) => (
         <SectionSwitch section={section} key={idx} />
       ))}
@@ -143,6 +142,7 @@ export const query = graphql`
     pagesJson(navigation: { link: { eq: $link } }) {
       navigation {
         title
+        metaDescription
       }
       sidenav {
         includeSidenav
@@ -185,15 +185,13 @@ export const query = graphql`
           }
         }
         image {
-          altText
-          image {
-            childImageSharp {
-              fluid(maxWidth: 600) {
-                ...GatsbyImageSharpFluid_withWebp
-              }
+          childImageSharp {
+            fluid(maxWidth: 600) {
+              ...GatsbyImageSharpFluid_withWebp
             }
           }
         }
+        altText
         icons {
           icon {
             childInlineSvg {

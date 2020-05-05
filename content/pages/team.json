@@ -2,6 +2,7 @@
   "navigation": {
     "navOrder": 4,
     "title": "Team",
+    "metaDescription": "All about our team here at DDS and more keywords for SEO purposes",
     "text": "Our Team",
     "link": "/team"
   },
@@ -18,10 +19,8 @@
     },
     {
       "type": "featuredMedia",
-      "image": {
-        "image": "ourteam-feature-image.jpg",
-        "altText": "Picture showing team members"
-      }
+      "image": "ourteam-feature-image.jpg",
+      "altText": "Picture showing team members"
     },
     {
       "type": "callToAction",

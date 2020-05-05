@@ -11,6 +11,7 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
 
       type Navigation {
         title: String
+        metaDescription: String
         navOrder: Int
         text: String
         link: String
@@ -51,11 +52,12 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
         mdCallout: MarkdownRemark @link(by: "rawMarkdownBody")
         heroImage: File @link(by: "relativePath")
         
-        image: ImageElement
+        image: File @link(by: "relativePath")
         icons: [IconElement]
         categories: [CategoryElement]
         images: [ImageElement]
 
+        altText: String
         title: String
         cta: String
         ctaLink: String
