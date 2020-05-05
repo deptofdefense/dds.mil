@@ -38,7 +38,6 @@ export const InterestForm: React.FC<InterestFormData> = () => {
         action="/join-us/success/"
         onSubmit={onSubmit}
         className="dds-interest-form"
-        data-netlify-recaptcha="true"
         data-netlify="true"
       >
         <input type="hidden" name="form-name" value="application" />
@@ -113,7 +112,6 @@ export const InterestForm: React.FC<InterestFormData> = () => {
           name="website"
           id="website"
         />
-        <div data-netlify-recaptcha="true"></div>
         <div className="dds-interest-form-submit-wrapper">
           <CtaButton type="submit">Send Application</CtaButton>
         </div>
