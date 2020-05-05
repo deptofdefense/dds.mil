@@ -35,7 +35,7 @@ export const InterestForm: React.FC<InterestFormData> = () => {
       <form
         name="application"
         method="POST"
-        action="/join-us/success"
+        action="/join-us/success/"
         onSubmit={onSubmit}
         className="dds-interest-form"
         data-netlify-recaptcha="true"
