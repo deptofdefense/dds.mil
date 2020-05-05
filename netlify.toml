@@ -19,3 +19,9 @@
 
 [[plugins]]
   package = "netlify-plugin-gatsby-cache"
+
+[[plugins]]
+  package = "netlify-plugin-a11y"
+
+  [plugins.inputs]
+  resultMode = "warn"

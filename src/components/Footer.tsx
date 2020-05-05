@@ -115,11 +115,13 @@ export const Footer: React.FC = () => {
               <FooterSubheader>Connect with us</FooterSubheader>
               <FooterLink
                 href="https://twitter.com/defensedigital?lang=en"
+                aria-label="Link to DDS Twitter"
                 className="display-inline-block margin-right-2 margin-bottom-3 font-ui-md"
               >
                 <FaTwitter />
               </FooterLink>
               <FooterLink
+                aria-label="Link to DDS LinkedIn"
                 href="https://www.linkedin.com/company/defensedigitalservice"
                 className="display-inline-block margin-bottom-3 font-ui-md"
               >

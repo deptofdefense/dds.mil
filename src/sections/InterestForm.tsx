@@ -75,6 +75,10 @@ export const InterestForm: React.FC<InterestFormData> = () => {
         body: encode({
           "form-name": "application",
           ...formData,
+          expertise:
+            formData.expertise === "other"
+              ? otherExpertise
+              : formData.expertise,
         }),
       });
       setSubmitting(false);
@@ -125,10 +129,10 @@ export const InterestForm: React.FC<InterestFormData> = () => {
             <div className="dds-label-wrapper">
               <legend>Area of expertise:</legend>
             </div>
-            <label className="display-none" htmlFor="expertise">
-              Expertise
-            </label>
             <div className="dds-radio-button-section">
+              <label htmlFor="expertise" className="display-none">
+                Area of expertise:
+              </label>
               <RadioButtonGroup
                 name="expertise"
                 onChange={onChange}

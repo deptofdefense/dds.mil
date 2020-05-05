@@ -54,6 +54,7 @@ module.exports = {
         theme_color: `#a2466c`,
         display: `browser`,
         icon: "media/logo-desktop-full.png",
+        background_color: "#73b3e7",
       },
     },
     {

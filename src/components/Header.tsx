@@ -85,7 +85,7 @@ export const Header: React.FC<Props> = ({ siteTitle }) => {
               </Link>
             </div>
           </div>
-          <button className="usa-menu-btn">
+          <button className="usa-menu-btn" aria-label="Expand Navigation">
             <FaBars />
           </button>
         </div>
