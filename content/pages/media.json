@@ -39,7 +39,7 @@
   "sidenav": {
     "includeSidenav": true,
     "wrapSectionFirst": 2,
-    "wrapSectionLast": 5,
+    "wrapSectionLast": 4,
     "menu": [
       { "link": "/media", "text": "Overview" },
       { "link": "/media/announcements", "text": "Announcements" },
