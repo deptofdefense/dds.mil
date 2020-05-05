@@ -41,6 +41,7 @@ export const InterestForm: React.FC<InterestFormData> = () => {
         data-netlify-recaptcha="true"
         data-netlify="true"
       >
+        <input type="hidden" name="form-name" value="application" />
         <h3>Interested in joining DDS? Apply now.</h3>
         <TextInput required label="First & Last Name:" id="name" name="name" />
         <div className="dds-radio-buttons-wrapper">
