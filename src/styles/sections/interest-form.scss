@@ -1,0 +1,114 @@
+.dds-interest-form-section {
+  max-width: 850px;
+  background-color: color("primary-lighter");
+  margin: units(7) auto 0 auto;
+  border-radius: units(1);
+}
+
+.dds-interest-form {
+  padding: units(3);
+
+  @include at-media(tablet) {
+    padding: units(5);
+  }
+
+  @include at-media(desktop) {
+    padding: units(7);
+  }
+
+  h3 {
+    font-size: 2rem;
+    margin-bottom: units(6);
+    text-align: center;
+    margin-top: 0;
+  }
+
+  .dds-text-input,
+  .dds-resume-upload {
+    align-items: center;
+  }
+
+  .dds-radio-buttons-wrapper {
+    align-items: flex-start;
+
+    .usa-fieldset {
+      padding: 0 units(1);
+    }
+  }
+
+  .dds-text-input,
+  .dds-radio-buttons-wrapper,
+  .dds-resume-upload {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: units(4);
+
+    @include at-media(desktop) {
+      flex-wrap: nowrap;
+    }
+
+    .dds-label-wrapper {
+      margin-bottom: units(2);
+      flex: 1 0 100%;
+
+      label {
+        font-weight: 700;
+        margin-top: 0;
+      }
+
+      @include at-media(desktop) {
+        flex: 0 0 200px;
+        text-align: right;
+        margin-right: units(3);
+        margin-bottom: 0;
+      }
+    }
+
+    .usa-fieldset {
+      .dds-text-input {
+        margin-top: units(1);
+      }
+      flex: 1 1 300px;
+    }
+
+    .usa-input {
+      display: inline-block;
+      width: auto;
+      margin-top: 0;
+      max-width: none;
+      flex: 1 0 auto;
+
+      @include at-media(desktop) {
+        flex: 1 1 auto;
+      }
+    }
+
+    input[type="file"] {
+      display: none;
+    }
+
+    .dds-resume-label {
+      background-color: color("primary-darker");
+      color: #ffffff;
+      border-radius: units(1);
+      cursor: pointer;
+      padding: 1rem units(6);
+      display: flex;
+      align-items: center;
+    }
+    .dds-resume-selected {
+      background-color: color("green-cool-40v");
+    }
+  }
+  .dds-interest-form-submit-wrapper {
+    margin-top: units(6);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .dds-cta-btn {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}

@@ -8,3 +8,4 @@ export * from "./ImgSection";
 export * from "./MarkdownBodySection";
 export * from "./RecentBlogPosts";
 export * from "./TextSection";
+export * from "./InterestForm";

@@ -17,11 +17,29 @@
       "mdCallout": "**Interested in proving hoodies, hackers, and nerds have an important role to play in furthering national defense missions?**\n We’ve built a team of top technical talent across the country to transform how the DoD builds and delivers digital services and products for DoD personnel."
     },
     {
-      "type": "callToAction",
-      "cta": "APPLY TO DDS TODAY",
-      "ctaLink": "/join-us",
-      "mdMain": "**We're focused on hiring the best to serve the best.**\n\nInterested in proving hoodies, hackers, and nerds have an important role to play in furthering national defense missions?",
-      "accent": true
+      "type": "interestForm"
+    },
+    {
+      "type": "imageCollection",
+      "spacing": true,
+      "images": [
+        {
+          "image": "IMG_5370.png",
+          "altText": "alt text 1"
+        },
+        {
+          "image": "IMG_5386.png",
+          "altText": "alt text 2"
+        },
+        {
+          "image": "IMG_5387.png",
+          "altText": "alt text 3"
+        },
+        {
+          "image": "IMG_5389.png",
+          "altText": "alt text 4"
+        }
+      ]
     }
   ]
 }

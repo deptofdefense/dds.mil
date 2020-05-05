@@ -23,6 +23,8 @@ import {
   RecentBlogPostsSectionData,
   MarkdownBodySection,
   MarkdownBodySectionData,
+  InterestForm,
+  InterestFormData,
 } from "sections";
 
 type SectionData =
@@ -35,7 +37,8 @@ type SectionData =
   | FeaturedMediaSectionData
   | RecentAnnouncementsSectionData
   | RecentBlogPostsSectionData
-  | MarkdownBodySectionData;
+  | MarkdownBodySectionData
+  | InterestFormData;
 
 type SidenavData = {
   includeSidenav: boolean;
@@ -83,6 +86,8 @@ const SectionSwitch: React.FC<{ section: SectionData }> = ({ section }) => {
       return <RecentBlogPosts {...section} />;
     case "markdownBody":
       return <MarkdownBodySection {...section} />;
+    case "interestForm":
+      return <InterestForm {...section} />;
     default:
       throw new Error(`Invalid section type encountered`);
   }
@@ -161,6 +166,7 @@ export const query = graphql`
         ctaLink
         numberTitles
         accent
+        spacing
         mdMain {
           html
         }

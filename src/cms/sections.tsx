@@ -102,6 +102,14 @@ const CategoryListSectionFields: PatchedField[] = [
 
 const ImageCollectionFields: PatchedField[] = [
   {
+    label: "Include Margin?",
+    name: "spacing",
+    widget: "boolean",
+    required: false,
+    default: false,
+    hint: "Include spacing between the image colleciton and the section above.",
+  },
+  {
     label: "Images",
     name: "images",
     widget: "list",

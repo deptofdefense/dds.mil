@@ -1,0 +1,43 @@
+{
+  "navigation": {
+    "navOrder": 15,
+    "title": "Success",
+    "link": "/join-us/success"
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "title": "Hiring the best to serve the best.",
+      "heroImage": "banner-join-us.png"
+    },
+    {
+      "type": "markdownBody",
+      "mdMain": "# Your application has been received. Thank you.\n\nBlah need some stuff here from @Rachel. Qui-gonn dantooine endor kessel calamari dooku fett luke. Hutt watto aayla organa mothma. Mara organa r2-d2 jabba leia. Lando qui-gon hutt solo leia. Darth mon darth binks endor luke moff naboo fett. Fett secura gamorrean cade leia. Fett"
+    },
+    {
+      "type": "recentBlogPosts"
+    },
+    {
+      "type": "imageCollection",
+      "spacing": true,
+      "images": [
+        {
+          "image": "IMG_5370.png",
+          "altText": "alt text 1"
+        },
+        {
+          "image": "IMG_5386.png",
+          "altText": "alt text 2"
+        },
+        {
+          "image": "IMG_5387.png",
+          "altText": "alt text 3"
+        },
+        {
+          "image": "IMG_5389.png",
+          "altText": "alt text 4"
+        }
+      ]
+    }
+  ]
+}
