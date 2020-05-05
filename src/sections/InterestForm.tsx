@@ -39,8 +39,14 @@ export const InterestForm: React.FC<InterestFormData> = () => {
         onSubmit={onSubmit}
         className="dds-interest-form"
         data-netlify="true"
+        netlify-honeypot="importantfield"
       >
         <input type="hidden" name="form-name" value="application" />
+        <div className="display-none">
+          <label>
+            Don’t fill this out if you're human: <input name="importantfield" />
+          </label>
+        </div>
         <h3>Interested in joining DDS? Apply now.</h3>
         <TextInput required label="First & Last Name:" id="name" name="name" />
         <div className="dds-radio-buttons-wrapper">
