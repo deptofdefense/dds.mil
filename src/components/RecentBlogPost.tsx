@@ -33,7 +33,7 @@ export const RecentBlogPost: React.FC<Props> = ({
           {title}
         </Link>
         <p>{summary}</p>
-        <Link to={`/news/${slug}`} className="dds-post-read-now">
+        <Link to={`/media/blog/${slug}`} className="dds-post-read-now">
           READ NOW <FaChevronRight />
         </Link>
       </div>
