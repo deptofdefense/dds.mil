@@ -27,9 +27,9 @@
     },
     {
       "type": "featuredMedia",
-      "image": "featured-media.png",
-      "altText": "Image of DDS Director, Brett Goldstein, during a media interview. ",
-      "mdMain": "Read more about the exciting adventures that our team has experienced while working alongside users within the DoD."
+      "image": "logo-banner.png",
+      "altText": "",
+      "mdMain": "**Read more about the exciting adventures that our team has experienced while working alongside users within the DoD.**"
     },
     {
       "type": "recentBlogPosts"
