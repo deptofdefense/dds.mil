@@ -1,7 +1,13 @@
 import React from "react";
 import { graphql } from "gatsby";
-import { Layout, BlogCard, Section, SidebarSection, Sidebar } from "components";
-import { Helmet } from "react-helmet";
+import {
+  Layout,
+  BlogCard,
+  Section,
+  SidebarSection,
+  Sidebar,
+  SEO,
+} from "components";
 
 interface Props {
   data: {
@@ -41,9 +47,7 @@ const BlogList: React.FC<Props> = ({
 }) => {
   return (
     <Layout>
-      <Helmet>
-        <title>Blog</title>
-      </Helmet>
+      <SEO title="Blog" />
       <SidebarSection sidebar={<Sidebar menu={sidenav.menu} includeSocial />}>
         <Section className="post-list-section">
           {nodes.map(({ fields, frontmatter }) => (

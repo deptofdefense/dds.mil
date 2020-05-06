@@ -125,6 +125,7 @@ export const InterestForm: React.FC<InterestFormData> = () => {
           value={formData.name}
         />
         <fieldset className="usa-fieldset">
+          <legend className="usa-sr-only">Area of expertise:</legend>
           <div className="dds-radio-buttons-wrapper">
             <div className="dds-label-wrapper">
               <legend>Area of expertise:</legend>

@@ -1,7 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
-import { Layout, Section, Sidebar, SidebarSection } from "components";
-import { Helmet } from "react-helmet";
+import { Layout, Section, Sidebar, SidebarSection, SEO } from "components";
 
 interface Props {
   data: {
@@ -38,9 +37,7 @@ const BlogPostPage: React.FC<Props> = ({
   const { sidenav } = pagesJson;
   return (
     <Layout>
-      <Helmet>
-        <title>{frontmatter.title}</title>
-      </Helmet>
+      <SEO title={frontmatter.title} />
       <SidebarSection sidebar={<Sidebar menu={sidenav.menu} includeSocial />}>
         <Section className="dds-post-page-section">
           <div dangerouslySetInnerHTML={{ __html: html }} />

@@ -10,6 +10,7 @@ interface Props {
   date: string;
   imgFluid?: any;
   imgSrc?: string;
+  altText?: string;
 }
 
 export const BlogCard: React.FC<Props> = ({
@@ -19,6 +20,7 @@ export const BlogCard: React.FC<Props> = ({
   date,
   imgFluid,
   imgSrc,
+  altText,
 }) => {
   return (
     <Card className="dds-blog-card">
