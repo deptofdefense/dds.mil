@@ -9,7 +9,7 @@
     "@types/react-dom": "^16.9.6",
     "@types/react-helmet": "^5.0.15",
     "clsx": "^1.1.0",
-    "gatsby": "^2.20.28",
+    "gatsby": "^2.21.15",
     "gatsby-background-image": "^1.1.1",
     "gatsby-image": "^2.3.4",
     "gatsby-link": "^2.3.4",
