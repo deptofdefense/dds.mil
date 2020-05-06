@@ -17,6 +17,10 @@ Since opening its doors in 2015, DDS has tackled a wide range of critical proble
 
 \###
 
+**About Defense Digital Service** 
+
+The Defense Digital Service (DDS) was established by the Secretary of Defense in November 2015 as a SWAT team of nerds that provides the best in modern technical knowledge designed to bolster national defense. DDS is primarily based in the Pentagon, but also has permanent office space in Augusta, Georgia (Tatooine) and Mountain View, California (Rogue Squadron). DDS talent includes world-class software developers, designers, product managers, digital experts and bureaucracy hackers from both the private sector and within government. Learn more at <https://dds.mil/>.
+
 **Brett Goldstein Bio**
 
 Mr. Goldstein has served in leadership roles in government, private sector, and academia. He began his career as an early employee at OpenTable where he helped grow the startup into a multinational company. Following the September 11th terrorist attacks, he joined the Chicago Police Department where he earned the rank of commander. He then served as the nation's first municipal Chief Data Officer in the City of Chicago—later assuming the role of the city's Chief Information Officer. He also founded a venture capital fund dedicated to cultivating technology startups that bring new solutions to critical urban problems.
@@ -26,7 +30,3 @@ Goldstein has also held fellowships at the University of Chicago and Harvard Uni
 **Contact**
 
 press@dds.mil
-
-**Defense Digital Service** 
-
-The Defense Digital Service (DDS) was established by the Secretary of Defense in November 2015 as a SWAT team of nerds that provides the best in modern technical knowledge designed to bolster national defense. DDS is primarily based in the Pentagon, but also has permanent office space in Augusta, Georgia (Tatooine) and Mountain View, California (Rogue Squadron). DDS talent includes world-class software developers, designers, product managers, digital experts and bureaucracy hackers from both the private sector and within government. Learn more at <https://dds.mil/>.
