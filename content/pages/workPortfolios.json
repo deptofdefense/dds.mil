@@ -13,7 +13,7 @@
     },
     {
       "type": "markdownBody",
-      "mdMain": "# PORTFOLIOS\n\n### DDS programs that are permanent enhancements of DoD's technical capabilities.\n\n**Hack The Pentagon**\n\n DDS established the Hack the Pentagon program in November 2016 as the Federal Government’s first-ever bug bounty program. Following best practices from the private sector, bug bounties allow independent hackers to research and disclose security vulnerabilities on DoD assets, sometimes in exchange for financial reward. The Air Force, Army, and other military departments and DoD agencies now use bug bounties or crowdsourced hacking assessments as an optimal way to harness the depth and breadth of technical talent across the globe to help secure DoD’s digital assets.\n\n**Service-Specific Partnerships**\n\n DDS partners across the services in a number of ways. We organize teams of non-DDS civilians and military personnel to work with DDS on time-bound projects that support specific mission needs. These short-term assignments build capacity across the DoD as participants solve complex problems, learn new skills, and share those learnings with their home commands. DDS established formal partnerships with the Army (December 2016) and the Air Force (January 2017) to dedicate resources to projects and teams. We also launched major projects in June 2019 with the Navy and Marine Corps as a key step toward establishing formal partnerships with those services as well."
+      "mdMain": "# PORTFOLIOS\n\n### DDS programs that are permanent enhancements of the DoD's technical capabilities. \n\n### Recent examples include:\n\n**Hack The Pentagon**\n\nDDS established the Hack the Pentagon program in November 2016 as the Federal Government’s first-ever bug bounty program. Following best practices from the private sector, bug bounties allow independent hackers to research and disclose security vulnerabilities on DoD assets, sometimes in exchange for financial reward. \n\nThe Air Force, Army, and other military departments and DoD agencies now use bug bounties or crowdsourced hacking assessments as an optimal way to harness the depth and breadth of technical talent across the globe to help secure DoD’s digital assets. \n\n**Service-Specific Partnerships**\n\nDDS partners across the services in a number of ways. We organize teams of non-DDS civilians and military personnel to work with DDS on time-bound projects that support specific mission needs. These short-term assignments build capacity across the DoD as participants solve complex problems, learn new skills, and share those learnings with their home commands. \n\nDDS established formal partnerships with the Army (December 2016) and the Air Force (January 2017) to dedicate resources to projects and teams. We also launched major projects in June 2019 with the Navy and Marine Corps as a key step toward establishing formal partnerships with those services as well."
     },
     {
       "type": "callToAction",
@@ -27,9 +27,18 @@
     "wrapSectionFirst": 2,
     "wrapSectionLast": 2,
     "menu": [
-      { "text": "Overview", "link": "/work/" },
-      { "text": "Portfolios", "link": "/work/portfolios" },
-      { "text": "Product Developments", "link": "/work/product-development" },
+      {
+        "text": "Overview",
+        "link": "/work/"
+      },
+      {
+        "text": "Portfolios",
+        "link": "/work/portfolios"
+      },
+      {
+        "text": "Product Developments",
+        "link": "/work/product-developments"
+      },
       {
         "text": "Ongoing Technical Advice",
         "link": "/work/ongoing-technical-advice"
