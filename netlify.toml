@@ -1,6 +1,7 @@
 # https://docs.netlify.com/configure-builds/file-based-configuration/
 [build]
   publish = "public"
+  ignore = "git diff --quiet HEAD^ HEAD || git log -1 --pretty=%an | xargs | grep -v dependabot-preview"
 
 [context.deploy-preview]
   command = "gatsby build"
