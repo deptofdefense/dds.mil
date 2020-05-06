@@ -1,6 +1,8 @@
 # Defense Digital Service
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/a854eb87-cb63-4e22-b024-ca3bf861147b/deploy-status)](https://app.netlify.com/sites/dds-mil/deploys)
+[![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=deptofdefense/dds.mil)](https://dependabot.com)
+
 
 This repository contains the source code for [the Defense Digital Service website](https://dds.mil). This website's source code is made available to the open source community with the hope that community contributions will improve functionality, add features, and mature this work.
 

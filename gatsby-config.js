@@ -61,7 +61,7 @@ module.exports = {
       resolve: "gatsby-plugin-netlify-cms",
       options: {
         enableIdentityWidget: false,
-        htmlTitle: "DDS.mil Content Manager",
+        htmlTitle: "Admin | Defense Digital Service",
         modulePath: `${__dirname}/src/cms/cms.tsx`,
         manualInit: true,
       },

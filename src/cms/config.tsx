@@ -11,6 +11,7 @@ const backend: Patch<CmsBackend> = {
   branch: "v2-master",
   site_domain: "dds.mil",
   repo: "deptofdefense/dds.mil",
+  squash_merges: true,
 };
 
 CMS.init({

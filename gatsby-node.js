@@ -1,4 +1,16 @@
 const path = require("path");
+const webpack = require(`webpack`);
+
+// https://www.gatsbyjs.org/packages/gatsby-plugin-netlify-cms/#disable-widget-on-site
+exports.onCreateWebpackConfig = ({ actions }) => {
+  actions.setWebpackConfig({
+    plugins: [
+      new webpack.IgnorePlugin({
+        resourceRegExp: /^netlify-identity-widget$/,
+      }),
+    ],
+  });
+};
 
 exports.createSchemaCustomization = ({ actions, schema }) => {
   const { createTypes } = actions;
