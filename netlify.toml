@@ -1,10 +1,10 @@
 # https://docs.netlify.com/configure-builds/file-based-configuration/
 [build]
   publish = "public"
-  ignore = "git diff --quiet HEAD^ HEAD || git log -1 --pretty=%an | xargs | grep -v dependabot-preview"
 
 [context.deploy-preview]
   command = "gatsby build"
+  ignore = "git diff --quiet HEAD^ HEAD && git log -1 --pretty=%an | xargs | grep -v dependabot-preview"
 
   [context.deploy-preview.environment]
     NODE_VERSION = "12.14.0"
@@ -13,6 +13,7 @@
 
 [context.branch-deploy]
   command = "gatsby build"
+  ignore = "git diff --quiet HEAD^ HEAD && git log -1 --pretty=%an | xargs | grep -v dependabot-preview"
 
   [context.branch-deploy.environment]
     NODE_VERSION = "12.14.0"
