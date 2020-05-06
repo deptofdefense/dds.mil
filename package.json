@@ -15,7 +15,7 @@
     "gatsby-link": "^2.3.4",
     "gatsby-plugin-manifest": "^2.3.6",
     "gatsby-plugin-netlify-cms": "^4.2.4",
-    "gatsby-plugin-react-helmet": "^3.2.4",
+    "gatsby-plugin-react-helmet": "^3.3.1",
     "gatsby-plugin-root-import": "^2.0.5",
     "gatsby-plugin-sass": "^2.2.3",
     "gatsby-plugin-sharp": "^2.5.6",
