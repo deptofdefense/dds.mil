@@ -112,7 +112,7 @@ export const Footer: React.FC = () => {
               </FooterLink>
             </div>
             <div className="grid-col-12 tablet:grid-col-4 order-first desktop:order-last">
-              <FooterSubheader>Connect with us</FooterSubheader>
+              <FooterSubheader>Connect With Us</FooterSubheader>
               <FooterLink
                 href="https://twitter.com/defensedigital?lang=en"
                 aria-label="Link to DDS Twitter"

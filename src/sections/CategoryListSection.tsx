@@ -7,7 +7,7 @@ import { FaChevronRight } from "react-icons/fa";
 export interface CategoryListSectionData extends SectionBase {
   type: "categoryList";
   numberTitles?: boolean;
-  sectionHeading?: string;
+  title?: string;
   categories: {
     title: string;
     details: string;
@@ -18,13 +18,13 @@ export interface CategoryListSectionData extends SectionBase {
 
 export const CategoryListSection: React.FC<CategoryListSectionData> = ({
   numberTitles,
-  sectionHeading,
+  title,
   categories,
 }) => {
   return (
     <Section>
       <div className="category-list-section">
-        {sectionHeading && <h2>{sectionHeading}</h2>}
+        {title && <h2>{title}</h2>}
         {categories.map(({ title, cta, ctaLink, details }, idx) => (
           <div className={"category-list-section-item"} key={title}>
             <h3>

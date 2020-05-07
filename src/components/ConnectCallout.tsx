@@ -4,7 +4,7 @@ import { FaTwitter, FaLinkedin } from "react-icons/fa";
 export const ConnectCallout: React.FC = () => {
   return (
     <div className="dds-connect-callout">
-      <h3>Connect with us:</h3>
+      <h3>Connect With Us:</h3>
       <div className="dds-connect-social-icons">
         <a href="https://twitter.com/defensedigital?lang=en">
           <FaTwitter />
@@ -15,7 +15,7 @@ export const ConnectCallout: React.FC = () => {
           <span className="usa-sr-only">Defense Digital Service LinkedIn</span>
         </a>
       </div>
-      <h3>Press/Speaking inqueries:</h3>
+      <h3>Press/Speaking Inquiries:</h3>
       <p>Email press@dds.mil</p>
     </div>
   );

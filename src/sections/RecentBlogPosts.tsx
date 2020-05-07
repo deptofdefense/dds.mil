@@ -55,7 +55,7 @@ export const RecentBlogPosts: React.FC<RecentBlogPostsSectionData> = () => {
 
   return (
     <Section>
-      <h3>From our blog:</h3>
+      <h3>Recent Blog Posts:</h3>
       <div className="recent-media-list">
         {posts.map((post) => (
           <RecentBlogPost

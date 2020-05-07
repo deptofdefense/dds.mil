@@ -65,5 +65,28 @@
       "cta": "APPLY TO DDS TODAY",
       "ctaLink": "/join-us"
     }
-  ]
+  ],
+  "sidenav": {
+    "includeSidenav": true,
+    "wrapSectionFirst": 2,
+    "wrapSectionLast": 2,
+    "menu": [
+      {
+        "text": "Overview",
+        "link": "/work"
+      },
+      {
+        "text": "Portfolios",
+        "link": "/work/portfolios"
+      },
+      {
+        "text": "Product Developments",
+        "link": "/work/product-development"
+      },
+      {
+        "text": "Ongoing Technical Advice",
+        "link": "/work/ongoing-technical-advice"
+      }
+    ]
+  }
 }
