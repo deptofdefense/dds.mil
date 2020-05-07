@@ -4,6 +4,7 @@ import { Patch } from "./types";
 import { PagesCollection } from "./pages";
 import { AnnouncementCollection } from "./announcements";
 import { PostCollection } from "./posts";
+import { NewsArticleCollection } from "./news";
 import { SettingsCollection } from "./settings";
 
 const backend: Patch<CmsBackend> = {
@@ -27,6 +28,7 @@ CMS.init({
       PagesCollection,
       AnnouncementCollection,
       PostCollection,
+      NewsArticleCollection,
       SettingsCollection,
     ],
   },

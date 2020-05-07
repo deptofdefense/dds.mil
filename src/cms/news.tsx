@@ -9,7 +9,7 @@ import {
 } from "./fields";
 import { CmsCollection } from "netlify-cms-core";
 
-export const AnnouncementCollection: CmsCollection = {
+export const NewsArticleCollection: CmsCollection = {
   name: "news",
   label: "News Articles",
   label_singular: "News Article",
