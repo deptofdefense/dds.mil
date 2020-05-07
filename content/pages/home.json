@@ -21,7 +21,7 @@
       "type": "iconSection",
       "icons": [
         {
-          "icon": "500px-brands.svg",
+          "icon": "highfive.svg",
           "title": "Who We Are",
           "cta": "MEET THE TEAM",
           "ctaLink": "/team",
