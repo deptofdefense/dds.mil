@@ -2,7 +2,7 @@ import React from "react";
 import { Link, useStaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image/withIEPolyfill";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { HeaderNavLink } from "components";
+import { HeaderNavLink, HeaderSearch } from "components";
 
 type NavigationNode = {
   link: string;
@@ -109,6 +109,7 @@ export const Header: React.FC<Props> = ({ siteTitle }) => {
                   ))}
               </React.Fragment>
             ))}
+            <HeaderSearch />
           </ul>
         </nav>
       </div>

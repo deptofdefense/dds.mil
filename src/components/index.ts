@@ -16,3 +16,4 @@ export * from "./Section";
 export * from "./MediaCard";
 export * from "./RadioButtonGroup";
 export * from "./TextInput";
+export * from "./HeaderSearch";

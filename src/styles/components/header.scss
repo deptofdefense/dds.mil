@@ -122,3 +122,50 @@
     font-weight: 100;
   }
 }
+
+.dds-nav-search {
+  display: flex;
+  align-items: center;
+
+  form {
+    outline: none !important;
+
+    button {
+      outline: none !important;
+    }
+  }
+
+  button {
+    cursor: pointer;
+    font-size: 20px;
+    padding: 0 22px;
+    color: color($theme-color-base);
+
+    :focus {
+      outline: none;
+    }
+  }
+
+  .dds-text-input {
+    position: absolute;
+    z-index: 1000;
+    bottom: -75px;
+    right: 0;
+    width: 450px;
+    padding: 16px;
+    visibility: hidden;
+    background-color: color("primary-lighter");
+  }
+}
+
+.dds-nav-search.dds-nav-search-open {
+  background-color: color("primary");
+
+  button {
+    color: #fff;
+  }
+
+  .dds-text-input {
+    visibility: visible;
+  }
+}

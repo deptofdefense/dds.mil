@@ -1,4 +1,4 @@
-import { CmsCollection } from 'netlify-cms-core';
+import { CmsCollection } from "netlify-cms-core";
 import { PatchedField } from "./types";
 
 const SettingsFields: PatchedField[] = [
@@ -22,6 +22,28 @@ const SettingsFields: PatchedField[] = [
     widget: "number",
     min: 1,
   },
+  {
+    label: "Search.gov Settings",
+    name: "searchgov",
+    widget: "object",
+    fields: [
+      {
+        label: "Affiliate",
+        name: "affiliate",
+        widget: "string",
+      },
+      {
+        label: "Access Key",
+        name: "accessKey",
+        widget: "string",
+      },
+      {
+        label: "Endpoint",
+        name: "endpoint",
+        widget: "string",
+      },
+    ],
+  },
 ];
 
 export const SettingsCollection: CmsCollection = {
@@ -37,4 +59,4 @@ export const SettingsCollection: CmsCollection = {
       fields: SettingsFields,
     },
   ],
-}
+};
