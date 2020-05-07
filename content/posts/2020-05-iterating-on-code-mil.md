@@ -28,3 +28,7 @@ Providing guidance and creating an inventory of code is great, but we want more.
 To that end we are working closely with the DoD Chief Information Officer’s people to revise the [2009 memo](https://dodcio.defense.gov/Portals/0/Documents/FOSS/2009OSS.pdf) clarifying the Department’s position on the use of Free and Open Source Software. We’re engaging organizations throughout the DoD to help them kickstart their open source initiatives. We’re working with thought leaders both inside the Department and in the F/OSS community to make our guidance more in tune with the needs of the Department and the American people.
 
 And we’re engaging with you. Right now. This blog post is one of many avenues we are using to engage directly. Read our documentation on the [Code.mil](https://code.mil/) website and let us know what we can improve by submitting an issue or a Pull Request. If you are a DoD project owner contact us at code@dds.mil so that we can hear your story or help get you started.
+
+
+
+*\[this post has been migrated from an outdated Defense Digital Service Medium page]*
