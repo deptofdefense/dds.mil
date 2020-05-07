@@ -54,3 +54,7 @@ Turning to the global ethical hacker community allows us to tap into new perspec
 Stay tuned as we continue working to bring in the best talent, technology, and approaches from the private sector to help transform government IT and better protect our country. 
 
 > *“It was great having the opportunity to work side by side with the Marines to help secure their assets. These are my favorite types of programs to be a part of, because they allow me to have a massive impact on systems critical to national security.” — Tanner Emek, ethical hacker participant & full time bug bounty hunter*
+
+
+
+*\[this post has been migrated from an outdated Defense Digital Service Medium page]*
