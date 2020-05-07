@@ -21,21 +21,21 @@
       "type": "iconSection",
       "icons": [
         {
-          "icon": "500px-brands.svg",
+          "icon": "highfive.svg",
           "title": "Who We Are",
           "cta": "MEET THE TEAM",
           "ctaLink": "/team",
           "details": "We are a SWAT team of nerds that provides the best in modern technical knowledge to bolster national defense."
         },
         {
-          "icon": "icon-lightbulb.png",
+          "icon": "lightbulb.svg",
           "title": "What We Do",
           "cta": "VIEW OUR WORK",
           "ctaLink": "/portfolio",
           "details": "We focus on high-impact projects that advance the DoD's most important initiatives that are critical to the well-being of service members, civilians, and core operations of the Department. "
         },
         {
-          "icon": "icon-news.png",
+          "icon": "news.svg",
           "title": "Media",
           "cta": "VIEW OUR MEDIA",
           "ctaLink": "/media",
