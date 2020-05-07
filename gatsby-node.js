@@ -89,6 +89,10 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
       type MarkdownRemark implements Node {
         frontmatter: Frontmatter!
       }
+
+      type ContentJson implements Node {
+        defaultMediaImage: File @link(by: "relativePath")
+      }
     `,
   ];
   createTypes(typeDefs);
@@ -217,32 +221,80 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
   `);
 
   // create pages of posts
-  const postListPage = path.resolve("src/templates/blog-post-list.tsx");
-  const posts = postQueryResult.data.allMarkdownRemark.nodes;
-  const numPages = Math.ceil(posts.length / postsPerPage);
+  // const postListPage = path.resolve("src/templates/blog-post-list.tsx");
+  // const posts = postQueryResult.data.allMarkdownRemark.nodes;
+  // const numPostPages = Math.ceil(posts.length / postsPerPage);
 
-  for (let i = 0; i < numPages; i++) {
-    createPage({
-      path: i === 0 ? `/media/blog` : `/media/blog/${i + 1}`,
-      component: postListPage,
-      context: {
-        limit: postsPerPage,
-        skip: i * postsPerPage,
-        numPages,
-        currentPage: i + 1,
-      },
-    });
-  }
+  // for (let i = 0; i < numPostPages; i++) {
+  //   createPage({
+  //     path: i === 0 ? `/media/blog` : `/media/blog/${i + 1}`,
+  //     component: postListPage,
+  //     context: {
+  //       limit: postsPerPage,
+  //       skip: i * postsPerPage,
+  //       numPostPages,
+  //       currentPage: i + 1,
+  //     },
+  //   });
+  // }
 
-  // create a page for each post
-  const postPage = path.resolve("src/templates/blog-post.tsx");
-  for (let i = 0; i < posts.length; i++) {
-    createPage({
-      path: `/media/blog/${posts[i].fields.slug}`,
-      component: postPage,
-      context: {
-        slug: posts[i].fields.slug,
-      },
-    });
+  // // create a page for each post
+  // const postPage = path.resolve("src/templates/blog-post.tsx");
+  // for (let i = 0; i < posts.length; i++) {
+  //   createPage({
+  //     path: `/media/blog/${posts[i].fields.slug}`,
+  //     component: postPage,
+  //     context: {
+  //       slug: posts[i].fields.slug,
+  //     },
+  //   });
+  // }
+
+  const mediaTypes = ["announcements", "news", "blog"];
+  const mediaListPage = path.resolve("src/templates/media-list.tsx");
+  // create a page for each announcement
+  const mediaPage = path.resolve("src/templates/media-page.tsx");
+  const pageSize = 8;
+
+  for (let mediaType of mediaTypes) {
+    console.log(mediaType);
+    const { data } = await graphql(`{
+      allMarkdownRemark(
+        filter: { frontmatter: { type: { eq: "${mediaType}" }}}
+        sort: { fields: [frontmatter___date], order: DESC }
+      ) {
+        nodes {
+          fields {
+            slug
+          }
+        }
+      }
+    }`);
+    const results = data.allMarkdownRemark.nodes;
+    const numPages = Math.ceil(results.length, pageSize);
+    for (let i = 0; i < numPages; i++) {
+      createPage({
+        path: i === 0 ? `/media/${mediaType}` : `/media/${mediaType}/${i + 1}`,
+        component: mediaListPage,
+        context: {
+          limit: pageSize,
+          skip: i * pageSize,
+          mediaType,
+          numPages,
+          currentPage: i + 1,
+        },
+      });
+    }
+
+    for (let i = 0; i < results.length; i++) {
+      createPage({
+        path: `/media/${mediaType}/${results[i].fields.slug}`,
+        component: mediaPage,
+        context: {
+          slug: results[i].fields.slug,
+          mediaType,
+        },
+      });
+    }
   }
 };

@@ -13,6 +13,6 @@ export * from "./ConnectCallout";
 export * from "./RecentBlogPost";
 export * from "./RecentAnnouncement";
 export * from "./Section";
-export * from "./BlogCard";
+export * from "./MediaCard";
 export * from "./RadioButtonGroup";
 export * from "./TextInput";

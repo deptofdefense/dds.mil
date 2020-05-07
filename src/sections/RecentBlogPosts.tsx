@@ -27,7 +27,7 @@ export const RecentBlogPosts: React.FC<RecentBlogPostsSectionData> = () => {
   const data = useStaticQuery(graphql`
     query {
       allMarkdownRemark(
-        filter: { frontmatter: { type: { eq: "blogPost" } } }
+        filter: { frontmatter: { type: { eq: "blog" } } }
         limit: 3
       ) {
         nodes {

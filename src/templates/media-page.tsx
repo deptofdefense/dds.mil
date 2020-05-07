@@ -50,10 +50,10 @@ const BlogPostPage: React.FC<Props> = ({
 export default BlogPostPage;
 
 export const query = graphql`
-  query($slug: String!) {
+  query($slug: String!, $mediaType: String!) {
     markdownRemark(
       fields: { slug: { eq: $slug } }
-      frontmatter: { type: { eq: "blogPost" } }
+      frontmatter: { type: { eq: $mediaType } }
     ) {
       html
       fields {

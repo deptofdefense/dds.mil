@@ -2,7 +2,7 @@ import React from "react";
 import { graphql } from "gatsby";
 import {
   Layout,
-  BlogCard,
+  MediaCard,
   Section,
   SidebarSection,
   Sidebar,
@@ -10,6 +10,9 @@ import {
 } from "components";
 
 interface Props {
+  pageContext: {
+    mediaType: string;
+  };
   data: {
     allMarkdownRemark: {
       nodes: {
@@ -20,7 +23,7 @@ interface Props {
           title: string;
           summary: string;
           date: string;
-          image: {
+          image?: {
             childImageSharp: {
               fluid: any;
             };
@@ -36,6 +39,14 @@ interface Props {
         }[];
       };
     };
+
+    contentJson: {
+      defaultMediaImage: {
+        childImageSharp: {
+          fluid: any;
+        };
+      };
+    };
   };
 }
 
@@ -43,7 +54,9 @@ const BlogList: React.FC<Props> = ({
   data: {
     allMarkdownRemark: { nodes },
     pagesJson: { sidenav },
+    contentJson: { defaultMediaImage },
   },
+  pageContext: { mediaType },
 }) => {
   return (
     <Layout>
@@ -51,11 +64,15 @@ const BlogList: React.FC<Props> = ({
       <SidebarSection sidebar={<Sidebar menu={sidenav.menu} includeSocial />}>
         <Section className="post-list-section">
           {nodes.map(({ fields, frontmatter }) => (
-            <BlogCard
+            <MediaCard
               key={fields.slug}
-              slug={fields.slug}
+              link={`/media/${mediaType}/${fields.slug}`}
               {...frontmatter}
-              imgFluid={frontmatter.image.childImageSharp.fluid}
+              imgFluid={
+                frontmatter.image
+                  ? frontmatter.image.childImageSharp.fluid
+                  : defaultMediaImage.childImageSharp.fluid
+              }
             />
           ))}
         </Section>
@@ -67,12 +84,12 @@ const BlogList: React.FC<Props> = ({
 export default BlogList;
 
 export const query = graphql`
-  query blogListQuery($skip: Int!, $limit: Int!) {
+  query announcementListQuery($mediaType: String!, $skip: Int!, $limit: Int!) {
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
       limit: $limit
       skip: $skip
-      filter: { frontmatter: { type: { eq: "blogPost" } } }
+      filter: { frontmatter: { type: { eq: $mediaType } } }
     ) {
       nodes {
         fields {
@@ -85,7 +102,7 @@ export const query = graphql`
           image {
             childImageSharp {
               fluid(maxWidth: 800) {
-                ...GatsbyImageSharpFluid
+                ...GatsbyImageSharpFluid_withWebp
               }
             }
           }
@@ -98,6 +115,16 @@ export const query = graphql`
         menu {
           text
           link
+        }
+      }
+    }
+
+    contentJson {
+      defaultMediaImage {
+        childImageSharp {
+          fluid(maxWidth: 800) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
         }
       }
     }

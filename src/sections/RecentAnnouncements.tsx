@@ -23,7 +23,7 @@ export const RecentAnnouncements: React.FC<RecentAnnouncementsSectionData> = () 
   const data = useStaticQuery(graphql`
     query {
       allMarkdownRemark(
-        filter: { frontmatter: { type: { eq: "announcement" } } }
+        filter: { frontmatter: { type: { eq: "announcements" } } }
         limit: 2
       ) {
         nodes {

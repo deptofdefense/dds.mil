@@ -5,7 +5,7 @@ import { Card } from "components";
 
 interface Props {
   title: string;
-  slug: string;
+  link: string;
   summary: string;
   date: string;
   imgFluid?: any;
@@ -13,9 +13,9 @@ interface Props {
   altText?: string;
 }
 
-export const BlogCard: React.FC<Props> = ({
+export const MediaCard: React.FC<Props> = ({
   title,
-  slug,
+  link,
   summary,
   date,
   imgFluid,
@@ -27,12 +27,12 @@ export const BlogCard: React.FC<Props> = ({
       {imgFluid && <Img fluid={imgFluid} />}
       {imgSrc && <img src={imgSrc} />}
       <div className="dds-post-body">
-        <Link to={`/media/blog/${slug}`} className="dds-post-heading">
+        <Link to={link} className="dds-post-heading">
           {title}
         </Link>
         <div className="dds-post-date">{date}</div>
         <p>{summary}</p>
-        <Link className="dds-post-read-now" to={`/media/blog/${slug}`}>
+        <Link className="dds-post-read-now" to={link}>
           READ MORE
         </Link>
       </div>

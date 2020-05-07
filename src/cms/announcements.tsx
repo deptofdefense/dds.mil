@@ -20,7 +20,7 @@ export const AnnouncementCollection: CmsCollection = {
   create: true,
   editor: { preview: true },
   fields: [
-    hiddenTypeField("announcement"),
+    hiddenTypeField("announcements"),
     TitleField,
     PublishDateField,
     EntryCoverImageField,
