@@ -201,63 +201,12 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
     });
   }
 
-  //
-  // BLOG POSTS LiST
-  //
-  const postsPerPage = 8;
-  const postQueryResult = await graphql(`
-    {
-      allMarkdownRemark(
-        filter: { frontmatter: { type: { eq: "blogPost" } } }
-        sort: { fields: [frontmatter___date], order: DESC }
-      ) {
-        nodes {
-          fields {
-            slug
-          }
-        }
-      }
-    }
-  `);
-
-  // create pages of posts
-  // const postListPage = path.resolve("src/templates/blog-post-list.tsx");
-  // const posts = postQueryResult.data.allMarkdownRemark.nodes;
-  // const numPostPages = Math.ceil(posts.length / postsPerPage);
-
-  // for (let i = 0; i < numPostPages; i++) {
-  //   createPage({
-  //     path: i === 0 ? `/media/blog` : `/media/blog/${i + 1}`,
-  //     component: postListPage,
-  //     context: {
-  //       limit: postsPerPage,
-  //       skip: i * postsPerPage,
-  //       numPostPages,
-  //       currentPage: i + 1,
-  //     },
-  //   });
-  // }
-
-  // // create a page for each post
-  // const postPage = path.resolve("src/templates/blog-post.tsx");
-  // for (let i = 0; i < posts.length; i++) {
-  //   createPage({
-  //     path: `/media/blog/${posts[i].fields.slug}`,
-  //     component: postPage,
-  //     context: {
-  //       slug: posts[i].fields.slug,
-  //     },
-  //   });
-  // }
-
   const mediaTypes = ["announcements", "news", "blog"];
   const mediaListPage = path.resolve("src/templates/media-list.tsx");
-  // create a page for each announcement
   const mediaPage = path.resolve("src/templates/media-page.tsx");
   const pageSize = 8;
 
   for (let mediaType of mediaTypes) {
-    console.log(mediaType);
     const { data } = await graphql(`{
       allMarkdownRemark(
         filter: { frontmatter: { type: { eq: "${mediaType}" }}}
@@ -272,6 +221,8 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
     }`);
     const results = data.allMarkdownRemark.nodes;
     const numPages = Math.ceil(results.length, pageSize);
+
+    // create list pages for this media type
     for (let i = 0; i < numPages; i++) {
       createPage({
         path: i === 0 ? `/media/${mediaType}` : `/media/${mediaType}/${i + 1}`,
@@ -286,6 +237,7 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
       });
     }
 
+    // create individual pages for each of the items of this media type
     for (let i = 0; i < results.length; i++) {
       createPage({
         path: `/media/${mediaType}/${results[i].fields.slug}`,
