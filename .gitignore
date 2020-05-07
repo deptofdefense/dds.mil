@@ -6,3 +6,6 @@ public/
 .ruby-gemset
 node_modules
 .cache
+
+# Local Netlify folder
+.netlify

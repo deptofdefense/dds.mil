@@ -4,7 +4,6 @@
 
 [context.deploy-preview]
   command = "gatsby build"
-  ignore = "git log -1 --pretty=%an | grep dependabot-preview"
 
   [context.deploy-preview.environment]
     NODE_VERSION = "12.14.0"
@@ -13,11 +12,13 @@
 
 [context.branch-deploy]
   command = "gatsby build"
-  ignore = "git log -1 --pretty=%an | grep dependabot-preview"
 
   [context.branch-deploy.environment]
     NODE_VERSION = "12.14.0"
     RUBY_VERSION = "2.6.2"
+
+[[plugins]]
+  package = "./ignore-dependabot"
 
 [[plugins]]
   package = "netlify-plugin-gatsby-cache"
