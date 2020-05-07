@@ -13,7 +13,7 @@ interface Props {
     };
   };
   location: {
-    state: {
+    state?: {
       search: string;
     };
   };
@@ -22,7 +22,7 @@ interface Props {
 export const Search: React.FC<Props> = ({ data, location }) => {
   const { accessKey, affiliate, endpoint } = data.contentJson.searchgov;
   const [loading, setLoading] = useState(false);
-  const [query, setQuery] = useState(location.state.search ?? "");
+  const [query, setQuery] = useState(location.state?.search ?? "");
   const [results, setResults] = useState([]);
 
   const fetchResults = async () => {

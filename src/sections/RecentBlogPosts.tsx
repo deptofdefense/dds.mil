@@ -10,7 +10,7 @@ export interface RecentBlogPostsSectionData extends SectionBase {
 type PostNode = {
   frontmatter: {
     title: string;
-    image: {
+    image?: {
       childImageSharp: {
         fluid: any;
       };
@@ -48,10 +48,21 @@ export const RecentBlogPosts: React.FC<RecentBlogPostsSectionData> = () => {
           }
         }
       }
+
+      contentJson {
+        defaultMediaImage {
+          childImageSharp {
+            fluid(maxWidth: 800) {
+              ...GatsbyImageSharpFluid_withWebp
+            }
+          }
+        }
+      }
     }
   `);
 
   const posts: PostNode[] = data.allMarkdownRemark.nodes;
+  const defaultImage = data.contentJson.defaultMediaImage;
 
   return (
     <Section>
@@ -61,7 +72,11 @@ export const RecentBlogPosts: React.FC<RecentBlogPostsSectionData> = () => {
           <RecentBlogPost
             className="recent-media-list-item"
             {...post.frontmatter}
-            imgFluid={post.frontmatter.image.childImageSharp.fluid}
+            imgFluid={
+              post.frontmatter.image
+                ? post.frontmatter.image.childImageSharp.fluid
+                : defaultImage.childImageSharp.fluid
+            }
             slug={post.fields.slug}
             key={post.fields.slug}
           />
