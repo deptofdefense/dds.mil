@@ -4,7 +4,7 @@
 
 [context.deploy-preview]
   command = "gatsby build"
-  ignore = "git log -1 --pretty=%B | grep dependabot"
+  ignore = "git log -1 --pretty=%an | grep dependabot-preview"
 
   [context.deploy-preview.environment]
     NODE_VERSION = "12.14.0"
@@ -13,7 +13,7 @@
 
 [context.branch-deploy]
   command = "gatsby build"
-  ignore = "git log -1 --pretty=%B | grep dependabot"
+  ignore = "git log -1 --pretty=%an | grep dependabot-preview"
 
   [context.branch-deploy.environment]
     NODE_VERSION = "12.14.0"
