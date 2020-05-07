@@ -1,5 +1,5 @@
 ---
-type: post
+type: blog
 title: "Code.mil: An Open Source Initiative at the Pentagon"
 date: 2017-03-13T18:51:00.000Z
 summary: Building bridges between the Department of Defense and the software
