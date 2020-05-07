@@ -3,6 +3,10 @@
   flex-wrap: wrap;
   align-items: center;
 
+  @include at-media(tablet) {
+    flex-wrap: nowrap;
+  }
+
   .gatsby-image-wrapper {
     flex: 1 1 40%;
   }
