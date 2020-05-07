@@ -28,6 +28,7 @@ const NavigationFields: PatchedField[] = [
   },
   {
     ...TitleField,
+    required: false,
     label: "Title Tag",
     hint: "Overall title for this page. Should be unique.",
   },
