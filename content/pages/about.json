@@ -24,10 +24,10 @@
       "icons": [
         {
           "icon": "icon-highfive.png",
-          "title": "Go where we're needed.",
+          "title": "Go where the work is.",
           "cta": "",
           "ctaLink": "",
-          "details": "Going all-in regardless of location is important. We quickly mobilize our team to go wherever we’re needed.  "
+          "details": "As a team, we are dedicated to taking on the most challenging technological problems within the Department of Defense to protect national security. "
         },
         {
           "icon": "hat-cowboy-side-solid.svg",
@@ -36,18 +36,18 @@
         },
         {
           "icon": "hat-cowboy-side-solid.svg",
-          "title": "Design side by side with users.",
+          "title": "Be brave and tell the truth. ",
+          "details": "As a team of firefighters, it is important to be brave and tell organizations truths that are often hard to accept regarding systems and capabilities. "
+        },
+        {
+          "icon": "hat-cowboy-side-solid.svg",
+          "title": "Ask for forgiveness, not permission, and signal intent. ",
+          "details": "We’re in the business of saving lives. We tell the truth, speak up, and signal intent within the department. "
+        },
+        {
+          "icon": "hat-cowboy-side-solid.svg",
+          "title": "Design with users not for them.",
           "details": "Good design is more than just design thinking. It’s designing directly with users to ensure the product and supporting processes meet needs the first time."
-        },
-        {
-          "icon": "hat-cowboy-side-solid.svg",
-          "title": "Tell the truth, and signal intent.",
-          "details": "We’re in the business of saving lives. We tell the truth, speak up, and signal intent within the Department. "
-        },
-        {
-          "icon": "hat-cowboy-side-solid.svg",
-          "title": "Hire the best to serve the best.",
-          "details": "Our people make us unique, and it’s our people who are best positioned to serve the unique needs of DoD. "
         }
       ]
     },
