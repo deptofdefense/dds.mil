@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+<style type="text/css">
+	.st0{display:none;}
+	.st1{display:inline;}
+	.st2{fill:none;stroke:#000000;stroke-width:0.1562;stroke-miterlimit:15.625;}
+	.st3{fill:#FFFFFF;}
+</style>
+<g class="st0">
+	<g class="st1">
+		<rect x="3.1" y="3.1" class="st2" width="93.8" height="93.8"/>
+		<line class="st2" x1="50" y1="3.1" x2="50" y2="96.9"/>
+		<line class="st2" x1="96.9" y1="50" x2="3.1" y2="50"/>
+		<line class="st2" x1="3.1" y1="3.1" x2="96.9" y2="96.9"/>
+		<rect x="15.6" y="15.6" class="st2" width="68.8" height="68.8"/>
+		<line class="st2" x1="96.9" y1="3.1" x2="3.1" y2="96.9"/>
+		<line class="st2" x1="3.1" y1="50" x2="50" y2="3.1"/>
+		<line class="st2" x1="50" y1="3.1" x2="96.9" y2="50"/>
+		<line class="st2" x1="96.9" y1="50" x2="50" y2="96.9"/>
+		<line class="st2" x1="50" y1="96.9" x2="3.1" y2="50"/>
+		<circle class="st2" cx="50" cy="50" r="32.8"/>
+	</g>
+</g>
+<path class="st3" d="M55.3,23.4H32.8v53.1h34.4V35.3L55.3,23.4z M56.2,28.8l7.8,7.2h-7.8V28.8z M35.9,73.4V26.6h17.2v12.5h10.9v34.4
+	H35.9z"/>
+<path class="st3" d="M17,78.8C10.3,71.1,6.2,60.9,6.2,50S10.3,28.9,17,21.2l-1.9-2.5C7.7,27,3.1,38,3.1,50s4.5,23,12,31.2L17,78.8z"
+	/>
+<path class="st3" d="M15.6,50c0-8,2.7-15.3,7.2-21.1l-2-2.5c-5.2,6.4-8.3,14.7-8.3,23.6s3.1,17.2,8.4,23.6l2-2.5
+	C18.3,65.3,15.6,58,15.6,50z"/>
+<path class="st3" d="M25,50c0-4.8,1.4-9.4,3.9-13.3l-2-2.7c-3.1,4.5-5,10-5,15.9s1.9,11.4,5,15.9l2-2.7C26.4,59.4,25,54.8,25,50z"/>
+<path class="st3" d="M83,21.2c6.7,7.7,10.8,17.8,10.8,28.8S89.7,71.1,83,78.8l1.9,2.5c7.5-8.3,12-19.2,12-31.2s-4.5-23-12-31.2
+	L83,21.2z"/>
+<path class="st3" d="M84.4,50c0,8-2.7,15.3-7.2,21.1l2,2.5c5.2-6.4,8.3-14.7,8.3-23.6s-3.1-17.2-8.4-23.6l-2,2.5
+	C81.7,34.7,84.4,42,84.4,50z"/>
+<path class="st3" d="M75,50c0,4.8-1.4,9.4-3.9,13.3l2,2.7c3.1-4.5,5-10,5-15.9s-1.9-11.4-5-15.9l-2,2.7C73.6,40.6,75,45.2,75,50z"/>
+<rect x="39.1" y="29.7" class="st3" width="10.9" height="3.1"/>
+<rect x="39.1" y="35.9" class="st3" width="10.9" height="3.1"/>
+<rect x="39.1" y="42.2" class="st3" width="21.9" height="3.1"/>
+<rect x="39.1" y="48.4" class="st3" width="21.9" height="3.1"/>
+<rect x="39.1" y="54.7" class="st3" width="21.9" height="3.1"/>
+<rect x="39.1" y="60.9" class="st3" width="18.8" height="3.1"/>
+</svg>
