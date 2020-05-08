@@ -29,6 +29,11 @@
   }
 }
 
+.dds-header-image {
+  width: 100px;
+  height: auto;
+}
+
 .usa-navbar {
   border: none;
 
@@ -160,6 +165,8 @@
 
 .dds-nav-search.dds-nav-search-open {
   background-color: color("primary");
+  border-top-left-radius: units(1);
+  border-top-right-radius: units(1);
 
   button {
     color: #fff;
@@ -167,5 +174,14 @@
 
   .dds-text-input {
     visibility: visible;
+    animation: fadeIn ease 0.3s;
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
 }

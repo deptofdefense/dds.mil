@@ -1,5 +1,5 @@
 .dds-cta-btn {
-  background-color: color("accent-cool-dark");
+  background-color: #00bde3;
   font-size: 22px;
   border: none;
   line-height: 26px;
@@ -20,6 +20,16 @@
     width: auto;
     padding: units(3) units(8);
   }
+}
+
+.dds-cta-btn:hover {
+  background-color: #28a0cb;
+  color: #fff;
+}
+
+.dds-cta-btn:active {
+  background-color: #07648d;
+  color: #fff;
 }
 
 .dds-cta-btn.width-full {

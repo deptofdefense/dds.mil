@@ -58,7 +58,7 @@
   font-weight: weight("light");
   color: color("base");
   margin: units(1) 0;
-  font-size: size("body", "xs");
+  font-size: 0.8rem;
 }
 
 .dds-blog-card {
@@ -73,12 +73,16 @@
     flex-wrap: nowrap;
   }
 
-  .gatsby-image-wrapper,
-  img {
+  .dds-blog-card-image {
     flex: 1 0 100%;
 
     @include at-media(desktop) {
       flex: 0 0 300px;
+    }
+
+    .gatsby-image-wrapper,
+    img {
+      height: 100%;
     }
   }
 

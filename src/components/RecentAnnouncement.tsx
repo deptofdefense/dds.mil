@@ -21,7 +21,7 @@ export const RecentAnnouncement: React.FC<Props> = ({
         <Link to={`/media/announcements/${slug}`} className="dds-post-heading">
           {title}
         </Link>
-        <div className="text-light font-body-xs margin-bottom-1">{date}</div>
+        <div className="dds-post-date">{date}</div>
       </div>
     </div>
   );

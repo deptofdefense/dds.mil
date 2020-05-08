@@ -1,6 +1,7 @@
 import React from "react";
 import { graphql } from "gatsby";
 import { Layout, Section, Sidebar, SidebarSection, SEO } from "components";
+import { HeroSection } from "sections";
 
 interface Props {
   data: {
@@ -13,6 +14,11 @@ interface Props {
         title: string;
         date: string;
         image: {
+          childImageSharp: {
+            fluid: any;
+          };
+        };
+        heroImage?: {
           childImageSharp: {
             fluid: any;
           };
@@ -38,6 +44,11 @@ const BlogPostPage: React.FC<Props> = ({
   return (
     <Layout>
       <SEO title={frontmatter.title} />
+      <HeroSection
+        type="hero"
+        title={frontmatter.title}
+        heroImage={frontmatter.heroImage}
+      />
       <SidebarSection sidebar={<Sidebar menu={sidenav.menu} includeSocial />}>
         <Section className="dds-post-page-section">
           <div dangerouslySetInnerHTML={{ __html: html }} />

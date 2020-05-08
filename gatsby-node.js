@@ -1,5 +1,8 @@
 const path = require("path");
 const webpack = require(`webpack`);
+const SVGO = require("svgo");
+
+const svgo = new SVGO();
 
 // https://www.gatsbyjs.org/packages/gatsby-plugin-netlify-cms/#disable-widget-on-site
 exports.onCreateWebpackConfig = ({ actions }) => {
@@ -92,6 +95,7 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
 
       type ContentJson implements Node {
         defaultMediaImage: File @link(by: "relativePath")
+        defaultHeroImage: File @link(by: "relativePath")
       }
     `,
   ];
@@ -155,9 +159,10 @@ exports.onCreateNode = async ({
     // Load content of svg files so they can be rendered
     // inline
     //
-    const id = createNodeId(node.id);
-    const rawSvg = await loadNodeContent(node);
 
+    const id = createNodeId(node.id);
+    const fileContent = await loadNodeContent(node);
+    const { data: rawSvg } = await svgo.optimize(fileContent);
     const svgNode = {
       id,
       children: [],
@@ -201,12 +206,16 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
     });
   }
 
-  const mediaTypes = ["announcements", "news", "blog"];
+  const mediaTypes = [
+    ["announcements", "Announcements"],
+    ["news", "News"],
+    ["blog", "Blog"],
+  ];
   const mediaListPage = path.resolve("src/templates/media-list.tsx");
   const mediaPage = path.resolve("src/templates/media-page.tsx");
   const pageSize = 8;
 
-  for (let mediaType of mediaTypes) {
+  for (let [mediaType, title] of mediaTypes) {
     const { data } = await graphql(`{
       allMarkdownRemark(
         filter: { frontmatter: { type: { eq: "${mediaType}" }}}
@@ -231,6 +240,7 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
           limit: pageSize,
           skip: i * pageSize,
           mediaType,
+          title,
           numPages,
           currentPage: i + 1,
         },

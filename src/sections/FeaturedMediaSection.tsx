@@ -8,8 +8,11 @@ export interface FeaturedMediaSectionData extends SectionBase {
   type: "featuredMedia";
   altText?: string;
   image: {
-    childImageSharp: {
+    childImageSharp?: {
       fluid: any;
+    };
+    childInlineSvg?: {
+      rawSvg: any;
     };
   };
   mdMain?: {
@@ -29,7 +32,14 @@ export const FeaturedMediaSection: React.FC<FeaturedMediaSectionData> = ({
           "image-only": !mdMain,
         })}
       >
-        <Img fluid={image.childImageSharp.fluid} alt={altText} />
+        {image.childImageSharp ? (
+          <Img fluid={image.childImageSharp.fluid} alt={altText} />
+        ) : (
+          <div
+            className="gatsby-image-wrapper"
+            dangerouslySetInnerHTML={{ __html: image.childInlineSvg!.rawSvg }}
+          />
+        )}
         {mdMain && (
           <div
             className="featured-media-description"

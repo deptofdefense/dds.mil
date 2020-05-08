@@ -11,9 +11,13 @@
   a {
     color: color("primary-vivid");
     text-decoration: none;
-    margin-bottom: units(1);
+    margin-bottom: 0;
   }
   a:hover {
     text-decoration: underline;
+  }
+
+  .dds-post-date {
+    margin-top: 4px;
   }
 }

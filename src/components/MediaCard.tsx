@@ -24,8 +24,10 @@ export const MediaCard: React.FC<Props> = ({
 }) => {
   return (
     <Card className="dds-blog-card">
-      {imgFluid && <Img fluid={imgFluid} />}
-      {imgSrc && <img src={imgSrc} />}
+      <Link className="dds-blog-card-image" to={link}>
+        {imgFluid && <Img fluid={imgFluid} />}
+        {imgSrc && <img src={imgSrc} />}
+      </Link>
       <div className="dds-post-body">
         <Link to={link} className="dds-post-heading">
           {title}

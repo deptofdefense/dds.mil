@@ -47,6 +47,7 @@ type SidenavData = {
   menu: {
     text: string;
     link: string;
+    partiallyActive?: boolean;
   }[];
   includeSocial: boolean;
 };
@@ -195,6 +196,9 @@ export const query = graphql`
             fluid(maxWidth: 600) {
               ...GatsbyImageSharpFluid_withWebp
             }
+          }
+          childInlineSvg {
+            rawSvg
           }
         }
         altText
