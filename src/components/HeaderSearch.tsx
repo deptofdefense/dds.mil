@@ -61,7 +61,7 @@ export const HeaderSearch: React.FC = () => {
         <button
           onFocus={onFocus}
           onClick={onSearchClick}
-          aria-labeledby="searchlabel"
+          aria-labelledby="searchlabel"
         >
           <FaSearch size={22} />
           <span id="searchlabel" className="usa-sr-only">
