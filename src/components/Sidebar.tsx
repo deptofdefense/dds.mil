@@ -13,9 +13,14 @@ export interface SidebarProps {
 export const Sidebar: React.FC<SidebarProps> = ({ menu, includeSocial }) => (
   <>
     <ul className="usa-sidenav margin-bottom-4">
-      {menu.map((item) => (
+      {menu.map((item, idx) => (
         <li className="usa-sidenav__item" key={item.link}>
-          <Link key={item.link} to={item.link} activeClassName="usa-current">
+          <Link
+            key={item.link}
+            to={item.link}
+            activeClassName="usa-current"
+            partiallyActive={idx !== 0}
+          >
             {item.text}
           </Link>
         </li>

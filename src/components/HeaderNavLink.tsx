@@ -13,6 +13,7 @@ export const HeaderNavLink: React.FC<Props> = ({ children, to, className }) => (
       to={to}
       className="usa-nav__link desktop:font-sans-md"
       activeClassName="usa-current"
+      partiallyActive
     >
       <span>{children}</span>
     </Link>

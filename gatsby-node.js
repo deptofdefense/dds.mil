@@ -95,6 +95,7 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
 
       type ContentJson implements Node {
         defaultMediaImage: File @link(by: "relativePath")
+        defaultHeroImage: File @link(by: "relativePath")
       }
     `,
   ];

@@ -47,6 +47,7 @@ type SidenavData = {
   menu: {
     text: string;
     link: string;
+    partiallyActive?: boolean;
   }[];
   includeSocial: boolean;
 };

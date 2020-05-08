@@ -15,7 +15,7 @@ export const MarkdownBodySection: React.FC<MarkdownBodySectionData> = ({
   return (
     <Section>
       <div
-        className="markdown-body usa-prose"
+        className="markdown-body"
         dangerouslySetInnerHTML={{ __html: html }}
       />
     </Section>

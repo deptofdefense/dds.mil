@@ -1,5 +1,6 @@
 .markdown-body {
   @include u-font-family("sans");
+  font-size: 1.1rem;
 
   :first-child {
     margin-top: 0;
@@ -7,5 +8,6 @@
 
   p {
     max-width: none;
+    line-height: 1.6;
   }
 }

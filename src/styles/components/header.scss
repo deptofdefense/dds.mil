@@ -174,5 +174,14 @@
 
   .dds-text-input {
     visibility: visible;
+    animation: fadeIn ease 0.3s;
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
 }

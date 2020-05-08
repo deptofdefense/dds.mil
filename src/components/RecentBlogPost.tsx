@@ -25,8 +25,10 @@ export const RecentBlogPost: React.FC<Props> = ({
 }) => {
   return (
     <Card className={className}>
-      {imgFluid && <Img fluid={imgFluid} />}
-      {imgSrc && <img src={imgSrc} />}
+      <Link to={`/media/blog/${slug}`}>
+        {imgFluid && <Img fluid={imgFluid} />}
+        {imgSrc && <img src={imgSrc} />}
+      </Link>
       <div className="dds-post-body">
         <Link to={`/media/blog/${slug}`} className="dds-post-heading">
           {title}
