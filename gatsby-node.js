@@ -1,5 +1,8 @@
 const path = require("path");
 const webpack = require(`webpack`);
+const SVGO = require("svgo");
+
+const svgo = new SVGO();
 
 // https://www.gatsbyjs.org/packages/gatsby-plugin-netlify-cms/#disable-widget-on-site
 exports.onCreateWebpackConfig = ({ actions }) => {
@@ -155,9 +158,10 @@ exports.onCreateNode = async ({
     // Load content of svg files so they can be rendered
     // inline
     //
-    const id = createNodeId(node.id);
-    const rawSvg = await loadNodeContent(node);
 
+    const id = createNodeId(node.id);
+    const fileContent = await loadNodeContent(node);
+    const { data: rawSvg } = await svgo.optimize(fileContent);
     const svgNode = {
       id,
       children: [],
