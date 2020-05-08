@@ -2,11 +2,14 @@ import React from "react";
 import { Section } from "components";
 import { SectionBase } from "types";
 
-export interface MarkdownBodySectionData extends SectionBase {
-  type: "markdownBody";
+interface Props {
   mdMain: {
     html: string;
   };
+}
+
+export interface MarkdownBodySectionData extends SectionBase, Props {
+  type: "markdownBody";
 }
 
 export const MarkdownBodySection: React.FC<MarkdownBodySectionData> = ({

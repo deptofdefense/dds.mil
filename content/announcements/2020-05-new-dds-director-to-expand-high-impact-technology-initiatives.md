@@ -16,8 +16,6 @@ At DDS, Goldstein will focus on continuing to recruit top technical talent from 
 
 Since opening its doors in 2015, DDS has tackled a wide range of critical problem sets at the DOD. Examples of DDS initiatives include: launching the federal government's first bug bounty program 'Hack the Pentagon'; reforming digital services that provide military families critical health benefits; building next-generation GPS; developing drone detection technologies; hunting adversaries on DOD networks; leading the JEDI cloud procurement; overhauling the logistics system that helps military families move; and redesigning training for cyber soldiers. DDS Director and co-founder Chris Lynch will be stepping down this month.
 
-\###
-
 **About Defense Digital Service**
 
 The Defense Digital Service (DDS) was established by the Secretary of Defense in November 2015 as a SWAT team of nerds that provides the best in modern technical knowledge designed to bolster national defense. DDS is primarily based in the Pentagon, but also has permanent office space in Augusta, Georgia (Tatooine) and Mountain View, California (Rogue Squadron). DDS talent includes world-class software developers, designers, product managers, digital experts and bureaucracy hackers from both the private sector and within government. Learn more at <https://dds.mil/>.

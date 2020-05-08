@@ -1,0 +1,13 @@
+.media-page-section {
+  .gatsby-image-wrapper {
+    width: 100%;
+    height: auto;
+    margin-bottom: units(2);
+
+    @include at-media(tablet) {
+      width: 50%;
+      float: right;
+      margin-left: units(3);
+    }
+  }
+}

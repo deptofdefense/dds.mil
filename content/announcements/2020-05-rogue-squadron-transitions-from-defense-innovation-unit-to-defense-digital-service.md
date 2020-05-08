@@ -22,8 +22,6 @@ Given the priority that the DOD is placing on C-UAS efforts, as well as the shar
 
 "Rogue Squadron has solved some of the department's most pressing counter-UAS challenges by bringing together commercial methodologies and technical expertise in different ways," said Mike Brown, DIU director. "In the same way that today’s Kessel Run office grew out of a DIU software development prototype, we are excited to see Rogue Squadron’s transition to DDS that will build and scale a powerful capability in DOD."
 
-\###
-
 **About Defense Digital Service**
 
 The Defense Digital Service (DDS) was established by the Secretary of Defense in November 2015 as a SWAT team of nerds that provides the best in modern technical knowledge designed to bolster national defense. DDS is primarily based in the Pentagon, but also has permanent office space in Augusta, Georgia (Tatooine) and Mountain View, California (Rogue Squadron). DDS talent includes world-class software developers, designers, product managers, digital experts and bureaucracy hackers from both the private sector and within government. Learn more at <https://dds.mil/>.

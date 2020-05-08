@@ -1,7 +1,8 @@
 import React from "react";
 import { graphql } from "gatsby";
+import Img from "gatsby-image";
 import { Layout, Section, Sidebar, SidebarSection, SEO } from "components";
-import { HeroSection } from "sections";
+import { HeroSection, MarkdownBodySection } from "sections";
 
 interface Props {
   data: {
@@ -33,14 +34,22 @@ interface Props {
         }[];
       };
     };
+    contentJson: {
+      defaultMediaImage: {
+        childImageSharp: {
+          fluid: any;
+        };
+      };
+    };
   };
 }
 
 const BlogPostPage: React.FC<Props> = ({
-  data: { markdownRemark, pagesJson },
+  data: { markdownRemark, pagesJson, contentJson },
 }) => {
   const { html, frontmatter } = markdownRemark;
   const { sidenav } = pagesJson;
+  const { defaultMediaImage } = contentJson;
   return (
     <Layout>
       <SEO title={frontmatter.title} />
@@ -50,8 +59,18 @@ const BlogPostPage: React.FC<Props> = ({
         heroImage={frontmatter.heroImage}
       />
       <SidebarSection sidebar={<Sidebar menu={sidenav.menu} includeSocial />}>
-        <Section className="dds-post-page-section">
-          <div dangerouslySetInnerHTML={{ __html: html }} />
+        <Section className="media-page-section">
+          <Img
+            fluid={
+              frontmatter.image
+                ? frontmatter.image.childImageSharp.fluid
+                : defaultMediaImage.childImageSharp.fluid
+            }
+          />
+          <div
+            className="markdown-body"
+            dangerouslySetInnerHTML={{ __html: html }}
+          />
         </Section>
       </SidebarSection>
     </Layout>
@@ -88,6 +107,16 @@ export const query = graphql`
         menu {
           text
           link
+        }
+      }
+    }
+
+    contentJson {
+      defaultMediaImage {
+        childImageSharp {
+          fluid(maxWidth: 800) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
         }
       }
     }
