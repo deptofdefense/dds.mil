@@ -3,10 +3,25 @@ import { navigate } from "gatsby-link";
 import clsx from "clsx";
 import { FaSearch } from "react-icons/fa";
 import { TextInput } from "components";
+import { useStaticQuery, graphql } from "gatsby";
 
 type Timeout = ReturnType<typeof setImmediate>;
 
 export const HeaderSearch: React.FC = () => {
+  const {
+    contentJson: { searchgov },
+  } = useStaticQuery(graphql`
+    query {
+      contentJson {
+        searchgov {
+          affiliate
+          endpoint
+          accessKey
+        }
+      }
+    }
+  `);
+
   const [timer, setTimer] = useState<Timeout>();
   const searchRef = useRef<HTMLInputElement>(null);
   const [searchExpanded, setSearchExpanded] = useState(false);
@@ -24,9 +39,9 @@ export const HeaderSearch: React.FC = () => {
 
   const onSearchSubmit: React.FormEventHandler = (e) => {
     e.preventDefault();
-    navigate(`/search`, {
-      state: { search: searchValue },
-    });
+    window.location.replace(
+      `${searchgov.endpoint}?utf8=✓&affiliate=${searchgov.affiliate}&query=${searchValue}`
+    );
   };
 
   const onBlur: React.FocusEventHandler<
@@ -58,18 +73,16 @@ export const HeaderSearch: React.FC = () => {
       })}
     >
       <form onSubmit={onSearchSubmit}>
-        <button
-          onFocus={onFocus}
-          onClick={onSearchClick}
-          aria-labelledby="searchlabel"
-        >
+        <button onFocus={onFocus} onClick={onSearchClick}>
           <FaSearch size={22} />
           <span id="searchlabel" className="usa-sr-only">
             {searchExpanded ? "Search" : "Open search input"}
           </span>
         </button>
+        <input type="hidden" name="affiliate" id="affiliate" value="dds" />
         <TextInput
           placeholder="Search"
+          aria-labelledby="searchlabel"
           ref={searchRef}
           value={searchValue}
           onChange={(e) => setSearchValue(e.target.value)}

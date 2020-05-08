@@ -1,9 +1,7 @@
 const path = require("path");
+const sitemap = require("./sitemap");
 
 module.exports = {
-  siteMetadata: {
-    title: `Defense Digital Service`,
-  },
   plugins: [
     {
       resolve: `gatsby-plugin-typescript`,
@@ -45,6 +43,10 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: sitemap,
+    },
     {
       resolve: "gatsby-plugin-manifest",
       options: {

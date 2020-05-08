@@ -1,5 +1,6 @@
 {
   "siteTitle": "Defense Digital Service",
+  "siteDomain": "dds.mil",
   "pageSize": 10,
   "seoDescription": "Home page for Defense Digital Service",
   "defaultMediaImage": "baby-yoda.png",
@@ -7,6 +8,6 @@
   "searchgov": {
     "affiliate": "dds",
     "accessKey": "yOkULtPGCnKOYWhlLB0rhn888vCfUBM7t0WgDzS5Fg0=",
-    "endpoint": "https://search.usa.gov/api/v2/search"
+    "endpoint": "https://search.usa.gov/search"
   }
 }

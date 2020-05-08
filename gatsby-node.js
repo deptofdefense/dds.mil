@@ -2,7 +2,20 @@ const path = require("path");
 const webpack = require(`webpack`);
 const SVGO = require("svgo");
 
-const svgo = new SVGO();
+let counter = 0;
+
+const svgo = new SVGO({
+  plugins: [
+    { removeXMLNS: true },
+    { inlineStyles: true },
+    { convertStyleToAttrs: true },
+    {
+      removeAttrs: {
+        attrs: ["svg:id"],
+      },
+    },
+  ],
+});
 
 // https://www.gatsbyjs.org/packages/gatsby-plugin-netlify-cms/#disable-widget-on-site
 exports.onCreateWebpackConfig = ({ actions }) => {
