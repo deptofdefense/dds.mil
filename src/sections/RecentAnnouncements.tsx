@@ -24,6 +24,7 @@ export const RecentAnnouncements: React.FC<RecentAnnouncementsSectionData> = () 
     query {
       allMarkdownRemark(
         filter: { frontmatter: { type: { eq: "announcements" } } }
+        sort: { fields: frontmatter___date, order: DESC }
         limit: 2
       ) {
         nodes {

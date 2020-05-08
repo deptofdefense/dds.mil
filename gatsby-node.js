@@ -7,7 +7,11 @@ let counter = 0;
 const svgo = new SVGO({
   plugins: [
     { removeXMLNS: true },
-    { inlineStyles: true },
+    {
+      inlineStyles: {
+        onlyMatchedOnce: false,
+      },
+    },
     { convertStyleToAttrs: true },
     {
       removeAttrs: {

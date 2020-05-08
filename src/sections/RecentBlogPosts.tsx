@@ -28,6 +28,7 @@ export const RecentBlogPosts: React.FC<RecentBlogPostsSectionData> = () => {
     query {
       allMarkdownRemark(
         filter: { frontmatter: { type: { eq: "blog" } } }
+        sort: { fields: frontmatter___date, order: DESC }
         limit: 3
       ) {
         nodes {
@@ -41,7 +42,7 @@ export const RecentBlogPosts: React.FC<RecentBlogPostsSectionData> = () => {
               }
             }
             summary
-            date(fromNow: true)
+            date(formatString: "MMM DD, YYYY")
           }
           fields {
             slug
