@@ -1,8 +1,12 @@
 const path = require("path");
 const sitemap = require("./config/sitemap");
 const robots = require("./config/robots");
+const rss = require("./config/rss");
 
 module.exports = {
+  siteMetadata: {
+    title: "Defense Digital Service",
+  },
   plugins: [
     {
       resolve: `gatsby-plugin-typescript`,
@@ -51,6 +55,10 @@ module.exports = {
     {
       resolve: `gatsby-plugin-robots-txt`,
       options: robots,
+    },
+    {
+      resolve: `gatsby-plugin-feed`,
+      options: rss,
     },
     {
       resolve: "gatsby-plugin-manifest",
