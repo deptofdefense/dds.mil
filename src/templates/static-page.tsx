@@ -196,6 +196,9 @@ export const query = graphql`
               ...GatsbyImageSharpFluid_withWebp
             }
           }
+          childInlineSvg {
+            rawSvg
+          }
         }
         altText
         icons {

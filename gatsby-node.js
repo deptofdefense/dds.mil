@@ -205,12 +205,16 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
     });
   }
 
-  const mediaTypes = ["announcements", "news", "blog"];
+  const mediaTypes = [
+    ["announcements", "Announcements"],
+    ["news", "News"],
+    ["blog", "Blog"],
+  ];
   const mediaListPage = path.resolve("src/templates/media-list.tsx");
   const mediaPage = path.resolve("src/templates/media-page.tsx");
   const pageSize = 8;
 
-  for (let mediaType of mediaTypes) {
+  for (let [mediaType, title] of mediaTypes) {
     const { data } = await graphql(`{
       allMarkdownRemark(
         filter: { frontmatter: { type: { eq: "${mediaType}" }}}
@@ -235,6 +239,7 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
           limit: pageSize,
           skip: i * pageSize,
           mediaType,
+          title,
           numPages,
           currentPage: i + 1,
         },

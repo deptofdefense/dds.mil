@@ -1,15 +1,25 @@
 .dds-cta-btn {
-  background-color: color("accent-cool-dark");
+  background-color: #00bde3;
   font-size: 22px;
   border: none;
   line-height: 26px;
   font-weight: bold;
-  color: #fff;
+  color: #28a0cb;
   border-radius: 5px;
   text-align: center;
   cursor: pointer;
   width: 100%;
   padding: units(3) 0;
+
+  :hover {
+    background-color: #28a0cb;
+    color: #fff;
+  }
+
+  :active {
+    background-color: #07648d;
+    color: #fff;
+  }
 
   @include at-media(desktop) {
     width: auto;

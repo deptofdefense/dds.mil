@@ -20,8 +20,8 @@ type QueryResult = {
     }[];
   };
   file: {
-    childImageSharp: {
-      fixed: any;
+    childInlineSvg: {
+      rawSvg: string;
     };
   };
 };
@@ -33,11 +33,9 @@ interface Props {
 export const Header: React.FC<Props> = ({ siteTitle }) => {
   const data: QueryResult = useStaticQuery(graphql`
     query {
-      file(relativePath: { eq: "logo-banner.png" }) {
-        childImageSharp {
-          fixed(width: 100) {
-            ...GatsbyImageSharpFixed
-          }
+      file(relativePath: { eq: "dds-wings-only.svg" }) {
+        childInlineSvg {
+          rawSvg
         }
       }
       allPagesJson(
@@ -61,6 +59,7 @@ export const Header: React.FC<Props> = ({ siteTitle }) => {
   const navigation = data.allPagesJson.nodes.map(
     ({ navigation }) => navigation
   );
+  const { rawSvg } = data.file.childInlineSvg;
 
   return (
     <header className="usa-header usa-header--basic" role="banner">
@@ -70,9 +69,9 @@ export const Header: React.FC<Props> = ({ siteTitle }) => {
             <div className="usa-logo__text">
               <Link to="/" aria-label="Home">
                 <div className="display-flex flex-row flex-align-center">
-                  <Img
-                    loading="eager"
-                    fixed={data.file.childImageSharp.fixed}
+                  <div
+                    className="dds-header-image"
+                    dangerouslySetInnerHTML={{ __html: rawSvg }}
                   />
                   <div className="display-flex flex-column margin-left-1  flex-no-wrap">
                     <div className="text-bold text-ls-1">DEFENSE</div>
