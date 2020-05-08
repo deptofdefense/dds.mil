@@ -1,5 +1,6 @@
 const path = require("path");
-const sitemap = require("./sitemap");
+const sitemap = require("./config/sitemap");
+const robots = require("./config/robots");
 
 module.exports = {
   plugins: [
@@ -46,6 +47,10 @@ module.exports = {
     {
       resolve: `gatsby-plugin-sitemap`,
       options: sitemap,
+    },
+    {
+      resolve: `gatsby-plugin-robots-txt`,
+      options: robots,
     },
     {
       resolve: "gatsby-plugin-manifest",
