@@ -28,10 +28,10 @@ export const RecentBlogPost: React.FC<Props> = ({
       {imgFluid && <Img fluid={imgFluid} />}
       {imgSrc && <img src={imgSrc} />}
       <div className="dds-post-body">
-        <div className="dds-post-date">{date}</div>
         <Link to={`/media/blog/${slug}`} className="dds-post-heading">
           {title}
         </Link>
+        <div className="dds-post-date">{date}</div>
         <p>{summary}</p>
         <Link to={`/media/blog/${slug}`} className="dds-post-read-now">
           READ NOW <FaChevronRight />

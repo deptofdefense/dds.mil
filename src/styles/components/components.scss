@@ -4,22 +4,12 @@
   border: none;
   line-height: 26px;
   font-weight: bold;
-  color: #28a0cb;
+  color: #fff;
   border-radius: 5px;
   text-align: center;
   cursor: pointer;
   width: 100%;
   padding: units(3) 0;
-
-  :hover {
-    background-color: #28a0cb;
-    color: #fff;
-  }
-
-  :active {
-    background-color: #07648d;
-    color: #fff;
-  }
 
   @include at-media(desktop) {
     width: auto;
@@ -30,6 +20,16 @@
     width: auto;
     padding: units(3) units(8);
   }
+}
+
+.dds-cta-btn:hover {
+  background-color: #28a0cb;
+  color: #fff;
+}
+
+.dds-cta-btn:active {
+  background-color: #07648d;
+  color: #fff;
 }
 
 .dds-cta-btn.width-full {

@@ -58,9 +58,15 @@ export const HeaderSearch: React.FC = () => {
       })}
     >
       <form onSubmit={onSearchSubmit}>
-        <button onFocus={onFocus} onClick={onSearchClick}>
+        <button
+          onFocus={onFocus}
+          onClick={onSearchClick}
+          aria-labeledby="searchlabel"
+        >
           <FaSearch size={22} />
-          <span className="usa-sr-only">Open Search Input</span>
+          <span id="searchlabel" className="usa-sr-only">
+            {searchExpanded ? "Search" : "Open search input"}
+          </span>
         </button>
         <TextInput
           placeholder="Search"
