@@ -1,47 +1,33 @@
 import React, { useState, useEffect, useRef } from "react";
-import { navigate } from "gatsby-link";
 import clsx from "clsx";
 import { FaSearch } from "react-icons/fa";
 import { TextInput } from "components";
-import { useStaticQuery, graphql } from "gatsby";
 
 type Timeout = ReturnType<typeof setImmediate>;
 
-export const HeaderSearch: React.FC = () => {
-  const {
-    contentJson: { searchgov },
-  } = useStaticQuery(graphql`
-    query {
-      contentJson {
-        searchgov {
-          affiliate
-          endpoint
-          accessKey
-        }
-      }
-    }
-  `);
+interface Props {
+  onSubmit: React.FormEventHandler;
+  value: string;
+  onChange: React.ChangeEventHandler<HTMLInputElement>;
+}
 
+export const HeaderSearch: React.FC<Props> = ({
+  value,
+  onChange,
+  onSubmit,
+}) => {
   const [timer, setTimer] = useState<Timeout>();
   const searchRef = useRef<HTMLInputElement>(null);
   const [searchExpanded, setSearchExpanded] = useState(false);
-  const [searchValue, setSearchValue] = useState("");
 
   const onSearchClick: React.MouseEventHandler = (e) => {
     if (!searchExpanded) {
       e.preventDefault();
       setSearchExpanded(true);
-    } else if (searchValue === "") {
+    } else if (value === "") {
       e.preventDefault();
       setSearchExpanded(false);
     }
-  };
-
-  const onSearchSubmit: React.FormEventHandler = (e) => {
-    e.preventDefault();
-    window.location.replace(
-      `${searchgov.endpoint}?utf8=✓&affiliate=${searchgov.affiliate}&query=${searchValue}`
-    );
   };
 
   const onBlur: React.FocusEventHandler<
@@ -72,20 +58,19 @@ export const HeaderSearch: React.FC = () => {
         "dds-nav-search-open": searchExpanded,
       })}
     >
-      <form onSubmit={onSearchSubmit}>
+      <form onSubmit={onSubmit}>
         <button onFocus={onFocus} onClick={onSearchClick}>
           <FaSearch size={22} />
           <span id="searchlabel" className="usa-sr-only">
             {searchExpanded ? "Search" : "Open search input"}
           </span>
         </button>
-        <input type="hidden" name="affiliate" id="affiliate" value="dds" />
         <TextInput
           placeholder="Search"
           aria-labelledby="searchlabel"
           ref={searchRef}
-          value={searchValue}
-          onChange={(e) => setSearchValue(e.target.value)}
+          value={value}
+          onChange={onChange}
           onBlur={onBlur}
           onFocus={onFocus}
         />

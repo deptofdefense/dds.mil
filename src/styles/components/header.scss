@@ -60,16 +60,23 @@
 .usa-nav {
   background-color: rgb(35, 120, 195);
   color: #fff;
-  width: 17rem;
+  width: 20rem;
+  padding: 0;
 
   @include at-media(desktop) {
     background-color: transparent;
     color: inherit;
     width: 100%;
+    padding: units(2);
   }
 
   .usa-nav__primary {
     margin-top: 0;
+    padding: 0 units(2);
+
+    @include at-media(desktop) {
+      padding: 0;
+    }
 
     .usa-nav__primary-item {
       border-top: none;
@@ -119,18 +126,15 @@
       }
     }
   }
-
-  .usa-nav__close {
-    margin: 0;
-    margin-left: auto;
-    font-size: 1.3em;
-    font-weight: 100;
-  }
 }
 
 .dds-nav-search {
-  display: flex;
   align-items: center;
+  display: none;
+
+  @include at-media(desktop) {
+    display: flex;
+  }
 
   form {
     outline: none !important;
@@ -184,5 +188,51 @@
     100% {
       opacity: 1;
     }
+  }
+}
+
+.header-drawer-search {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin-bottom: units(2);
+  background-color: color("primary");
+  padding: units(3) units(2);
+
+  @include at-media(desktop) {
+    display: none;
+  }
+
+  form {
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    color: #fff;
+    border: 1px solid #ddd;
+    position: relative;
+
+    .dds-text-input {
+      width: 100%;
+    }
+
+    input {
+      border: none;
+      margin-top: 0;
+    }
+
+    button {
+      position: absolute;
+      right: 0;
+      background-color: #fff;
+      border: none;
+    }
+  }
+
+  .usa-nav__close {
+    margin: 0;
+    font-size: 1.3em;
+    font-weight: 100;
+    color: #fff;
   }
 }

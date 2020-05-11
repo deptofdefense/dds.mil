@@ -57,19 +57,17 @@ export const IconSection: React.FC<IconSectionData> = ({ icons }) => {
             })}
             key={title}
           >
-            <div className="icon-info-section-heading">
-              {cta ? (
-                <Link to={ctaLink}>
-                  <Icon {...icon} />
-                  <h3>{title}</h3>
-                </Link>
-              ) : (
-                <>
-                  <Icon {...icon} />
-                  <h3>{title}</h3>
-                </>
-              )}
-            </div>
+            {cta ? (
+              <Link to={ctaLink} className="icon-info-section-heading">
+                <Icon {...icon} />
+                <h3>{title}</h3>
+              </Link>
+            ) : (
+              <div className="icon-info-section-heading">
+                <Icon {...icon} />
+                <h3>{title}</h3>
+              </div>
+            )}
             <p>{details}</p>
             {cta && (
               <Link to={ctaLink}>

@@ -34,8 +34,8 @@
       h3 {
         width: 100%;
         font-size: size("body", "xl");
-        padding-left: units(2);
         margin: 0;
+        padding-left: units(2);
       }
 
       @include at-media(desktop) {
