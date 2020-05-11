@@ -225,7 +225,6 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
 
   const mediaTypes = [
     ["announcements", "Announcements"],
-    ["news", "News"],
     ["blog", "Blog"],
   ];
   const mediaListPage = path.resolve("src/templates/media-list.tsx");
@@ -275,5 +274,37 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
         },
       });
     }
+  }
+
+  const newsListPage = path.resolve("src/templates/news-list.tsx");
+  const { data: newsData } = await graphql(`
+    {
+      allMarkdownRemark(
+        filter: { frontmatter: { type: { eq: "news" } } }
+        sort: { fields: [frontmatter___date], order: DESC }
+      ) {
+        nodes {
+          fields {
+            slug
+          }
+        }
+      }
+    }
+  `);
+  const results = newsData.allMarkdownRemark.nodes;
+  const numPages = Math.ceil(results.length, 15);
+
+  // create list pages for news articles
+  for (let i = 0; i < numPages; i++) {
+    createPage({
+      path: i === 0 ? `/media/news` : `/media/news/${i + 1}`,
+      component: newsListPage,
+      context: {
+        limit: pageSize,
+        skip: i * pageSize,
+        numPages,
+        currentPage: i + 1,
+      },
+    });
   }
 };

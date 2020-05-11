@@ -22,9 +22,18 @@ export const NewsArticleCollection: CmsCollection = {
   fields: [
     hiddenTypeField("news"),
     TitleField,
+    {
+      label: "Link",
+      name: "link",
+      widget: "string",
+      hint: "Fully qualified link to the article (https://....)",
+    },
+    {
+      label: "Outlet",
+      name: "outlet",
+      widget: "string",
+      required: false,
+    },
     PublishDateField,
-    EntryCoverImageField,
-    EntrySummaryField,
-    EntryBodyField,
   ],
 };

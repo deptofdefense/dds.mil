@@ -1,0 +1,19 @@
+.dds-news-item {
+  padding: 0 units(3) units(3) units(3);
+  font-size: 28px;
+  line-height: 26px;
+  height: 100%;
+
+  a {
+    color: color("primary-vivid");
+    text-decoration: none;
+    margin-bottom: 0;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .dds-post-date {
+    margin-top: 4px;
+  }
+}

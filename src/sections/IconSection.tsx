@@ -70,7 +70,7 @@ export const IconSection: React.FC<IconSectionData> = ({ icons }) => {
             )}
             <p>{details}</p>
             {cta && (
-              <Link to={ctaLink}>
+              <Link to={ctaLink} className="info-section-item-cta-link">
                 {cta} <FaChevronRight fontSize={13} />
               </Link>
             )}

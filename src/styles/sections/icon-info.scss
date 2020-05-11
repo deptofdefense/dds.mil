@@ -5,7 +5,7 @@
   flex-direction: column;
   width: 100%;
   padding: 42px 0;
-  margin: -1.5rem 0;
+  margin-top: -1.5rem;
 
   @include at-media(desktop) {
     flex-direction: row;
@@ -29,12 +29,15 @@
     .icon-info-section-heading {
       display: flex;
       align-items: center;
+      flex-wrap: nowrap;
       margin-bottom: units(2);
+      margin-top: 0 !important;
 
       h3 {
-        width: 100%;
+        // width: 100%;
         font-size: size("body", "xl");
         margin: 0;
+        padding: 0;
         padding-left: units(2);
       }
 
@@ -67,6 +70,12 @@
     a:hover {
       text-decoration: underline;
       color: #fff;
+    }
+  }
+
+  .icon-info-section-item:last-of-type {
+    @include at-media(desktop) {
+      margin-right: -2rem;
     }
   }
 

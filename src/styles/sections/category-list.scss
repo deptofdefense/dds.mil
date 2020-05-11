@@ -12,7 +12,6 @@
   }
 
   h2 {
-    padding: 0 units(5);
     margin-top: 0;
     width: 100%;
 
@@ -70,5 +69,9 @@
       border-color: #ffffff;
       background-color: color("blue-warm-60");
     }
+  }
+
+  .category-list-section-item:last-of-type {
+    margin-right: -1rem;
   }
 }

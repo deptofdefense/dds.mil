@@ -17,21 +17,6 @@
     @include at-media(tablet) {
       width: 40%;
     }
-
-    button {
-      width: 100%;
-      padding: units(3) 0;
-
-      @include at-media(desktop) {
-        width: auto;
-        padding: units(2) units(5);
-      }
-
-      @include at-media(desktop) {
-        width: auto;
-        padding: units(3) units(8);
-      }
-    }
   }
 
   .cta-details {
