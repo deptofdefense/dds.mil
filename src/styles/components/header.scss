@@ -86,6 +86,7 @@
         background-color: transparent;
         color: white;
         font-weight: $theme-font-weight-light;
+        white-space: nowrap;
 
         @include at-media(desktop) {
           font-weight: bold;

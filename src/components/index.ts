@@ -18,3 +18,4 @@ export * from "./RadioButtonGroup";
 export * from "./TextInput";
 export * from "./HeaderSearch";
 export * from "./NewsArticleItem";
+export * from "./Paginator";

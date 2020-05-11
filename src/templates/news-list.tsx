@@ -7,6 +7,7 @@ import {
   SidebarSection,
   Sidebar,
   SEO,
+  Paginator,
 } from "components";
 
 interface Props {
@@ -29,6 +30,11 @@ interface Props {
       };
     };
   };
+  pageContext: {
+    currentPage: number;
+    numPages: number;
+    basePage: string;
+  };
 }
 
 const NewsList: React.FC<Props> = ({
@@ -36,6 +42,7 @@ const NewsList: React.FC<Props> = ({
     allMarkdownRemark: { nodes },
     pagesJson: { sidenav },
   },
+  pageContext,
 }) => {
   return (
     <Layout>
@@ -43,8 +50,9 @@ const NewsList: React.FC<Props> = ({
       <SidebarSection sidebar={<Sidebar menu={sidenav.menu} includeSocial />}>
         <Section className="post-list-section">
           {nodes.map(({ frontmatter }) => (
-            <NewsArticleItem key={frontmatter.link} {...frontmatter} />
+            <NewsArticleItem key={frontmatter.title} {...frontmatter} />
           ))}
+          <Paginator {...pageContext} />
         </Section>
       </SidebarSection>
     </Layout>

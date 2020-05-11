@@ -61,3 +61,22 @@
     background-color: #fefeff;
   }
 }
+
+.paginator {
+  font-size: 1.2rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  a {
+    margin: 0 units(2);
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+}

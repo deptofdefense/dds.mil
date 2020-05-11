@@ -223,6 +223,9 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
     });
   }
 
+  //
+  //  ANNOUNCEMENTS AND BLOG POSTS
+  //
   const mediaTypes = [
     ["announcements", "Announcements"],
     ["blog", "Blog"],
@@ -245,7 +248,7 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
       }
     }`);
     const results = data.allMarkdownRemark.nodes;
-    const numPages = Math.ceil(results.length, pageSize);
+    const numPages = Math.ceil(results.length / pageSize);
 
     // create list pages for this media type
     for (let i = 0; i < numPages; i++) {
@@ -259,6 +262,7 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
           title,
           numPages,
           currentPage: i + 1,
+          basePage: `/media/${mediaType}`,
         },
       });
     }
@@ -276,6 +280,9 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
     }
   }
 
+  //
+  //  NEWS ARTICLES
+  //
   const newsListPage = path.resolve("src/templates/news-list.tsx");
   const { data: newsData } = await graphql(`
     {
@@ -292,7 +299,7 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
     }
   `);
   const results = newsData.allMarkdownRemark.nodes;
-  const numPages = Math.ceil(results.length, 15);
+  const numPages = Math.ceil(results.length / 15);
 
   // create list pages for news articles
   for (let i = 0; i < numPages; i++) {
@@ -300,10 +307,11 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
       path: i === 0 ? `/media/news` : `/media/news/${i + 1}`,
       component: newsListPage,
       context: {
-        limit: pageSize,
-        skip: i * pageSize,
+        limit: 15,
+        skip: i * 15,
         numPages,
         currentPage: i + 1,
+        basePage: "/media/news",
       },
     });
   }
