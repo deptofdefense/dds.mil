@@ -129,15 +129,12 @@ export const Header: React.FC = () => {
                 name="affiliate"
                 value={searchgov.affiliate}
               />
-              <span id="searchlabel" className="usa-sr-only">
-                Search
-              </span>
-              <button type="submit">
+              <button type="submit" aria-label="Submit Search Query">
                 <FaSearch size={22} />
               </button>
               <TextInput
                 placeholder="Search"
-                aria-labelledby="searchlabel"
+                aria-label="Search query input"
                 value={searchValue}
                 onChange={onSearchChange}
               />
@@ -149,9 +146,7 @@ export const Header: React.FC = () => {
           <ul className="usa-nav__primary usa-accordion">
             {navigation.map(({ link, text, subnav }) => (
               <React.Fragment key={link}>
-                <HeaderNavLink to={link}>
-                  {text}
-                </HeaderNavLink>
+                <HeaderNavLink to={link}>{text}</HeaderNavLink>
                 {subnav &&
                   subnav.map((sub) => (
                     <HeaderNavLink

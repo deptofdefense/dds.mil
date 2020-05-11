@@ -1,9 +1,5 @@
-.bundle/
-.jekyll-cache/
-.sass-cache/
-public/
 .DS_Store
-.ruby-gemset
+public/
 node_modules
 .cache
 
