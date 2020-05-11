@@ -13,8 +13,6 @@ export const Paginator: React.FC<Props> = ({
   numPages,
   basePage,
 }) => {
-  console.log(currentPage, numPages, basePage);
-
   let prevPage = null;
   if (currentPage > 2) {
     prevPage = `${basePage}/${currentPage - 1}`;
