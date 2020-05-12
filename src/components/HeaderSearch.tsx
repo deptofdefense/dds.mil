@@ -8,12 +8,12 @@ type Timeout = ReturnType<typeof setImmediate>;
 interface Props {
   onSubmit: React.FormEventHandler;
   value: string;
-  onChange: React.ChangeEventHandler<HTMLInputElement>;
+  setValue(value: string): void;
 }
 
 export const HeaderSearch: React.FC<Props> = ({
   value,
-  onChange,
+  setValue,
   onSubmit,
 }) => {
   const [timer, setTimer] = useState<Timeout>();
@@ -26,7 +26,6 @@ export const HeaderSearch: React.FC<Props> = ({
       setSearchExpanded(true);
     } else if (value === "") {
       e.preventDefault();
-      setSearchExpanded(false);
     }
   };
 
@@ -35,6 +34,7 @@ export const HeaderSearch: React.FC<Props> = ({
   > = () => {
     setTimer(
       setImmediate(() => {
+        setValue("");
         setSearchExpanded(false);
       })
     );
@@ -44,6 +44,7 @@ export const HeaderSearch: React.FC<Props> = ({
     HTMLInputElement | HTMLButtonElement
   > = (e) => {
     clearImmediate(timer as Timeout);
+    setSearchExpanded(true);
   };
 
   useEffect(() => {
@@ -62,16 +63,17 @@ export const HeaderSearch: React.FC<Props> = ({
         <button
           onFocus={onFocus}
           onClick={onSearchClick}
+          disabled={searchExpanded && value === ""}
           aria-label={searchExpanded ? "Submit Search" : "Expand Search Input"}
         >
-          <FaSearch size={22} />
+          <FaSearch size={22} focusable={false} />
         </button>
         <TextInput
           placeholder="Search"
           aria-label="Search query input"
           ref={searchRef}
           value={value}
-          onChange={onChange}
+          onChange={(e) => setValue(e.target.value)}
           onBlur={onBlur}
           onFocus={onFocus}
         />

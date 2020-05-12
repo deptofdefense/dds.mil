@@ -55,7 +55,11 @@ export const RadioButtonGroup: React.FC<Props> = ({
           />
           <label className="usa-radio__label" htmlFor="other">
             Other
-            <TextInput value={otherValue} onChange={onOtherChange} />
+            <TextInput
+              value={otherValue}
+              onChange={onOtherChange}
+              tabIndex={value === "other" ? 0 : -1}
+            />
           </label>
         </div>
       )}

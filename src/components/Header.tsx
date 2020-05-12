@@ -82,13 +82,6 @@ export const Header: React.FC = () => {
     [searchValue]
   );
 
-  const onSearchChange: React.ChangeEventHandler<HTMLInputElement> = useCallback(
-    (e) => {
-      setSearchValue(e.target.value);
-    },
-    []
-  );
-
   const navigation = data.allPagesJson.nodes.map(
     ({ navigation }) => navigation
   );
@@ -136,7 +129,7 @@ export const Header: React.FC = () => {
                 placeholder="Search"
                 aria-label="Search query input"
                 value={searchValue}
-                onChange={onSearchChange}
+                onChange={e => setSearchValue(e.target.value)}
               />
             </form>
             <button className="usa-nav__close" aria-label="Close Navigation">
@@ -162,7 +155,7 @@ export const Header: React.FC = () => {
             <HeaderSearch
               onSubmit={onSearchSubmit}
               value={searchValue}
-              onChange={onSearchChange}
+              setValue={setSearchValue}
             />
           </ul>
         </nav>

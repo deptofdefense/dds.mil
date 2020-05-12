@@ -88,10 +88,13 @@
     }
 
     input[type="file"] {
-      display: none;
+      width: 1px;
+      height: 1px;
+      opacity: 0;
+      z-index: -10;
     }
 
-    .dds-resume-label {
+    input[type="file"] + .dds-resume-label {
       background-color: color("primary-darker");
       color: #ffffff;
       border-radius: units(1);
@@ -100,10 +103,16 @@
       display: flex;
       align-items: center;
     }
+
+    input[type="file"]:focus + .dds-resume-label {
+      outline: 0.25rem solid #2491ff;
+    }
+
     .dds-resume-selected {
       background-color: color("green-cool-40v");
     }
   }
+
   .dds-interest-form-submit-wrapper {
     margin-top: units(6);
     width: 100%;

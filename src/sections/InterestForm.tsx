@@ -170,6 +170,14 @@ export const InterestForm: React.FC<InterestFormData> = () => {
           <div className="dds-label-wrapper">
             <label htmlFor="resume">Resume:</label>
           </div>
+
+          <input
+            onChange={onAttatchment}
+            id="resume"
+            name="resume"
+            type="file"
+            accept=".pdf,.doc,.docx"
+          />
           <label
             className={clsx("dds-resume-label", {
               "dds-resume-selected": Boolean(formData.resume?.name),
@@ -186,13 +194,6 @@ export const InterestForm: React.FC<InterestFormData> = () => {
                 <FaPlus className="margin-right-2" /> Upload Resume
               </>
             )}
-            <input
-              onChange={onAttatchment}
-              id="resume"
-              name="resume"
-              type="file"
-              accept=".pdf,.doc,.docx"
-            />
           </label>
           {errors.resume && (
             <div className="text-red margin-left-2">{errors.resume}</div>
