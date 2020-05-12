@@ -2,6 +2,7 @@
 type: announcements
 title: New DDS Director to Expand High-Impact Technology Initiatives
 date: 2019-04-23T19:55:00.000Z
+cover: dds-wings-only.svg
 summary: Public, private sector technologist Brett Goldstein named Defense
   Digital Service Director
 ---
