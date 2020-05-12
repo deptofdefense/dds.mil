@@ -54,10 +54,6 @@ export const RecentBlogPosts: React.FC<RecentBlogPostsSectionData> = () => {
 
   const posts: PostNode[] = data.allMarkdownRemark.nodes;
 
-  console.log(
-    posts.map((p) => `${p.frontmatter.title} ${p.frontmatter.image}`)
-  );
-
   return (
     <Section>
       <h3>Recent Blog Posts:</h3>

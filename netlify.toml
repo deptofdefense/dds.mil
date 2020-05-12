@@ -29,3 +29,20 @@
   [plugins.inputs]
   resultMode = "warn"
   checkPaths = ['/']
+
+
+[[redirects]]
+  from = "https://dds-mil.netlify.com/*"
+  to = "https://dds.mil/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/usacecovid"
+  to = "https://docs.google.com/forms/d/e/1FAIpQLSdWyrdmobjbXLJhKye0apU7XscoF73bTXOxd3DWSzQt3zDhlA/viewform?usp=sf_link"
+  status = 301
+
+[[redirects]]
+  from = "/usace-ct"
+  to = "https://docs.google.com/forms/d/e/1FAIpQLSdFhflnYUpPBnXXzwAOmsb3RHf42-9o1vZoZDISQYkSC_-MYg/viewform"
+  status = 301
