@@ -2,7 +2,7 @@
 type: blog
 title: Iterating on Code.mil
 date: 2018-04-13T04:00:00.000Z
-cover: dds-wings-only.svg
+image: default-media-image.png
 summary: "No one ever said open sourcing code at the Department of Defense (DoD)
   would be easy. "
 ---

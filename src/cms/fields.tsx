@@ -11,6 +11,7 @@ export const hiddenTypeField = (value: string): PatchedField => ({
   widget: "hidden",
   default: value,
 });
+
 export const hiddenNavOrderField = (value: number): PatchedField => ({
   label: "navOrder",
   name: "navOrder",
@@ -39,16 +40,20 @@ export const EntrySummaryField: PatchedField = {
 };
 
 export const EntryCoverImageField: PatchedField = {
-  label: "Cover Image",
-  name: "cover",
+  label: "Image",
+  name: "image",
   widget: "image",
-  required: false,
+  required: true,
+  allow_multiple: false,
+  default: "default-media-image.png",
+  hint: "PNG or JPG only",
 };
 
 export const EntryBodyField: PatchedField = {
   label: "Body",
   name: "body",
   widget: "markdown",
+  default: "",
 };
 
 export const CTAField: PatchedField = {

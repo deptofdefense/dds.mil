@@ -1,13 +1,15 @@
+import React from "react";
 import {
   hiddenTypeField,
   entrySummaryFormat,
   TitleField,
   PublishDateField,
-  EntryCoverImageField,
-  EntrySummaryField,
-  EntryBodyField,
 } from "./fields";
+import CMS from "netlify-cms-app";
 import { CmsCollection } from "netlify-cms-core";
+import { PreviewProps } from "./types";
+import { formatDate } from "./utils";
+import { NewsArticleItem } from "components";
 
 export const NewsArticleCollection: CmsCollection = {
   name: "news",
@@ -37,3 +39,19 @@ export const NewsArticleCollection: CmsCollection = {
     PublishDateField,
   ],
 };
+
+const NewsArticlePreview: React.FC<PreviewProps> = ({ entry }) => {
+  const props = {
+    title: entry.getIn(["data", "title"]),
+    link: entry.getIn(["data", "link"]),
+    outlet: entry.getIn(["data", "outlet"]),
+    date: formatDate(entry.getIn(["data", "date"])),
+  };
+  return (
+    <div className="maxw-mobile-lg margin-x-auto margin-top-7">
+      <NewsArticleItem {...props} />
+    </div>
+  );
+};
+
+CMS.registerPreviewTemplate("news", NewsArticlePreview);

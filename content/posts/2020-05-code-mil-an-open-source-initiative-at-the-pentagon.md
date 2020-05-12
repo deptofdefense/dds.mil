@@ -2,17 +2,18 @@
 type: blog
 title: "Code.mil: An Open Source Initiative at the Pentagon"
 date: 2017-03-13T18:51:00.000Z
-cover: dds-wings-only.svg
+image: default-media-image.png
 summary: Building bridges between the Department of Defense and the software
   development community, one pull request at a time
 ---
-The Department of Defense (DoD) is a behemoth Federal agency built upon closed proprietary software and legacy systems that have been continually outpaced by modern technology and development standards. While the DoD has made strides towards modernization, one arena that has yet to be fully embraced and implemented is the practice of free and open source software. 
+
+The Department of Defense (DoD) is a behemoth Federal agency built upon closed proprietary software and legacy systems that have been continually outpaced by modern technology and development standards. While the DoD has made strides towards modernization, one arena that has yet to be fully embraced and implemented is the practice of free and open source software.
 
 Our team at the Defense Digital Service (DDS) was formed by Secretary of Defense to bring in private sector best talent, practices and technology into the DoD. Most of us hail from companies such as Google and Amazon, and from environments where open source is commonplace. We at DDS deeply believe that code developed by Federal employees should be available for reuse and collaboration not only across the rest of government, but the public too.
 
 As a result, we created [Code.mil](https://code.mil/), an initiative that allows developers around the world to reuse and contribute to unclassified code written by Federal employees in support of DoD programs, which in turn support services for millions of people around the globe.
 
-**Open source in the Federal space** 
+**Open source in the Federal space**
 
 The concept of open source in government is not a brand new one: in fact, the White House launched [Code.gov](https://code.gov/) last November, which is the Federal government’s primary platform for code sharing and reuse. [Code.mil](https://code.mil/) is our direct implementation of this mission to “improve access to the Federal government’s custom developed software.” We want to promote the concept of open source across the vast DoD landscape, and demonstrate its utility by hosting projects developed by our own engineering talent. The many projects hosted on [Code.mil](https://code.mil/) will also be available on [Code.gov](https://code.gov/).
 
@@ -38,7 +39,7 @@ All of these elements collectively allow the DoD to tap into a vast pool of tale
 
 There is a huge resource of developer talent within the DoD that would love to leverage some of the modern tools used in the tech industry to share code and ideas. Likewise, there are many skilled developers in private sector who would love to contribute to strengthening software developed within the government.
 
-> *As Eric Raymond famously wrote, “given enough eyeballs, all bugs are shallow.”*
+> _As Eric Raymond famously wrote, “given enough eyeballs, all bugs are shallow.”_
 
 Opening up DoD codebases for the world to see allows code vulnerabilities to be identified and remediated more quickly than current internal methods. This crowdsourced concept is similar to how public bug bounties like Hack the Pentagon were successful in allowing the public to aid the DoD in identifying and fixing bugs faster and at a lower cost than the DoD could on its own.
 
@@ -64,4 +65,4 @@ Our hope is that [Code.mil](https://code.mil/) will encourage conversation aroun
 
 If you are a Federal employee and have a program or project you would like to share, start the conversation by connecting with us directly at code@dds.mil.
 
-*\[this post has been migrated from an outdated Defense Digital Service Medium page]*
+_\[this post has been migrated from an outdated Defense Digital Service Medium page]_

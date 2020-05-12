@@ -34,22 +34,14 @@ interface Props {
         }[];
       };
     };
-    contentJson: {
-      defaultMediaImage: {
-        childImageSharp: {
-          fluid: any;
-        };
-      };
-    };
   };
 }
 
 const BlogPostPage: React.FC<Props> = ({
-  data: { markdownRemark, pagesJson, contentJson },
+  data: { markdownRemark, pagesJson },
 }) => {
   const { html, frontmatter } = markdownRemark;
   const { sidenav } = pagesJson;
-  const { defaultMediaImage } = contentJson;
   return (
     <Layout>
       <SEO title={frontmatter.title} />
@@ -60,13 +52,7 @@ const BlogPostPage: React.FC<Props> = ({
       />
       <SidebarSection sidebar={<Sidebar menu={sidenav.menu} includeSocial />}>
         <Section className="media-page-section">
-          <Img
-            fluid={
-              frontmatter.image
-                ? frontmatter.image.childImageSharp.fluid
-                : defaultMediaImage.childImageSharp.fluid
-            }
-          />
+          <Img fluid={frontmatter.image.childImageSharp.fluid} />
           <div
             className="markdown-body"
             dangerouslySetInnerHTML={{ __html: html }}
@@ -107,16 +93,6 @@ export const query = graphql`
         menu {
           text
           link
-        }
-      }
-    }
-
-    contentJson {
-      defaultMediaImage {
-        childImageSharp {
-          fluid(maxWidth: 800) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
         }
       }
     }

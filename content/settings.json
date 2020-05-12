@@ -3,8 +3,7 @@
   "siteDomain": "dds.mil",
   "pageSize": 10,
   "seoDescription": "Home page for Defense Digital Service",
-  "defaultMediaImage": "baby-yoda.png",
-  "defaultHeroImage": "banner-media.png",
+  "defaultHeroImage": "default-banner.png",
   "searchgov": {
     "affiliate": "dds",
     "accessKey": "yOkULtPGCnKOYWhlLB0rhn888vCfUBM7t0WgDzS5Fg0=",

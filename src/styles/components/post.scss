@@ -14,15 +14,9 @@
 
   p {
     flex-grow: 1;
-    display: block;
-    display: -webkit-box;
     font-size: 1rem;
     line-height: 22px;
     width: 100%;
-    -webkit-line-clamp: 5;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
 
     @include at-media(tablet) {
       margin: units(2) 0 units(3);
@@ -74,6 +68,7 @@
 
   .dds-blog-card-image {
     flex: 1 0 100%;
+    position: relative;
 
     @include at-media(desktop) {
       flex: 0 0 300px;
@@ -82,6 +77,19 @@
     .gatsby-image-wrapper,
     img {
       height: 100%;
+    }
+
+    .cms-image-wrapper {
+      height: 250px;
+
+      img {
+        object-fit: cover;
+        object-position: center center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+      }
     }
   }
 
