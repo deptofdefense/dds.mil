@@ -3,6 +3,7 @@ type: announcements
 title: Rogue Squadron Transitions from Defense Innovation Unit to Defense
   Digital Service
 date: 2020-02-12T05:00:00.000Z
+cover: dds-wings-only.svg
 summary: The Transition Strengthens the DOD’s Expertise in Counter-UAS
 ---
 
