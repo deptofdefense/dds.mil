@@ -93,8 +93,13 @@ export const Header: React.FC = () => {
         <div className="usa-navbar">
           <div className="usa-logo" id="extended-logo">
             <div className="usa-logo__text">
-              <Link to="/" aria-label="Home">
-                <div className="display-flex flex-row flex-align-center">
+              <Link
+                to="/"
+                aria-label="Home"
+                className="dds-header-home-link"
+                tabIndex={0}
+              >
+                <div className="display-flex flex-row flex-align-center dds-header-home">
                   <div
                     className="dds-header-image"
                     dangerouslySetInnerHTML={{ __html: rawSvg }}
@@ -129,7 +134,7 @@ export const Header: React.FC = () => {
                 placeholder="Search"
                 aria-label="Search query input"
                 value={searchValue}
-                onChange={e => setSearchValue(e.target.value)}
+                onChange={(e) => setSearchValue(e.target.value)}
               />
             </form>
             <button className="usa-nav__close" aria-label="Close Navigation">

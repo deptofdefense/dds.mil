@@ -34,6 +34,12 @@
   height: auto;
 }
 
+.dds-header-home-link:focus {
+  .dds-header-home {
+    outline: 0.25rem solid #2491ff;
+  }
+}
+
 .usa-navbar {
   border: none;
 
@@ -136,14 +142,6 @@
   @include at-media(desktop) {
     display: flex;
   }
-
-  // form {
-  //   outline: none !important;
-
-  //   button {
-  //     outline: none !important;
-  //   }
-  // }
 
   form {
     height: 100%;

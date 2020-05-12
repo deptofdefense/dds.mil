@@ -51,7 +51,9 @@ export const HeroSection: React.FC<HeroSectionData> = ({
             <h1>{title}</h1>
             {cta && (
               <Link to={ctaLink!}>
-                <button className="hero-card-cta">{cta}</button>
+                <button tabIndex={-1} className="hero-card-cta">
+                  {cta}
+                </button>
               </Link>
             )}
           </div>

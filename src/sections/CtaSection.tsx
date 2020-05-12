@@ -35,9 +35,11 @@ export const CtaSection: React.FC<CtaSectionData> = ({
             }}
           />
         )}
-        <Link to={ctaLink}>
-          <CtaButton>{cta}</CtaButton>
-        </Link>
+        <div className="cta-callout">
+          <Link to={ctaLink}>
+            <CtaButton tabIndex={-1}>{cta}</CtaButton>
+          </Link>
+        </div>
       </div>
     </Section>
   );
