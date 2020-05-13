@@ -2,8 +2,6 @@ const path = require("path");
 const webpack = require(`webpack`);
 const SVGO = require("svgo");
 
-let counter = 0;
-
 const svgo = new SVGO({
   plugins: [
     { removeXMLNS: true },

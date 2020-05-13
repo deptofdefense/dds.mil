@@ -3,6 +3,9 @@ const sitemap = require("./config/sitemap");
 const robots = require("./config/robots");
 
 module.exports = {
+  siteMetadata: {
+    dapAgency: "dds",
+  },
   plugins: [
     {
       resolve: `gatsby-plugin-typescript`,
