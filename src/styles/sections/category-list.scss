@@ -5,7 +5,6 @@
   width: 100%;
 
   @include at-media(desktop) {
-    margin: 0 -1rem;
     flex-direction: row;
     align-items: stretch;
     flex-wrap: wrap;
@@ -18,18 +17,14 @@
     @include at-media(tablet) {
       padding: 0;
     }
-
-    @include at-media(desktop) {
-      padding: 0 units(3);
-    }
   }
 
   .category-list-section-item {
     width: 100%;
+    flex: 1 1;
+    background-color: #ecf3fb;
     padding: units(3) units(5);
     margin: units(1) 0;
-    flex: 1 1 0;
-    background-color: #ecf3fb;
 
     @include at-media(desktop) {
       padding: units(6) units(3) units(8) units(3);
@@ -71,7 +66,10 @@
     }
   }
 
+  .category-list-section-item:first-of-type {
+    margin-left: 0;
+  }
   .category-list-section-item:last-of-type {
-    margin-right: -1rem;
+    margin-right: 0;
   }
 }

@@ -9,7 +9,7 @@
   text-align: center;
   cursor: pointer;
   width: 100%;
-  padding: units(3) units(1);
+  padding: units(3) units(2);
 
   @include at-media(desktop) {
     width: auto;
