@@ -26,7 +26,18 @@ $theme-font-type-sans: "public-sans";
 $content-max-width: 1400px;
 $desktop-pad-section-y: 64px;
 
-@import "uswds";
+$theme-show-notifications: false;
+
+// Import required global packages
+@import "~uswds/dist/scss/packages/required";
+@import "~uswds/dist/scss/packages/global";
+
+@import "~uswds/dist/scss/packages/uswds-utilities";
+@import "~uswds/dist/scss/packages/usa-banner";
+@import "~uswds/dist/scss/packages/usa-header";
+@import "~uswds/dist/scss/packages/form-controls";
+@import "~uswds/dist/scss/packages/usa-sidenav";
+
 @import "./layout.scss";
 @import "./sections";
 @import "./components";

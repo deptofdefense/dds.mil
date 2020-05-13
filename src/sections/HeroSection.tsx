@@ -1,8 +1,9 @@
 import React from "react";
-import { Link, useStaticQuery, graphql } from "gatsby";
+import { Link } from "gatsby";
 import clsx from "clsx";
 import Img from "gatsby-image";
 import { SectionBase } from "types";
+import { useDefaultHeroImage } from "hooks";
 
 export interface HeroSectionData extends SectionBase {
   type: "hero";
@@ -22,19 +23,7 @@ export const HeroSection: React.FC<HeroSectionData> = ({
   ctaLink,
   heroImage,
 }) => {
-  const { contentJson } = useStaticQuery(graphql`
-    query {
-      contentJson {
-        defaultHeroImage {
-          childImageSharp {
-            fluid(maxWidth: 1440, quality: 90) {
-              ...GatsbyImageSharpFluid_withWebp
-            }
-          }
-        }
-      }
-    }
-  `);
+  const defaultHeroImage = useDefaultHeroImage();
 
   return (
     <div className="hero">
@@ -42,7 +31,7 @@ export const HeroSection: React.FC<HeroSectionData> = ({
         fluid={
           heroImage
             ? heroImage.childImageSharp.fluid
-            : contentJson.defaultHeroImage.childImageSharp.fluid
+            : defaultHeroImage.childImageSharp.fluid
         }
       />
       <div className={clsx("hero-inner", { "hero-inner-expanded": cta })}>
