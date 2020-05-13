@@ -135,19 +135,39 @@
   }
 }
 
-.dds-nav-search {
+.dds-search-form {
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: nowrap;
   align-items: center;
-  display: none;
+  color: #fff;
+  border: 1px solid #ddd;
+  position: relative;
 
-  @include at-media(desktop) {
-    display: flex;
-  }
+  .dds-text-input {
+    width: 100%;
 
-  form {
-    height: 100%;
+    input {
+      border: none;
+      margin-top: 0;
+    }
   }
 
   button {
+    position: absolute;
+    padding: 0;
+    right: 5px;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+.dds-nav-search-item {
+  align-items: center;
+  display: flex;
+
+  .dds-header-search-toggle {
     height: 100%;
     cursor: pointer;
     font-size: 20px;
@@ -155,20 +175,24 @@
     color: color($theme-color-base);
   }
 
-  .dds-text-input {
+  .dds-search-form-wrapper {
     position: absolute;
     z-index: 1000;
-    bottom: -75px;
+    bottom: -70px;
     right: 0;
     width: 450px;
     padding: 16px;
     visibility: hidden;
     background-color: color("primary-lighter");
+
+    button {
+      display: none;
+    }
   }
 }
 
-.dds-nav-search.dds-nav-search-open {
-  button {
+.dds-nav-search-item.dds-nav-search-item-open {
+  .dds-header-search-toggle {
     background-color: color("primary");
     cursor: pointer;
     border-top-left-radius: units(1);
@@ -176,14 +200,7 @@
     color: #fff;
   }
 
-  button.disabled,
-  button:disabled {
-    background-color: color("primary-lighter");
-    color: color("ink");
-    cursor: not-allowed;
-  }
-
-  .dds-text-input {
+  .dds-search-form-wrapper {
     visibility: visible;
     animation: fadeIn ease 0.3s;
   }
@@ -201,44 +218,22 @@
   display: flex;
   align-items: center;
   flex-wrap: nowrap;
-  margin-bottom: units(2);
   background-color: color("primary");
+  margin-bottom: units(2);
   padding: units(3) units(2);
 
   @include at-media(desktop) {
     display: none;
   }
 
-  form {
-    flex-grow: 1;
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    color: #fff;
-    border: 1px solid #ddd;
-    position: relative;
-
-    .dds-text-input {
-      width: 100%;
-    }
-
-    input {
-      border: none;
-      margin-top: 0;
-    }
-
-    button {
-      position: absolute;
-      right: 0;
-      background-color: #fff;
-      border: none;
-    }
-  }
-
   .usa-nav__close {
     margin: 0;
-    font-size: 1.3em;
+    font-size: 1.5em;
     font-weight: 100;
     color: #fff;
+  }
+
+  .dds-search-form-wrapper {
+    flex-grow: 1;
   }
 }

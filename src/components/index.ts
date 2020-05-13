@@ -16,6 +16,7 @@ export * from "./Section";
 export * from "./MediaCard";
 export * from "./RadioButtonGroup";
 export * from "./TextInput";
-export * from "./HeaderSearch";
 export * from "./NewsArticleItem";
 export * from "./Paginator";
+export * from "./HeaderSearchForm";
+export * from "./HeaderLogo";

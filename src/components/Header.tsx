@@ -1,142 +1,56 @@
-import React, { useState, useCallback } from "react";
-import { Link, useStaticQuery, graphql } from "gatsby";
-import Img from "gatsby-image/withIEPolyfill";
+import React, { useState, useRef, useEffect } from "react";
+import clsx from "clsx";
 import { FaBars, FaTimes, FaSearch } from "react-icons/fa";
-import { HeaderNavLink, HeaderSearch, TextInput } from "components";
-
-type NavigationNode = {
-  link: string;
-  text: string;
-  subnav?: {
-    link: string;
-    text: string;
-  }[];
-};
-
-type QueryResult = {
-  allPagesJson: {
-    nodes: {
-      navigation: NavigationNode;
-    }[];
-  };
-  file: {
-    childInlineSvg: {
-      rawSvg: string;
-    };
-  };
-  contentJson: {
-    searchgov: {
-      affiliate: string;
-      endpoint: string;
-      accessKey: string;
-    };
-  };
-};
+import { useHeaderData } from "hooks";
+import { HeaderNavLink, HeaderLogo, HeaderSearchForm } from "components";
 
 export const Header: React.FC = () => {
-  const data: QueryResult = useStaticQuery(graphql`
-    query {
-      file(relativePath: { eq: "dds-wings-only.svg" }) {
-        childInlineSvg {
-          rawSvg
-        }
-      }
-      allPagesJson(
-        sort: { order: ASC, fields: navigation___navOrder }
-        filter: { navigation: { text: { ne: null } } }
-      ) {
-        nodes {
-          navigation {
-            text
-            link
-            subnav {
-              text
-              link
-            }
-          }
-        }
-      }
+  const { searchgov, navigation } = useHeaderData();
+  const [query, setQuery] = useState("");
+  const [searchExpanded, setSearchExpanded] = useState(false);
+  const searchRef = useRef<HTMLInputElement>(null);
 
-      contentJson {
-        searchgov {
-          affiliate
-          endpoint
-          accessKey
-        }
-      }
-    }
-  `);
+  const toggleSearchExpanded = () => {
+    setSearchExpanded(!searchExpanded);
+  };
 
-  const {
-    contentJson: { searchgov },
-  } = data;
-  const [searchValue, setSearchValue] = useState("");
-
-  const onSearchSubmit: React.FormEventHandler = useCallback(
-    (e) => {
-      e.preventDefault();
+  const onSearchSubmit: React.FormEventHandler = (e) => {
+    e.preventDefault();
+    if (query) {
       window.location.replace(
-        `${searchgov.endpoint}?utf8=✓&affiliate=${searchgov.affiliate}&query=${searchValue}`
+        `${searchgov.endpoint}?utf8=✓&affiliate=${searchgov.affiliate}&query=${query}`
       );
-    },
-    [searchValue]
-  );
+    } else {
+      setSearchExpanded(false);
+    }
+  };
 
-  const navigation = data.allPagesJson.nodes.map(
-    ({ navigation }) => navigation
-  );
-  const { rawSvg } = data.file.childInlineSvg;
+  const onSearchChange: React.ChangeEventHandler<HTMLInputElement> = (e) => {
+    setQuery(e.target.value);
+  };
+
+  useEffect(() => {
+    if (searchExpanded) {
+      searchRef.current?.focus();
+    }
+  }, [searchExpanded]);
 
   return (
     <header className="usa-header usa-header--basic" role="banner">
       <div className="usa-nav-container">
         <div className="usa-navbar">
-          <div className="usa-logo" id="extended-logo">
-            <div className="usa-logo__text">
-              <Link
-                to="/"
-                aria-label="Home"
-                className="dds-header-home-link"
-                tabIndex={0}
-              >
-                <div className="display-flex flex-row flex-align-center dds-header-home">
-                  <div
-                    className="dds-header-image"
-                    dangerouslySetInnerHTML={{ __html: rawSvg }}
-                  />
-                  <div className="display-flex flex-column margin-left-1  flex-no-wrap">
-                    <div className="text-bold text-ls-1">DEFENSE</div>
-                    <div>
-                      <span className="text-semibold">DIGITAL&nbsp;</span>
-                      <span className="text-light">SERVICE</span>
-                    </div>
-                  </div>
-                </div>
-              </Link>
-            </div>
-          </div>
+          <HeaderLogo />
           <button className="usa-menu-btn" aria-label="Expand Navigation">
             <FaBars />
           </button>
         </div>
         <nav aria-label="Primary navigation" className="usa-nav">
           <div className="header-drawer-search">
-            <form onSubmit={onSearchSubmit}>
-              <input
-                type="hidden"
-                name="affiliate"
-                value={searchgov.affiliate}
-              />
-              <button type="submit" aria-label="Submit Search Query">
-                <FaSearch size={22} />
-              </button>
-              <TextInput
-                placeholder="Search"
-                aria-label="Search query input"
-                value={searchValue}
-                onChange={(e) => setSearchValue(e.target.value)}
-              />
-            </form>
+            <HeaderSearchForm
+              onSubmit={onSearchSubmit}
+              value={query}
+              onChange={onSearchChange}
+            />
             <button className="usa-nav__close" aria-label="Close Navigation">
               <FaTimes />
             </button>
@@ -157,11 +71,26 @@ export const Header: React.FC = () => {
                   ))}
               </React.Fragment>
             ))}
-            <HeaderSearch
-              onSubmit={onSearchSubmit}
-              value={searchValue}
-              setValue={setSearchValue}
-            />
+            <li
+              className={clsx("dds-nav-search-item", {
+                "dds-nav-search-item-open": searchExpanded,
+              })}
+            >
+              <button
+                onFocus={toggleSearchExpanded}
+                className="dds-header-search-toggle"
+                aria-label="Expand Search Input"
+              >
+                <FaSearch size={22} />
+              </button>
+              <HeaderSearchForm
+                ref={searchRef}
+                onSubmit={onSearchSubmit}
+                value={query}
+                onChange={onSearchChange}
+                onBlur={(e) => setSearchExpanded(false)}
+              />
+            </li>
           </ul>
         </nav>
       </div>
