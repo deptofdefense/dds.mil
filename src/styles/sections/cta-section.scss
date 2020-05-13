@@ -17,6 +17,14 @@
     @include at-media(tablet) {
       width: 40%;
     }
+
+    a {
+      width: 100%;
+
+      @include at-media(tablet) {
+        width: auto;
+      }
+    }
   }
 
   .cta-details {
