@@ -25,7 +25,6 @@
     "gatsby-plugin-typescript": "^2.4.2",
     "gatsby-remark-images": "^3.3.2",
     "gatsby-source-filesystem": "^2.3.3",
-    "gatsby-source-lever": "^2.2.3",
     "gatsby-transformer-json": "^2.4.1",
     "gatsby-transformer-remark": "^2.8.8",
     "gatsby-transformer-sharp": "^2.5.2",

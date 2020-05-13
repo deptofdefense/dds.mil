@@ -87,12 +87,5 @@ module.exports = {
         path: `${__dirname}/media`,
       },
     },
-    {
-      resolve: "gatsby-source-lever",
-      options: {
-        site: "leverdemo",
-        verboseOutput: true,
-      },
-    },
   ],
 };
