@@ -12,7 +12,7 @@ const FooterLink: React.FC<JSX.IntrinsicElements["a"]> = ({
   <a
     className={clsx(
       className,
-      "display-block font-ui-sm tablet:font-ui-3xs text-no-underline hover:text-underline text-white margin-bottom-1"
+      "display-block font-ui-sm tablet:font-ui-3xs text-no-underline hover:text-underline text-white margin-bottom-2 tablet:margin-bottom-1"
     )}
     {...rest}
   >

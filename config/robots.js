@@ -4,7 +4,7 @@ module.exports = {
   resolveEnv: () => CONTEXT,
   env: {
     production: {
-      policy: [{ userAgent: "*", disallow: ["*"] }],
+      policy: [{ userAgent: "*", disallow: ["/admin"] }],
       sitemap: `${URL}/sitemap.xml`,
       host: URL,
     },
