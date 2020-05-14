@@ -3,12 +3,12 @@ type: blog
 title: Iterating on Code.mil
 date: 2018-04-13T04:00:00.000Z
 image: default-media-image.png
-summary: "No one ever said open sourcing code at the Department of Defense (DoD)
-  would be easy. "
+summary: No one ever said open sourcing code at the Department of Defense (DoD)
+  would be easy
 ---
 **Iterating on Code.mil**
 
-*No one ever said open sourcing code at the Department of Defense (DoD) would be easy.* 
+*No one ever said open sourcing code at the Department of Defense (DoD) would be easy*
 
 In February 2017, the Defense Digital Service (DDS) decided it was time to take a more involved approach within the Department of Defense in the government-wide movement to open source code. This was spurred by the release of the new Federal Source Code Policy by the Office of Management and Budget in August, 2016 and [Code.gov](https://www.code.gov/) in November, 2016. We spent a lot of time talking with people in the DoD, across the federal government, and leaders in the Free / Open Source Software (F/OSS) community. Thus we formed a new project called Code.mil and created a [GitHub repository](https://github.com/Code-dot-mil/code.mil) providing guidance on how to open source code at the DoD.
 
