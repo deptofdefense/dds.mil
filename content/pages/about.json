@@ -8,7 +8,7 @@
   "sections": [
     {
       "type": "hero",
-      "heroImage": "about_hero.png",
+      "heroImage": "banner-aboutus.png",
       "title": "Solving mission-critical problems within the Department of Defense.",
       "cta": "",
       "ctaLink": ""
