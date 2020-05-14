@@ -15,7 +15,7 @@
     },
     {
       "type": "textWithCallout",
-      "mdMain": "**Who We Are**\n\nDDS was first established by the Secretary of Defense in November 2015 as a SWAT team of nerds that provides the best in modern technical knowledge to bolster national defense.\n\nWe are primarily based in the Pentagon and our range of talent includes world-class software developers, engineers, designers, and product managers from both the private sector and within government. We also have outposts in Augusta, GA and Mountain View, CA. \n\nWe focus on high-impact projects that advance the Department of Defense's most important initiatives that are critical to the well-being of service members, civilians, and core operations of the Department. \n\n**How We Team**\n\nIn addition to bringing in private sector and government talent, DDS partners with military services by detailing service members to DDS teams to tackle some of the DoD’s highest priority challenges. \n\n### [MEET OUR TEAM](https://v2-master--dds-mil.netlify.app/team)",
+      "mdMain": "**Who We Are**\n\nDDS was established by the Secretary of Defense in November 2015 as a SWAT team of nerds that provides the best in modern technical knowledge to bolster national defense.\n\nWe are world-class software developers, engineers, data scientists, designers, and product managers from both the private sector, government, and the military. We are headquartered in the Pentagon, and we have outposts in Augusta, GA and Mountain View, CA.\n\nWe focus on high-impact projects that advance the Department of Defense's most important initiatives that are critical to the well-being of service members, civilians, and core operations of the Department.",
       "mdCallout": "**Our mission is to provide the best in modern technology to bolster national defense.**"
     },
     {
@@ -37,7 +37,7 @@
         {
           "icon": "bebrave_noun_eagle_704258.svg",
           "title": "Be brave and tell the truth. ",
-          "details": "As a team of firefighters, it is important to be brave and tell organizations truths that are often hard to accept regarding systems and capabilities. "
+          "details": "We tell the Department the truth about systems and capabilities — even if it's hard to hear."
         },
         {
           "icon": "forgiveness_noun_testimonial_1065389.svg",
@@ -47,7 +47,7 @@
         {
           "icon": "users_noun_collaboration_2272050.svg",
           "title": "Design with users not for them.",
-          "details": "Good design is more than just design thinking. It’s designing directly with users to ensure the product and supporting processes meet needs the first time."
+          "details": "We design directly with users to ensure the product and supporting processes meet needs the first time."
         }
       ]
     },
