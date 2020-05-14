@@ -6,6 +6,9 @@ date: 2020-02-12T05:00:00.000Z
 image: default-media-image.png
 summary: The Transition Strengthens the DOD’s Expertise in Counter-UAS
 ---
+**Rogue Squadron Transitions from Defense Innovation Unit to Defense Digital Service**
+
+*The Transition Strengthens the DOD’s Expertise in Counter-UAS*
 
 WASHINGTON — February 12, 2020 — Rogue Squadron, a Defense Innovation Unit (DIU) team based in Mountain View, California, which develops hardware and software solutions for small unmanned aerial systems (sUAS) and counter-UAS (C-UAS) missions, will now report to the Defense Digital Service (DDS), a Department of Defense organization dedicated to providing the best in modern technical knowledge to the government.
 
