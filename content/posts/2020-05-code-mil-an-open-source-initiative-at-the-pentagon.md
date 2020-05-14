@@ -6,6 +6,9 @@ image: default-media-image.png
 summary: Building bridges between the Department of Defense and the software
   development community, one pull request at a time
 ---
+**Code.mil: An Open Source Initiative at the Pentagon**
+
+*Building bridges between the Department of Defense and the software development community, one pull request at a time*
 
 The Department of Defense (DoD) is a behemoth Federal agency built upon closed proprietary software and legacy systems that have been continually outpaced by modern technology and development standards. While the DoD has made strides towards modernization, one arena that has yet to be fully embraced and implemented is the practice of free and open source software.
 
@@ -39,7 +42,7 @@ All of these elements collectively allow the DoD to tap into a vast pool of tale
 
 There is a huge resource of developer talent within the DoD that would love to leverage some of the modern tools used in the tech industry to share code and ideas. Likewise, there are many skilled developers in private sector who would love to contribute to strengthening software developed within the government.
 
-> _As Eric Raymond famously wrote, “given enough eyeballs, all bugs are shallow.”_
+> *As Eric Raymond famously wrote, “given enough eyeballs, all bugs are shallow.”*
 
 Opening up DoD codebases for the world to see allows code vulnerabilities to be identified and remediated more quickly than current internal methods. This crowdsourced concept is similar to how public bug bounties like Hack the Pentagon were successful in allowing the public to aid the DoD in identifying and fixing bugs faster and at a lower cost than the DoD could on its own.
 
@@ -65,4 +68,4 @@ Our hope is that [Code.mil](https://code.mil/) will encourage conversation aroun
 
 If you are a Federal employee and have a program or project you would like to share, start the conversation by connecting with us directly at code@dds.mil.
 
-_\[this post has been migrated from an outdated Defense Digital Service Medium page]_
+*\[this post has been migrated from an outdated Defense Digital Service Medium page]*
