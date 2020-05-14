@@ -4,11 +4,11 @@ title: "Code.mil: An Open Source Initiative at the Pentagon"
 date: 2017-03-13T18:51:00.000Z
 image: default-media-image.png
 summary: Building bridges between the Department of Defense and the software
-  development community, one pull request at a time.
+  development community, one pull request at a time
 ---
 **Code.mil: An Open Source Initiative at the Pentagon**
 
-*Building bridges between the Department of Defense and the software development community, one pull request at a time.*
+*Building bridges between the Department of Defense and the software development community, one pull request at a time*
 
 The Department of Defense (DoD) is a behemoth Federal agency built upon closed proprietary software and legacy systems that have been continually outpaced by modern technology and development standards. While the DoD has made strides towards modernization, one arena that has yet to be fully embraced and implemented is the practice of free and open source software.
 
