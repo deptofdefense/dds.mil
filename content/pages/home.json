@@ -13,8 +13,8 @@
     },
     {
       "type": "textWithCallout",
-      "mdMain": "**We're on a mission.**\n\nThe Defense Digital Service (DDS) was first established by the Secretary of Defense in November 2015 as a SWAT team of nerds to provide the best in modern technology to bolster national defense. We bring in talent from both the private sector and within government to advance critical DoD initiatives.",
-      "mdCallout": "**Doing work that matters by focusing our time and energy on high-priority undertakings.**",
+      "mdMain": "**We're on a mission.**\n\nThe Defense Digital Service (DDS) is a SWAT team of nerds established by the Secretary of Defense to provide the best in modern technology to bolster national defense. We are designers, product managers, engineers, and data scientists from industry and government who advance critical DoD initiatives.",
+      "mdCallout": "**We focus on high-impact projects that advance the Department of Defense's most important initiatives.**",
       "alignByText": true
     },
     {
