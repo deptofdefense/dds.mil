@@ -4,11 +4,11 @@ title: Hack the Marine Corps Results Are In!
 date: 2018-10-03T18:27:00.000Z
 image: default-media-image.png
 summary: Hackers work alongside Marines to discover and disclose nearly 150
-  vulnerabilities.
+  vulnerabilities
 ---
 **Hack the Marine Corps Results Are In!**
 
-*Hackers work alongside Marines to discover and disclose nearly 150 vulnerabilities.*
+*Hackers work alongside Marines to discover and disclose nearly 150 vulnerabilities*
 
 We know that adversaries are continually working to exploit our networks and cripple critical operations. They don’t hold back — and in order to fight and win in all domains, neither can we. That’s why last month we launched Hack the Marine Corps, the Defense Department’s sixth public bug bounty challenge. We partnered with private-sector security firm HackerOne and the U.S. Marine Corps Cyberspace Command (MARFORCYBER) to deploy over one-hundred of the world’s top ethical hackers on the U.S. Marine Corps public-facing websites and services.
 
