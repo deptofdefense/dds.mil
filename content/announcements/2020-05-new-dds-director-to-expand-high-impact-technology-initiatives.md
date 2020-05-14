@@ -6,6 +6,9 @@ image: default-media-image.png
 summary: Public, private sector technologist Brett Goldstein named Defense
   Digital Service Director
 ---
+**New DDS Director to Expand High-Impact Technology Initiatives**
+
+*Public, private sector technologist Brett Goldstein named Defense Digital Service Director*
 
 WASHINGTON — April 23, 2019 —The Department of Defense announced today Brett Goldstein has been appointed Director of the Defense Digital Service (DDS) based at the Pentagon. DDS is an agency team of the U.S. Digital Service, which is part of the Office of Management and Budget. Goldstein was recruited by Acting Secretary of Defense Patrick Shanahan and will be a direct report, tackling critical technology problems for the department.
 
