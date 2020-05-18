@@ -18,7 +18,7 @@ export const Header: React.FC = () => {
     e.preventDefault();
     if (query) {
       window.location.replace(
-        `${searchgov.endpoint}?utf8=✓&affiliate=${searchgov.affiliate}&query=${query}`
+        `${searchgov.endpoint}?&affiliate=${searchgov.affiliate}&query=${query}`
       );
     } else {
       setSearchExpanded(false);
