@@ -12,7 +12,7 @@ export interface SidebarProps {
 
 export const Sidebar: React.FC<SidebarProps> = ({ menu, includeSocial }) => (
   <>
-    <ul className="usa-sidenav margin-bottom-4">
+    <ul className="usa-sidenav">
       {menu.map((item, idx) => (
         <li className="usa-sidenav__item" key={item.link}>
           <Link
