@@ -46,10 +46,10 @@ export const Footer: React.FC = () => {
   `);
 
   return (
-    <div className="dds-container dds-footer">
-      <div className="width-full padding-3 tablet:padding-5 maxw-widescreen">
+    <div className="dds-footer">
+      <div className="width-full padding-x-3 padding-y-5 tablet:padding-5 maxw-widescreen margin-x-auto">
         <div className="grid-row">
-          <div className="grid-col-12 desktop:grid-col-6 grid-row flex-align-start margin-bottom-5  flex-justify-start">
+          <div className="grid-col-12 desktop:grid-col-6 grid-row flex-align-start margin-bottom-5 flex-justify-start">
             <div className="width-15 desktop:width-15">
               <Img loading="eager" fluid={data.file.childImageSharp.fluid} />
             </div>
