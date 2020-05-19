@@ -31,7 +31,11 @@
     }
 
     .gatsby-image-wrapper {
-      min-height: 150px;
+      height: 300px;
+
+      @include at-media(tablet) {
+        height: 200px;
+      }
     }
   }
 }
