@@ -2,7 +2,7 @@
 type: blog
 title: Recruiting First — Being Social While Distancing
 date: 2020-05-19T20:15:16.882Z
-image: 1telework-5059653_1280.jpg
+image: 3telework-5059653_1280.jpg
 summary: "By: Christan Johnson"
 ---
 *CJ currently serves as the Talent Lead for the Defense Digital Service* 
