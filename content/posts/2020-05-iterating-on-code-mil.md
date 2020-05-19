@@ -2,7 +2,7 @@
 type: blog
 title: Iterating on Code.mil
 date: 2018-04-13T04:00:00.000Z
-image: default-media-image.png
+image: 2hack-capital-uv5_bsypfum-unsplash.jpg
 summary: No one ever said open sourcing code at the Department of Defense (DoD)
   would be easy
 ---
