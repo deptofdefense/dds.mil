@@ -30,7 +30,7 @@
         flex: 0 0 300px;
         display: none;
 
-        @media screen and (min-width: 1200px) {
+        @media screen and (min-width: 1280px) {
           display: block;
         }
       }
@@ -44,7 +44,7 @@
           margin-top: 0;
         }
 
-        @media screen and (min-width: 1200px) {
+        @media screen and (min-width: 1280px) {
           padding: 0 units(5);
         }
 

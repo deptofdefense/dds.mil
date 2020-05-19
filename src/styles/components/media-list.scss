@@ -4,7 +4,7 @@
   align-items: stretch;
   justify-content: space-between;
 
-  @include at-media(tablet) {
+  @media screen and (min-width: 860px) {
     margin: 0 -0.5rem;
     flex-wrap: nowrap;
   }
@@ -18,7 +18,7 @@
     margin: 1rem 0;
     position: relative;
 
-    @include at-media(tablet) {
+    @media screen and (min-width: 860px) {
       display: flex;
       flex-direction: column;
       min-width: 0;
@@ -33,7 +33,7 @@
     .gatsby-image-wrapper {
       height: 300px;
 
-      @include at-media(tablet) {
+      @media screen and (min-width: 860px) {
         height: 200px;
       }
     }

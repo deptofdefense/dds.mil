@@ -14,8 +14,6 @@ $theme-hero-image: "#{$theme-image-path}/hero.png";
 
 // Your custom changes to variables go here
 // Uncomment to see this working
-// $theme-color-primary-darker: 'black';
-$theme-show-notifications: false;
 $theme-color-base-lightest: "gray-cool-2";
 $theme-color-base-darker: "gray-warm-70";
 $theme-font-weight-thin: 200;
@@ -23,10 +21,12 @@ $theme-font-weight-heavy: 900;
 $theme-font-weight-semibold: 500;
 $theme-font-weight-light: 300;
 $theme-font-type-sans: "public-sans";
+$theme-header-min-width: "desktop-lg";
 $content-max-width: 1400px;
 $desktop-pad-section-y: 64px;
 
 $theme-show-notifications: false;
+$theme-show-compile-warnings: false;
 
 // Import required global packages
 @import "~uswds/dist/scss/packages/required";
