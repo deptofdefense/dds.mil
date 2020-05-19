@@ -12,14 +12,12 @@
       flex-direction: row;
       align-items: flex-start;
       flex-wrap: nowrap;
-      margin-left: auto;
-      margin-right: auto;
       margin: units(5) auto;
       padding: 0 units(3);
       max-width: $content-max-width;
 
       @include at-media(tablet) {
-        margin: units(7) 0;
+        margin: units(7) auto;
         padding: 0 units(5);
       }
       @include at-media(desktop) {
