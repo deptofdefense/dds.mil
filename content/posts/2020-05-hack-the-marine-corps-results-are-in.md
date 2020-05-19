@@ -2,7 +2,7 @@
 type: blog
 title: Hack the Marine Corps Results Are In!
 date: 2018-10-03T18:27:00.000Z
-image: htmc-stats.jpg
+image: 2-htmc-stats.jpg
 summary: Hackers work alongside Marines to discover and disclose nearly 150
   vulnerabilities
 ---
