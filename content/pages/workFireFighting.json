@@ -13,7 +13,7 @@
     },
     {
       "type": "markdownBody",
-      "mdMain": "# FIRE FIGHTING\n\n### W**e can’t wait to play catch-up with our technology.** DDS runs firefighting missions to address **immediate problems** threatening our safety.\n\n### Recent examples include:\n\n**MySymptoms.mil**\n\nDDS designed [MySymptoms.mil](https://MySymptoms.mil) specifically for the DoD community to check and assess COVID-19 symptoms. [MySymptoms.mil](https://MySymptoms.mil) was created at the direction of the Secretary of Defense.\n\n[MySymptoms.mil](https://MySymptoms.mil) is an anonymous tool designed with DoD personnel in mind. It does not diagnose disease but assesses the likelihood someone may have COVID-19 based on a series of simple health-related questions, and then provides information on how to seek further advice. [MySymptoms.mil](https://MySymptoms.mil) was built on a .mil domain to ensure the DoD community can access it regardless of the network they use."
+      "mdMain": "# FIRE FIGHTING\n\n### **We can’t wait to play catch-up with our technology.** DDS runs firefighting missions to address **immediate problems** threatening our safety.\n\n### Recent examples include:\n\n**MySymptoms.mil**\n\nDDS designed [MySymptoms.mil](https://MySymptoms.mil) specifically for the DoD community to check and assess COVID-19 symptoms. [MySymptoms.mil](https://MySymptoms.mil) was created at the direction of the Secretary of Defense.\n\n[MySymptoms.mil](https://MySymptoms.mil) is an anonymous tool designed with DoD personnel in mind. It does not diagnose disease but assesses the likelihood someone may have COVID-19 based on a series of simple health-related questions, and then provides information on how to seek further advice. [MySymptoms.mil](https://MySymptoms.mil) was built on a .mil domain to ensure the DoD community can access it regardless of the network they use."
     },
     {
       "type": "callToAction",
@@ -41,7 +41,7 @@
       },
       {
         "text": "Phone A Nerd",
-        "link": "/work/phone-a-friend"
+        "link": "/work/phone-a-nerd"
       }
     ]
   }
