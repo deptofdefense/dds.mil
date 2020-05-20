@@ -33,16 +33,20 @@
   .usa-nav-container {
     justify-content: space-between;
     align-items: center;
-    padding-top: units(3);
-    padding-bottom: units(3);
+    padding: units(3);
     margin-left: 0;
     margin-right: 0;
     width: 100%;
     max-width: $content-max-width;
 
-    @include at-media(desktop) {
+    @include at-media(tablet) {
       padding-left: units(5);
       padding-right: units(5);
+    }
+
+    @include at-media(desktop) {
+      padding-left: units(7);
+      padding-right: units(7);
     }
   }
 }
@@ -71,9 +75,7 @@
   }
 
   .usa-logo {
-    @include at-media(desktop) {
       margin: 0;
-    }
 
     a {
       color: color($theme-color-primary);
@@ -87,7 +89,7 @@
   width: 20rem;
   padding: 0;
 
-  @include at-media(desktop) {
+  @include at-media(desktop-lg) {
     background-color: transparent;
     color: inherit;
     width: 100%;
@@ -98,7 +100,7 @@
     margin-top: 0;
     padding: 0 units(2);
 
-    @include at-media(desktop) {
+    @include at-media(desktop-lg) {
       padding: 0;
     }
 
@@ -112,7 +114,7 @@
         font-weight: $theme-font-weight-light;
         white-space: nowrap;
 
-        @include at-media(desktop) {
+        @include at-media(desktop-lg) {
           font-weight: bold;
           font-size: 17px;
           color: color($theme-color-base);
@@ -125,7 +127,7 @@
       a.usa-current {
         font-weight: bolder;
 
-        @include at-media(desktop) {
+        @include at-media(desktop-lg) {
           color: color("blue-50v");
           font-weight: bold;
         }
@@ -136,7 +138,7 @@
         background-color: #fff;
         width: 0.15em;
 
-        @include at-media(desktop) {
+        @include at-media(desktop-lg) {
           background-color: color("blue-40v");
           bottom: 0em;
           width: auto;
@@ -146,7 +148,7 @@
 
     .usa-nav__primary-item.header-subnav-item {
       margin-left: units(2);
-      @include at-media(desktop) {
+      @include at-media(desktop-lg) {
         display: none;
       }
     }
@@ -194,7 +196,7 @@
     display: none;
     color: color($theme-color-base);
 
-    @include at-media(desktop) {
+    @include at-media(desktop-lg) {
       display: block;
     }
   }
@@ -246,7 +248,7 @@
   margin-bottom: units(2);
   padding: units(3) units(2);
 
-  @include at-media(desktop) {
+  @include at-media(desktop-lg) {
     display: none;
   }
 
