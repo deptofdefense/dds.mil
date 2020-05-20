@@ -1,7 +1,7 @@
 {
   "navigation": {
     "title": "Fire Fighting",
-    "link": "/work/portfolios"
+    "link": "/work/fire-fighting"
   },
   "sections": [
     {
@@ -33,15 +33,15 @@
       },
       {
         "text": "Fire Fighting",
-        "link": "/work/portfolios"
+        "link": "/work/fire-fighting"
       },
       {
         "text": "Projects",
-        "link": "/work/product-development"
+        "link": "/work/projects"
       },
       {
         "text": "Phone A Friend",
-        "link": "/work/ongoing-technical-advice"
+        "link": "/work/phone-a-friend"
       }
     ]
   }
