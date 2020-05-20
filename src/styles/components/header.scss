@@ -1,8 +1,26 @@
 .usa-banner__inner {
   max-width: $content-max-width;
+  width: 100%;
 
   @include at-media(desktop) {
     padding-left: units(5);
+  }
+}
+
+.usa-banner__header {
+  @media screen and (max-width: 640px) {
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+}
+
+.usa-banner__content {
+  box-sizing: border-box;
+  padding: 1rem;
+
+  @include at-media(desktop) {
+    padding: units(3) units(5);
   }
 }
 
