@@ -1,7 +1,7 @@
 {
   "navigation": {
-    "title": "Product Developments",
-    "link": "/work/product-development"
+    "title": "Projects",
+    "link": "/work/projects"
   },
   "sections": [
     {
@@ -32,16 +32,16 @@
         "link": "/work"
       },
       {
-        "text": "Portfolios",
-        "link": "/work/portfolios"
+        "text": "Fire Fighting",
+        "link": "/work/fire-fighting"
       },
       {
-        "text": "Product Developments",
-        "link": "/work/product-development"
+        "text": "Projects",
+        "link": "/work/projects"
       },
       {
-        "text": "Ongoing Technical Advice",
-        "link": "/work/ongoing-technical-advice"
+        "text": "Phone A Friend",
+        "link": "/work/phone-a-friend"
       }
     ]
   }
