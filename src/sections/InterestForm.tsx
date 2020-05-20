@@ -141,10 +141,7 @@ export const InterestForm: React.FC<InterestFormData> = () => {
                 required
                 options={[
                   { value: "engineering", label: "Engineering" },
-                  {
-                    value: "productManagement",
-                    label: "Product Management and something long",
-                  },
+                  { value: "productManagement", label: "Product Management" },
                   { value: "designer", label: "UX/Visual Designer" },
                   { value: "dataScience", label: "Data Science" },
                 ]}
