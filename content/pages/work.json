@@ -30,13 +30,13 @@
     {
       "type": "textWithCallout",
       "mdMain": "**Our Work**\n\nDDS focuses on high-impact projects that advance the Department of Defense's most important initiatives that are critical to the well-being of service members, civilians, and core operations of the Department. \n\nCurrent and past projects include reforming digital services that provide military families access to critical benefits; running bug bounty programs to identify vulnerabilities and better secure defense systems; developing drone detection technologies; hunting adversaries on defense networks; rethinking training for cyber soldiers and more.",
-      "mdCallout": "**Using design and technology to improve government services, strengthen national defense, and care for military members and their families.**",
+      "mdCallout": "**We use design and technology to improve government services, strengthen national defense, and care for military members and their families.**",
       "cta": "",
       "ctaLink": ""
     },
     {
       "type": "categoryList",
-      "title": "Engagment Categories:",
+      "title": "Engagement Categories:",
       "numberTitles": true,
       "categories": [
         {
