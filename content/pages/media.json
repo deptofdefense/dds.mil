@@ -15,7 +15,7 @@
       },
       {
         "link": "/media/news",
-        "text": "DDS in the News"
+        "text": "News"
       }
     ]
   },
@@ -64,7 +64,7 @@
       },
       {
         "link": "/media/news",
-        "text": "DDS in the News"
+        "text": "News"
       }
     ],
     "includeSocial": true
