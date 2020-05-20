@@ -52,8 +52,8 @@
           "ctaLink": "/work/projects"
         },
         {
-          "title": "PHONE A FRIEND",
-          "details": "When DDS engages with an organization to dig into technical issues that office is facing. These engagements tend to be shorter in duration and usually results in a report that outlines findings and possible technical paths forward.",
+          "title": "PHONE A NERD",
+          "details": "When DDS engages with a DoD organization to dig into technical issues that office is facing. These engagements tend to be shorter in duration and usually results in a report that outlines findings and possible technical paths forward.",
           "cta": "LEARN MORE",
           "ctaLink": "/work/phone-a-friend"
         }
@@ -84,7 +84,7 @@
         "link": "/work/projects"
       },
       {
-        "text": "Phone A Friend",
+        "text": "Phone A Nerd",
         "link": "/work/phone-a-friend"
       }
     ]
