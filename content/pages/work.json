@@ -6,15 +6,15 @@
     "link": "/work",
     "subnav": [
       {
-        "text": "Portfolios",
+        "text": "Fire Fighting",
         "link": "/work/portfolios"
       },
       {
-        "text": "Product Developments",
+        "text": "Projects",
         "link": "/work/product-development"
       },
       {
-        "text": "Ongoing Technical Advice",
+        "text": "Phone A Friend",
         "link": "/work/ongoing-technical-advice"
       }
     ]
@@ -40,8 +40,8 @@
       "numberTitles": true,
       "categories": [
         {
-          "title": "FIREFIGHTING",
-          "details": "TBD COPY FROM TOWN HALL DECK",
+          "title": "FIRE FIGHTING",
+          "details": "When a DoD organization faces a technical issue that cannot wait, DDS issues a rapid response. These engagements end with a quick technical fix or a report that outlines the team’s findings and presents possible paths forward.",
           "cta": "LEARN MORE",
           "ctaLink": "/work/portfolios"
         },
@@ -76,15 +76,15 @@
         "link": "/work"
       },
       {
-        "text": "Portfolios",
+        "text": "Fire Fighting",
         "link": "/work/portfolios"
       },
       {
-        "text": "Product Developments",
+        "text": "Projects",
         "link": "/work/product-development"
       },
       {
-        "text": "Ongoing Technical Advice",
+        "text": "Phone A Friend",
         "link": "/work/ongoing-technical-advice"
       }
     ]
