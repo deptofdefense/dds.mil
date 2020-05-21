@@ -19,7 +19,8 @@
       "type": "callToAction",
       "mdMain": "**We're focused on hiring the best to serve the best.**\n\nInterested in proving hoodies, hackers, and nerds have an important role to play in furthering national defense missions?",
       "cta": "APPLY TO DDS TODAY",
-      "ctaLink": "/join-us"
+      "ctaLink": "/join-us",
+      "accent": true
     }
   ],
   "sidenav": {
