@@ -6,7 +6,7 @@
   "sections": [
     {
       "type": "hero",
-      "heroImage": "new_home_hero_img.png",
+      "heroImage": "hero-cropped.jpg",
       "title": "Transforming technology within the Department of Defense",
       "cta": "ABOUT US",
       "ctaLink": "/about"
