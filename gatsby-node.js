@@ -2,8 +2,6 @@ const path = require("path");
 const webpack = require(`webpack`);
 const SVGO = require("svgo");
 
-let counter = 0;
-
 const svgo = new SVGO({
   plugins: [
     { removeXMLNS: true },
@@ -263,6 +261,7 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
           numPages,
           currentPage: i + 1,
           basePage: `/media/${mediaType}`,
+          link: `/media/${mediaType}${i > 0 ? "/" + (i + 1) : ""}`,
         },
       });
     }
@@ -274,6 +273,7 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
         component: mediaPage,
         context: {
           slug: results[i].fields.slug,
+          link: `/media/${mediaType}/${results[i].fields.slug}`,
           mediaType,
         },
       });
@@ -312,6 +312,7 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
         numPages,
         currentPage: i + 1,
         basePage: "/media/news",
+        link: `/media/news${i > 0 ? "/" + (i + 1) : ""}`,
       },
     });
   }

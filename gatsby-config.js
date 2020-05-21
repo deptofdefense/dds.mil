@@ -1,8 +1,10 @@
 const path = require("path");
-const sitemap = require("./config/sitemap");
 const robots = require("./config/robots");
 
 module.exports = {
+  siteMetadata: {
+    siteUrl: "https://v2-master--dds-mil.netlify.app/",
+  },
   plugins: [
     {
       resolve: `gatsby-plugin-typescript`,
@@ -48,7 +50,9 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-sitemap`,
-      options: sitemap,
+      options: {
+        exclude: ["/admin/*"],
+      },
     },
     {
       resolve: `gatsby-plugin-robots-txt`,

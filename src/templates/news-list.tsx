@@ -31,6 +31,7 @@ interface Props {
     };
   };
   pageContext: {
+    link: string;
     currentPage: number;
     numPages: number;
     basePage: string;
@@ -46,7 +47,7 @@ const NewsList: React.FC<Props> = ({
 }) => {
   return (
     <Layout>
-      <SEO title={"News"} />
+      <SEO title={"News"} url={pageContext.link} />
       <SidebarSection sidebar={<Sidebar menu={sidenav.menu} includeSocial />}>
         <Section className="post-list-section">
           {nodes.map(({ frontmatter }) => (

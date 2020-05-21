@@ -5,6 +5,9 @@ import { Layout, Section, Sidebar, SidebarSection, SEO } from "components";
 import { HeroSection, MarkdownBodySection } from "sections";
 
 interface Props {
+  pageContext: {
+    link: string;
+  };
   data: {
     markdownRemark: {
       html: string;
@@ -13,10 +16,16 @@ interface Props {
       };
       frontmatter: {
         title: string;
+        summary: string;
         date: string;
         image: {
           childImageSharp: {
             fluid: any;
+            original: {
+              src: string;
+              height: number;
+              width: number;
+            };
           };
         };
         heroImage?: {
@@ -39,12 +48,18 @@ interface Props {
 
 const BlogPostPage: React.FC<Props> = ({
   data: { markdownRemark, pagesJson },
+  pageContext: { link },
 }) => {
   const { html, frontmatter } = markdownRemark;
   const { sidenav } = pagesJson;
   return (
     <Layout>
-      <SEO title={frontmatter.title} />
+      <SEO
+        url={link}
+        title={frontmatter.title}
+        image={frontmatter.image.childImageSharp.original}
+        description={frontmatter.summary}
+      />
       <HeroSection
         type="hero"
         title={frontmatter.title}
@@ -77,11 +92,17 @@ export const query = graphql`
       }
       frontmatter {
         title
+        summary
         date
         image {
           childImageSharp {
             fluid(maxWidth: 800) {
               ...GatsbyImageSharpFluid
+            }
+            original {
+              src
+              width
+              height
             }
           }
         }

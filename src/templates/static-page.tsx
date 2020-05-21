@@ -56,6 +56,9 @@ type SidenavData = {
 };
 
 interface Props {
+  pageContext: {
+    link: string;
+  };
   data: {
     pagesJson: {
       sections: SectionData[];
@@ -103,6 +106,7 @@ const StaticPage: React.FC<Props> = ({
   data: {
     pagesJson: { sections, sidenav, navigation },
   },
+  pageContext: { link },
 }) => {
   const splitSections = useMemo(() => {
     const hasSidebar = Boolean(sidenav?.wrapSectionFirst);
@@ -128,7 +132,11 @@ const StaticPage: React.FC<Props> = ({
 
   return (
     <Layout>
-      <SEO title={navigation.title} description={navigation.metaDescription} />
+      <SEO
+        title={navigation.title}
+        description={navigation.metaDescription}
+        url={link}
+      />
       {splitSections.beforeNav.map((section, idx) => (
         <SectionSwitch section={section} key={idx} />
       ))}

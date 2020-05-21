@@ -13,6 +13,7 @@ interface Props {
   pageContext: {
     mediaType: string;
     title: string;
+    link: string;
   };
   data: {
     allMarkdownRemark: {
@@ -48,11 +49,11 @@ const MediaList: React.FC<Props> = ({
     allMarkdownRemark: { nodes },
     pagesJson: { sidenav },
   },
-  pageContext: { mediaType, title },
+  pageContext: { mediaType, title, link },
 }) => {
   return (
     <Layout>
-      <SEO title={title} />
+      <SEO title={title} url={link} />
       <SidebarSection sidebar={<Sidebar menu={sidenav.menu} includeSocial />}>
         <Section className="post-list-section">
           {nodes.map(({ fields, frontmatter }) => (
