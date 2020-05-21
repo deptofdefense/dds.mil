@@ -95,6 +95,7 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
         ctaLink: String
 
         numberTitles: Boolean
+        tweetLimit: Int
       }
 
       type PagesJson implements Node {

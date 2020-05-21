@@ -38,6 +38,9 @@
       "type": "recentAnnouncements"
     },
     {
+      "type": "recentTweets"
+    },
+    {
       "type": "callToAction",
       "cta": "APPLY TO DDS TODAY",
       "ctaLink": "/join-us",
@@ -48,7 +51,7 @@
   "sidenav": {
     "includeSidenav": true,
     "wrapSectionFirst": 2,
-    "wrapSectionLast": 4,
+    "wrapSectionLast": 5,
     "menu": [
       {
         "link": "/media",

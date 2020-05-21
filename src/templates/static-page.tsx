@@ -25,6 +25,8 @@ import {
   MarkdownBodySectionData,
   InterestForm,
   InterestFormData,
+  RecentTweets,
+  RecentTweetsSectionData,
 } from "sections";
 
 type SectionData =
@@ -38,7 +40,8 @@ type SectionData =
   | RecentAnnouncementsSectionData
   | RecentBlogPostsSectionData
   | MarkdownBodySectionData
-  | InterestFormData;
+  | InterestFormData
+  | RecentTweetsSectionData;
 
 type SidenavData = {
   includeSidenav: boolean;
@@ -89,6 +92,8 @@ const SectionSwitch: React.FC<{ section: SectionData }> = ({ section }) => {
       return <MarkdownBodySection {...section} />;
     case "interestForm":
       return <InterestForm {...section} />;
+    case "recentTweets":
+      return <RecentTweets {...section} />;
     default:
       throw new Error(`Invalid section type encountered`);
   }
@@ -168,6 +173,7 @@ export const query = graphql`
         numberTitles
         accent
         spacing
+        tweetLimit
         mdMain {
           html
         }

@@ -129,6 +129,17 @@ const FeaturedMediaFields: PatchedField[] = [
 const RecentBlogPostsFields: PatchedField[] = [];
 const RecentAnnouncementsFields: PatchedField[] = [];
 
+const RecentTweetsFields: PatchedField[] = [
+  {
+    label: "Tweet Count",
+    name: "tweetLimit",
+    widget: "number",
+    min: 1,
+    max: 20,
+    hint: "The number of recent tweets to include",
+  },
+];
+
 export const SectionList: PatchedField = {
   label: "Sections",
   name: "sections",
@@ -183,6 +194,11 @@ export const SectionList: PatchedField = {
       label: "Recent Announcements",
       name: "recentAnnouncements",
       fields: RecentAnnouncementsFields,
+    },
+    {
+      label: "Recent Tweets",
+      name: "recentTweets",
+      fields: RecentTweetsFields,
     },
   ],
 };

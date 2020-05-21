@@ -9,3 +9,4 @@ export * from "./MarkdownBodySection";
 export * from "./RecentBlogPosts";
 export * from "./TextSection";
 export * from "./InterestForm";
+export * from "./RecentTweets";
