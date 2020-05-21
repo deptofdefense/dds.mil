@@ -28,6 +28,7 @@ interface FormState {
   expertise: string;
   resume: null | File;
   linkedIn: string;
+  github: string;
   website: string;
 }
 
@@ -40,6 +41,7 @@ export const InterestForm: React.FC<InterestFormData> = () => {
     expertise: "",
     resume: null,
     linkedIn: "",
+    github: "",
     website: "",
   });
 
@@ -70,7 +72,7 @@ export const InterestForm: React.FC<InterestFormData> = () => {
       return;
     }
     try {
-      fetch("/join-us", {
+      await fetch("/join-us", {
         method: "POST",
         body: encode({
           "form-name": "application",
@@ -203,6 +205,14 @@ export const InterestForm: React.FC<InterestFormData> = () => {
           id="linkedIn"
           onChange={onChange}
           value={formData.linkedIn}
+        />
+        <TextInput
+          label="GitHub Profile:"
+          labelSecondary="(optional)"
+          name="github"
+          id="github"
+          onChange={onChange}
+          value={formData.github}
         />
         <TextInput
           label="Personal website:"
