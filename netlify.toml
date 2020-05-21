@@ -1,35 +1,13 @@
 # https://docs.netlify.com/configure-builds/file-based-configuration/
 [build]
   publish = "public"
-
-[context.deploy-preview]
   command = "gatsby build"
-
-  [context.deploy-preview.environment]
-    NODE_VERSION = "12.14.0"
-    RUBY_VERSION = "2.6.2"
-
-
-[context.branch-deploy]
-  command = "gatsby build"
-
-  [context.branch-deploy.environment]
-    NODE_VERSION = "12.14.0"
-    RUBY_VERSION = "2.6.2"
 
 [[plugins]]
   package = "./ignore-dependabot"
 
 [[plugins]]
   package = "netlify-plugin-gatsby-cache"
-
-[[plugins]]
-  package = "netlify-plugin-a11y"
-
-  [plugins.inputs]
-  resultMode = "warn"
-  checkPaths = ['/']
-
 
 [[redirects]]
   from = "https://dds-mil.netlify.com/*"
