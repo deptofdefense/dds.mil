@@ -14,6 +14,14 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-167416376-1",
+        exclude: ["/admin/**"],
+        defer: true,
+      },
+    },
+    {
       resolve: "gatsby-plugin-root-import",
       options: {
         components: path.join(__dirname, "src/components"),
