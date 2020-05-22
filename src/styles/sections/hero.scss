@@ -1,7 +1,6 @@
 .hero {
   position: relative;
   min-height: 225px;
-  // margin-bottom: 96px;
 
   .gatsby-image-wrapper {
     height: 225px;
@@ -71,8 +70,6 @@
   }
 
   .hero-inner.hero-inner-expanded {
-    max-height: 500px;
-
     @include at-media(tablet) {
       padding: units(7) units(7);
       max-width: $content-max-width;
@@ -85,6 +82,9 @@
       margin: auto;
     }
 
+    @include at-media(widescreen) {
+      padding: 6rem units(7);
+    }
 
     .hero-card {
       @include at-media(tablet) {

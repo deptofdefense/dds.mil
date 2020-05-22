@@ -15,7 +15,7 @@
     },
     {
       "type": "textWithCallout",
-      "mdMain": "**Who We Are**\n\nDDS was established by the Secretary of Defense in November 2015 as a SWAT team of nerds that provides the best in modern technical knowledge to bolster national defense.\n\nWe are world-class software developers, engineers, data scientists, designers, and product managers from both the private sector, government, and the military. We are headquartered in the Pentagon, and we have outposts in Augusta, GA and Mountain View, CA.\n\nWe focus on high-impact projects that advance the Department of Defense's most important initiatives that are critical to the well-being of service members, civilians, and core operations of the Department.",
+      "mdMain": "### Who We Are\n\nDDS was established by the Secretary of Defense in November 2015 as a SWAT team of nerds that provides the best in modern technical knowledge to bolster national defense.\n\nWe are world-class software developers, engineers, data scientists, designers, and product managers from both the private sector, government, and the military. We are headquartered in the Pentagon, and we have outposts in Augusta, GA and Mountain View, CA.\n\nWe focus on high-impact projects that advance the Department of Defense's most important initiatives that are critical to the well-being of service members, civilians, and core operations of the Department.",
       "mdCallout": "**Our mission is to provide the best in modern technology to bolster national defense.**"
     },
     {
