@@ -65,7 +65,7 @@ module.exports = {
         short_name: `Defense Digital Service`,
         start_url: `/`,
         theme_color: `#a2466c`,
-        display: `browser`,
+        display: `standalone`,
         icon: "media/logo-desktop-full.png",
         background_color: "#73b3e7",
       },
@@ -93,5 +93,6 @@ module.exports = {
         path: `${__dirname}/media`,
       },
     },
+    "gatsby-plugin-offline",
   ],
 };
