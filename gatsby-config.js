@@ -64,10 +64,10 @@ module.exports = {
         name: "DDS.mil",
         short_name: `Defense Digital Service`,
         start_url: `/`,
-        theme_color: `#a2466c`,
+        theme_color: `#345d96`,
         display: `standalone`,
         icon: "media/logo-desktop-full.png",
-        background_color: "#73b3e7",
+        background_color: "#f7f9fa",
       },
     },
     {
