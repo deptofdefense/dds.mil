@@ -27,7 +27,7 @@ export const TextSection: React.FC<TextSectionData> = ({
   return (
     <Section className="text-info-section">
       <div
-        className="text-info-section-primary"
+        className="text-info-section-primary markdown-body"
         dangerouslySetInnerHTML={{
           __html: mdMain.html,
         }}
