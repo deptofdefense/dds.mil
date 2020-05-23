@@ -1,6 +1,5 @@
 import React from "react";
-import Link from "gatsby-link";
-import { ConnectCallout } from "components";
+import { ConnectCallout, ConditionalLink } from "components";
 
 export interface SidebarProps {
   menu: {
@@ -15,14 +14,14 @@ export const Sidebar: React.FC<SidebarProps> = ({ menu, includeSocial }) => (
     <ul className="usa-sidenav">
       {menu.map((item, idx) => (
         <li className="usa-sidenav__item" key={item.link}>
-          <Link
+          <ConditionalLink
             key={item.link}
             to={item.link}
             activeClassName="usa-current"
             partiallyActive={idx !== 0}
           >
             {item.text}
-          </Link>
+          </ConditionalLink>
         </li>
       ))}
     </ul>

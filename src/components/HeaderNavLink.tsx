@@ -1,6 +1,6 @@
 import React from "react";
 import clsx from "clsx";
-import { Link } from "gatsby";
+import { ConditionalLink } from "components";
 
 interface Props {
   to: string;
@@ -15,13 +15,13 @@ export const HeaderNavLink: React.FC<Props> = ({
   partiallyActive = false,
 }) => (
   <li className={clsx("usa-nav__primary-item", className)}>
-    <Link
+    <ConditionalLink
       to={to}
       className="usa-nav__link desktop:font-sans-md"
       activeClassName="usa-current"
       partiallyActive={partiallyActive}
     >
       <span>{children}</span>
-    </Link>
+    </ConditionalLink>
   </li>
 );

@@ -1,7 +1,6 @@
 import React from "react";
-import { Link } from "gatsby";
 import { SectionBase } from "types";
-import { Section } from "components";
+import { Section, ConditionalLink } from "components";
 import Img from "gatsby-image/withIEPolyfill";
 import clsx from "clsx";
 import { FaChevronRight } from "react-icons/fa";
@@ -58,10 +57,13 @@ export const IconSection: React.FC<IconSectionData> = ({ icons }) => {
             key={title}
           >
             {cta ? (
-              <Link to={ctaLink} className="icon-info-section-heading">
+              <ConditionalLink
+                to={ctaLink}
+                className="icon-info-section-heading"
+              >
                 <Icon {...icon} />
                 <h3>{title}</h3>
-              </Link>
+              </ConditionalLink>
             ) : (
               <div className="icon-info-section-heading">
                 <Icon {...icon} />
@@ -70,9 +72,12 @@ export const IconSection: React.FC<IconSectionData> = ({ icons }) => {
             )}
             <p>{details}</p>
             {cta && (
-              <Link to={ctaLink} className="info-section-item-cta-link">
+              <ConditionalLink
+                to={ctaLink}
+                className="info-section-item-cta-link"
+              >
                 {cta} <FaChevronRight fontSize={13} />
-              </Link>
+              </ConditionalLink>
             )}
           </div>
         ))}

@@ -1,7 +1,6 @@
 import React from "react";
 import { SectionBase } from "types";
-import { Section } from "components";
-import { Link } from "gatsby";
+import { Section, ConditionalLink } from "components";
 import { FaChevronRight } from "react-icons/fa";
 
 export interface CategoryListSectionData extends SectionBase {
@@ -33,9 +32,9 @@ export const CategoryListSection: React.FC<CategoryListSectionData> = ({
             </h3>
             <p>{details}</p>
             {cta && (
-              <Link to={ctaLink}>
+              <ConditionalLink to={ctaLink}>
                 {cta} <FaChevronRight fontSize={13} />
-              </Link>
+              </ConditionalLink>
             )}
           </div>
         ))}

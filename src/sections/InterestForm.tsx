@@ -3,7 +3,7 @@ import clsx from "clsx";
 import { navigate } from "gatsby-link";
 import { SectionBase } from "types";
 import { TextInput, RadioButtonGroup, CtaButton } from "components";
-import { FaCheck, FaPlus, FaSpinner } from "react-icons/fa";
+import { FaCheck, FaPlus } from "react-icons/fa";
 
 export interface InterestFormData extends SectionBase {
   type: "interestForm";

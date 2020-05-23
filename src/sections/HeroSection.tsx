@@ -1,9 +1,9 @@
 import React from "react";
-import { Link } from "gatsby";
 import clsx from "clsx";
 import Img from "gatsby-image";
 import { SectionBase } from "types";
 import { useDefaultHeroImage } from "hooks";
+import { ConditionalLink } from "components";
 
 export interface HeroSectionData extends SectionBase {
   type: "hero";
@@ -39,11 +39,11 @@ export const HeroSection: React.FC<HeroSectionData> = ({
           <div className="hero-card">
             <h1>{title}</h1>
             {cta && (
-              <Link to={ctaLink!}>
+              <ConditionalLink to={ctaLink!}>
                 <button tabIndex={-1} className="hero-card-cta">
                   {cta}
                 </button>
-              </Link>
+              </ConditionalLink>
             )}
           </div>
         )}

@@ -1,7 +1,7 @@
 import { PatchedField } from "./types";
 
 export const internalLinkHint =
-  "This should be an internal link beginning with a '/' to an existing page. Changing this link will not change the location of this page at this time.";
+  "For an internal link this should start with a '/', for external links use the full url starting with 'https://'";
 
 export const entrySummaryFormat = "{{year}}-{{month}} -- {{title}}";
 

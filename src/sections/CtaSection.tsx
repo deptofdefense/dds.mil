@@ -1,8 +1,7 @@
 import React from "react";
 import clsx from "clsx";
 import { SectionBase } from "types";
-import { CtaButton, Section } from "components";
-import { Link } from "gatsby";
+import { CtaButton, Section, ConditionalLink } from "components";
 
 export interface CtaSectionData extends SectionBase {
   type: "callToAction";
@@ -36,9 +35,9 @@ export const CtaSection: React.FC<CtaSectionData> = ({
           />
         )}
         <div className="cta-callout">
-          <Link to={ctaLink}>
+          <ConditionalLink to={ctaLink}>
             <CtaButton tabIndex={-1}>{cta}</CtaButton>
-          </Link>
+          </ConditionalLink>
         </div>
       </div>
     </Section>

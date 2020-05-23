@@ -1,7 +1,6 @@
 import React from "react";
 import { SectionBase } from "types";
-import { CtaButton, Section } from "components";
-import { Link } from "gatsby";
+import { CtaButton, Section, ConditionalLink } from "components";
 import clsx from "clsx";
 
 export interface TextSectionData extends SectionBase {
@@ -44,9 +43,9 @@ export const TextSection: React.FC<TextSectionData> = ({
           }}
         />
         {cta && (
-          <Link className="padding-x-2" to={ctaLink!}>
+          <ConditionalLink className="padding-x-2" to={ctaLink!}>
             <CtaButton className="margin-top-4 width-full">{cta}</CtaButton>
-          </Link>
+          </ConditionalLink>
         )}
       </div>
     </Section>

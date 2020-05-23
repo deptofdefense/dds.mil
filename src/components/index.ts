@@ -20,3 +20,4 @@ export * from "./NewsArticleItem";
 export * from "./Paginator";
 export * from "./HeaderSearchForm";
 export * from "./HeaderLogo";
+export * from "./ConditionalLink";
