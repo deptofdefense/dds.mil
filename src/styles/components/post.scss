@@ -81,13 +81,12 @@
     }
 
     .gatsby-image-wrapper,
+    .cms-image-wrapper,
     img {
       height: 100%;
     }
 
     .cms-image-wrapper {
-      height: 250px;
-
       img {
         object-fit: cover;
         object-position: center center;

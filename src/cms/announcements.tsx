@@ -51,7 +51,7 @@ const AnnouncementPreview: React.FC<PreviewProps> = ({
 
   return (
     <>
-      <div className="maxw-mobile-lg margin-top-7 margin-x-auto">
+      <div className="maxw-tablet margin-top-7 margin-x-auto">
         <MediaCard {...props} />
       </div>
       <hr className="margin-y-5 width-full" />

@@ -1,61 +1,36 @@
-import "./config";
 import "../styles/index.scss";
+import CMS from "netlify-cms-app";
+import { CmsBackend } from "netlify-cms-core";
+import { Patch } from "./types";
+import { PagesCollection } from "./pages";
+import { AnnouncementCollection } from "./announcements";
+import { PostCollection } from "./posts";
+import { NewsArticleCollection } from "./news";
+import { SettingsCollection } from "./settings";
 
-// interface Props {
-//   entry: {
-//     getIn<T extends any = string>(arg0: string[]): T;
-//   };
-// }
+const backend: Patch<CmsBackend> = {
+  name: "github",
+  branch: "v2-master",
+  site_domain: "dds.mil",
+  repo: "deptofdefense/dds.mil",
+  squash_merges: true,
+};
 
-// const CMSBlog: React.FC<Props> = ({ entry }) => {
-//   const props = {
-//     title: entry.getIn(["data", "title"]),
-//     summary: entry.getIn(["data", "summary"]),
-//     date: "just now",
-//     body: entry.getIn(["data", "body"]),
-//     slug: "tmp-slug",
-//     photo: "",
-//   };
-
-//   return (
-//     <div className="margin-top-9 margin-x-auto maxw-mobile-lg">
-//       <BlogPostCard {...props} />
-//     </div>
-//   );
-// };
-
-// const CMSNewsArticle: React.FC<Props> = ({ entry }) => {
-//   const props = {
-//     title: entry.getIn(["data", "title"]),
-//     summary: entry.getIn(["data", "summary"]),
-//     date: "just now",
-//     link: entry.getIn(["data", "link"]),
-//     slug: "tmp-slug",
-//     photo: "",
-//   };
-
-//   return (
-//     <div className="margin-top-9 margin-x-auto maxw-mobile-lg">
-//       <NewsArticleCard {...props} />
-//     </div>
-//   );
-// };
-
-// const CMSAnnouncement: React.FC<Props> = ({ entry }) => {
-//   const props = {
-//     title: entry.getIn(["data", "title"]),
-//     summary: entry.getIn(["data", "summary"]),
-//     date: "just now",
-//     slug: "tmp-slug",
-//   };
-
-//   return (
-//     <div className="margin-top-9 margin-x-auto maxw-mobile-lg">
-//       <AnnouncementCard {...props} />
-//     </div>
-//   );
-// };
-
-// CMS.registerPreviewTemplate("posts", CMSBlog);
-// CMS.registerPreviewTemplate("news", CMSNewsArticle);
-// CMS.registerPreviewTemplate("announcements", CMSAnnouncement);
+CMS.init({
+  config: {
+    backend,
+    site_url: "https://v2-master--dds-mil.netlify.app/",
+    display_url: "DDS.mil",
+    logo_url: "/img/logo-cms.png",
+    publish_mode: "editorial_workflow",
+    media_folder: "media",
+    public_folder: "",
+    collections: [
+      PagesCollection,
+      AnnouncementCollection,
+      PostCollection,
+      NewsArticleCollection,
+      SettingsCollection,
+    ],
+  },
+});
