@@ -3,7 +3,7 @@ const robots = require("./config/robots");
 
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://v2-master--dds-mil.netlify.app/",
+    siteUrl: "https://dds.mil/",
   },
   plugins: [
     {

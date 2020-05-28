@@ -10,7 +10,7 @@ import { SettingsCollection } from "./settings";
 
 const backend: Patch<CmsBackend> = {
   name: "github",
-  branch: "v2-master",
+  branch: "master",
   site_domain: "dds.mil",
   repo: "deptofdefense/dds.mil",
   squash_merges: true,
@@ -19,7 +19,7 @@ const backend: Patch<CmsBackend> = {
 CMS.init({
   config: {
     backend,
-    site_url: "https://v2-master--dds-mil.netlify.app/",
+    site_url: "https://dds.mil/",
     display_url: "DDS.mil",
     logo_url: "/img/logo-cms.png",
     publish_mode: "editorial_workflow",
