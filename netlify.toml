@@ -4,9 +4,6 @@
   command = "gatsby build"
 
 [[plugins]]
-  package = "./ignore-dependabot"
-
-[[plugins]]
   package = "netlify-plugin-gatsby-cache"
 
 [[redirects]]
