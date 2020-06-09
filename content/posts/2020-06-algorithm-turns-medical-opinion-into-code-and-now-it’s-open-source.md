@@ -2,7 +2,7 @@
 type: blog
 title: Algorithm turns medical opinion into code, and now it’s open source
 date: 2020-06-09T15:42:03.846Z
-image: default-media-image.png
+image: mysymptoms.mil-home.png
 summary: We created MySymptoms.mil, a digital tool to help flatten the curve.
   Now, the base algorithm behind the screen is available as open source code for
   anyone to use.
