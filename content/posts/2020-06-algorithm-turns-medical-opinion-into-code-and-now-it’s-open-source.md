@@ -7,7 +7,7 @@ summary: We created MySymptoms.mil, a digital tool to help flatten the curve.
   Now, the base algorithm behind the screen is available as open source code for
   anyone to use.
 ---
-With an impending global health crisis that threatened the five million people under his guidance, Secretary of Defense Mark Esper approached DDS in early March for a technology solution to mitigate the spread of the novel coronavirus within our military community. Now, the base algorithm is available as open source code for anyone to use.
+With an impending global health crisis that threatened to impact five million people across the DoD, Secretary of Defense Mark Esper approached DDS in early March for a technology solution to mitigate the spread of the novel coronavirus within our military community. Now, the base algorithm is available as open source code for anyone to use.
 
 Leaders of pathology in all four branches had reason to be concerned: servicemen and women occupy close quarters on deployments; military families live in tight-knit communities on bases around the world; more employees report to work at the Pentagon than to any other municipal building in the world. An outbreak is a serious threat. Defense leadership reasoned that if service members could determine their symptoms early, they could limit exposing others to the virus.
 
