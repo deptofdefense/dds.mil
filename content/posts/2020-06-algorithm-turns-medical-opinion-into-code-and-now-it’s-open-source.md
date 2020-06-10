@@ -13,7 +13,7 @@ Leaders of pathology in all four branches had reason to be concerned: servicemen
 
 We partnered with Dr. Donald Shell, Director of Disease Prevention, Disease Management and Population Health Policy and Oversight, to stand up MySymptoms.mil, an online tool to help flatten the curve.
 
-MySymptoms.mil is essentially a translation of DoD medical opinion into code.The tool lets users anonymously self-assess the likelihood that they have contracted the virus based on a series of simple health-related questions. Users choose from a list of symptoms, pre-existing conditions, and core logic is used to calculate a score, from high to medium to low, as it relates to the likelihood of having COVID-19.
+MySymptoms.mil is essentially a translation of DoD medical opinion into code. The tool lets users anonymously self-assess the likelihood that they have contracted the virus based on a series of simple health-related questions. Users choose from a list of symptoms, pre-existing conditions, and core logic is used to calculate a score, from high to medium to low, as it relates to the likelihood of having COVID-19.
 
 This is not the only symptom tracker available online, but it is the only one specifically designed for the Defense community. The value-added is that it’s based on expert opinions from the Defense Health Agency and the CDC.
 
