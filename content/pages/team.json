@@ -25,7 +25,7 @@
     {
       "type": "callToAction",
       "cta": "APPLY TO DDS TODAY",
-      "ctaLink": "/join-us",
+      "ctaLink": "http://jobs.lever.co/dds",
       "mdMain": "**We're focused on hiring the best to serve the best.**\n\nInterested in proving hoodies, hackers, and nerds have an important role to play in furthering national defense missions?"
     }
   ]
