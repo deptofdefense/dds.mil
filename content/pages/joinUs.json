@@ -17,7 +17,9 @@
       "mdCallout": "**Interested in proving hoodies, hackers, and nerds have an important role to play in furthering national defense missions? We’ve built a team of top technical talent across the country to transform how the DoD builds and delivers digital services and products for DoD personnel.**"
     },
     {
-      "type": "interestForm"
+      "type": "callToAction",
+      "cta": "APPLY TO DDS TODAY",
+      "ctaLink": "http://jobs.lever.co/dds"
     },
     {
       "type": "imageCollection",
