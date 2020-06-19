@@ -44,11 +44,21 @@ module.exports = {
       options: {
         plugins: [
           {
+            resolve: "gatsby-remark-embed-video",
+            options: {
+              width: 800,
+              height: 400,
+              related: false,
+              noIframeBorder: true,
+            },
+          },
+          {
             resolve: "gatsby-remark-images",
             options: {
               maxWidth: 600,
             },
           },
+          `gatsby-remark-responsive-iframe`,
         ],
       },
     },
