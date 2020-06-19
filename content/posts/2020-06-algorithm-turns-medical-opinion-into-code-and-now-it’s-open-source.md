@@ -11,6 +11,8 @@ With an impending global health crisis that threatened to impact five million pe
 
 Leaders of pathology in all four branches had reason to be concerned: servicemen and women occupy close quarters on deployments; military families live in tight-knit communities on bases around the world; more employees report to work at the Pentagon than to any other municipal building in the world. An outbreak is a serious threat. Defense leadership reasoned that if service members could determine their symptoms early, they could limit exposing others to the virus.
 
+`youtube: https://www.youtube.com/watch?v=l9_-2oG4Cc0`
+
 We partnered with Dr. Donald Shell, Director of Disease Prevention, Disease Management and Population Health Policy and Oversight, to stand up [MySymptoms.mil](https://mysymptoms.mil/), an online tool to help flatten the curve.
 
 MySymptoms.mil is essentially a translation of DoD medical opinion into code. The tool lets users anonymously self-assess the likelihood that they have contracted the virus based on a series of simple health-related questions. Users choose from a list of symptoms, pre-existing conditions, and core logic is used to calculate a score, from high to medium to low, as it relates to the likelihood of having COVID-19.
