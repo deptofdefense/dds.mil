@@ -3,8 +3,8 @@ type: blog
 title: “We the People” Form the Government We Need
 date: 2020-06-29T15:35:26.996Z
 image: kevin-4thofjuly.png
-summary: "Outgoing DDS bureaucracy hacker Kevin Carter shares his top three
-  takeaways from public service. "
+summary: Outgoing bureaucracy hacker Kevin Carter learned to put people over
+  process during his years of public service with DDS.
 ---
 Whether serendipity or providence, July 4th is my final day as a federal employee with the Defense Digital Service.
 
