@@ -1,7 +1,7 @@
 ---
 type: blog
 title: “We the People” Form the Government We Need
-date: 2020-06-29T15:35:26.996Z
+date: 2020-06-29T16:14:20.470Z
 image: kevin-4thofjuly.png
 summary: "Outgoing bureaucracy hacker Kevin Carter reflects on his “nerd tour of
   duty” with DDS, learning to put people over process in service of everyday
