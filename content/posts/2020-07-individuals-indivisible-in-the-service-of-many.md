@@ -16,8 +16,6 @@ Defense Digital Service does not have just one story, it has many. Each member o
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">&quot;I look back at all of the events in my life and think about how fortunate I am to be given opportunities to give back to myself, my family, my team, &amp; ultimately my country.&quot; <a href="https://twitter.com/savank?ref_src=twsrc%5Etfw">@savank</a> <a href="https://twitter.com/hashtag/Immigrant?src=hash&amp;ref_src=twsrc%5Etfw">#Immigrant</a> <a href="https://twitter.com/hashtag/Entrepreneur?src=hash&amp;ref_src=twsrc%5Etfw">#Entrepreneur</a> <a href="https://twitter.com/hashtag/Husband?src=hash&amp;ref_src=twsrc%5Etfw">#Husband</a> <a href="https://twitter.com/hashtag/Dad?src=hash&amp;ref_src=twsrc%5Etfw">#Dad</a> <a href="https://twitter.com/hashtag/American?src=hash&amp;ref_src=twsrc%5Etfw">#American</a> <a href="https://twitter.com/hashtag/IndependenceDayStories?src=hash&amp;ref_src=twsrc%5Etfw">#IndependenceDayStories</a> <a href="https://t.co/LpNt3dr8Wm">https://t.co/LpNt3dr8Wm</a></p>&mdash; Defense Digital Service (@DefenseDigital) <a href="https://twitter.com/DefenseDigital/status/1276916456928825344?ref_src=twsrc%5Etfw">June 27, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-
-
 We are technologists, but we are also spouses, parents, immigrants, veterans, and entrepreneurs.
 
 ![A collage of four photos show a woman holding a diploma, a pair of men packing lunchbags, four children holding lunchbags, and a lunchbag with a message written on it.](cyndie-photo-2.jpg "Cyndie Vieira (left) organized food drives for the non-profit organization, #Hashtaglunchbag in New Jersey before joining Defense Digital Service.")
@@ -37,5 +35,7 @@ From the first day…
 **...to [the last](https://dds.mil/media/blog/2020-06-%E2%80%9Cwe-the-people%E2%80%9D-form-the-government-we-need).**
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">“If there is one lasting impact I hope I’ve had at DDS, it is contributing to an environment — both a physical space and a culture — that prioritizes people over process.” 🦅💻🇺🇸 <a href="https://twitter.com/KCartero?ref_src=twsrc%5Etfw">@KCartero</a> <a href="https://twitter.com/hashtag/PMF?src=hash&amp;ref_src=twsrc%5Etfw">#PMF</a> <a href="https://twitter.com/hashtag/PublicServant?src=hash&amp;ref_src=twsrc%5Etfw">#PublicServant</a> <a href="https://twitter.com/hashtag/Innovator?src=hash&amp;ref_src=twsrc%5Etfw">#Innovator</a> <a href="https://twitter.com/hashtag/American?src=hash&amp;ref_src=twsrc%5Etfw">#American</a> <a href="https://twitter.com/hashtag/IndependenceDayStories?src=hash&amp;ref_src=twsrc%5Etfw">#IndependenceDayStories</a> <a href="https://t.co/IMFuxz6PD8">https://t.co/IMFuxz6PD8</a></p>&mdash; Defense Digital Service (@DefenseDigital) <a href="https://twitter.com/DefenseDigital/status/1277646803220017152?ref_src=twsrc%5Etfw">June 29, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
 
 Our many stories make DDS a reflection of the country we serve. Happy Independence Day 🇺🇸 from our nerdy family to yours.
