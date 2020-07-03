@@ -24,9 +24,9 @@ We are united in our dedication to doing good.
 
 "I have always had the desire to do work that gives back," says Brett Laurets, who worked in the private sector for more than 20 years before joining DDS in 2020. One of the first projects he has lead for the team is MySymptoms.Mil, the COVID-19 symptom checking tool created for the U.S. military community. 
 
-"It feels great to be part of a team that dedicates itself to improving the lives of the people that are committed to protecting our freedom," Brett says. 
-
 ![A GIF of a website.](mysymptoms-take2.gif "DDS engineers created MySymptoms.Mil to help service men and women manage their health during the COVID-19 pandemic.")
+
+Brett says, "It feels great to be part of a team that dedicates itself to improving the lives of the people that are committed to protecting our freedom."
 
 From the first day…
 
@@ -35,7 +35,5 @@ From the first day…
 **...to [the last](https://dds.mil/media/blog/2020-06-%E2%80%9Cwe-the-people%E2%80%9D-form-the-government-we-need).**
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">“If there is one lasting impact I hope I’ve had at DDS, it is contributing to an environment — both a physical space and a culture — that prioritizes people over process.” 🦅💻🇺🇸 <a href="https://twitter.com/KCartero?ref_src=twsrc%5Etfw">@KCartero</a> <a href="https://twitter.com/hashtag/PMF?src=hash&amp;ref_src=twsrc%5Etfw">#PMF</a> <a href="https://twitter.com/hashtag/PublicServant?src=hash&amp;ref_src=twsrc%5Etfw">#PublicServant</a> <a href="https://twitter.com/hashtag/Innovator?src=hash&amp;ref_src=twsrc%5Etfw">#Innovator</a> <a href="https://twitter.com/hashtag/American?src=hash&amp;ref_src=twsrc%5Etfw">#American</a> <a href="https://twitter.com/hashtag/IndependenceDayStories?src=hash&amp;ref_src=twsrc%5Etfw">#IndependenceDayStories</a> <a href="https://t.co/IMFuxz6PD8">https://t.co/IMFuxz6PD8</a></p>&mdash; Defense Digital Service (@DefenseDigital) <a href="https://twitter.com/DefenseDigital/status/1277646803220017152?ref_src=twsrc%5Etfw">June 29, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-
 
 Our many stories make DDS a reflection of the country we serve. Happy Independence Day 🇺🇸 from our nerdy family to yours.
