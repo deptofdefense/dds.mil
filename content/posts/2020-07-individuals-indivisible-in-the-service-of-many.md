@@ -32,10 +32,8 @@ From the first day…
 
 ![A woman stands behind a podium with a seal of the U.S. Department of Defense on it.](img_8085_50-.jpg "DDS designer Marie Smith on her first day working at the Pentagon.")
 
-**...to [the last](https://dds.mil/media/blog/2020-06-%E2%80%9Cwe-the-people%E2%80%9D-form-the-government-we-need).**
+...to [the last](https://dds.mil/media/blog/2020-06-%E2%80%9Cwe-the-people%E2%80%9D-form-the-government-we-need).
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">“If there is one lasting impact I hope I’ve had at DDS, it is contributing to an environment — both a physical space and a culture — that prioritizes people over process.” 🦅💻🇺🇸 <a href="https://twitter.com/KCartero?ref_src=twsrc%5Etfw">@KCartero</a> <a href="https://twitter.com/hashtag/PMF?src=hash&amp;ref_src=twsrc%5Etfw">#PMF</a> <a href="https://twitter.com/hashtag/PublicServant?src=hash&amp;ref_src=twsrc%5Etfw">#PublicServant</a> <a href="https://twitter.com/hashtag/Innovator?src=hash&amp;ref_src=twsrc%5Etfw">#Innovator</a> <a href="https://twitter.com/hashtag/American?src=hash&amp;ref_src=twsrc%5Etfw">#American</a> <a href="https://twitter.com/hashtag/IndependenceDayStories?src=hash&amp;ref_src=twsrc%5Etfw">#IndependenceDayStories</a> <a href="https://t.co/IMFuxz6PD8">https://t.co/IMFuxz6PD8</a></p>&mdash; Defense Digital Service (@DefenseDigital) <a href="https://twitter.com/DefenseDigital/status/1277646803220017152?ref_src=twsrc%5Etfw">June 29, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-
 
 Our many stories make DDS a reflection of the country we serve. Happy Independence Day 🇺🇸 from our nerdy family to yours.
