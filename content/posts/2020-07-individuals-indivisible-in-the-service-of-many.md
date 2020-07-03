@@ -16,6 +16,8 @@ Defense Digital Service does not have just one story, it has many. Each member o
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">&quot;I look back at all of the events in my life and think about how fortunate I am to be given opportunities to give back to myself, my family, my team, &amp; ultimately my country.&quot; <a href="https://twitter.com/savank?ref_src=twsrc%5Etfw">@savank</a> <a href="https://twitter.com/hashtag/Immigrant?src=hash&amp;ref_src=twsrc%5Etfw">#Immigrant</a> <a href="https://twitter.com/hashtag/Entrepreneur?src=hash&amp;ref_src=twsrc%5Etfw">#Entrepreneur</a> <a href="https://twitter.com/hashtag/Husband?src=hash&amp;ref_src=twsrc%5Etfw">#Husband</a> <a href="https://twitter.com/hashtag/Dad?src=hash&amp;ref_src=twsrc%5Etfw">#Dad</a> <a href="https://twitter.com/hashtag/American?src=hash&amp;ref_src=twsrc%5Etfw">#American</a> <a href="https://twitter.com/hashtag/IndependenceDayStories?src=hash&amp;ref_src=twsrc%5Etfw">#IndependenceDayStories</a> <a href="https://t.co/LpNt3dr8Wm">https://t.co/LpNt3dr8Wm</a></p>&mdash; Defense Digital Service (@DefenseDigital) <a href="https://twitter.com/DefenseDigital/status/1276916456928825344?ref_src=twsrc%5Etfw">June 27, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
+
+
 We are technologists, but we are also spouses, parents, immigrants, veterans, and entrepreneurs.
 
 ![A collage of four photos show a woman holding a diploma, a pair of men packing lunchbags, four children holding lunchbags, and a lunchbag with a message written on it.](cyndie-photo-2.jpg "Cyndie Vieira (left) organized food drives for the non-profit organization, #Hashtaglunchbag in New Jersey before joining Defense Digital Service.")
