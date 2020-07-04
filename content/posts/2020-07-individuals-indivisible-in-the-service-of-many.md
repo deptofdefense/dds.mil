@@ -16,7 +16,7 @@ Defense Digital Service does not have just one story, it has many. Each member o
 
 We are technologists, but we are also spouses, parents, immigrants, veterans, and entrepreneurs.
 
-![A collage of four photos show a woman holding a diploma, a pair of men packing lunchbags, four children holding lunchbags, and a lunchbag with a message written on it.](cyndie-photo-2.jpg "Cyndie Vieira (left) organized food drives for the non-profit organization, #Hashtaglunchbag in New Jersey before joining Defense Digital Service.")
+![A collage of four photos show a woman holding a diploma, a pair of men packing lunch bags, four children holding lunch bags, and a lunch bag with a message written on it.](screen-shot-2020-07-01-at-3.10.22-pm.png "Cyndie Vieira (left) organized food drives for the non-profit organization, #Hashtaglunchbag in New Jersey before joining Defense Digital Service.")
 
 We are united in our dedication to doing good.
 
