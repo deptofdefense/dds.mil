@@ -26,10 +26,10 @@ Brett says, "It feels great to be part of a team that dedicates itself to improv
 
 From the first day…
 
-![A woman stands behind a podium with a seal of the U.S. Department of Defense on it.](img_8085_50-.jpg "DDS designer Marie Smith on her first day working at the Pentagon.")
+![A woman stands behind a podium with a seal of the U.S. Department of Defense on it.](../../media/img_8085_50-.jpg "DDS designer Marie Smith on her first day working at the Pentagon.")
 
 ...to [the last](https://dds.mil/media/blog/2020-06-%E2%80%9Cwe-the-people%E2%80%9D-form-the-government-we-need).
 
-![Tweet from Defense Digital Service](screen-shot-2020-07-04-at-1.49.26-pm.png)
+![Tweet from Defense Digital Service](../../media/screen-shot-2020-07-04-at-1.49.26-pm.png)
 
 Our many stories make DDS a reflection of the country we serve. Happy Independence Day 🇺🇸 from our nerdy family to yours.
