@@ -10,7 +10,7 @@ Defense Digital Service does not have just one story, it has many. Each member o
 
 [Maya Keong](https://www.linkedin.com/posts/defensedigitalservice_westpointwomen-asianamerican-digitalsecurity-activity-6684127559006920704-kfaY), a West Point grad and project analyst on the Hack the Pentagon team, says, “A growth mindset and increased diversity are what make us stronger together in service to our nation."
 
-![A group of people sit around a table working on laptops](img_4805_50-.jpg "Maya Keong works with the Hack the Pentagon team.")
+![A group of people sit around a table working on laptops](img_4805_1.4mb.jpg "Maya Keong works with the Hack the Pentagon team.")
 
 "The work we do \[is] not about the glory. It’s about saving lives,” says [Savan Kong](https://www.linkedin.com/feed/update/urn:li:activity:6682680546969186304), serial entrepreneur and one of our product managers.
 
