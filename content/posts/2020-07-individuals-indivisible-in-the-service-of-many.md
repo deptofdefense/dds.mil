@@ -24,8 +24,6 @@ We are united in our dedication to doing good.
 
 "I have always had the desire to do work that gives back," says Brett Laurets, who left a 20-year career in the private sector to join DDS in January of 2020. One of the first projects he led for the team was MySymptoms.Mil, the COVID-19 symptom checking tool created for the U.S. military community. 
 
-![A GIF of a website.](mysymptoms-take2.gif "DDS engineers created MySymptoms.Mil to help service men and women manage their health during the COVID-19 pandemic.")
-
 Brett says, "It feels great to be part of a team that dedicates itself to improving the lives of the people that are committed to protecting our freedom."
 
 From the first day…
