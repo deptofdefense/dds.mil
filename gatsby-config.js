@@ -32,6 +32,20 @@ module.exports = {
         types: path.join(__dirname, "src/types"),
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `media`,
+        path: `${__dirname}/media`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `content`,
+        path: `${__dirname}/content`,
+      },
+    },
     `gatsby-transformer-json`,
     {
       resolve: "gatsby-transformer-sharp",
@@ -50,6 +64,12 @@ module.exports = {
               height: 400,
               related: false,
               noIframeBorder: true,
+            },
+          },
+          {
+            resolve: `gatsby-relative-pathify-images`,
+            options: {
+              relativePathPrefix: "../../media/",
             },
           },
           {
@@ -95,20 +115,6 @@ module.exports = {
         htmlTitle: "Admin | Defense Digital Service",
         modulePath: `${__dirname}/src/cms/cms.tsx`,
         manualInit: true,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `content`,
-        path: `${__dirname}/content`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `media`,
-        path: `${__dirname}/media`,
       },
     },
     "gatsby-plugin-offline",
