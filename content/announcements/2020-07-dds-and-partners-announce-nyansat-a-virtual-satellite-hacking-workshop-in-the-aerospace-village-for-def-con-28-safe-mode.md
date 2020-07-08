@@ -40,27 +40,27 @@ Founded in 2011, Red Balloon Security ([www.redballoonsecurity.com](http://www.r
 
 **CONTACT:**
 
-Defense Digital Service
+Defense Digital Service 
 
-Jinyoung Englund
+Jinyoung Englund 
 
-press@dds.mil
+press@dds.mil 
 
 [dds.mil](https://dds.mil/)
 
 
 
-Air Force Research Laboratory
+Air Force Research Laboratory 
 
-Deliarae Jesaitis
+Deliarae Jesaitis 
 
-[deliarae.jesaitis.1@us.af](http://deliarae.jesaitis.1@us.af.mil).mil
+[deliarae.jesaitis.1@us.af](http://deliarae.jesaitis.1@us.af.mil).mil 
 
 [Afresearchlab.com](https://afresearchlab.com/)
 
 
 
-Red Balloon Security
+Red Balloon Security 
 
 Michael Sias
 
