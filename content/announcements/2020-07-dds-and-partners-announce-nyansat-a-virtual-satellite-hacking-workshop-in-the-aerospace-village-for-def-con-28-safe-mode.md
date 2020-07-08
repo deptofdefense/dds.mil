@@ -4,7 +4,7 @@ title: The U.S. Defense Digital Service, the Department of the Air Force and Red
   Balloon Security Announce NyanSat, a Virtual Satellite Hacking Workshop in the
   Aerospace Village for DEF CON 28 Safe Mode
 date: 2020-07-08T16:00:31.260Z
-image: nyansat-logo.jpg
+image: press_logos.png
 summary: NyanSat, designed and developed by Red Balloon Security, kicks off the
   first of four virtual hacking workshops hosted by the U.S. Defense Digital
   Service and the Department of the Air Force in the Aerospace Village at DEF
