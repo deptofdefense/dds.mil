@@ -1,0 +1,14 @@
+{
+  "name": "gatsby-relative-pathify-images",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "DDS",
+  "license": "SEE LICENSE IN REPOSITORY",
+  "dependencies": {
+    "unist-util-visit": "^2.0.2"
+  }
+}

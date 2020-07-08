@@ -24,7 +24,7 @@ CMS.init({
     logo_url: "/img/logo-cms.png",
     publish_mode: "editorial_workflow",
     media_folder: "media",
-    public_folder: "",
+    public_folder: "../../media",
     collections: [
       PagesCollection,
       AnnouncementCollection,
