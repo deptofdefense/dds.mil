@@ -1,7 +1,8 @@
 ---
 type: announcements
-title: DDS, USAF, and Red Balloon Security Announce NyanSat, a Virtual Satellite
-  Hacking Workshop in the Aerospace Village for DEF CON 28
+title: The U.S. Defense Digital Service, the Department of the Air Force and Red
+  Balloon Security Announce NyanSat, a Virtual Satellite Hacking Workshop in the
+  Aerospace Village for DEF CON 28 Safe Mode
 date: 2020-07-08T13:00:31.260Z
 image: default-media-image.png
 summary: NyanSat, designed and developed by Red Balloon Security, kicks off the
