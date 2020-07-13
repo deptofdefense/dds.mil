@@ -84,7 +84,7 @@ const DefconPage: React.FC<PageProps<QueryResult>> = ({ data }) => {
       </Section>
 
       <Section>
-        <div className="defcon-image-section">
+        <div className="defcon-image-section flipped">
           <Img fluid={data.placeholder.childImageSharp.fluid} />
           <div className="section-content">
             <h3>About HAS</h3>
