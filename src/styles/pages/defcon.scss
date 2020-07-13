@@ -1,0 +1,112 @@
+.defcon-footer {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  padding: 0;
+
+  @include at-media(tablet) {
+    padding: 0 units(2);
+    justify-content: flex-start;
+  }
+
+  @include at-media(desktop) {
+    padding: 0 8rem;
+  }
+
+  .defcon-footer-item {
+    width: 25%;
+  }
+}
+
+.defcon-hero {
+  .hero {
+    .hero-inner {
+      p {
+        color: white;
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+.defcon-image-section {
+  display: flex;
+  align-items: flex-start;
+  flex-flow: row wrap;
+  width: 100%;
+  padding: 2rem 0;
+  max-width: 1000px;
+  margin: 0 auto;
+
+  @include at-media(tablet) {
+    flex-flow: row nowrap;
+  }
+
+  .gatsby-image-wrapper {
+    width: 40%;
+    flex: 1 0 auto;
+
+    @include at-media(tablet) {
+      margin-right: 3rem;
+    }
+  }
+
+  .section-content {
+    flex: 1 1 auto;
+    margin-top: 1rem;
+
+    @include at-media(tablet) {
+      margin-top: 0;
+    }
+
+    h3 {
+      font-size: 1.3rem;
+      margin: 0;
+    }
+    p {
+      font-size: 1.4rem;
+      line-height: 1.6;
+    }
+  }
+}
+
+.defcon-image-section.flipped {
+  flex-flow: row wrap;
+
+  @include at-media(tablet) {
+    flex-flow: row-reverse nowrap;
+  }
+
+  .gatsby-image-wrapper {
+    @include at-media(tablet) {
+      margin-right: 0;
+      margin-left: 3rem;
+    }
+  }
+}
+
+.defcon-countdown {
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+
+  h2 {
+    margin: 0;
+    font-size: 1.6rem;
+  }
+
+  .defcon-counter {
+    margin-top: 2rem;
+    font-size: 3rem;
+    margin-bottom: 0;
+
+    .defcon-counter-label {
+      display: block;
+      font-size: 1.5rem;
+      margin: 1rem 0;
+    }
+  }
+}
