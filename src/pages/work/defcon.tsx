@@ -57,9 +57,10 @@ const DefconPage: React.FC<PageProps<QueryResult>> = ({ data }) => {
             excited to be a part of Aerospace Village where we are bigger and
             bolder in what we bring to share with, teach, and learn from the
             community! In addition to Bricks in the Air, our popular aviation
-            hacking workshops, we are also bringing satellites big (via the
-            hackasat CTF) and small (via SAT hacking workshops) to DEFCON. And
-            yes, we are doing this in SAFEMODE!{" "}
+            hacking workshops, we are also bringing satellites big{" "}
+            <em>(via the hackasat CTF)</em> and small{" "}
+            <em>(via SAT hacking workshops)</em> to DEFCON. And yes, we are
+            doing this in SAFEMODE!{" "}
           </p>
 
           <h2>Why Aerospace Village?</h2>
@@ -77,13 +78,18 @@ const DefconPage: React.FC<PageProps<QueryResult>> = ({ data }) => {
           <p>
             Designed to introduce the basics of aviation and space security to
             players, these workshops will feature a series of challenges that
-            meet the skill level of the noob and pro alike! Since we cannot meet
-            you in person in Vegas to share these workshops with you, we have
-            created a rich web-enabled (no special VR equipment required)
-            Virtual Reality environment through which you can access the
-            workshops. During DEFCON, August 6-9, the VR environment can be
-            accessed at DDSvirtual.com. The first 500 participants to complete
-            one of the challenges will receive a free Bricks in the Air t-shirt!
+            meet the skill level of the noob and pro alike! Since we cannot
+            share these workshops with you in person in Las Vegas, we created a
+            rich web-enabled Virtual Reality environment{" "}
+            <em>(no special VR equipment required)</em> so you can access the
+            workshops from home.{" "}
+            <b>
+              <em>
+                Access the VR environment at DDSvirtual.com during DEFCON,
+                August 6-9. The first 500 participants to complete one of the
+                challenges will receive a free Bricks in the Air t-shirt!
+              </em>
+            </b>
           </p>
 
           <h2>Bricks In the Air (Aviation Workshops)</h2>
