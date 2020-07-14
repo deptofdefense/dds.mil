@@ -89,6 +89,7 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
 
         altText: String
         title: String
+        subtitle: String
         cta: String
         ctaLink: String
 

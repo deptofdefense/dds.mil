@@ -176,6 +176,7 @@ export const query = graphql`
       sections {
         type
         title
+        subtitle
         cta
         ctaLink
         numberTitles
