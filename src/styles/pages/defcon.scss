@@ -60,12 +60,12 @@
     }
 
     h3 {
-      font-size: 1.3rem;
+      font-size: 1.5rem;
       margin: 0;
     }
     p {
-      font-size: 1.4rem;
-      line-height: 1.6;
+      font-size: 1.3rem;
+      line-height: 33px;
     }
   }
 }
@@ -93,7 +93,7 @@
   margin: 0 auto;
   text-align: center;
 
-  h2 {
+  h4 {
     margin: 0;
     font-size: 1.6rem;
   }
@@ -108,5 +108,17 @@
       font-size: 1.5rem;
       margin: 1rem 0;
     }
+  }
+}
+
+.defcon-content-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  font-size: 1.3rem;
+  line-height: 33px;
+
+  h2 {
+    font-size: 1.8rem;
+    margin: 0;
   }
 }
