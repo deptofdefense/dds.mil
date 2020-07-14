@@ -7,14 +7,13 @@
     {
       "type": "hero",
       "heroImage": "header-ourwork.png",
-      "title": "Break the code.",
-      "subtitle": "A guide to recruitment and hiring tech talent",
+      "title": "Doing work that matters by focusing our time and energy on high-priority undertakings.",
       "cta": "",
       "ctaLink": ""
     },
     {
       "type": "markdownBody",
-      "mdMain": "### Break the code\n\nBreak the Code is a guide to breaking the status quo of traditional government recruiting and hiring. This publication lets government organizations begin the conversation on how to engage with potential employees in online spaces where technologists gather. It also highlights current policies that can be used to acquire and retain tech talent.\n\n<br /><iframe src=\"https://drive.google.com/viewerng/viewer?embedded=true&url=https://5f0da813c4934b00075f9f8b--dds-mil.netlify.app/DDS-BreakTheCode-Public.pdf\" width=\"100%\" height=\"700px\" allowFullscreen />"
+      "mdMain": "### Break the code\n\n#### A guide to recruitment and hiring tech talent\n\nBreak the Code is a guide to breaking the status quo of traditional government recruiting and hiring. This publication lets government organizations begin the conversation on how to engage with potential employees in online spaces where technologists gather. It also highlights current policies that can be used to acquire and retain tech talent.\n\n<br /><iframe src=\"https://drive.google.com/viewerng/viewer?embedded=true&url=https://5f0da813c4934b00075f9f8b--dds-mil.netlify.app/DDS-BreakTheCode-Public.pdf\" width=\"100%\" height=\"700px\" allowFullscreen />"
     },
     {
       "type": "callToAction",
