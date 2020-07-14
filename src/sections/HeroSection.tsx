@@ -8,6 +8,7 @@ import { ConditionalLink } from "components";
 export interface HeroSectionData extends SectionBase {
   type: "hero";
   title?: string;
+  subtitle?: string;
   cta?: string;
   ctaLink?: string;
   heroImage?: {
@@ -19,6 +20,7 @@ export interface HeroSectionData extends SectionBase {
 
 export const HeroSection: React.FC<HeroSectionData> = ({
   title,
+  subtitle,
   cta,
   ctaLink,
   heroImage,
@@ -38,6 +40,7 @@ export const HeroSection: React.FC<HeroSectionData> = ({
         {title && (
           <div className="hero-card">
             <h1>{title}</h1>
+            {subtitle && <h2>{subtitle}</h2>}
             {cta && (
               <ConditionalLink to={ctaLink!}>
                 <button tabIndex={-1} className="hero-card-cta">

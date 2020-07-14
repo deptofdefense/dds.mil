@@ -25,6 +25,12 @@ const HeroSectionFields: PatchedField[] = [
     hint: "If included, render inside the image with a blue background.",
   },
   {
+    label: "Subtitle",
+    name: "subtitle",
+    widget: "string",
+    required: false,
+  },
+  {
     ...CTAField,
     required: false,
     hint:
