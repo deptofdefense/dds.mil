@@ -35,15 +35,7 @@ const DefconPage: React.FC<PageProps<QueryResult>> = ({ data }) => {
       />
 
       <div className="defcon-hero">
-        <div className="hero">
-          <Img fluid={data.hero.childImageSharp.fluid} />
-          <div className="hero-inner hero-inner-expanded">
-            <div className="hero-card">
-              <h1>DEFCON 28</h1>
-              <p>2020 Space Security Challenge Hack-a-Sat</p>
-            </div>
-          </div>
-        </div>
+        <Img fluid={data.hero.childImageSharp.fluid} />
       </div>
 
       <Section>
@@ -287,7 +279,7 @@ export default DefconPage;
 
 export const query = graphql`
   query DefconPageQuery {
-    hero: file(relativePath: { eq: "defcon-hero.jpg" }) {
+    hero: file(relativePath: { eq: "Defcon-Hero.png" }) {
       childImageSharp {
         fluid(maxWidth: 1440, quality: 90) {
           ...GatsbyImageSharpFluid_withWebp
