@@ -296,7 +296,7 @@ export default DefconPage;
 
 export const query = graphql`
   query DefconPageQuery {
-    hero: file(relativePath: { eq: "Defcon-Hero.png" }) {
+    hero: file(relativePath: { eq: "Defcon-Hero.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1440, quality: 90) {
           ...GatsbyImageSharpFluid_withWebp
