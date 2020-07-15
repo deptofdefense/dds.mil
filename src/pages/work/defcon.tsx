@@ -4,6 +4,9 @@ import Img from "gatsby-image";
 import { Layout, SEO, Section, ConditionalLink } from "components";
 import { differenceInDays } from "date-fns";
 
+// @ts-ignore
+import bitaGif from "../../assets/Defcon-bita.gif";
+
 interface FooterImage {
   childImageSharp: {
     fluid: any;
@@ -88,6 +91,12 @@ const DefconPage: React.FC<PageProps<QueryResult>> = ({ data }) => {
           </p>
 
           <h2>Bricks In the Air (Aviation Workshops)</h2>
+          <div className="defcon-bita-gif">
+            <img
+              src={bitaGif}
+              alt="animated graphic with text for bricks in the air"
+            />
+          </div>
           <p>
             This series of 4 workshops offers you the chance to attempt sending
             messages to mock LEGO Technic aircraft over I2C to learn and
