@@ -53,50 +53,52 @@ const DefconPage: React.FC<PageProps<QueryResult>> = ({ data }) => {
         <div className="defcon-content-wrapper">
           <h2>DDS @ DEFCON</h2>
           <p>
-            Defense Digital Service returns to DEFCON for a second time to
-            engage with the incredible community that attends each year. After
-            our inaugural year during DEFCON 27, where we partnered with the Air
-            Force to bring a CTF, flight simulator, and hands-on aviation
-            workshops to Aviation Village, we are committed to participating in
-            DEFCON each year. This year we return in partnership with the Air
-            Force and have expanded our focus to include space security! We are
-            excited to be a part of Aerospace Village where we are bigger and
-            bolder in what we bring to share with, teach, and learn from the
-            community! In addition to Bricks in the Air, our popular aviation
-            hacking workshops, we are also bringing satellites big{" "}
-            <em>(via the hackasat CTF)</em> and small{" "}
-            <em>(via SAT hacking workshops)</em> to DEFCON. And yes, we are
-            doing this in SAFEMODE!{" "}
+            The Defense Digital Service is partnering with the U.S. Department
+            of the Air Force to host the 2020 Space Security Challenge, the
+            first ever Hack-A-Satellite experience at Def Con 28, now completely
+            online in Safe Mode due to the Covid-19 pandemic. To watch the
+            Hack-A-Sat Capture the Flag (CTF) final event taking place during
+            Aug 7-9, 2020, visit Hackasat.com.
           </p>
 
-          <h2>Why Aerospace Village?</h2>
           <p>
-            Aerospace is a cornerstone of our global infrastructure and economy.
-            While passenger safety is at an all-time high, the adoption of
-            connected technologies exposes aircraft, airports, and the aerospace
-            ecosystem to new risks. Cybersecurity failure can impact human life
-            and public safety; a crisis of confidence in the trustworthiness of
-            air travel can undermine economic, national, and international
-            security.
+            At the same time, we encourage you to play! We are hosting 4
+            virtual, hands-on, educational aerospace workshops in Aerospace
+            Village for you to learn about aviation and space security in our
+            virtual domain [insert website and link]:
           </p>
+
+          <ul>
+            <li>Bricks-in-the-Air</li>
+            <li>CPX SimpleSat</li>
+            <li>DDSat-1</li>
+            <li>Nyan-Sat</li>
+          </ul>
 
           <h2>Aerospace Workshops</h2>
           <p>
             Designed to introduce the basics of aviation and space security to
-            players, these workshops will feature a series of challenges that
-            meet the skill level of the noob and pro alike! Since we cannot
-            share these workshops with you in person in Las Vegas, we created a
-            rich web-enabled Virtual Reality environment{" "}
-            <em>(no special VR equipment required)</em> so you can access the
-            workshops from home.{" "}
+            players, these workshops will feature a series of challenges for all
+            skill levels, from introductory to advanced.
+          </p>
+          <p>
+            Access the rich web-enabled Virtual Reality environment from home at
+            [website]. No special VR equipment is required.
+          </p>
+          <p>
             <b>
+              The first 500 participants to complete one of the challenges will
+              receive a free Bricks-in-the-Air t-shirt!
+            </b>
+          </p>
+          {/* <b>
               <em>
                 Access the VR environment at DDSvirtual.com during DEFCON,
                 August 6-9. The first 500 participants to complete one of the
                 challenges will receive a free Bricks in the Air t-shirt!
               </em>
             </b>
-          </p>
+          </p> */}
 
           <h2>Bricks In the Air (Aviation Workshops)</h2>
           <div className="defcon-bita-gif">
@@ -106,28 +108,25 @@ const DefconPage: React.FC<PageProps<QueryResult>> = ({ data }) => {
             />
           </div>
           <p>
-            This series of 4 workshops offers you the chance to attempt sending
-            messages to mock LEGO Technic aircraft over I2C to learn and
-            experiment with direct injection attacks on a data bus. This year we
-            have a few extra treats including the brand spanking new Spike Prime
-            robot from lego!{" "}
+            In this series of four workshops, you will attempt to send messages
+            to a mock LEGO® technic aircraft over I2C to experiment with direct
+            injection attacks on a data bus. This year, we’ve integrated the
+            newly released Spike Prime robot from LEGO® bricks.
           </p>
-          <ul>
-            <li>Category: Aircraft</li>
-            <li>Technical Level: Introductory - Advanced</li>
-            <li>Coding Language: C++, Python</li>
-            <li>Workshop open: August 6-9, 2020 from 9AM-6PM EST</li>
-          </ul>
+
+          <p>
+            Category: Aircraft
+            <br />
+            Technical Level: Introductory to Advanced
+            <br />
+            Coding Language: C++, Python
+          </p>
 
           <p>The following kits will be featured in these workshops:</p>
           <ul>
-            <li>LEGO Technic Cargo Plane 42025</li>
-            <li>LEGO Technic Heavy Lift Helicopter 42052 </li>
-            <li>LEGO Technic Helicopter 9396</li>
-            <li>
-              Fingers Crossed-New Release: Lego Technic Bell Boeing V-22 Osprey
-              (42113)
-            </li>
+            <li>LEGO® Technic Cargo Plane 42025</li>
+            <li>LEGO® Technic Heavy Lift Helicopter 42052 </li>
+            <li>LEGO® Technic Helicopter 9396</li>
           </ul>
 
           <p>
@@ -230,9 +229,9 @@ const DefconPage: React.FC<PageProps<QueryResult>> = ({ data }) => {
           <div className="section-content">
             <h3>NyanSat</h3>
             <p>
-              Nyansat consists of three fun, non-competitive challenges:
+              Nyan-Sat consists of three fun, non-competitive challenges:
               building your own satellite tracking antenna, exploiting a ground
-              station modem, and participating in our livestreamed,
+              station modem, and participating in our live streamed,
               internet-accessible, community ground station event.
             </p>
             <p>
