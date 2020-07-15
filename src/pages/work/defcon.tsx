@@ -17,6 +17,9 @@ interface QueryResult {
   aflogo: FooterImage;
   avlogo: FooterImage;
   hackasatlogo: FooterImage;
+  cpxsimplesat: FooterImage;
+  ddssat: FooterImage;
+  nyansat: FooterImage;
 }
 
 const DefconPage: React.FC<PageProps<QueryResult>> = ({ data }) => {
@@ -137,7 +140,7 @@ const DefconPage: React.FC<PageProps<QueryResult>> = ({ data }) => {
           </p>
         </div>
         <div className="defcon-image-section">
-          <Img fluid={data.placeholder.childImageSharp.fluid} />
+          <Img fluid={data.cpxsimplesat.childImageSharp.fluid} />
           <div className="section-content">
             <h3>CPX SimpleSat</h3>
             <p>
@@ -180,7 +183,7 @@ const DefconPage: React.FC<PageProps<QueryResult>> = ({ data }) => {
 
       <Section>
         <div className="defcon-image-section flipped">
-          <Img fluid={data.placeholder.childImageSharp.fluid} />
+          <Img fluid={data.ddssat.childImageSharp.fluid} />
           <div className="section-content">
             <h3>DDSAT-1</h3>
             <p>
@@ -214,7 +217,7 @@ const DefconPage: React.FC<PageProps<QueryResult>> = ({ data }) => {
 
       <Section>
         <div className="defcon-image-section">
-          <Img fluid={data.placeholder.childImageSharp.fluid} />
+          <Img fluid={data.nyansat.childImageSharp.fluid} />
           <div className="section-content">
             <h3>NyanSat</h3>
             <p>
@@ -293,6 +296,30 @@ export const query = graphql`
     }
 
     placeholder: file(relativePath: { eq: "press_logos.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 800, quality: 90) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+
+    cpxsimplesat: file(relativePath: { eq: "Defcon-CPX-Simple-SAT.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 800, quality: 90) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+
+    ddssat: file(relativePath: { eq: "Defcon-DDS-SAT1.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 800, quality: 90) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+
+    nyansat: file(relativePath: { eq: "Defcon-NYAN-SAT.png" }) {
       childImageSharp {
         fluid(maxWidth: 800, quality: 90) {
           ...GatsbyImageSharpFluid_withWebp
