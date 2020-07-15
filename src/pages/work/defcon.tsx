@@ -2,7 +2,6 @@ import React from "react";
 import { graphql, PageProps } from "gatsby";
 import Img from "gatsby-image";
 import { Layout, SEO, Section, ConditionalLink } from "components";
-import { differenceInDays } from "date-fns";
 
 // @ts-ignore
 import bitaGif from "../../assets/Defcon-bita.gif";
@@ -10,6 +9,17 @@ import bitaGif from "../../assets/Defcon-bita.gif";
 interface FooterImage {
   childImageSharp: {
     fluid: any;
+  };
+}
+
+interface SocialImage {
+  childImageSharp: {
+    fluid: any;
+    original: {
+      src: string;
+      width: number;
+      height: number;
+    };
   };
 }
 
@@ -22,19 +32,17 @@ interface QueryResult {
   hackasatlogo: FooterImage;
   cpxsimplesat: FooterImage;
   ddssat: FooterImage;
-  nyansat: FooterImage;
+  nyansat: SocialImage;
 }
 
 const DefconPage: React.FC<PageProps<QueryResult>> = ({ data }) => {
-  const event = new Date(2020, 7, 8);
-  const daysRemaining = differenceInDays(event, new Date());
-
   return (
     <Layout>
       <SEO
         title="Defcon 2020"
         description="DDS Supports Defcon for 2020"
         url="https://dds.mil/work/defcon"
+        image={data.nyansat.childImageSharp.original}
       />
 
       <div className="defcon-hero">
@@ -324,6 +332,11 @@ export const query = graphql`
       childImageSharp {
         fluid(maxWidth: 800, quality: 90) {
           ...GatsbyImageSharpFluid_withWebp
+        }
+        original {
+          src
+          width
+          height
         }
       }
     }
