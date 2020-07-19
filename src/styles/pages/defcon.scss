@@ -1,129 +1,489 @@
-.defcon-footer {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  padding: 0;
-
-  @include at-media(tablet) {
-    padding: 0 units(2);
-    justify-content: flex-start;
-  }
-
-  @include at-media(desktop) {
-    padding: 0 8rem;
-  }
-
-  .defcon-footer-item {
-    width: 25%;
-  }
-}
-
 .defcon-hero {
-  .hero {
-    .hero-inner {
-      p {
+  position: relative;
+
+  .gatsby-image-wrapper {
+    position: absolute !important;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+
+  .defcon-hero-content {
+    position: relative;
+    width: 100%;
+    max-width: 1366px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 2rem;
+    z-index: 2;
+
+    .defcon-hero-copy {
+      display: flex;
+      flex-flow: column nowrap;
+      margin-left: 3rem;
+
+      h1 {
+        margin: 3rem 0 0 0;
+        font-size: 3.5rem;
+        color: #88f4f5;
+        text-transform: capitalize;
+        font-style: oblique;
+        transform: rotate(-3deg);
+      }
+
+      h2 {
+        font-size: 3.2rem;
         color: white;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: flex-start;
+        font-weight: 200;
+        transform: rotate(-3deg);
+        font-style: oblique;
+        margin: 5px 0 0 0;
+
+        .theAt {
+          display: block;
+          font-size: 2.8rem;
+          font-weight: 200;
+          color: #d71fe9;
+        }
+      }
+    }
+
+    .defcon-date-wrapper {
+      align-self: flex-end;
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      justify-content: center;
+      color: #fcff83;
+      font-weight: 200;
+      transform: rotate(-4deg);
+      font-style: oblique;
+      margin-top: -4.5rem;
+      width: 400px;
+      height: 400px;
+      border: 2px solid #fcff83;
+      border-radius: 50%;
+
+      .defcon-days {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        margin-right: 2rem;
+      }
+
+      .defcon-month {
+        font-size: 2.2rem;
+        margin-bottom: 0.2rem;
+        letter-spacing: 8px;
+        margin-top: -50px;
+      }
+
+      .defcon-day {
+        font-size: 6rem;
+        position: relative;
+        display: inline-block;
+        font-stretch: semi-condensed;
+      }
+
+      .defcon-day::after {
+        content: "TH";
+        position: absolute;
         font-size: 1.2rem;
+        top: 20px;
+        right: -2rem;
+      }
+
+      .defcon-tac {
+        font-stretch: extra-expanded;
+        font-size: 3rem;
+        margin: 0 0.1rem;
+      }
+
+      .defcon-year {
+        font-size: 3.2rem;
+        letter-spacing: 12px;
       }
     }
   }
 }
 
-.defcon-image-section {
-  display: flex;
-  align-items: flex-start;
-  flex-flow: row wrap;
+.defcon-sec2 {
   width: 100%;
-  padding: 2rem 0;
-  max-width: 1000px;
-  margin: 0 auto;
+  position: relative;
+  margin-top: -250px;
 
-  @include at-media(tablet) {
-    flex-flow: row nowrap;
+  @media screen and (max-width: 1100px) {
+    margin-top: -150px;
   }
+
+  .defcon-border-blue {
+    position: absolute;
+    top: -24px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #090f3c;
+    z-index: 10;
+    clip-path: polygon(0 0, 100% 22%, 100% 75%, 0 100%);
+
+    @media screen and (max-width: 1100px) {
+      clip-path: polygon(0 0, 100% 9%, 100% 75%, 0 100%);
+    }
+  }
+
+  .defcon-border-black {
+    position: absolute;
+    top: -12px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #1e021f;
+    z-index: 12;
+    clip-path: polygon(0 0, 100% 23%, 100% 75%, 0 100%);
+
+    @media screen and (max-width: 1100px) {
+      clip-path: polygon(0 0, 100% 10%, 100% 75%, 0 100%);
+    }
+  }
+
+  .defcon-border-purple {
+    position: absolute;
+    left: 0;
+    bottom: -36px;
+    width: 100%;
+    height: 100%;
+    background: #5b065e;
+    z-index: 12;
+    clip-path: polygon(0 0, 100% 25%, 100% 72%, 0 100%);
+
+    @media screen and (max-width: 1100px) {
+      clip-path: polygon(0 0, 100% 25%, 100% 82%, 0 100%);
+    }
+  }
+
+  .defcon-border-botblue {
+    position: absolute;
+    left: 0;
+    bottom: -48px;
+    width: 100%;
+    height: 100%;
+    background: #1e4b97;
+    z-index: 11;
+    clip-path: polygon(0 0, 100% 25%, 100% 72%, 0 100%);
+
+    @media screen and (max-width: 1100px) {
+      clip-path: polygon(0 0, 100% 25%, 100% 82%, 0 100%);
+    }
+  }
+
+  .defcon-sec2-content {
+    background: #6b0e72;
+    overflow: hidden;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    position: relative;
+    z-index: 13;
+    clip-path: polygon(0 0, 100% 25%, 100% 75%, 0 100%);
+
+    @media screen and (max-width: 1100px) {
+      clip-path: polygon(0 0, 100% 12%, 100% 85%, 0 100%);
+    }
+
+    .defcon-sec2-left {
+      position: relative;
+      flex: 1 1 50%;
+      align-self: stretch;
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+
+      @media screen and (max-width: 850px) {
+        flex: 1 0 100%;
+        padding: 250px 0 0 0;
+      }
+
+      .defcon-feature-img {
+        margin: 0 auto;
+        z-index: 15;
+      }
+
+      .gatsby-image-wrapper {
+        padding: 100px 0;
+        position: absolute !important;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        z-index: 14;
+
+        @media screen and (max-width: 850px) {
+          display: none;
+        }
+      }
+    }
+
+    .defcon-sec2-right {
+      flex: 1 1 50%;
+      padding: 0 5rem 0 2rem;
+      color: white;
+      padding: 250px 5rem 200px 2rem;
+
+      @media screen and (max-width: 850px) {
+        flex: 1 0 100%;
+        padding: 100px 5rem 200px 2rem;
+      }
+
+      h2 {
+        font-size: 3rem;
+        margin: 0 0 1.5rem 0;
+      }
+
+      p {
+        font-size: 1.2rem;
+        line-height: 1.5;
+        margin: 1rem 0;
+
+        a {
+          color: #fcff83;
+          text-decoration: none;
+        }
+
+        a:hover {
+          text-decoration: underline;
+        }
+      }
+
+      ul {
+        font-size: 2rem;
+        font-weight: 500;
+        line-height: 1.5;
+        list-style-type: none;
+
+        li:before {
+          content: "-";
+          text-indent: -8px;
+          margin-right: 8px;
+        }
+      }
+    }
+  }
+}
+
+.defcon-sec3 {
+  margin-top: -300px;
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
 
   .gatsby-image-wrapper {
-    width: 40%;
-    flex: 1 0 auto;
-
-    @include at-media(tablet) {
-      margin-right: 3rem;
-    }
+    padding: 100px 0;
+    position: absolute !important;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
   }
 
-  .section-content {
-    flex: 1 1 auto;
-    margin-top: 1rem;
+  .defcon-sec3-content {
+    padding: 400px 1rem 500px 1rem;
+    z-index: 3;
+    text-align: center;
 
-    @include at-media(tablet) {
-      margin-top: 0;
+    h2 {
+      font-style: oblique;
+      font-size: 3.5rem;
+      font-weight: 600;
+      letter-spacing: -2px;
+      line-height: 5rem;
+      position: relative;
+      // z-index: 5;
     }
 
-    h3 {
-      font-size: 1.5rem;
-      margin: 0;
+    h2:after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 40px;
+      top: 20px;
+      border-radius: 50%;
+      background-color: #6892e6;
+      left: 0;
+      transform: rotate(-3deg);
+      z-index: -1;
     }
+
+    .defcon-sec3-p3 {
+      max-width: 550px;
+      margin: 1.5rem auto;
+      font-style: italic;
+    }
+
     p {
-      font-size: 1.3rem;
-      line-height: 33px;
+      max-width: 700px;
+      line-height: 1.4;
     }
   }
 }
 
-.defcon-image-section.flipped {
-  flex-flow: row wrap;
+.defcon-sec4 {
+  margin-top: -500px;
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 300px;
 
-  @include at-media(tablet) {
-    flex-flow: row-reverse nowrap;
+  .defcon-bg-img {
+    position: absolute !important;
+    height: 100%;
+    width: 100%;
+    top: 24px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+    clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 100%);
+
+    @media screen and (max-width: 850px) {
+      clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 100%);
+    }
   }
 
-  .gatsby-image-wrapper {
-    @include at-media(tablet) {
-      margin-right: 0;
-      margin-left: 3rem;
+  .defcon-border-topblue {
+    position: absolute;
+    left: 0;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background: #1e4b97;
+    z-index: 1;
+    clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 100%);
+
+    @media screen and (max-width: 850px) {
+      clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 100%);
+    }
+  }
+
+  .defcon-sec4-content-wrapper {
+    width: 100%;
+    max-width: 1366px;
+    margin: 0 auto;
+    z-index: 4;
+    min-height: 800px;
+    padding: 0 2rem;
+
+    .defcon-sec4-content {
+      width: 100%;
+      position: relative;
+      display: flex;
+      flex-flow: row wrap;
+      align-items: flex-start;
+      justify-content: space-between;
+
+      @media screen and (max-width: 850px) {
+        flex-flow: column nowrap;
+        align-items: center;
+      }
+
+      .defcon-workshop {
+        width: calc(50% - 42px);
+        color: white;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        padding: 0 1rem;
+        margin: 3rem 0 calc(3rem + 150px) 0;
+        background: none;
+        z-index: 8;
+        position: relative;
+        font-size: 1.2rem;
+        line-height: 1.5;
+
+        @media screen and (max-width: 850px) {
+          width: 100%;
+          margin: 4rem 2rem calc(3rem + 150px) 2rem;
+        }
+
+        .gatsby-image-wrapper {
+          width: 100%;
+        }
+
+        .defcon-workshop-bg-purple {
+          position: absolute;
+          width: 100%;
+          z-index: -1;
+          height: 100%;
+          background-color: #5b065e;
+          top: 150px;
+          clip-path: polygon(0 0, 100% 5%, 100% 90%, 0 100%);
+        }
+
+        h3 {
+          font-size: 3.2rem;
+          text-transform: uppercase;
+          font-style: oblique;
+          letter-spacing: -3px;
+          margin: 0 0 1rem 0;
+          line-height: 3rem;
+          width: 100%;
+        }
+
+        p {
+          width: 100%;
+        }
+
+        .defcon-workshop-copy {
+          padding: 3rem 2rem 0 2rem;
+
+          @media screen and (max-width: 850px) {
+            margin: 3rem 1rem 0 1rem;
+          }
+        }
+        .defcon-workshop-copy.defcon-fixup-image {
+          margin-top: -5rem;
+        }
+
+        // .defcon-bita-img {
+        //   padding: 2rem 0;
+        // }
+      }
     }
   }
 }
 
-.defcon-countdown {
-  background-color: #fff;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 2rem;
-  max-width: 500px;
-  margin: 0 auto;
-  text-align: center;
+.defcon-sec5 {
+  background-color: yellow;
+  z-index: 100;
+  clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%);
+  position: relative;
+  margin-top: -200px;
 
-  h4 {
-    margin: 0;
-    font-size: 1.6rem;
-  }
+  .defcon-sec5-content {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 0 2rem 0;
 
-  .defcon-counter {
-    margin-top: 2rem;
-    font-size: 3rem;
-    margin-bottom: 0;
-
-    .defcon-counter-label {
-      display: block;
-      font-size: 1.5rem;
-      margin: 1rem 0;
+    .defcon-footer-item {
+      width: 15%;
     }
   }
-}
-
-.defcon-content-wrapper {
-  max-width: 1000px;
-  margin: 0 auto;
-  font-size: 1.3rem;
-  line-height: 33px;
-
-  h2 {
-    font-size: 1.8rem;
-    margin: 1.5rem 0 1rem;
-  }
-}
-
-.defcon-bita-gif {
-  max-width: 800px;
-  margin: 0 auto;
 }
