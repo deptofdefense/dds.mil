@@ -93,37 +93,40 @@ const DefconPage: React.FC<PageProps<QueryResult>> = ({ data }) => {
               fluid={data.sec2bg.childImageSharp.fluid}
               objectPosition="bottom right"
             />
-            <img
-              src="https://via.placeholder.com/350"
-              className="defcon-feature-img"
-              alt="skull"
-            />
+
+            <div className="defcon-feature-img">
+              <img src="https://via.placeholder.com/350" alt="skull" />
+            </div>
           </div>
           <div className="defcon-sec2-right">
-            <h2>DDS @ DEFCON</h2>
-            <p>
-              The Defense Digital Service is partnering with the U.S. Department
-              of the Air Force to host the 2020 Space Security Challenge, the
-              first ever Hack-A-Satellite experience at Def Con 28, now
-              completely online in Safe Mode due to the Covid-19 pandemic. To
-              watch the Hack-A-Sat Capture the Flag (CTF) final event taking
-              place during Aug 7-9, 2020, visit{" "}
-              <a href="http://hackasat.com">Hackasat.com.</a>
-            </p>
+            <div className="defcon-sec2-right-content">
+              <h2>DDS @ DEFCON</h2>
+              <p>
+                For the second year, the Defense Digital Service is partnering
+                with the U.S. Department of the Air Force to participate in
+                Aerospace Village at Def Con 28. This year we have expanded our
+                scope beyond aviation to include space, specifically,
+                satellites! In addition to hosting the 2020 Space Security
+                Challenge, the first ever Hack-A-Satellite CTFat Def Con, we are
+                also bringing a series of interactive workshops to Def Con in
+                complete Safemode.
+              </p>
 
-            <p>
-              At the same time, we encourage you to play! We are hosting 4
-              virtual, hands-on, educational aerospace workshops in Aerospace
-              Village for you to learn about aviation and space security in our
-              virtual domain <a href="#">insert website and link</a>:
-            </p>
+              <p>
+                We have created a rich, web based virtual reality environment
+                for you to interact with each of our workshops . Get ready to
+                watch the final event of the CTF at hackasat.com and get fully
+                immersed in the gameplay of our workshops at{" "}
+                <a href="https://dds-virtual.com">dds-virtual.com</a>.
+              </p>
 
-            <ul>
-              <li>Bricks-in-the-Air</li>
-              <li>CPX SimpleSat</li>
-              <li>DDSat-1</li>
-              <li>Nyan-Sat</li>
-            </ul>
+              <ul>
+                <li>Bricks-in-the-Air</li>
+                <li>CPX SimpleSat</li>
+                <li>DDSat-1</li>
+                <li>Nyan-Sat</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -136,10 +139,6 @@ const DefconPage: React.FC<PageProps<QueryResult>> = ({ data }) => {
             Designed to introduce the basics of aviation and space security to
             players, these workshops will feature a series of challenges for all
             skill levels, from introductory to advanced.
-          </p>
-          <p>
-            Access the rich web-enabled Virtual Reality environment from home at
-            [website]. No special VR equipment is required.
           </p>
           <p className="defcon-sec3-p3">
             <b>
@@ -303,6 +302,8 @@ const DefconPage: React.FC<PageProps<QueryResult>> = ({ data }) => {
                   Coding Language: TBA
                   <br />
                   Workshop open: August 6-9, 2020 from 10AM-5PM EST
+                  <br />
+                  Workshop closes: August 10, 2020 at 5 PM EST
                   <br />
                 </p>
                 <p>

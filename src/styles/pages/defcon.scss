@@ -208,7 +208,7 @@
     align-items: center;
     position: relative;
     z-index: 13;
-    clip-path: polygon(0 0, 100% 25%, 100% 75%, 0 100%);
+    clip-path: polygon(0 0, 100% 23%, 100% 75%, 0 100%);
 
     @media screen and (max-width: 1100px) {
       clip-path: polygon(0 0, 100% 12%, 100% 85%, 0 100%);
@@ -228,8 +228,12 @@
       }
 
       .defcon-feature-img {
-        margin: 0 auto;
+        width: 100%;
+        max-width: (1366px / 2);
         z-index: 15;
+        margin-left: auto;
+        display: flex;
+        justify-content: center;
       }
 
       .gatsby-image-wrapper {
@@ -254,6 +258,7 @@
       padding: 0 5rem 0 2rem;
       color: white;
       padding: 250px 5rem 200px 2rem;
+      position: relative;
 
       @media screen and (max-width: 850px) {
         flex: 1 0 100%;
@@ -264,36 +269,40 @@
         padding: 100px 1rem 200px 1rem;
       }
 
-      h2 {
-        font-size: 3rem;
-        margin: 0 0 1.5rem 0;
-      }
+      .defcon-sec2-right-content {
+        max-width: calc(1366px / 2);
 
-      p {
-        font-size: 1.2rem;
-        line-height: 1.5;
-        margin: 1rem 0;
-
-        a {
-          color: #fcff83;
-          text-decoration: none;
+        h2 {
+          font-size: 3rem;
+          margin: 0 0 1.5rem 0;
         }
 
-        a:hover {
-          text-decoration: underline;
+        p {
+          font-size: 1.2rem;
+          line-height: 1.5;
+          margin: 1rem 0;
+
+          a {
+            color: #fcff83;
+            text-decoration: none;
+          }
+
+          a:hover {
+            text-decoration: underline;
+          }
         }
-      }
 
-      ul {
-        font-size: 2rem;
-        font-weight: 500;
-        line-height: 1.5;
-        list-style-type: none;
+        ul {
+          font-size: 2rem;
+          font-weight: 500;
+          line-height: 1.5;
+          list-style-type: none;
 
-        li:before {
-          content: "-";
-          text-indent: -8px;
-          margin-right: 8px;
+          li:before {
+            content: "-";
+            text-indent: -8px;
+            margin-right: 8px;
+          }
         }
       }
     }
@@ -359,7 +368,8 @@
 
     p {
       max-width: 700px;
-      line-height: 1.4;
+      line-height: 1.5;
+      font-size: 1.2rem;
     }
   }
 }
