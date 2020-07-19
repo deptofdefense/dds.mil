@@ -3,9 +3,6 @@ import { graphql, PageProps } from "gatsby";
 import Img from "gatsby-image/withIEPolyfill";
 import { Layout, SEO, ConditionalLink } from "components";
 
-// @ts-ignore
-import bitaGif from "../../assets/Defcon-bita.gif";
-
 interface FooterImage {
   childImageSharp: {
     fluid: any;
@@ -45,16 +42,19 @@ const DefconPage: React.FC<PageProps<QueryResult>> = ({ data }) => {
         title="Defcon 2020"
         description="DDS Supports Defcon for 2020"
         url="https://dds.mil/work/defcon"
-      />
+      >
+        <link
+          href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,200;0,300;0,400;0,500;0,700;1,200;1,500;1,700&display=swap"
+          rel="stylesheet"
+        />
+      </SEO>
 
       <div className="defcon-hero">
         <Img fluid={data.hero.childImageSharp.fluid} />
         <div className="defcon-hero-content">
-          <img
-            src="https://via.placeholder.com/350"
-            className="defcon-hero-skull"
-            alt="skull"
-          />
+          <div className="defcon-hero-skull">
+            <img src="https://via.placeholder.com/350" alt="skull" />
+          </div>
           <div className="defcon-hero-copy">
             <div>
               <h1>AEROSPACE WORKSHOPS</h1>

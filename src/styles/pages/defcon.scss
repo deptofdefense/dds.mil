@@ -25,19 +25,28 @@
     z-index: 2;
     overflow: hidden;
 
+    .defcon-hero-skull {
+      flex: 0 0 40%;
+      display: flex;
+      justify-content: flex-end;
+    }
+
     .defcon-hero-copy {
       display: flex;
       flex-flow: column nowrap;
       margin-left: 3rem;
       word-wrap: break-word;
+      font-family: "Barlow Condensed", sans-serif;
+      flex: 1 1 auto;
 
       h1 {
         margin: 3rem 0 0 0;
-        font-size: 3.5rem;
+        font-size: 5rem;
         color: #88f4f5;
         text-transform: capitalize;
         font-style: oblique;
         transform: rotate(-3deg);
+        font-weight: 500;
 
         @media screen and (max-width: 500px) {
           font-size: 2.5rem;
@@ -45,7 +54,7 @@
       }
 
       h2 {
-        font-size: 3.2rem;
+        font-size: 4.5rem;
         color: white;
         display: flex;
         flex-flow: row nowrap;
@@ -54,6 +63,7 @@
         transform: rotate(-3deg);
         font-style: oblique;
         margin: 5px 0 0 0;
+        line-height: 0.9;
 
         @media screen and (max-width: 500px) {
           font-size: 3.2rem;
@@ -61,9 +71,12 @@
 
         .theAt {
           display: block;
-          font-size: 2.8rem;
+          font-size: 7rem;
           font-weight: 200;
+          line-height: 65px;
           color: #d71fe9;
+          padding-right: 0.2rem;
+          font-style: normal;
         }
       }
     }
@@ -76,9 +89,9 @@
       justify-content: center;
       color: #fcff83;
       font-weight: 200;
-      transform: rotate(-4deg);
+      transform: rotate(-4.5deg);
       font-style: oblique;
-      margin-top: -4.5rem;
+      margin-top: -5rem;
       width: 400px;
       height: 400px;
       border: 2px solid #fcff83;
@@ -93,39 +106,41 @@
         flex-flow: row nowrap;
         align-items: center;
         margin-right: 2rem;
+        line-height: 0.9;
       }
 
       .defcon-month {
         font-size: 2.2rem;
         margin-bottom: 0.2rem;
-        letter-spacing: 8px;
+        letter-spacing: 6px;
         margin-top: -50px;
       }
 
       .defcon-day {
-        font-size: 6rem;
+        font-size: 7.5rem;
+        margin: 0 0.1rem;
         position: relative;
         display: inline-block;
-        font-stretch: semi-condensed;
       }
 
       .defcon-day::after {
         content: "TH";
         position: absolute;
-        font-size: 1.2rem;
-        top: 20px;
-        right: -2rem;
+        font-size: 1.5rem;
+        top: 22px;
+        right: -1.5rem;
       }
 
       .defcon-tac {
-        font-stretch: extra-expanded;
         font-size: 3rem;
         margin: 0 0.1rem;
+        font-weight: 500;
       }
 
       .defcon-year {
-        font-size: 3.2rem;
+        font-size: 4.5rem;
         letter-spacing: 12px;
+        font-weight: 200;
       }
     }
   }
@@ -134,7 +149,8 @@
 .defcon-sec2 {
   width: 100%;
   position: relative;
-  margin-top: -250px;
+  margin-top: -260px;
+  font-family: "Barlow Condensed", sans-serif;
 
   @media screen and (max-width: 1100px) {
     margin-top: -150px;
@@ -148,7 +164,7 @@
     height: 100%;
     background: #090f3c;
     z-index: 10;
-    clip-path: polygon(0 0, 100% 22%, 100% 75%, 0 100%);
+    clip-path: polygon(0 0, 100% 19%, 100% 75%, 0 100%);
 
     @media screen and (max-width: 1100px) {
       clip-path: polygon(0 0, 100% 9%, 100% 75%, 0 100%);
@@ -163,7 +179,7 @@
     height: 100%;
     background: #1e021f;
     z-index: 12;
-    clip-path: polygon(0 0, 100% 23%, 100% 75%, 0 100%);
+    clip-path: polygon(0 0, 100% 20%, 100% 75%, 0 100%);
 
     @media screen and (max-width: 1100px) {
       clip-path: polygon(0 0, 100% 10%, 100% 75%, 0 100%);
@@ -178,7 +194,7 @@
     height: 100%;
     background: #5b065e;
     z-index: 12;
-    clip-path: polygon(0 0, 100% 25%, 100% 72%, 0 100%);
+    clip-path: polygon(0 0, 100% 25%, 100% 80%, 0 100%);
 
     @media screen and (max-width: 1100px) {
       clip-path: polygon(0 0, 100% 25%, 100% 82%, 0 100%);
@@ -193,7 +209,7 @@
     height: 100%;
     background: #1e4b97;
     z-index: 11;
-    clip-path: polygon(0 0, 100% 25%, 100% 72%, 0 100%);
+    clip-path: polygon(0 0, 100% 25%, 100% 80%, 0 100%);
 
     @media screen and (max-width: 1100px) {
       clip-path: polygon(0 0, 100% 25%, 100% 82%, 0 100%);
@@ -208,7 +224,7 @@
     align-items: center;
     position: relative;
     z-index: 13;
-    clip-path: polygon(0 0, 100% 23%, 100% 75%, 0 100%);
+    clip-path: polygon(0 0, 100% 20%, 100% 83%, 0 100%);
 
     @media screen and (max-width: 1100px) {
       clip-path: polygon(0 0, 100% 12%, 100% 85%, 0 100%);
@@ -257,7 +273,7 @@
       flex: 1 1 50%;
       padding: 0 5rem 0 2rem;
       color: white;
-      padding: 250px 5rem 200px 2rem;
+      padding: 250px 5rem 250px 2rem;
       position: relative;
 
       @media screen and (max-width: 850px) {
@@ -273,14 +289,17 @@
         max-width: calc(1366px / 2);
 
         h2 {
-          font-size: 3rem;
+          font-size: 4rem;
           margin: 0 0 1.5rem 0;
+          font-weight: 500;
+          font-style: oblique;
         }
 
         p {
-          font-size: 1.2rem;
-          line-height: 1.5;
+          font-size: 1.7rem;
+          line-height: 1.3;
           margin: 1rem 0;
+          font-weight: 300;
 
           a {
             color: #fcff83;
@@ -293,8 +312,8 @@
         }
 
         ul {
-          font-size: 2rem;
-          font-weight: 500;
+          font-size: 2.5rem;
+          font-weight: 400;
           line-height: 1.5;
           list-style-type: none;
 
@@ -315,6 +334,7 @@
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
+  font-family: "Barlow Condensed", sans-serif;
 
   .gatsby-image-wrapper {
     padding: 100px 0;
@@ -328,7 +348,7 @@
   }
 
   .defcon-sec3-content {
-    padding: 400px 2rem 500px 2rem;
+    padding: 350px 2rem 500px 2rem;
     z-index: 3;
     text-align: center;
     word-break: break-word;
@@ -339,12 +359,11 @@
 
     h2 {
       font-style: oblique;
-      font-size: 3.5rem;
-      font-weight: 600;
-      letter-spacing: -2px;
+      font-size: 5rem;
+      font-weight: 500;
       line-height: 5rem;
       position: relative;
-      // z-index: 5;
+      margin: 1rem 0;
     }
 
     h2:after {
@@ -368,8 +387,9 @@
 
     p {
       max-width: 700px;
-      line-height: 1.5;
-      font-size: 1.2rem;
+      font-size: 1.7rem;
+      line-height: 1.3;
+      font-weight: 300;
     }
   }
 }
@@ -382,17 +402,18 @@
   align-items: center;
   width: 100%;
   padding-bottom: 300px;
+  font-family: "Barlow Condensed", sans-serif;
 
   .defcon-bg-img {
     position: absolute !important;
     height: 100%;
     width: 100%;
-    top: 24px;
+    top: 0px;
     right: 0;
     left: 0;
     bottom: 0;
     z-index: 2;
-    clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 14%, 100% 100%, 0 100%);
 
     @media screen and (max-width: 850px) {
       clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 100%);
@@ -407,7 +428,7 @@
     height: 100%;
     background: #1e4b97;
     z-index: 1;
-    clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 12%, 100% 100%, 0 100%);
 
     @media screen and (max-width: 850px) {
       clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 100%);
@@ -450,8 +471,9 @@
         background: none;
         z-index: 8;
         position: relative;
-        font-size: 1.2rem;
-        line-height: 1.5;
+        font-size: 1.7rem;
+        line-height: 1.3;
+        font-weight: 3 00;
         word-break: break-word;
 
         @media screen and (max-width: 850px) {
@@ -474,12 +496,12 @@
         }
 
         h3 {
-          font-size: 3.2rem;
+          font-size: 4rem;
+          font-weight: 500;
           text-transform: uppercase;
           font-style: oblique;
-          letter-spacing: -3px;
           margin: 0 0 1rem 0;
-          line-height: 3rem;
+          line-height: 0.9;
           width: 100%;
         }
 
