@@ -158,7 +158,7 @@ const DefconPage: React.FC<PageProps<QueryResult>> = ({ data }) => {
         />
         <div className="defcon-sec4-content-wrapper">
           <div className="defcon-sec4-content">
-            <div className="defcon-workshop">
+            <div className="defcon-workshop defcon-bita-workshop">
               <div className="defcon-workshop-bg-purple" />
               <Img fluid={data.bita.childImageSharp.fluid} />
 
