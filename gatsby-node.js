@@ -231,7 +231,7 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
   ];
   const mediaListPage = path.resolve("src/templates/media-list.tsx");
   const mediaPage = path.resolve("src/templates/media-page.tsx");
-  const pageSize = 8;
+  const pageSize = 10;
 
   for (let [mediaType, title] of mediaTypes) {
     const { data } = await graphql(`{
