@@ -361,14 +361,14 @@ export const query = graphql`
     }
     sec3bg: file(relativePath: { eq: "defcon/defcon-sec3bg.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 800, quality: 90) {
+        fluid(maxWidth: 1440, quality: 90) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     sec4bg: file(relativePath: { eq: "defcon/defcon-sec4bg.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 800, quality: 90) {
+        fluid(maxWidth: 1440, quality: 90) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
