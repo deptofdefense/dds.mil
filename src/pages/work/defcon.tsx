@@ -25,6 +25,7 @@ interface QueryResult {
   sec2bg: FooterImage;
   sec3bg: FooterImage;
   sec4bg: FooterImage;
+  sec2img: FooterImage;
   bita: FooterImage;
   cpx: FooterImage;
   ddsat: FooterImage;
@@ -91,11 +92,14 @@ const DefconPage: React.FC<PageProps<QueryResult>> = ({ data }) => {
           <div className="defcon-sec2-left">
             <Img
               fluid={data.sec2bg.childImageSharp.fluid}
+              className="defcon-sec2-bg"
               objectPosition="bottom right"
             />
 
-            <div className="defcon-feature-img">
-              <img src="https://via.placeholder.com/350" alt="skull" />
+            <div className="defcon-feature-img-wrapper">
+              <div className="defcon-feature-img">
+                <Img fluid={data.sec2img.childImageSharp.fluid} />
+              </div>
             </div>
           </div>
           <div className="defcon-sec2-right">
@@ -388,6 +392,13 @@ export const query = graphql`
       }
     }
 
+    sec2img: file(relativePath: { eq: "defcon/sec2-left-photo.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 700, quality: 90) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
     cpx: file(relativePath: { eq: "defcon/sec4-cpx-logo.png" }) {
       childImageSharp {
         fluid(maxWidth: 500, quality: 90) {

@@ -243,16 +243,34 @@
         padding: 250px 0 0 0;
       }
 
-      .defcon-feature-img {
+      .defcon-feature-img-wrapper {
+        height: 100%;
+        max-height: 900px;
+        max-width: calc(1366px / 2);
         width: 100%;
-        max-width: (1366px / 2);
+        height: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: center;
+        position: relative;
         z-index: 15;
         margin-left: auto;
-        display: flex;
-        justify-content: center;
+
+        @media screen and (max-width: 850px) {
+          margin: 0 auto;
+        }
+
+        .defcon-feature-img {
+          width: 100%;
+
+          .gatsby-image-wrapper {
+            width: 100%;
+          }
+        }
       }
 
-      .gatsby-image-wrapper {
+      .defcon-sec2-bg {
         padding: 100px 0;
         position: absolute !important;
         height: 100%;
