@@ -23,6 +23,7 @@ export const useRecentAnnouncements = () => {
           frontmatter {
             title
             date(formatString: "MMM DD, YYYY")
+            externalLink
           }
           fields {
             slug

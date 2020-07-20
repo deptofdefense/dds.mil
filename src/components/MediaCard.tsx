@@ -1,7 +1,6 @@
 import React from "react";
 import Img from "gatsby-image";
-import Link from "gatsby-link";
-import { Card } from "components";
+import { Card, ConditionalLink as Link } from "components";
 
 interface Props {
   title: string;
@@ -11,6 +10,7 @@ interface Props {
   imgFluid?: any;
   imgSrc?: string;
   altText?: string;
+  externalLink?: string;
 }
 
 export const MediaCard: React.FC<Props> = ({

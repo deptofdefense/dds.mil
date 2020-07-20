@@ -30,6 +30,7 @@ interface Props {
               fluid: any;
             };
           };
+          externalLink: string;
         };
       }[];
     };
@@ -59,7 +60,9 @@ const MediaList: React.FC<Props> = ({
           {nodes.map(({ fields, frontmatter }) => (
             <MediaCard
               key={fields.slug}
-              link={`/media/${mediaType}/${fields.slug}`}
+              link={
+                frontmatter.externalLink ?? `/media/${mediaType}/${fields.slug}`
+              }
               imgFluid={frontmatter.image.childImageSharp.fluid}
               {...frontmatter}
             />
@@ -95,6 +98,7 @@ export const query = graphql`
               }
             }
           }
+          externalLink
         }
       }
     }
