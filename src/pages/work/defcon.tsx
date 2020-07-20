@@ -169,20 +169,13 @@ const DefconPage: React.FC<PageProps<QueryResult>> = ({ data }) => {
             Designed to introduce the basics of aviation and space security to
             players, these workshops will feature a series of challenges for all
             skill levels, from introductory to advanced. We have crafted these
-            around a rich story for enhanced gameplay.  You will need the
-            following tools to play:
+            around a rich story for enhanced gameplay. In order to play you will
+            need a Twitch account. Our twitch is integrated with the Discord
+            server to send updates on gameplay. Access the rich web-enabled
+            Virtual Reality environment from home at{" "}
+            <a href="https://dds-virtual.com">dds-virtual.com</a>.
+            <b> No special VR equipment is required.</b>
           </p>
-          <ul>
-            <li>
-              Access the rich web-enabled Virtual Reality environment from home
-              at dds-virtual.com. No special VR equipment is required.
-            </li>
-            <li>In order to play, you will need to have a Twitch account.</li>
-            <li>
-              We integrate with the Discord server for communication on
-              gameplay.
-            </li>
-          </ul>
           <p className="defcon-sec3-p3">
             <b>
               The first 500 participants to complete one of the Bricks in the
@@ -201,6 +194,43 @@ const DefconPage: React.FC<PageProps<QueryResult>> = ({ data }) => {
         />
         <div className="defcon-sec4-content-wrapper">
           <div className="defcon-sec4-content">
+            <div className="defcon-workshop">
+              <div className="defcon-workshop-bg-purple" />
+              <Img fluid={data.nyansat.childImageSharp.fluid} />
+              <div className="defcon-workshop-copy defcon-nyansat-copy">
+                <h3>NYANSAT</h3>
+                <p>
+                  Nyan-Sat consists of three fun, non-competitive challenges:
+                  building your own satellite tracking antenna, exploiting a
+                  ground station modem, and participating in our live streamed,
+                  internet-accessible, community ground station event.
+                </p>
+                <p>
+                  Technical Level: Intermediate - Advanced
+                  <br />
+                  Workshop open: August 6-9, 2020 from 10AM-5PM EST
+                  <br />
+                  Workshop closes: August 10, 2020 at 5 PM EST
+                  <br />
+                </p>
+                <p>
+                  <b>Get involved!</b>
+                </p>
+                <p>
+                  Instruction Videos:
+                  <br />
+                  Twitch: twitch.tv/nyansat
+                  <br />
+                  Discord: NyanSat-text; NyanSat-voice
+                  <br />
+                  Forums: https://discord.gg/nsSMEdv
+                  <br />
+                  Website: https://nyan-sat.com/
+                  <br />
+                </p>
+              </div>
+            </div>
+
             <div className="defcon-workshop defcon-bita-workshop">
               <div className="defcon-workshop-bg-purple" />
               <Img fluid={data.bita.childImageSharp.fluid} />
@@ -240,7 +270,7 @@ const DefconPage: React.FC<PageProps<QueryResult>> = ({ data }) => {
                 fluid={data.cpx.childImageSharp.fluid}
                 className="defcon-bita-img"
               />
-              <div className="defcon-workshop-copy  defcon-ddsat-copy">
+              <div className="defcon-workshop-copy defcon-ddsat-copy">
                 <h3>CPX Simplesat</h3>
                 <p>
                   CPX SimpleSat was built to allow you to experiment with
@@ -275,43 +305,6 @@ const DefconPage: React.FC<PageProps<QueryResult>> = ({ data }) => {
                   Coding Language: Python
                   <br />
                   Workshop Open: August 6-9, 2020 from 10AM-6PM PST
-                  <br />
-                </p>
-              </div>
-            </div>
-
-            <div className="defcon-workshop">
-              <div className="defcon-workshop-bg-purple" />
-              <Img fluid={data.nyansat.childImageSharp.fluid} />
-              <div className="defcon-workshop-copy defcon-nyansat-copy">
-                <h3>NYANSAT</h3>
-                <p>
-                  Nyan-Sat consists of three fun, non-competitive challenges:
-                  building your own satellite tracking antenna, exploiting a
-                  ground station modem, and participating in our live streamed,
-                  internet-accessible, community ground station event.
-                </p>
-                <p>
-                  Technical Level: Intermediate - Advanced
-                  <br />
-                  Workshop open: August 6-9, 2020 from 10AM-5PM EST
-                  <br />
-                  Workshop closes: August 10, 2020 at 5 PM EST
-                  <br />
-                </p>
-                <p>
-                  <b>Get involved!</b>
-                </p>
-                <p>
-                  Instruction Videos:
-                  <br />
-                  Twitch: twitch.tv/nyansat
-                  <br />
-                  Discord: NyanSat-text; NyanSat-voice
-                  <br />
-                  Forums: https://discord.gg/nsSMEdv
-                  <br />
-                  Website: https://nyan-sat.com/
                   <br />
                 </p>
               </div>
