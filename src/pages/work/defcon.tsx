@@ -151,17 +151,11 @@ const DefconPage: React.FC<PageProps<QueryResult>> = ({ data }) => {
               <p>
                 We have created a rich, web based virtual reality environment
                 for you to interact with each of our workshops . Get ready to
-                watch the final event of the CTF at hackasat.com and get fully
+                watch the final event of the CTF at{" "}
+                <a href="https://hackasat.com">hackasat.com</a> and get fully
                 immersed in the gameplay of our workshops at{" "}
                 <a href="https://dds-virtual.com">dds-virtual.com</a>.
               </p>
-
-              <ul>
-                <li>Bricks-in-the-Air</li>
-                <li>CPX SimpleSat</li>
-                <li>DDSat-1</li>
-                <li>Nyan-Sat</li>
-              </ul>
             </div>
           </div>
         </div>
@@ -174,12 +168,26 @@ const DefconPage: React.FC<PageProps<QueryResult>> = ({ data }) => {
           <p>
             Designed to introduce the basics of aviation and space security to
             players, these workshops will feature a series of challenges for all
-            skill levels, from introductory to advanced.
+            skill levels, from introductory to advanced. We have crafted these
+            around a rich story for enhanced gameplay.  You will need the
+            following tools to play:
           </p>
+          <ul>
+            <li>
+              Access the rich web-enabled Virtual Reality environment from home
+              at dds-virtual.com. No special VR equipment is required.
+            </li>
+            <li>In order to play, you will need to have a Twitch account.</li>
+            <li>
+              We integrate with the Discord server for communication on
+              gameplay.
+            </li>
+          </ul>
           <p className="defcon-sec3-p3">
             <b>
-              The first 500 participants to complete one of the challenges will
-              receive a free Bricks-in-the-Air t-shirt!
+              The first 500 participants to complete one of the Bricks in the
+              Air, Simple SAT or CPX-SAT challenges will receive a free
+              Bricks-in-the-Air t-shirt!
             </b>
           </p>
         </div>
@@ -207,11 +215,11 @@ const DefconPage: React.FC<PageProps<QueryResult>> = ({ data }) => {
                   from LEGO® bricks.
                 </p>
                 <p>
-                  Category: Aircraft
-                  <br />
-                  Technical Level: Introductory to Advanced
+                  Technical Level: Introductory
                   <br />
                   Coding Language: C++, Python
+                  <br />
+                  Workshop Open: August 6-9, 2020 from 10AM-6PM PST
                   <br />
                 </p>
                 <p>The following kits will be featured in these workshops:</p>
@@ -222,16 +230,6 @@ const DefconPage: React.FC<PageProps<QueryResult>> = ({ data }) => {
                   <br />
                   LEGO® Technic Helicopter 9396
                   <br />
-                </p>
-                <p>
-                  <b>Get involved!</b>
-                </p>
-                <p>
-                  Instruction Videos:
-                  <br />
-                  Twitch:
-                  <br />
-                  Discord: <br />
                 </p>
               </div>
             </div>
@@ -242,7 +240,7 @@ const DefconPage: React.FC<PageProps<QueryResult>> = ({ data }) => {
                 fluid={data.cpx.childImageSharp.fluid}
                 className="defcon-bita-img"
               />
-              <div className="defcon-workshop-copy defcon-fixup-image">
+              <div className="defcon-workshop-copy  defcon-ddsat-copy">
                 <h3>CPX Simplesat</h3>
                 <p>
                   CPX SimpleSat was built to allow you to experiment with
@@ -251,35 +249,11 @@ const DefconPage: React.FC<PageProps<QueryResult>> = ({ data }) => {
                   the Satellite. No previous experience required.
                 </p>
                 <p>
-                  Category: Satellite
-                  <br />
                   Technical Level: Introductory
                   <br />
                   Coding Languages: Python and CircuitPython
                   <br />
-                  Workshop open: August 6-9, 2020 from 9AM-6PM EST
-                  <br />
-                </p>
-                <p>The following kits will be featured in these workshops:</p>
-                <p>
-                  LEGO® Technic Cargo Plane 42025
-                  <br />
-                  LEGO® Technic Heavy Lift Helicopter 42052
-                  <br />
-                  LEGO® Technic Helicopter 9396
-                  <br />
-                </p>
-                <p>
-                  <b>Get involved!</b>
-                </p>
-                <p>
-                  Instruction Videos:
-                  <br />
-                  Twitch: twitch.tv/CPXSATAfrica | twitch.tv/CPXSATAsia
-                  |twitch.tv/CPXSATNorthAmerica twitch.tv/CPXSATEurope
-                  |twitch.tv/CPXSATAntarctica
-                  <br />
-                  Discord: CPX-SimpleSat-text; CPS-SimpleSat-voice
+                  Workshop Open: August 6-9, 2020 from 10AM-6PM PST
                   <br />
                 </p>
               </div>
@@ -288,7 +262,7 @@ const DefconPage: React.FC<PageProps<QueryResult>> = ({ data }) => {
             <div className="defcon-workshop">
               <div className="defcon-workshop-bg-purple" />
               <Img fluid={data.ddsat.childImageSharp.fluid} />
-              <div className="defcon-workshop-copy defcon-fixup-image">
+              <div className="defcon-workshop-copy defcon-ddsat-copy">
                 <h3>DDSAT-1</h3>
                 <p>
                   Here you’ll get to experiment with RF exploitation by
@@ -296,24 +270,11 @@ const DefconPage: React.FC<PageProps<QueryResult>> = ({ data }) => {
                   mock ground station.
                 </p>
                 <p>
-                  Category: Satellite
-                  <br />
                   Technical Level: Intermediate - Advanced
                   <br />
                   Coding Language: Python
                   <br />
-                  Workshop open: August 6-9, 2020 from 10AM-5PM EST
-                  <br />
-                </p>
-                <p>
-                  <b>Get involved!</b>
-                </p>
-                <p>
-                  Instruction Videos:
-                  <br />
-                  Twitch: twitch.tv/DDSAT1
-                  <br />
-                  Discord:
+                  Workshop Open: August 6-9, 2020 from 10AM-6PM PST
                   <br />
                 </p>
               </div>
@@ -322,7 +283,7 @@ const DefconPage: React.FC<PageProps<QueryResult>> = ({ data }) => {
             <div className="defcon-workshop">
               <div className="defcon-workshop-bg-purple" />
               <Img fluid={data.nyansat.childImageSharp.fluid} />
-              <div className="defcon-workshop-copy">
+              <div className="defcon-workshop-copy defcon-nyansat-copy">
                 <h3>NYANSAT</h3>
                 <p>
                   Nyan-Sat consists of three fun, non-competitive challenges:
@@ -331,11 +292,7 @@ const DefconPage: React.FC<PageProps<QueryResult>> = ({ data }) => {
                   internet-accessible, community ground station event.
                 </p>
                 <p>
-                  Category: Satellite
-                  <br />
                   Technical Level: Intermediate - Advanced
-                  <br />
-                  Coding Language: TBA
                   <br />
                   Workshop open: August 6-9, 2020 from 10AM-5PM EST
                   <br />
