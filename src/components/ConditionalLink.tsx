@@ -23,7 +23,7 @@ export const ConditionalLink: React.FC<Omit<GatsbyLinkProps<any>, "ref">> = ({
     );
   }
   return (
-    <OutboundLink href={to} {...other}>
+    <OutboundLink target="_blank" rel="noreferrer" href={to} {...other}>
       {children}
     </OutboundLink>
   );
