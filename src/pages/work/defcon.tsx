@@ -81,6 +81,38 @@ const DefconPage: React.FC<PageProps<QueryResult>> = ({ data }) => {
             </div>
           </div>
         </div>
+
+        <div className="defcon-hero-content defcon-hero-content-mobile">
+          <div className="defcon-hero-copy">
+            <h1>AEROSPACE WORKSHOPS</h1>
+            <h2>
+              <span className="theAt">@</span>
+            </h2>
+          </div>
+
+          <div className="defcon-hero-skull">
+            <img src="https://via.placeholder.com/350" alt="skull" />
+          </div>
+
+          <div className="defcon-hero-copy">
+            <h2>
+              <span>
+                DEFCON<b>28</b>
+                <br />
+                <b>SAFEMODE</b>
+              </span>
+            </h2>
+            <div className="defcon-date-wrapper">
+              <span className="defcon-month">AUGUST</span>
+              <div className="defcon-days">
+                <span className="defcon-day">6</span>
+                <span className="defcon-tac">&mdash;</span>
+                <span className="defcon-day">9</span>
+              </div>
+              <span className="defcon-year">2020</span>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div className="defcon-sec2">

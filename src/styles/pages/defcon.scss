@@ -25,6 +25,10 @@
     z-index: 2;
     overflow: hidden;
 
+    @media screen and (max-width: 800px) {
+      display: none;
+    }
+
     .defcon-hero-skull {
       flex: 0 0 40%;
       display: flex;
@@ -39,22 +43,22 @@
       font-family: "Barlow Condensed", sans-serif;
       flex: 1 1 auto;
 
+      @media screen and (max-width: 800px) {
+        margin-left: 0;
+      }
+
       h1 {
         margin: 3rem 0 0 0;
-        font-size: 5rem;
+        font-size: 5.5rem;
         color: #88f4f5;
         text-transform: capitalize;
         font-style: oblique;
         transform: rotate(-3deg);
         font-weight: 500;
-
-        @media screen and (max-width: 500px) {
-          font-size: 2.5rem;
-        }
       }
 
       h2 {
-        font-size: 4.5rem;
+        font-size: 5rem;
         color: white;
         display: flex;
         flex-flow: row nowrap;
@@ -64,10 +68,6 @@
         font-style: oblique;
         margin: 5px 0 0 0;
         line-height: 0.9;
-
-        @media screen and (max-width: 500px) {
-          font-size: 3.2rem;
-        }
 
         .theAt {
           display: block;
@@ -97,8 +97,8 @@
       border: 2px solid #fcff83;
       border-radius: 50%;
 
-      @media screen and (max-width: 500px) {
-        margin-top: 0;
+      @media screen and (max-width: 800px) {
+        margin-top: 1rem;
       }
 
       .defcon-days {
@@ -142,6 +142,21 @@
         letter-spacing: 12px;
         font-weight: 200;
       }
+    }
+  }
+
+  .defcon-hero-content.defcon-hero-content-mobile {
+    display: none;
+
+    @media screen and (max-width: 800px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    h2 {
+      justify-content: center;
     }
   }
 }
