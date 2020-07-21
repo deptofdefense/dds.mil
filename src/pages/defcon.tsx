@@ -22,6 +22,8 @@ interface SocialImage {
 
 interface QueryResult {
   hero: FooterImage;
+  heroskull: FooterImage;
+  herodatebg: FooterImage;
   sec2bg: FooterImage;
   sec3bg: FooterImage;
   sec4bg: FooterImage;
@@ -51,10 +53,13 @@ const DefconPage: React.FC<PageProps<QueryResult>> = ({ data }) => {
       </SEO>
 
       <div className="defcon-hero">
-        <Img fluid={data.hero.childImageSharp.fluid} />
+        <Img
+          fluid={data.hero.childImageSharp.fluid}
+          className="defcon-hero-bg"
+        />
         <div className="defcon-hero-content">
           <div className="defcon-hero-skull">
-            <img src="https://via.placeholder.com/350" alt="skull" />
+            <Img fluid={data.heroskull.childImageSharp.fluid} />
           </div>
           <div className="defcon-hero-copy">
             <div>
@@ -71,6 +76,7 @@ const DefconPage: React.FC<PageProps<QueryResult>> = ({ data }) => {
               </h2>
             </div>
             <div className="defcon-date-wrapper">
+              <Img fluid={data.herodatebg.childImageSharp.fluid} />
               <span className="defcon-month">AUGUST</span>
               <div className="defcon-days">
                 <span className="defcon-day">6</span>
@@ -91,7 +97,7 @@ const DefconPage: React.FC<PageProps<QueryResult>> = ({ data }) => {
           </div>
 
           <div className="defcon-hero-skull">
-            <img src="https://via.placeholder.com/350" alt="skull" />
+            <Img fluid={data.heroskull.childImageSharp.fluid} />
           </div>
 
           <div className="defcon-hero-copy">
@@ -103,6 +109,7 @@ const DefconPage: React.FC<PageProps<QueryResult>> = ({ data }) => {
               </span>
             </h2>
             <div className="defcon-date-wrapper">
+              <Img fluid={data.herodatebg.childImageSharp.fluid} />
               <span className="defcon-month">AUGUST</span>
               <div className="defcon-days">
                 <span className="defcon-day">6</span>
@@ -257,7 +264,7 @@ const DefconPage: React.FC<PageProps<QueryResult>> = ({ data }) => {
               </div>
             </div>
 
-            <div className="defcon-workshop">
+            <div className="defcon-workshop defcon-ddsat">
               <div className="defcon-workshop-bg-purple" />
               <Img fluid={data.ddsat.childImageSharp.fluid} alt="DDSAT-1" />
               <div className="defcon-workshop-copy defcon-ddsat-copy">
@@ -351,6 +358,20 @@ export const query = graphql`
     hero: file(relativePath: { eq: "defcon/defcon-hero.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1440, quality: 90) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    heroskull: file(relativePath: { eq: "defcon/defcon-hero-skull.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 600, quality: 90) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    herodatebg: file(relativePath: { eq: "defcon/date-circles-bg.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 600, quality: 90) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
