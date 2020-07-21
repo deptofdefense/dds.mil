@@ -7,9 +7,10 @@ summary: The Basic Optical Biometric Analysis (BOBA) prototype upgrades current
   biometric technology with enhanced functionality and accessibility for service
   members on the tactical edge.
 ---
+
 **Defense Digital Service Delivers Biometric Prototype to Army**
 
-*Partnering with Service Members to Drive Innovation*
+_Partnering with Service Members to Drive Innovation_
 
 WASHINGTON — July 21, 2020 — The Defense Digital Service (DDS) has produced a prototype that will provide service members at the tactical edge with an app that will allow them to use biometric technology to quickly identify friends and potential foes. The prototype, known as the Basic Optical Biometric Analysis (BOBA), upgrades the current biometric technology in use today to verify the identity of partner forces and supporting civilian personnel from the local area.
 
@@ -31,4 +32,4 @@ Built entirely by DDS, the government owns the BOBA code.
 
 The Defense Digital Service was established by the Secretary of Defense in November 2015 as a SWAT team of nerds that provides the best in modern technical knowledge designed to bolster national defense. We are primarily based in the Pentagon, but we also have satellite offices in Augusta, Georgia and co-located at the Defense Innovation Unit in Mountain View, California. Our range of talent includes world-class software developers, designers, product managers, digital experts and bureaucracy hackers from both the private sector and within government.
 
-**Download press release here.**
+<a href="https://dds.mil/DDS-BreakTheCode-Public.pdf" target="_blank" rel="noopener">**Download press release here.**</a>
