@@ -32,4 +32,4 @@ Built entirely by DDS, the government owns the BOBA code.
 
 The Defense Digital Service was established by the Secretary of Defense in November 2015 as a SWAT team of nerds that provides the best in modern technical knowledge designed to bolster national defense. We are primarily based in the Pentagon, but we also have satellite offices in Augusta, Georgia and co-located at the Defense Innovation Unit in Mountain View, California. Our range of talent includes world-class software developers, designers, product managers, digital experts and bureaucracy hackers from both the private sector and within government.
 
-<a href="https://dds.mil/DDS-BreakTheCode-Public.pdf" target="_blank" rel="noopener">**Download press release here.**</a>
+<a href="https://dds.mil/BOBA_Announcement_Press_Release_rdg_July_19.pdf" target="_blank" rel="noopener">**Download press release here.**</a>
