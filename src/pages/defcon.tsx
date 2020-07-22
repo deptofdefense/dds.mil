@@ -3,7 +3,7 @@ import { graphql, PageProps } from "gatsby";
 import Img from "gatsby-image/withIEPolyfill";
 import { Layout, SEO, ConditionalLink } from "components";
 
-interface FooterImage {
+interface ImageQuery {
   childImageSharp: {
     fluid: any;
   };
@@ -21,21 +21,21 @@ interface SocialImage {
 }
 
 interface QueryResult {
-  hero: FooterImage;
-  heroskull: FooterImage;
-  herodatebg: FooterImage;
-  sec2bg: FooterImage;
-  sec3bg: FooterImage;
-  sec4bg: FooterImage;
-  sec2img: FooterImage;
-  bita: FooterImage;
-  cpx: FooterImage;
-  ddsat: FooterImage;
-  nyansat: FooterImage;
-  ddslogo: FooterImage;
-  aflogo: FooterImage;
-  avlogo: FooterImage;
-  hackasatlogo: FooterImage;
+  hero: ImageQuery;
+  heroskull: ImageQuery;
+  herodatebg: ImageQuery;
+  sec2bg: ImageQuery;
+  sec3bg: ImageQuery;
+  sec4bg: ImageQuery;
+  sec2img: ImageQuery;
+  bita: ImageQuery;
+  cpx: ImageQuery;
+  ddsat: ImageQuery;
+  nyansat: ImageQuery;
+  ddslogo: ImageQuery;
+  aflogo: ImageQuery;
+  avlogo: ImageQuery;
+  hackasatlogo: ImageQuery;
 }
 
 const DefconPage: React.FC<PageProps<QueryResult>> = ({ data }) => {
@@ -44,7 +44,7 @@ const DefconPage: React.FC<PageProps<QueryResult>> = ({ data }) => {
       <SEO
         title="Defcon 2020"
         description="DDS Supports Defcon for 2020"
-        url="https://dds.mil/work/defcon"
+        url="https://dds.mil/defcon"
       >
         <link
           href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,200;0,300;0,400;0,500;0,700;1,200;1,500;1,700&display=swap"
