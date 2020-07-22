@@ -21,6 +21,7 @@ interface SocialImage {
 }
 
 interface QueryResult {
+  social: SocialImage;
   hero: ImageQuery;
   heroskull: ImageQuery;
   herodatebg: ImageQuery;
@@ -42,9 +43,10 @@ const DefconPage: React.FC<PageProps<QueryResult>> = ({ data }) => {
   return (
     <Layout>
       <SEO
-        title="Defcon 2020"
-        description="DDS Supports Defcon for 2020"
-        url="https://dds.mil/defcon"
+        title="DDS @ DEFCON"
+        description="For the second year, the Defense Digital Service is partnering with the U.S. Department of the Air Force to participate in Aerospace Village at Def Con 28. This year we have expanded our scope beyond aviation to include space, specifically, satellites!"
+        url="/defcon"
+        image={data.social.childImageSharp.original}
       >
         <link
           href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,200;0,300;0,400;0,500;0,700;1,200;1,500;1,700&display=swap"
@@ -362,6 +364,15 @@ export default DefconPage;
 
 export const query = graphql`
   query DefconPageQuery {
+    social: file(relativePath: { eq: "defcon/defcon-social.png" }) {
+      childImageSharp {
+        original {
+          src
+          width
+          height
+        }
+      }
+    }
     hero: file(relativePath: { eq: "defcon/defcon-hero.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1440, quality: 90) {
@@ -435,7 +446,6 @@ export const query = graphql`
         }
       }
     }
-
     nyansat: file(relativePath: { eq: "defcon/sec4-nyansat-logo.png" }) {
       childImageSharp {
         fluid(maxWidth: 500, quality: 90) {
@@ -443,28 +453,30 @@ export const query = graphql`
         }
       }
     }
-    ddslogo: file(relativePath: { eq: "DDS-logo-black-2x.png" }) {
+    ddslogo: file(relativePath: { eq: "defcon/DDS-logo-black-2x.png" }) {
       childImageSharp {
         fluid(maxWidth: 400, quality: 90) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
-    aflogo: file(relativePath: { eq: "AF-logo-black-2x.png" }) {
+    aflogo: file(relativePath: { eq: "defcon/AF-logo-black-2x.png" }) {
       childImageSharp {
         fluid(maxWidth: 400, quality: 90) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
-    avlogo: file(relativePath: { eq: "AV-logo-2x.png" }) {
+    avlogo: file(relativePath: { eq: "defcon/AV-logo-2x.png" }) {
       childImageSharp {
         fluid(maxWidth: 400, quality: 90) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
-    hackasatlogo: file(relativePath: { eq: "hackasat-logo-black-2x.png" }) {
+    hackasatlogo: file(
+      relativePath: { eq: "defcon/hackasat-logo-black-2x.png" }
+    ) {
       childImageSharp {
         fluid(maxWidth: 400, quality: 90) {
           ...GatsbyImageSharpFluid_withWebp

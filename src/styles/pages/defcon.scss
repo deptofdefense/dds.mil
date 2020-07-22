@@ -290,7 +290,7 @@
     align-items: center;
     position: relative;
     z-index: 13;
-    clip-path: polygon(0 0, 100% 18%, 100% 83%, 0 100%);
+    clip-path: polygon(0 0, 100% 19%, 100% 83%, 0 100%);
 
     @media screen and (max-width: 1200px) {
       clip-path: polygon(0 0, 100% 10%, 100% 85%, 0 100%);
