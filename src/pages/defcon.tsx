@@ -242,7 +242,7 @@ const DefconPage: React.FC<PageProps<QueryResult>> = ({ data }) => {
               <div className="defcon-workshop-bg-purple" />
               <Img
                 fluid={data.cpx.childImageSharp.fluid}
-                className="defcon-bita-img"
+                className="defcon-workshop-smaller"
                 alt="CPX Simplesat"
               />
               <div className="defcon-workshop-copy defcon-ddsat-copy">
@@ -266,7 +266,11 @@ const DefconPage: React.FC<PageProps<QueryResult>> = ({ data }) => {
 
             <div className="defcon-workshop defcon-ddsat">
               <div className="defcon-workshop-bg-purple" />
-              <Img fluid={data.ddsat.childImageSharp.fluid} alt="DDSAT-1" />
+              <Img
+                fluid={data.ddsat.childImageSharp.fluid}
+                className="defcon-workshop-smaller"
+                alt="DDSAT-1"
+              />
               <div className="defcon-workshop-copy defcon-ddsat-copy">
                 {/* <h3>DDSAT-1</h3> */}
                 <p>
@@ -287,7 +291,11 @@ const DefconPage: React.FC<PageProps<QueryResult>> = ({ data }) => {
 
             <div className="defcon-workshop">
               <div className="defcon-workshop-bg-purple" />
-              <Img fluid={data.nyansat.childImageSharp.fluid} alt="NYANSAT" />
+              <Img
+                fluid={data.nyansat.childImageSharp.fluid}
+                className="defcon-workshop-smaller"
+                alt="NYANSAT"
+              />
               <div className="defcon-workshop-copy defcon-nyansat-copy">
                 {/* <h3>NYANSAT</h3> */}
                 <p>
