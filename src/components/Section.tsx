@@ -4,6 +4,7 @@ import clsx from "clsx";
 export interface SectionProps extends Partial<JSX.IntrinsicElements["div"]> {
   accentBlue?: boolean;
   accentBase?: boolean;
+  accentYellow?: boolean;
   shadow?: boolean;
 }
 
@@ -12,6 +13,7 @@ export const Section: React.FC<SectionProps> = ({
   className,
   accentBlue,
   accentBase,
+  accentYellow,
   shadow,
   ...rest
 }) => (
@@ -19,6 +21,7 @@ export const Section: React.FC<SectionProps> = ({
     className={clsx("dds-section-container", {
       "accent-blue": accentBlue,
       "accent-base": accentBase,
+      "accent-yellow": accentYellow,
       "shadow-2": shadow,
     })}
     {...rest}

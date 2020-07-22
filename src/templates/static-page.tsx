@@ -1,6 +1,5 @@
 import React, { useMemo } from "react";
 import { graphql } from "gatsby";
-import { Helmet } from "react-helmet";
 import { Layout, SEO, Sidebar, SidebarSection } from "components";
 import {
   HeroSection,
