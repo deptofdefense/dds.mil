@@ -316,13 +316,12 @@ const DefconPage: React.FC<PageProps<QueryResult>> = ({ data }) => {
                   <b>Get involved!</b>
                 </p>
                 <p>
-                  Instruction Videos:
-                  <br />
                   Discord: NyanSat-text; NyanSat-voice
                   <br />
-                  Forums: https://discord.gg/nsSMEdv
+                  Forums:{" "}
+                  <a href="https://discord.gg/nsSMEdv">discord.gg/nsSMEdv</a>
                   <br />
-                  Website: https://nyan-sat.com/
+                  Website: <a href="https://nyan-sat.com/">nyan-sat.com</a>
                   <br />
                 </p>
               </div>

@@ -609,6 +609,15 @@
         .defcon-workshop-copy {
           padding: 2rem 2rem 0 2rem;
 
+          a {
+            color: #fcff83;
+            text-decoration: none;
+          }
+
+          a:hover {
+            text-decoration: underline;
+          }
+
           @media screen and (max-width: 850px) {
             margin: 2rem 0 0 0;
             padding: 3rem 1rem 0 1rem;
