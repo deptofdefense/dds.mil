@@ -26,6 +26,8 @@ import {
   InterestFormData,
   RecentTweets,
   RecentTweetsSectionData,
+  RawHTMLSection,
+  RawHTMLSectionData,
 } from "sections";
 
 type SectionData =
@@ -40,7 +42,8 @@ type SectionData =
   | RecentBlogPostsSectionData
   | MarkdownBodySectionData
   | InterestFormData
-  | RecentTweetsSectionData;
+  | RecentTweetsSectionData
+  | RawHTMLSectionData;
 
 type SidenavData = {
   includeSidenav: boolean;
@@ -96,6 +99,8 @@ const SectionSwitch: React.FC<{ section: SectionData }> = ({ section }) => {
       return <InterestForm {...section} />;
     case "recentTweets":
       return <RecentTweets {...section} />;
+    case "rawHTML":
+      return <RawHTMLSection {...section} />;
     default:
       throw new Error(`Invalid section type encountered`);
   }
