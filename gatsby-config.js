@@ -99,13 +99,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        name: "Defense Digital Service",
-        short_name: `DDS`,
-        start_url: `/`,
-        theme_color: `#345d96`,
-        display: `standalone`,
         icon: "media/logo-desktop-full.png",
-        background_color: "#f7f9fa",
       },
     },
     {
