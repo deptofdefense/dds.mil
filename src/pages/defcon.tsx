@@ -44,7 +44,7 @@ const DefconPage: React.FC<PageProps<QueryResult>> = ({ data }) => {
     <Layout>
       <SEO
         title="DDS @ DEF CON"
-        description="For the second year, the Defense Digital Service is partnering with the U.S. Department of the Air Force to participate in Aerospace Village at Def Con 28. This year we have expanded our scope beyond aviation to include space, specifically satellites!"
+        description="For the second year, the Defense Digital Service is partnering with the U.S. Department of the Air Force to participate in Aerospace Village at DEF CON 28. This year we have expanded our scope beyond aviation to include space, specifically satellites!"
         url="/defcon"
         image={data.social.childImageSharp.original}
       >
@@ -149,11 +149,11 @@ const DefconPage: React.FC<PageProps<QueryResult>> = ({ data }) => {
               <p>
                 For the second year, the Defense Digital Service is partnering
                 with the United States Air Force to participate in Aerospace
-                Village at Def Con 28. This year we have expanded our scope
+                Village at DEF CON 28. This year we have expanded our scope
                 beyond aviation to include space, specifically satellites! In
                 addition to hosting the 2020 Space Security Challenge, the
                 first-ever Hack-A-Satellite CTF at DEF CON, we are also bringing
-                a series of interactive workshops to Def Con in complete
+                a series of interactive workshops to DEF CON in complete
                 Safemode.
               </p>
 
@@ -161,9 +161,18 @@ const DefconPage: React.FC<PageProps<QueryResult>> = ({ data }) => {
                 We have created a vibrant, web-based virtual reality environment
                 for you to interact with each of our workshops. Access our
                 virtual workshops at{" "}
-                <a href="https://dds-virtual.com">dds-virtual.com</a> and watch
-                the final Hack-A-Sat Capture the Flag event at{" "}
-                <a href="https://hackasat.com">hackasat.com</a>.
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://dds-virtual.com"
+                >
+                  dds-virtual.com
+                </a>{" "}
+                and watch the final Hack-A-Sat Capture the Flag event at{" "}
+                <a target="_blank" rel="noreferrer" href="https://hackasat.com">
+                  hackasat.com
+                </a>
+                .
               </p>
             </div>
           </div>
@@ -183,8 +192,10 @@ const DefconPage: React.FC<PageProps<QueryResult>> = ({ data }) => {
             <b>You do not need a verified email address to play.</b> Our Twitch
             is integrated with the Discord server to send updates on gameplay.
             Access the rich web-enabled Virtual Reality environment from home at{" "}
-            <a href="https://dds-virtual.com">dds-virtual.com</a>.
-            <b> No special VR equipment is required.</b>
+            <a target="_blank" rel="noreferrer" href="https://dds-virtual.com">
+              dds-virtual.com
+            </a>
+            .<b> No special VR equipment is required.</b>
           </p>
           <p className="defcon-sec3-p3">
             <b>
@@ -263,6 +274,12 @@ const DefconPage: React.FC<PageProps<QueryResult>> = ({ data }) => {
                   <b>Workshop Open</b>: August 6-9, 2020 from 10AM-6PM PST
                   <br />
                 </p>
+                <p>
+                  Want to get smarter on SAT Hacking?{" "}
+                  <ConditionalLink to="https://github.com/deptofdefense/hack-a-sat-library">
+                    <em>Check out this resource library we created.</em>
+                  </ConditionalLink>
+                </p>
               </div>
             </div>
 
@@ -287,6 +304,12 @@ const DefconPage: React.FC<PageProps<QueryResult>> = ({ data }) => {
                   <br />
                   <b>Workshop Open</b>: August 6-9, 2020 from 10AM-6PM PST
                   <br />
+                </p>
+                <p>
+                  Want to get smarter on SAT Hacking?{" "}
+                  <ConditionalLink to="https://github.com/deptofdefense/hack-a-sat-library">
+                    <em>Check out this resource library we created.</em>
+                  </ConditionalLink>
                 </p>
               </div>
             </div>
@@ -337,7 +360,9 @@ const DefconPage: React.FC<PageProps<QueryResult>> = ({ data }) => {
           </div>
 
           <div className="defcon-footer-item">
-            <Img fluid={data.hackasatlogo.childImageSharp.fluid} />
+            <ConditionalLink to="https://www.hackasat.com/">
+              <Img fluid={data.hackasatlogo.childImageSharp.fluid} />
+            </ConditionalLink>
           </div>
 
           <ConditionalLink to="https://dds.mil" className="defcon-footer-item">
