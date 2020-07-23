@@ -5,6 +5,10 @@
   },
   "sections": [
     {
+      "type": "rawHTML",
+      "mdMain": "<div style=\"background-color: purple; padding: 0.8rem 1rem;\"><a href=\"\\defcon\" style=\"font-weight: 600; display: block; text-decoration: none; margin: 0 auto; max-width: 1366px; text-align: center; font-size: 1.3rem;\"><span style=\"color: #88f4f5;\">AEROSPACE WORKSHOPS</span><span style=\"color: white;\"> @ DEF CON28 SAFEMODE</span><span style=\"color: #fcff83;\"> AUGUST 6TH-9TH 2020</span></a></div>"
+    },
+    {
       "type": "hero",
       "heroImage": "hero-cropped.jpg",
       "title": "Transforming technology within the Department of Defense",
