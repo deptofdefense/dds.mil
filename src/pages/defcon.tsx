@@ -43,7 +43,7 @@ const DefconPage: React.FC<PageProps<QueryResult>> = ({ data }) => {
   return (
     <Layout>
       <SEO
-        title="DDS @ DEFCON"
+        title="DDS @ DEF CON"
         description="For the second year, the Defense Digital Service is partnering with the U.S. Department of the Air Force to participate in Aerospace Village at Def Con 28. This year we have expanded our scope beyond aviation to include space, specifically, satellites!"
         url="/defcon"
         image={data.social.childImageSharp.original}
@@ -71,7 +71,7 @@ const DefconPage: React.FC<PageProps<QueryResult>> = ({ data }) => {
               <h2>
                 <span className="theAt">@</span>
                 <span>
-                  DEFCON<b>28</b>
+                  DEF&nbsp;CON<b>28</b>
                   <br />
                   <b>SAFEMODE</b>
                 </span>
@@ -105,7 +105,7 @@ const DefconPage: React.FC<PageProps<QueryResult>> = ({ data }) => {
           <div className="defcon-hero-copy">
             <h2>
               <span>
-                DEFCON<b>28</b>
+                DEF&nbsp;CON<b>28</b>
                 <br />
                 <b>SAFEMODE</b>
               </span>
@@ -145,7 +145,7 @@ const DefconPage: React.FC<PageProps<QueryResult>> = ({ data }) => {
           </div>
           <div className="defcon-sec2-right">
             <div className="defcon-sec2-right-content">
-              <h2>DDS @ DEFCON</h2>
+              <h2>DDS @ DEF&nbsp;CON</h2>
               <p>
                 For the second year, the Defense Digital Service is partnering
                 with the U.S. Department of the Air Force to participate in
