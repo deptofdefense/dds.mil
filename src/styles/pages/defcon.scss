@@ -565,7 +565,7 @@
         flex-flow: column nowrap;
         align-items: center;
         padding: 0 1rem;
-        margin: 3rem 0;
+        margin: 4rem 0;
         background: none;
         z-index: 8;
         position: relative;
@@ -576,7 +576,7 @@
 
         @media screen and (max-width: 850px) {
           width: 100%;
-          margin: 3rem 2rem calc(3rem + 150px) 2rem;
+          margin: 3rem 2rem calc(2rem + 150px) 2rem;
         }
 
         .gatsby-image-wrapper {
