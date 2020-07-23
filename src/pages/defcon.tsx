@@ -44,7 +44,7 @@ const DefconPage: React.FC<PageProps<QueryResult>> = ({ data }) => {
     <Layout>
       <SEO
         title="DDS @ DEF CON"
-        description="For the second year, the Defense Digital Service is partnering with the U.S. Department of the Air Force to participate in Aerospace Village at Def Con 28. This year we have expanded our scope beyond aviation to include space, specifically, satellites!"
+        description="For the second year, the Defense Digital Service is partnering with the U.S. Department of the Air Force to participate in Aerospace Village at Def Con 28. This year we have expanded our scope beyond aviation to include space, specifically satellites!"
         url="/defcon"
         image={data.social.childImageSharp.original}
       >
@@ -148,22 +148,22 @@ const DefconPage: React.FC<PageProps<QueryResult>> = ({ data }) => {
               <h2>DDS @ DEF&nbsp;CON</h2>
               <p>
                 For the second year, the Defense Digital Service is partnering
-                with the U.S. Department of the Air Force to participate in
-                Aerospace Village at Def Con 28. This year we have expanded our
-                scope beyond aviation to include space, specifically,
-                satellites! In addition to hosting the 2020 Space Security
-                Challenge, the first ever Hack-A-Satellite CTFat Def Con, we are
-                also bringing a series of interactive workshops to Def Con in
-                complete Safemode.
+                with the United States Air Force to participate in Aerospace
+                Village at Def Con 28. This year we have expanded our scope
+                beyond aviation to include space, specifically satellites! In
+                addition to hosting the 2020 Space Security Challenge, the
+                first-ever Hack-A-Satellite CTF at DEF CON, we are also bringing
+                a series of interactive workshops to Def Con in complete
+                Safemode.
               </p>
 
               <p>
-                We have created a rich, web based virtual reality environment
-                for you to interact with each of our workshops . Get ready to
-                watch the final event of the CTF at{" "}
-                <a href="https://hackasat.com">hackasat.com</a> and get fully
-                immersed in the gameplay of our workshops at{" "}
-                <a href="https://dds-virtual.com">dds-virtual.com</a>.
+                We have created a vibrant, web-based virtual reality environment
+                for you to interact with each of our workshops. Access our
+                virtual workshops at{" "}
+                <a href="https://dds-virtual.com">dds-virtual.com</a> and watch
+                the final Hack-A-Sat Capture the Flag event at{" "}
+                <a href="https://hackasat.com">hackasat.com</a>.
               </p>
             </div>
           </div>
@@ -178,9 +178,9 @@ const DefconPage: React.FC<PageProps<QueryResult>> = ({ data }) => {
             Designed to introduce the basics of aviation and space security to
             players, these workshops will feature a series of challenges for all
             skill levels, from introductory to advanced. We have crafted these
-            around a rich story for enhanced gameplay. In order to play you will
-            need a Twitch account.{" "}
-            <b>You do not need a verified email address to play.</b> Our twitch
+            around a rich story for enhanced gameplay. To play, you will need a
+            Twitch account.{" "}
+            <b>You do not need a verified email address to play.</b> Our Twitch
             is integrated with the Discord server to send updates on gameplay.
             Access the rich web-enabled Virtual Reality environment from home at{" "}
             <a href="https://dds-virtual.com">dds-virtual.com</a>.
@@ -189,8 +189,8 @@ const DefconPage: React.FC<PageProps<QueryResult>> = ({ data }) => {
           <p className="defcon-sec3-p3">
             <b>
               The first 500 participants to complete one of the Bricks in the
-              Air, Simple SAT or CPX-SAT challenges will receive a free
-              Bricks-in-the-Air t-shirt!
+              Air, CPX SimpleSat or DDSat-1 challenges will receive a free
+              Bricks in the Air t-shirt!
             </b>
           </p>
         </div>
@@ -303,27 +303,23 @@ const DefconPage: React.FC<PageProps<QueryResult>> = ({ data }) => {
                 <p>
                   Nyan-Sat consists of three fun, non-competitive challenges:
                   building your own satellite tracking antenna, exploiting a
-                  ground station modem, and participating in our live streamed,
+                  ground station modem, and participating in our live-streamed,
                   internet-accessible, community ground station event.
                 </p>
                 <p>
                   <b>Technical Level</b>: Intermediate - Advanced
                   <br />
-                  <b>Workshop open</b>: August 6-9, 2020 from 10AM-5PM EST
-                  <br />
-                  <b>Workshop closes</b>: August 10, 2020 at 5 PM EST
+                  <b>Workshop open</b>: July 7- August 9, 2020
                   <br />
                 </p>
                 <p>
                   <b>Get involved!</b>
                 </p>
                 <p>
-                  Discord: NyanSat-text; NyanSat-voice
-                  <br />
-                  Forums:{" "}
+                  Discord:{" "}
                   <a href="https://discord.gg/nsSMEdv">discord.gg/nsSMEdv</a>
                   <br />
-                  Website: <a href="https://nyan-sat.com/">nyan-sat.com</a>
+                  Play Now: <a href="https://nyan-sat.com/">nyan-sat.com</a>
                   <br />
                 </p>
               </div>
