@@ -1,0 +1,5 @@
+Contact: https://hackerone.com/deptofdefense
+Contact: https://www.dc3.mil/vulnerability-disclosure
+Acknowledgments: https://hackerone.com/deptofdefense/thanks
+Policy: https://hackerone.com/deptofdefense
+Hiring: https://dds.mil/join-us
