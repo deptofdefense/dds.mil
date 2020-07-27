@@ -44,7 +44,7 @@ The Air Force Research Laboratory (AFRL) is the primary scientific research and 
 
 CONTACT:
 
-Defense Digital Service
+**Defense Digital Service**
 
 Jinyoung Englund
 
@@ -54,7 +54,7 @@ press@dds.mil
 
 <https://dds.mil/>
 
-Air Force Research Laboratory
+**Air Force Research Laboratory**
 
 Deliarae Jesaitis
 
