@@ -9,8 +9,6 @@ summary: The U.S. Defense Digital Service and the Department of the Air Force
 ---
 ![A graphic outlining four workshops, illustrated by different kinds of helicopters built from LEGO bricks.](06_bricksworkshopdds_modal_r5.png)
 
-
-
 WASHINGTON – July 28, 2020 – Bricks in the Air, designed and developed by the Defense Digital Service (DDS) in partnership with the Department of the Air Force, is a four bay avionics hacking workshop for beginners taking place in the Aerospace Village at the first-ever virtual DEF CON 28 Safe Mode from Aug 6-9, 2020. First introduced at DEF CON 27 (2019) by the DDS team, Bricks in the Air is built with LEGO® Bricks’ Technic series and engineered by DDS to allow players to simulate hacking airplanes to expose, and subsequently secure, vulnerabilities. These workshops are meant to be educational and the U.S. Government does not condone hacking for malicious gain.
 
 “When it comes to securing DoD’s most critical assets, we invite hackers because they think like hackers,” says Brett Goldstein, Director of the Defense Digital Service. “Nefarious hackers don’t abide by a ‘security checklist’ or ‘playbook.’ Their approach is fluid, unpredictable, and the best way to be prepared for such attacks in aviation is to flip the script on how the DoD thinks about security.”
