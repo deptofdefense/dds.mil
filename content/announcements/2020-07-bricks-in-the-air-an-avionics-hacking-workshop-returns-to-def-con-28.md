@@ -2,24 +2,25 @@
 type: announcements
 title: Avionics Hacking Workshop "Bricks in the Air" Returns to DEF CON 28
 date: 2020-07-28T13:00:00.000Z
-image: 06_bricksworkshopdds_modal_r5.png
+image: bita-forum-avatar1.png
 summary: The U.S. Defense Digital Service and the Department of the Air Force
   Announce Bricks in the Air, an Avionics Hacking Workshop built with LEGO®
   Bricks in the Aerospace Village for DEF CON 28 Safe Mode.
 ---
+![A graphic outlining four workshops, illustrated by different kinds of helicopters built from LEGO bricks.](06_bricksworkshopdds_modal_r5.png)
+
+
+
 WASHINGTON – July 28, 2020 – Bricks in the Air, designed and developed by the Defense Digital Service (DDS) in partnership with the Department of the Air Force, is a four bay avionics hacking workshop for beginners taking place in the Aerospace Village at the first-ever virtual DEF CON 28 Safe Mode from Aug 6-9, 2020. First introduced at DEF CON 27 (2019) by the DDS team, Bricks in the Air is built with LEGO® Bricks’ Technic series and engineered by DDS to allow players to simulate hacking airplanes to expose, and subsequently secure, vulnerabilities. These workshops are meant to be educational and the U.S. Government does not condone hacking for malicious gain.
 
 “When it comes to securing DoD’s most critical assets, we invite hackers because they think like hackers,” says Brett Goldstein, Director of the Defense Digital Service. “Nefarious hackers don’t abide by a ‘security checklist’ or ‘playbook.’ Their approach is fluid, unpredictable, and the best way to be prepared for such attacks in aviation is to flip the script on how the DoD thinks about security.”
 
 Since DEF CON is now in Safe Mode due to COVID-19,[ all 4 DDS and USAF workshops](https://dds.mil/defcon/) will be conducted virtually at [dds-virtual.com](http://dds-virtual.com). Participation in the Bricks in the Air workshop will be open from Aug 6, 2020 to August 9, 2020, and players will need a Twitch account to participate. The workshop consists of 4 simulated airplanes in 4 bays: 
 
-1) Mad Props, a cargo airplane, 
-
-2) Huey Lewis and The Views, a heavy-lift helicopter, 
-
-3) Spinderella, a rescue helicopter, and 
-
-4) Hella Props, a heavy-lift helicopter.
+1. Mad Props, a cargo airplane, 
+2. Huey Lewis and The Views, a heavy-lift helicopter, 
+3. Spinderella, a rescue helicopter, and 
+4. Hella Props, a heavy-lift helicopter.
 
 In addition to the Bricks in the Air avionics workshop, DDS and the USAF are also hosting two satellite hacking workshops, CPX SimpleSat, and DDSat-1, in addition to the ground station hacking workshop, Nyan-Sat, developed with Red Balloon Security. The first 500 players to complete one of the Bricks in the Air, CPX SimpleSat, or DDSat-1 challenges will receive a “Bricks in the Air” DEF CON t-shirt.
 
@@ -52,8 +53,6 @@ press@dds.mil
 571-527-6773
 
 <https://dds.mil/>
-
-
 
 Air Force Research Laboratory
 
