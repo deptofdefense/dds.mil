@@ -64,4 +64,4 @@ Deliarae Jesaitis
 
 [Afresearchlab.com](https://afresearchlab.com/)
 
-**Download press release here.**
+**[Download press release here.](https://github.com/deptofdefense/dds.mil/files/4984349/_28.JULY.2020.l.DDS.Virtual.Workshop.PR.2.l.Bricks.in.the.Air.docx.pdf)**
