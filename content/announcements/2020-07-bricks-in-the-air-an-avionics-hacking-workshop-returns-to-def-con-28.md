@@ -1,6 +1,6 @@
 ---
 type: announcements
-title: Bricks in the Air, an Avionics Hacking Workshop, Returns to DEF CON 28
+title: Avionics Hacking Workshop "Bricks in the Air" Returns to DEF CON 28
 date: 2020-07-28T13:00:00.000Z
 image: 06_bricksworkshopdds_modal_r5.png
 summary: The U.S. Defense Digital Service and the Department of the Air Force
