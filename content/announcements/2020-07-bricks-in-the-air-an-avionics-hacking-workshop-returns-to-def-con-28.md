@@ -7,6 +7,7 @@ summary: The U.S. Defense Digital Service and the Department of the Air Force
   Announce Bricks in the Air, an Avionics Hacking Workshop built with LEGO®
   Bricks in the Aerospace Village for DEF CON 28 Safe Mode.
 ---
+
 **The U.S. Defense Digital Service and the Department of the Air Force Announce Bricks in the Air, an Avionics Hacking Workshop built with LEGO® Bricks in the Aerospace Village for DEF CON 28 Safe Mode.**
 
 WASHINGTON – July 28, 2020 – Bricks in the Air, designed and developed by the Defense Digital Service (DDS) in partnership with the Department of the Air Force, is a four-bay avionics hacking workshop for beginners taking place in the Aerospace Village at the first-ever virtual DEF CON 28 Safe Mode from Aug 6-9, 2020. First introduced at DEF CON 27 (2019) by the DDS team, Bricks in the Air is built with LEGO® Bricks’ Technic series and engineered by DDS to allow players to simulate hacking airplanes to expose, and subsequently secure, vulnerabilities. These workshops are meant to be educational and the U.S. Government does not condone hacking for malicious gain.
@@ -15,9 +16,9 @@ WASHINGTON – July 28, 2020 – Bricks in the Air, designed and developed by th
 
 ![A graphic image showing four helicopter models built from LEGO bricks. ](06_bricksworkshopdds_modal_r5.png)
 
-Since DEF CON is now in Safe Mode due to COVID-19,[ all 4 DDS and USAF workshops](https://dds.mil/defcon/) will be conducted virtually at [dds-virtual.com](http://dds-virtual.com). Participation in the Bricks in the Air workshop will be open from Aug 6, 2020 to August 9, 2020, and players will need a Twitch account to participate. The workshop consists of 4 simulated airplanes in four bays: 
+Since DEF CON is now in Safe Mode due to COVID-19,[ all 4 DDS and USAF workshops](https://dds.mil/defcon/) will be conducted virtually at [dds-virtual.com](http://dds-virtual.com). Participation in the Bricks in the Air workshop will be open from Aug 6, 2020 to August 9, 2020, and players will need a Twitch account to participate. The workshop consists of 4 simulated airplanes in four bays:
 
-1. Mad Props, a cargo airplane 
+1. Mad Props, a cargo airplane
 2. Huey Lewis and The Views, a heavy-lift helicopter
 3. Spinderella, a rescue helicopter
 4. Hella Props, a heavy-lift helicopter
@@ -64,4 +65,4 @@ Deliarae Jesaitis
 
 [Afresearchlab.com](https://afresearchlab.com/)
 
-**[Download press release here.](https://github.com/deptofdefense/dds.mil/files/4984349/_28.JULY.2020.l.DDS.Virtual.Workshop.PR.2.l.Bricks.in.the.Air.docx.pdf)**
+**[Download press release here.](https://dds.mil/28.JULY.2020.l.DDS.Virtual.Workshop.PR.2.l.Bricks.in.the.Air.pdf)**
