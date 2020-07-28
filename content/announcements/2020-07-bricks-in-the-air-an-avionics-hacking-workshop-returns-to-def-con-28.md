@@ -31,7 +31,7 @@ This and other workshops are the hands-on learning part of the Space Security Ch
 
 For more information about the Bricks in the Air avionics hacking workshop or the three aerospace hacking workshops, CPX-SimpleSat, DDSat-1, and Nyan-Sat, visit [dds.mil/defcon/](https://dds.mil/defcon/) or to check out the Hack-A-Sat CTF final event, visit [www.hackasat.com](https://www.hackasat.com/).
 
-\###
+<br />
 
 **About Defense Digital Service (DDS)**
 
@@ -41,28 +41,22 @@ The Defense Digital Service was established by the Secretary of Defense in Novem
 
 The Air Force Research Laboratory (AFRL) is the primary scientific research and development center for the Department of the Air Force. AFRL plays an integral role in leading the discovery, development, and integration of affordable warfighting technologies for our air, space, and cyberspace force. With a workforce of more than 11,000 across nine technology areas and 40 other operations across the globe, AFRL provides a diverse portfolio of science and technology ranging from fundamental to advanced research and technology development. For more information, visit [www.afresearchlab.com](http://www.afresearchlab.com).
 
-\###
+<br />
 
 CONTACT:
 
 **Defense Digital Service**
 
-Jinyoung Englund
-
-press@dds.mil
-
-571-527-6773
-
-<https://dds.mil/>
+Jinyoung Englund<br />
+press@dds.mil<br />
+571-527-6773<br />
+[https://dds.mil](https://dds.mil)
 
 **Air Force Research Laboratory**
 
-Deliarae Jesaitis
-
-[deliarae.jesaitis.1@us.af](http://deliarae.jesaitis.1@us.af.mil).mil
-
-315-371-6477
-
+Deliarae Jesaitis<br />
+deliarae.jesaitis.1@us.af.mil<br />
+315-371-6477<br />
 [Afresearchlab.com](https://afresearchlab.com/)
 
-**[Download press release here.](https://dds.mil/28.JULY.2020.l.DDS.Virtual.Workshop.PR.2.l.Bricks.in.the.Air.pdf)**
+<a href="https://dds.mil/28.JULY.2020.l.DDS.Virtual.Workshop.PR.2.l.Bricks.in.the.Air.pdf" target="_blank" rel="noopener">**Download press release here.**</a>
