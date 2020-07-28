@@ -50,7 +50,7 @@ CONTACT:
 Jinyoung Englund<br />
 press@dds.mil<br />
 571-527-6773<br />
-[https://dds.mil](https://dds.mil)
+[dds.mil](https://dds.mil)
 
 **Air Force Research Laboratory**
 
