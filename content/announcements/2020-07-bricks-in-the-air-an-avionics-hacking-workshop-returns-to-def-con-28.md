@@ -16,7 +16,7 @@ WASHINGTON – July 28, 2020 – Bricks in the Air, designed and developed by th
 
 ![A graphic image showing four helicopter models built from LEGO bricks. ](06_bricksworkshopdds_modal_r5.png)
 
-Since DEF CON is now in Safe Mode due to COVID-19,[ all 4 DDS and USAF workshops](https://dds.mil/defcon/) will be conducted virtually at [dds-virtual.com](http://dds-virtual.com). Participation in the Bricks in the Air workshop will be open from Aug 6, 2020 to August 9, 2020, and players will need a Twitch account to participate. The workshop consists of 4 simulated airplanes in four bays:
+Since DEF CON is now in Safe Mode due to COVID-19, [all 4 DDS and USAF workshops](https://dds.mil/defcon/) will be conducted virtually at [dds-virtual.com](http://dds-virtual.com). Participation in the Bricks in the Air workshop will be open from Aug 6, 2020 to August 9, 2020, and players will need a Twitch account to participate. The workshop consists of 4 simulated airplanes in four bays:
 
 1. Mad Props, a cargo airplane
 2. Huey Lewis and The Views, a heavy-lift helicopter
@@ -35,7 +35,7 @@ For more information about the Bricks in the Air avionics hacking workshop or th
 
 **About Defense Digital Service (DDS)**
 
-The Defense Digital Service was established by the Secretary of Defense in November 2015 as a SWAT team of nerds that provides the best in modern technical knowledge designed to bolster national defense. We are primarily based in the Pentagon, but we also have satellite offices in Augusta, Georgia, and co-located at the Defense Innovation Unit in Mountain View, California. Our range of talent includes world-class software developers, designers, product managers, digital experts, and bureaucracy hackers from both the private sector and within government. Learn more at <https://dds.mil/>.
+The Defense Digital Service was established by the Secretary of Defense in November 2015 as a SWAT team of nerds that provides the best in modern technical knowledge designed to bolster national defense. We are primarily based in the Pentagon, but we also have satellite offices in Augusta, Georgia, and co-located at the Defense Innovation Unit in Mountain View, California. Our range of talent includes world-class software developers, designers, product managers, digital experts, and bureaucracy hackers from both the private sector and within government. Learn more at [dds.mil](https://dds.mil).
 
 **About Air Force Research Laboratory (AFRL)**
 
