@@ -1,7 +1,7 @@
 {
   "navigation": {
-    "title": "Tech Navigator",
-    "link": "/work/tech-navigator"
+    "title": "Tech Navigators",
+    "link": "/work/tech-navigators"
   },
   "sections": [
     {
@@ -42,7 +42,7 @@
       },
       {
         "text": "Tech Navigators",
-        "link": "/work/tech-navigator"
+        "link": "/work/tech-navigators"
       },
       {
         "text": "Break the Code",
