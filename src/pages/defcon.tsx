@@ -174,6 +174,17 @@ const DefconPage: React.FC<PageProps<QueryResult>> = ({ data }) => {
                 </a>
                 .
               </p>
+              <p>
+                Also check out our{" "}
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://dds-virtual.customink.shop/"
+                >
+                  swag store
+                </a>{" "}
+                for the workshops.
+              </p>
             </div>
           </div>
         </div>
