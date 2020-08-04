@@ -259,6 +259,13 @@ const DefconPage: React.FC<PageProps<QueryResult>> = ({ data }) => {
                   LEGO® Technic Helicopter 9396
                   <br />
                 </p>
+
+                <p>
+                  Want to get smarter on Aviation Hacking?{" "}
+                  <ConditionalLink to="https://github.com/deptofdefense/hack-aviation-library">
+                    <em>Check out this resource library we created.</em>
+                  </ConditionalLink>
+                </p>
               </div>
             </div>
 
