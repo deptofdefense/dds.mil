@@ -14,8 +14,8 @@
         "link": "/work/projects"
       },
       {
-        "text": "Phone A Nerd",
-        "link": "/work/phone-a-nerd"
+        "text": "Tech Navigators",
+        "link": "/work/tech-navigators"
       },
       {
         "text": "Break the Code",
@@ -60,10 +60,10 @@
           "ctaLink": "/work/projects"
         },
         {
-          "title": "PHONE A NERD",
+          "title": "TECH NAVIGATORS",
           "details": "When DDS engages with a DoD organization to dig into technical issues that the office is facing. These engagements tend to be shorter in duration and usually result in a report that outlines findings and possible technical paths forward.",
           "cta": "LEARN MORE",
-          "ctaLink": "/work/phone-a-nerd"
+          "ctaLink": "/work/tech-navigators"
         }
       ]
     },
@@ -93,8 +93,8 @@
         "link": "/work/projects"
       },
       {
-        "text": "Phone A Nerd",
-        "link": "/work/phone-a-nerd"
+        "text": "Tech Navigators",
+        "link": "/work/tech-navigators"
       },
       {
         "text": "Break the Code",
