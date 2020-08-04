@@ -357,9 +357,7 @@ const DefconPage: React.FC<PageProps<QueryResult>> = ({ data }) => {
                   <br />
                 </p>
                 <p>
-                  Twitch Channels
-                  <br />
-                  <a href="https://www.twitch.tv/ddsat1">ddsat1</a>
+                  Twitch: <a href="https://www.twitch.tv/ddsat1">ddsat1</a>
                 </p>
                 <p>
                   Want to get smarter on SAT Hacking?{" "}
