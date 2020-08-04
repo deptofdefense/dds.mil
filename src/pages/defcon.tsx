@@ -259,7 +259,22 @@ const DefconPage: React.FC<PageProps<QueryResult>> = ({ data }) => {
                   LEGO® Technic Helicopter 9396
                   <br />
                 </p>
-
+                <p>
+                  Twitch Channels
+                  <br />
+                  <a href="https://www.twitch.tv/biahueylewis">biahueylewis</a>
+                  <br />
+                  <a href="https://www.twitch.tv/biamadprops">biamadprops</a>
+                  <br />
+                  <a href="https://www.twitch.tv/biaspinderella">
+                    biaspinderella
+                  </a>
+                  <br />
+                  <a href="https://www.twitch.tv/biahellaprops">
+                    biahellaprops
+                  </a>
+                  <br />
+                </p>
                 <p>
                   Want to get smarter on Aviation Hacking?{" "}
                   <ConditionalLink to="https://github.com/deptofdefense/hack-aviation-library">
@@ -293,6 +308,24 @@ const DefconPage: React.FC<PageProps<QueryResult>> = ({ data }) => {
                   <br />
                 </p>
                 <p>
+                  Twitch Channels
+                  <br />
+                  <a href="https://www.twitch.tv/cpxsatamericas">
+                    cpxsatamericas
+                  </a>
+                  <br />
+                  <a href="https://www.twitch.tv/cpxsatafrica">cpxsatafrica</a>
+                  <br />
+                  <a href="https://www.twitch.tv/cpxsatasia">cpxsatasia</a>
+                  <br />
+                  <a href="https://www.twitch.tv/cpxsataustralia">
+                    cpxsataustralia
+                  </a>
+                  <br />
+                  <a href="https://www.twitch.tv/cpxsateurope">cpxsateurope</a>
+                  <br />
+                </p>
+                <p>
                   Want to get smarter on SAT Hacking?{" "}
                   <ConditionalLink to="https://github.com/deptofdefense/hack-a-sat-library">
                     <em>Check out this resource library we created.</em>
@@ -322,6 +355,11 @@ const DefconPage: React.FC<PageProps<QueryResult>> = ({ data }) => {
                   <br />
                   <b>Workshop Open</b>: August 6-9, 2020 from 10AM-6PM PST
                   <br />
+                </p>
+                <p>
+                  Twitch Channels
+                  <br />
+                  <a href="https://www.twitch.tv/ddsat1">ddsat1</a>
                 </p>
                 <p>
                   Want to get smarter on SAT Hacking?{" "}
@@ -362,6 +400,7 @@ const DefconPage: React.FC<PageProps<QueryResult>> = ({ data }) => {
                   <br />
                   Play Now: <a href="https://nyan-sat.com/">nyan-sat.com</a>
                   <br />
+                  Twitch: <a href="https://www.twitch.tv/nyansat">nyansat</a>
                 </p>
               </div>
             </div>
