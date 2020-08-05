@@ -22,27 +22,19 @@ These workshops are the hands-on learning part of Space Security Challenge 2020:
 
 For more information about the Bricks in the Air avionics hacking workshops or the aerospace hacking workshops, CPX-SimpleSat, DDSat-1, and Nyan-Sat, visit [dds.mil/defcon/](https://dds.mil/defcon/) or to check out the Hack-A-Sat CTF final event, visit [www.hackasat.com](https://www.hackasat.com/).
 
-
-
 \###
 
 **About Defense Digital Service (DDS)**
 
-The Defense Digital Service was established by the Secretary of Defense in November 2015 as a SWAT team of nerds that provides the best in modern technical knowledge designed to bolster national defense. We are primarily based in the Pentagon, but we also have satellite offices in Augusta, Georgia, and co-located at the Defense Innovation Unit in Mountain View, California. Our range of talent includes world-class software developers, designers, product managers, digital experts, and bureaucracy hackers from both the private sector and within government. Learn more at<https://dds.mil/>.
-
-
+The Defense Digital Service was established by the Secretary of Defense in November 2015 as a SWAT team of nerds that provides the best in modern technical knowledge designed to bolster national defense. We are primarily based in the Pentagon, but we also have satellite offices in Augusta, Georgia, and co-located at the Defense Innovation Unit in Mountain View, California. Our range of talent includes world-class software developers, designers, product managers, digital experts, and bureaucracy hackers from both the private sector and within government. Learn more at <https://dds.mil/>.
 
 **About Air Force Research Laboratory (AFRL)**
 
-The Air Force Research Laboratory (AFRL) is the primary scientific research and development center for the Department of the Air Force. AFRL plays an integral role in leading the discovery, development, and integration of affordable warfighting technologies for our air, space, and cyberspace force. With a workforce of more than 11,000 across nine technology areas and 40 other operations across the globe, AFRL provides a diverse portfolio of science and technology ranging from fundamental to advanced research and technology development. For more information, visit[www.afresearchlab.com](http://www.afresearchlab.com).
-
-
+The Air Force Research Laboratory (AFRL) is the primary scientific research and development center for the Department of the Air Force. AFRL plays an integral role in leading the discovery, development, and integration of affordable warfighting technologies for our air, space, and cyberspace force. With a workforce of more than 11,000 across nine technology areas and 40 other operations across the globe, AFRL provides a diverse portfolio of science and technology ranging from fundamental to advanced research and technology development. For more information, visit [www.afresearchlab.com](http://www.afresearchlab.com).
 
 \###
 
 CONTACT:
-
-
 
 **Defense Digital Service**
 
@@ -53,8 +45,6 @@ press@dds.mil
 571-527-6773
 
 <https://dds.mil/>
-
-
 
 **Air Force Research Laboratory**
 
