@@ -42,20 +42,14 @@ CONTACT:
 
 **Defense Digital Service**
 
-Jinyoung Englund
-
-press@dds.mil
-
-571-527-6773
-
+Jinyoung Englund  
+press@dds.mil  
+571-527-6773  
 <https://dds.mil/>
 
 **Air Force Research Laboratory**
 
-Deliarae Jesaitis
-
-[deliarae.jesaitis.1@us.af](http://deliarae.jesaitis.1@us.af.mil).mil
-
-315-371-6477
-
+Deliarae Jesaitis  
+[deliarae.jesaitis.1@us.af.mil](http://deliarae.jesaitis.1@us.af.mil)  
+315-371-6477  
 [Afresearchlab.com](https://afresearchlab.com/)
