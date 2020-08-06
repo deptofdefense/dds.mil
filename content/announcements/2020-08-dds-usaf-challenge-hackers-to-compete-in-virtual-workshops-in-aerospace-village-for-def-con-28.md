@@ -1,13 +1,14 @@
 ---
 type: announcements
-title: DDS, USAF challenge hackers to compete in virtual workshops in Aerospace
-  Village for DEF CON 28
-date: 2020-08-06T17:00:00.000Z
+title: "Defense Digital Service and the Department of the Air Force Challenge
+  Hackers in Space "
+date: 2020-08-06T18:00:00.000Z
 image: DDS_PRESS_RELEASE.jpg
-summary: Defense Digital Service and the Department of the Air Force Challenge
-  Hackers of all skill levels to compete in their hands-on virtual workshops in
-  Aerospace Village for DEF CON 28 Safe Mode.
+summary: Hackers of all skill levels to compete in their hands-on virtual
+  workshops in Aerospace Village for DEF CON 28 Safe Mode
 ---
+**Hackers of all skill levels to compete in their hands-on virtual workshops in Aerospace Village for DEF CON 28 Safe Mode.**
+
 WASHINGTON – August 6, 2020 – Starting today at 10:00 AM PST / 1:00 PM EST, hackers from every skill level and around the world will have an opportunity to try their hand at completing a number of avionics and aerospace hacking challenges through [dds-virtual.com](http://dds-virtual.com), created by the Defense Digital Service (DDS) in partnership with the Department of the Air Force. The soft launch, opening one day before DEF CON 28 Safe Mode officially kicks off, enables participants to test their Twitch settings, explore all the available workshops, and decide which ones they want to compete in during DEF CON.
 
 “Of course we would rather be at DEF CON in person, but under the circumstances of a global pandemic, for the first time in nearly 30 years, DEF CON is completely free and virtual. That’s historic. It also meant we had to completely change our strategy and re-create our workshops with only a few weeks to go,” said Brett Goldstein, Director of Defense Digital Service. “It was an insane amount of work, but working with the Air Force, we did it and we’re honored to be able to contribute to the community.”
