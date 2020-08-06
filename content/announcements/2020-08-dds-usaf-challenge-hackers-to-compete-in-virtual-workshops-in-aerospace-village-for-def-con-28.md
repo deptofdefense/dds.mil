@@ -9,7 +9,7 @@ summary: Hackers of all skill levels to compete in their hands-on virtual
 ---
 **Hackers of all skill levels to compete in their hands-on virtual workshops in Aerospace Village for DEF CON 28 Safe Mode.**
 
-WASHINGTON – August 6, 2020 – Starting today at 10:00 AM PST / 1:00 PM EST, hackers from every skill level and around the world will have an opportunity to try their hand at completing a number of avionics and aerospace hacking challenges through [dds-virtual.com](http://dds-virtual.com), created by the Defense Digital Service (DDS) in partnership with the Department of the Air Force. The soft launch, opening one day before DEF CON 28 Safe Mode officially kicks off, enables participants to test their Twitch settings, explore all the available workshops, and decide which ones they want to compete in during DEF CON.
+WASHINGTON – August 6, 2020 – Starting today at 10:00 AM PST / 1:00 PM EST, hackers from every skill level and around the world will have an opportunity to try their hand at completing a number of avionics and aerospace hacking challenges through [dds-virtual.com](http://dds-virtual.com), created by Defense Digital Service in partnership with the Department of the Air Force. The soft launch, opening one day before DEF CON 28 Safe Mode officially kicks off, enables participants to test their Twitch settings, explore all the available workshops, and decide which ones they want to compete in during DEF CON.
 
 “Of course we would rather be at DEF CON in person, but under the circumstances of a global pandemic, for the first time in nearly 30 years, DEF CON is completely free and virtual. That’s historic. It also meant we had to completely change our strategy and re-create our workshops with only a few weeks to go,” said Brett Goldstein, Director of Defense Digital Service. “It was an insane amount of work, but working with the Air Force, we did it and we’re honored to be able to contribute to the community.”
 
@@ -17,11 +17,13 @@ In order to play, participants only need a Twitch account and no additional VR e
 
 “We partnered with Brett’s ‘SWAT Team of Nerds’ because they are exemplars of the kind of private-sector talent we intend to collaborate with, and learn from, as we look to design more-secure aerospace systems,” said Dr. Will Roper, Assistant Secretary of the Air Force for Acquisition, Technology, and Logistics. “It’s imperative we cultivate technical talent across the DoD, and especially for space systems, as nations depend on the essential services these platforms provide.”
 
-Brett Goldstein and Dr. Will Roper will be kicking off the Space Security Challenge: 2020 Hack-A-Sat events with an opening show titled, “Between 2 Nerds,” a candid conversation, and an inside look at the DDS headquarters in the Pentagon. The show will take place on Friday, August 7 at 11 AM PST / 2 PM EST at hackasat.com.
+Brett Goldstein and Dr. Roper will be kicking off the Space Security Challenge: 2020 Hack-A-Sat events with an opening show titled, “Between 2 Nerds,” a candid conversation, and an inside look at the DDS headquarters in the Pentagon. The show will take place on Friday, August 7 at 11 AM PST / 2 PM EST at hackasat.com.
 
 These workshops are the hands-on learning part of Space Security Challenge 2020: Hack-A-Sat, a joint effort by Defense Digital Service and the Department of the Air Force. The Hack-A-Sat Capture the Flag, a multi-stage challenge for more advanced security researchers, kicked off in late May with a qualification event that hosted over 2,000 teams from around the world. Eight of the most talented teams have been invited to the Hack-A-Sat final event taking place virtually Aug 7-9 on hackasat.com. Together, the Hack-A-Sat CTF and the educational workshops contribute to the Aerospace Village’s mission of building an inclusive community of next-generation aerospace cybersecurity expertise and leaders.
 
 For more information about the Bricks in the Air avionics hacking workshops or the aerospace hacking workshops, CPX-SimpleSat, DDSat-1, and Nyan-Sat, visit [dds.mil/defcon/](https://dds.mil/defcon/) or to check out the Hack-A-Sat CTF final event, visit [www.hackasat.com](https://www.hackasat.com/).
+
+\###
 
 **About Defense Digital Service (DDS)**
 
