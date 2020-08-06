@@ -3,7 +3,7 @@ type: announcements
 title: "Defense Digital Service and the Department of the Air Force Challenge
   Hackers in Space "
 date: 2020-08-06T18:00:00.000Z
-image: DDS_PRESS_RELEASE.jpg
+image: aerospace-workshops-by-dds.jpg
 summary: Hackers of all skill levels to compete in their hands-on virtual
   workshops in Aerospace Village for DEF CON 28 Safe Mode
 ---
@@ -23,6 +23,8 @@ These workshops are the hands-on learning part of Space Security Challenge 2020:
 
 For more information about the Bricks in the Air avionics hacking workshops or the aerospace hacking workshops, CPX-SimpleSat, DDSat-1, and Nyan-Sat, visit [dds.mil/defcon/](https://dds.mil/defcon/) or to check out the Hack-A-Sat CTF final event, visit [www.hackasat.com](https://www.hackasat.com/).
 
+<a href="https://dds.mil/6_AUGUST_2020_DDS_DEF_CON_Hacker_Challenge.pdf" target="_blank" rel="noopener">**Download press release here.**</a>
+
 \###
 
 **About Defense Digital Service (DDS)**
@@ -33,4 +35,26 @@ The Defense Digital Service was established by the Secretary of Defense in Novem
 
 The Air Force Research Laboratory (AFRL) is the primary scientific research and development center for the Department of the Air Force. AFRL plays an integral role in leading the discovery, development, and integration of affordable warfighting technologies for our air, space, and cyberspace force. With a workforce of more than 11,000 across nine technology areas and 40 other operations across the globe, AFRL provides a diverse portfolio of science and technology ranging from fundamental to advanced research and technology development. For more information, visit [www.afresearchlab.com](http://www.afresearchlab.com).
 
-<a href="https://dds.mil/6_AUGUST_2020_DDS_DEF_CON_Hacker_Challenge.pdf" target="_blank" rel="noopener">**Download press release here.**</a>
+\###
+
+CONTACT:
+
+**Defense Digital Service**
+
+Jinyoung Englund
+
+press@dds.mil
+
+571-527-6773
+
+<https://dds.mil/>
+
+**Air Force Research Laboratory**
+
+Deliarae Jesaitis
+
+[deliarae.jesaitis.1@us.af](http://deliarae.jesaitis.1@us.af.mil).mil
+
+315-371-6477
+
+[Afresearchlab.com](https://afresearchlab.com/)
