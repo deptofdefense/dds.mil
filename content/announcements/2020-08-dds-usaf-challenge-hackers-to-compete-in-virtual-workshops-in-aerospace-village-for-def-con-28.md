@@ -14,7 +14,7 @@ WASHINGTON – August 6, 2020 – Starting today at 10:00 AM PST / 1:00 PM EST, 
 
 In order to play, participants only need a Twitch account and no additional VR equipment. The first 500 players to complete one of the Bricks in the Air, CPX SimpleSat, or DDSat-1 challenges will receive a Bricks in the Air DEF CON t-shirt. These workshops are meant to be educational and the U.S. Government does not condone hacking for malicious gain.
 
-“We partnered with Brett’s ‘SWAT Team of Nerds’ because they are exemplars of the kind of private sector talent we intend to collaborate with, and learn from, as we look to design more-secure aerospace systems,” said Dr. Will Roper, Assistant Secretary of the Air Force for Acquisition, Technology and Logistics. “It’s imperative we cultivate technical talent across the DoD, and especially for space systems, as nations depend on the essential services these platforms provide.”
+“We partnered with Brett’s ‘SWAT Team of Nerds’ because they are exemplars of the kind of private sector talent we intend to collaborate with, and learn from, as we look to design more-secure aerospace systems,” said Dr. Will Roper, Assistant Secretary of the Air Force for Acquisition, Technology, and Logistics. “It’s imperative we cultivate technical talent across the DoD, and especially for space systems, as nations depend on the essential services these platforms provide.”
 
 Brett Goldstein and Dr. Will Roper will be kicking off the Space Security Challenge: 2020 Hack-A-Sat events with an opening show titled, “Between 2 Nerds,” a candid conversation, and an inside look at the DDS headquarters in the Pentagon. The show will take place on Friday, August 7 at 11 AM PST / 2 PM EST at hackasat.com.
 
@@ -31,27 +31,3 @@ The Defense Digital Service was established by the Secretary of Defense in Novem
 **About Air Force Research Laboratory (AFRL)**
 
 The Air Force Research Laboratory (AFRL) is the primary scientific research and development center for the Department of the Air Force. AFRL plays an integral role in leading the discovery, development, and integration of affordable warfighting technologies for our air, space, and cyberspace force. With a workforce of more than 11,000 across nine technology areas and 40 other operations across the globe, AFRL provides a diverse portfolio of science and technology ranging from fundamental to advanced research and technology development. For more information, visit [www.afresearchlab.com](http://www.afresearchlab.com).
-
-\###
-
-CONTACT:
-
-**Defense Digital Service**
-
-Jinyoung Englund
-
-press@dds.mil
-
-571-527-6773
-
-<https://dds.mil/>
-
-**Air Force Research Laboratory**
-
-Deliarae Jesaitis
-
-[deliarae.jesaitis.1@us.af](http://deliarae.jesaitis.1@us.af.mil).mil
-
-315-371-6477
-
-[Afresearchlab.com](https://afresearchlab.com/)
