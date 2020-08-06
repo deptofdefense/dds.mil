@@ -2,7 +2,7 @@
 type: announcements
 title: DDS, USAF challenge hackers to compete in virtual workshops in Aerospace
   Village for DEF CON 28
-date: 2020-08-06T13:00:00.000Z
+date: 2020-08-06T17:00:00.000Z
 image: DDS_PRESS_RELEASE.jpg
 summary: Defense Digital Service and the Department of the Air Force Challenge
   Hackers of all skill levels to compete in their hands-on virtual workshops in
