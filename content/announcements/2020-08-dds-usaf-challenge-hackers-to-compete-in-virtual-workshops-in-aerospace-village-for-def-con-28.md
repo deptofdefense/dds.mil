@@ -2,7 +2,7 @@
 type: announcements
 title: "Defense Digital Service and the Department of the Air Force Challenge
   Hackers in Space "
-date: 2020-08-06T18:00:00.000Z
+date: 2020-08-06T18:30:10.300Z
 image: aerospace-workshops-by-dds.jpg
 summary: Hackers of all skill levels to compete in their hands-on virtual
   workshops in Aerospace Village for DEF CON 28 Safe Mode
