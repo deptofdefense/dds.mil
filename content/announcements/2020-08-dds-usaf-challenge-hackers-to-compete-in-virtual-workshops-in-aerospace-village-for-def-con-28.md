@@ -7,6 +7,7 @@ image: aerospace-workshops-by-dds.jpg
 summary: Hackers of all skill levels to compete in their hands-on virtual
   workshops in Aerospace Village for DEF CON 28 Safe Mode
 ---
+
 **Hackers of all skill levels to compete in their hands-on virtual workshops in Aerospace Village for DEF CON 28 Safe Mode.**
 
 WASHINGTON – August 6, 2020 – Starting today at 10:00 AM PST / 1:00 PM EST, hackers from every skill level and around the world will have an opportunity to try their hand at completing a number of avionics and aerospace hacking challenges through [dds-virtual.com](http://dds-virtual.com), created by Defense Digital Service in partnership with the Department of the Air Force. The soft launch, opening one day before DEF CON 28 Safe Mode officially kicks off, enables participants to test their Twitch settings, explore all the available workshops, and decide which ones they want to compete in during DEF CON.
@@ -25,8 +26,6 @@ For more information about the Bricks in the Air avionics hacking workshops or t
 
 <a href="https://dds.mil/6_AUGUST_2020_DDS_DEF_CON_Hacker_Challenge.pdf" target="_blank" rel="noopener">**Download press release here.**</a>
 
-\###
-
 **About Defense Digital Service (DDS)**
 
 The Defense Digital Service was established by the Secretary of Defense in November 2015 as a SWAT team of nerds that provides the best in modern technical knowledge designed to bolster national defense. We are primarily based in the Pentagon, but we also have satellite offices in Augusta, Georgia, and co-located at the Defense Innovation Unit in Mountain View, California. Our range of talent includes world-class software developers, designers, product managers, digital experts, and bureaucracy hackers from both the private sector and within government. Learn more at <https://dds.mil/>.
@@ -35,26 +34,18 @@ The Defense Digital Service was established by the Secretary of Defense in Novem
 
 The Air Force Research Laboratory (AFRL) is the primary scientific research and development center for the Department of the Air Force. AFRL plays an integral role in leading the discovery, development, and integration of affordable warfighting technologies for our air, space, and cyberspace force. With a workforce of more than 11,000 across nine technology areas and 40 other operations across the globe, AFRL provides a diverse portfolio of science and technology ranging from fundamental to advanced research and technology development. For more information, visit [www.afresearchlab.com](http://www.afresearchlab.com).
 
-\###
-
 CONTACT:
 
 **Defense Digital Service**
 
-Jinyoung Englund
-
-press@dds.mil
-
-571-527-6773
-
+Jinyoung Englund  
+press@dds.mil  
+571-527-6773  
 <https://dds.mil/>
 
 **Air Force Research Laboratory**
 
-Deliarae Jesaitis
-
-[deliarae.jesaitis.1@us.af](http://deliarae.jesaitis.1@us.af.mil).mil
-
-315-371-6477
-
+Deliarae Jesaitis  
+[deliarae.jesaitis.1@us.af.mil](http://deliarae.jesaitis.1@us.af.mil)  
+315-371-6477  
 [Afresearchlab.com](https://afresearchlab.com/)
