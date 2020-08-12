@@ -13,7 +13,7 @@
     },
     {
       "type": "markdownBody",
-      "mdMain": "### Fire Fighting\n\nWe can't wait to play catch-up with our technology. DDS runs firefighting missions to address immediate problems threatening our safety. Recent examples include:\n\n**MySymptoms.mil** \n\nDDS designed [MySymptoms.mil](https://MySymptoms.mil) specifically for the DoD community to check and assess COVID-19 symptoms. [MySymptoms.mil](https://MySymptoms.mil) was created at the direction of the Secretary of Defense.\n\n[MySymptoms.mil](https://MySymptoms.mil) is an anonymous tool designed with DoD personnel in mind. It does not diagnose disease but assesses the likelihood someone may have COVID-19 based on a series of simple health-related questions, and then provides information on how to seek further advice. [MySymptoms.mil](https://MySymptoms.mil) was built on a .mil domain to ensure the DoD community can access it regardless of the network they use.\n\n**Army Recruiting System**\n\nThe Army’s Recruiting Information Support System (ARISS) suffered a series of critical system outages that prevented the Army from generating enlistment contracts. DDS sent a team of four software engineers and a product manager, to the Army Human Resources Command in Fort Knox, Kentucky, to troubleshoot and assist in service restoration. The team immediately installed commercial application performance monitoring tools and was successful in restoring the service."
+      "mdMain": "### Fire Fighting\n\nWe can't wait to play catch-up with our technology. DDS runs firefighting missions to address immediate problems threatening our safety. Recent examples include:\n\n**Operation Warp Speed**\n\nOperation Warp Speed is an effort to OWS ensure that safe, effective, FDA-approved vaccines are securely researched, tested, manufactured, and distributed to the American people. OWS is a joint effort between DoD and HHS, which merges HHS’ central role in pandemic response and their relationship with the healthcare industry with DoD’s experience with large-scale operations and defensive capabilities. NSA and DDS are playing key roles in the cybersecurity ‘pillar’ of the OWS Security & Assurance effort. NSA and DDS leverage complementary capabilities and various cybersecurity experts to assess potential risks & threats and provide guidance on potential mitigations. NSA & DDS are working to secure critical data & systems involved in the above processes, across private & public organizations.\n\n**Army Recruiting System**\n\nThe Army’s Recruiting Information Support System (ARISS) suffered a series of critical system outages that prevented the Army from generating enlistment contracts. DDS sent a team of four software engineers and a product manager, to the Army Human Resources Command in Fort Knox, Kentucky, to troubleshoot and assist in service restoration. The team immediately installed commercial application performance monitoring tools and was successful in restoring the service."
     },
     {
       "type": "callToAction",
@@ -41,12 +41,12 @@
         "link": "/work/projects"
       },
       {
-        "text": "Tech Navigators",
-        "link": "/work/tech-navigators"
+        "text": "Portfolio",
+        "link": "/work/portfolio"
       },
       {
-        "text": "Break the Code",
-        "link": "/work/break-the-code"
+        "text": "Tech Navigators",
+        "link": "/work/tech-navigators"
       },
       {
         "text": "DEF CON",
