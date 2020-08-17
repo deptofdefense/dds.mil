@@ -1,7 +1,7 @@
 {
     "navigation": {
-      "title": "Portfolio",
-      "link": "/work/portfolio"
+      "title": "Portfolios",
+      "link": "/work/portfolios"
     },
     "sections": [
       {
@@ -41,8 +41,8 @@
           "link": "/work/projects"
         },
         {
-          "text": "Portfolio",
-          "link": "/work/portfolio"
+          "text": "Portfolios",
+          "link": "/work/portfolios"
         },
         {
           "text": "Tech Navigators",
