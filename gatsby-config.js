@@ -111,6 +111,6 @@ module.exports = {
         manualInit: true,
       },
     },
-    "gatsby-plugin-offline",
+    "gatsby-plugin-remove-serviceworker",
   ],
 };
