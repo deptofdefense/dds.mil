@@ -132,8 +132,8 @@ const FeaturedMediaFields: PatchedField[] = [
   { ...MdMainField, required: false },
 ];
 
-const RecentBlogPostsFields: PatchedField[] = [];
-const RecentAnnouncementsFields: PatchedField[] = [];
+const RecentBlogPostsFields: PatchedField[] = [AltTextField];
+const RecentAnnouncementsFields: PatchedField[] = [AltTextField];
 
 const RecentTweetsFields: PatchedField[] = [
   {
