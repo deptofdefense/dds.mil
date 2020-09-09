@@ -214,8 +214,7 @@ const DefconPage: React.FC<PageProps<QueryResult>> = ({ data }) => {
               </p>
               <p>
                 To stay informed of what we’ll be hosting at DEF CON 29, follow
-                DDS on Twitter at @defensedigital and sign up to receive alerts
-                at dds.mil/defcon/.
+                DDS on Twitter at @defensedigital or check back here.
               </p>
             </div>
           </div>
