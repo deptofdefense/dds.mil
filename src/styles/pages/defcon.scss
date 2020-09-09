@@ -1,3 +1,38 @@
+.defcon-banner {
+  background-color: purple;
+  padding: 0.8rem 1rem;
+
+  .defcon-banner-inner {
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    justify-content: center;
+    font-weight: 600;
+  }
+
+  .defcon-banner-sec-first {
+    color: #88f4f5;
+    display: block;
+  }
+  .defcon-banner-sec-sec {
+    color: white;
+    display: block;
+  }
+  .defcon-banner-sec-th {
+    color: #fcff83;
+    display: block;
+  }
+  .defcon-banner-sec-learn {
+    font-size: 0.9rem;
+    padding: 0.3rem 1rem;
+    border: 2px solid #fcff83;
+    color: #fcff83;
+    border-radius: 5px;
+    margin: 5px 16px;
+    display: block;
+  }
+}
+
 .defcon-hero {
   position: relative;
 
@@ -230,10 +265,10 @@
     height: 100%;
     background: #090f3c;
     z-index: 10;
-    clip-path: polygon(0 0, 100% 18%, 100% 75%, 0 100%);
+    clip-path: polygon(0 0, 100% 13%, 100% 75%, 0 100%);
 
     @media screen and (max-width: 1200px) {
-      clip-path: polygon(0 0, 100% 8%, 100% 75%, 0 100%);
+      clip-path: polygon(0 0, 100% 7%, 100% 75%, 0 100%);
     }
   }
 
@@ -245,10 +280,10 @@
     height: 100%;
     background: #1e021f;
     z-index: 12;
-    clip-path: polygon(0 0, 100% 18%, 100% 75%, 0 100%);
+    clip-path: polygon(0 0, 100% 13%, 100% 75%, 0 100%);
 
     @media screen and (max-width: 1200px) {
-      clip-path: polygon(0 0, 100% 8%, 100% 75%, 0 100%);
+      clip-path: polygon(0 0, 100% 7%, 100% 75%, 0 100%);
     }
   }
 
@@ -260,10 +295,10 @@
     height: 100%;
     background: #5b065e;
     z-index: 12;
-    clip-path: polygon(0 0, 100% 25%, 100% 80%, 0 100%);
+    clip-path: polygon(0 0, 100% 20%, 100% 82%, 0 100%);
 
     @media screen and (max-width: 1200px) {
-      clip-path: polygon(0 0, 100% 25%, 100% 82%, 0 100%);
+      clip-path: polygon(0 0, 100% 25%, 100% 84%, 0 100%);
     }
   }
 
@@ -275,10 +310,10 @@
     height: 100%;
     background: #1e4b97;
     z-index: 11;
-    clip-path: polygon(0 0, 100% 25%, 100% 80%, 0 100%);
+    clip-path: polygon(0 0, 100% 25%, 100% 82%, 0 100%);
 
     @media screen and (max-width: 1200px) {
-      clip-path: polygon(0 0, 100% 25%, 100% 82%, 0 100%);
+      clip-path: polygon(0 0, 100% 25%, 100% 84%, 0 100%);
     }
   }
 
@@ -290,10 +325,10 @@
     align-items: center;
     position: relative;
     z-index: 13;
-    clip-path: polygon(0 0, 100% 19%, 100% 83%, 0 100%);
+    clip-path: polygon(0 0, 100% 14%, 100% 85%, 0 100%);
 
     @media screen and (max-width: 1200px) {
-      clip-path: polygon(0 0, 100% 10%, 100% 85%, 0 100%);
+      clip-path: polygon(0 0, 100% 9%, 100% 87%, 0 100%);
     }
 
     .defcon-sec2-left {

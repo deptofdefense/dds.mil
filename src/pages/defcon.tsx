@@ -53,6 +53,18 @@ const DefconPage: React.FC<PageProps<QueryResult>> = ({ data }) => {
           rel="stylesheet"
         />
       </SEO>
+      <div className="defcon-banner">
+        <div className="defcon-banner-inner">
+          {/* <span className="defcon-banner-src-first"></span> */}
+          <span className="defcon-banner-sec-sec">
+            Thanks for a great DEF CON 28 SAFEMODE
+          </span>
+          <span className="defcon-banner-sec-th">
+            &nbsp;Check back here for our plans for DEF CON 29
+          </span>
+          {/* <div className="defcon-banner-sec-learn">LEARN MORE</div> */}
+        </div>
+      </div>
 
       <div className="defcon-hero">
         <Img
@@ -147,43 +159,62 @@ const DefconPage: React.FC<PageProps<QueryResult>> = ({ data }) => {
             <div className="defcon-sec2-right-content">
               <h2>DDS @ DEF&nbsp;CON</h2>
               <p>
-                For the second year, the Defense Digital Service is partnering
-                with the United States Air Force to participate in Aerospace
-                Village at DEF CON 28. This year we have expanded our scope
-                beyond aviation to include space, specifically satellites! In
-                addition to hosting the 2020 Space Security Challenge, the
-                first-ever Hack-A-Satellite CTF at DEF CON, we are also bringing
-                a series of interactive workshops to DEF CON in complete
-                Safemode.
+                For the second year running, DDS partnered with the United
+                States Air Force to participate in Aerospace Village at DEF CON
+                28. Together, we hosted the 2020 Space Security Challenge, the
+                first-ever Hack-A-Satellite CTF at DEF CON, and a series of
+                interactive workshops on aerospace hacking.
               </p>
-
               <p>
-                We have created a vibrant, web-based virtual reality environment
-                for you to interact with each of our workshops. Access our
-                virtual workshops at{" "}
+                With nothing but some ingenuity and a whole lot of LEGO®
+                building bricks, Defense Digital Service engineers rigged up
+                four aviation workshops, three satellite hacking workshops, and
+                one ground station workshop with partner Red Balloon Security
+                for DEF CON 28 SAFEMODE participants to test their skills
+                hacking real devices from the comfort of their own homes.
+              </p>
+              <p>
+                We had a blast hosting 2,300 participants across our Bricks in
+                the Air, CPX SimpleSat, DDSat-1, and NyanSat workshops!
+                Conversations on Twitch and Discord throughout the weekend
+                proved to us once again that hands-on experiences like these,
+                especially from a distance during a global health pandemic, are
+                essential in training the next generation of security
+                researchers.
+              </p>
+              <p>
+                Our twitch streams and virtual space, dds-virtual.mil, are now
+                offline. If you wish to keep learning, explore our open resource
+                libraries on GitHub, including all of our public code for our
+                virtual workshops:
+                <br />
                 <a
                   target="_blank"
                   rel="noreferrer"
-                  href="https://dds-virtual.com"
+                  href="https://github.com/deptofdefense/dds-at-DEFCON"
                 >
-                  dds-virtual.com
-                </a>{" "}
-                and watch the final Hack-A-Sat Capture the Flag event at{" "}
-                <a target="_blank" rel="noreferrer" href="https://hackasat.com">
-                  hackasat.com
+                  DDS at DEF CON
                 </a>
-                .
-              </p>
-              <p>
-                Also check out our{" "}
+                <br />
                 <a
                   target="_blank"
                   rel="noreferrer"
-                  href="https://dds-virtual.customink.shop/"
+                  href="https://github.com/deptofdefense/hack-a-sat-library"
                 >
-                  swag store
-                </a>{" "}
-                for the workshops.
+                  Satellite Hacking Library
+                </a>
+                <br />
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://github.com/deptofdefense/hack-aviation-library"
+                >
+                  Aviation Hacking Library
+                </a>
+              </p>
+              <p>
+                To stay informed of what we’ll be hosting at DEF CON 29, follow
+                DDS on Twitter at @defensedigital or check back here.
               </p>
             </div>
           </div>
@@ -196,24 +227,9 @@ const DefconPage: React.FC<PageProps<QueryResult>> = ({ data }) => {
           <h2>AEROSPACE WORKSHOPS</h2>
           <p>
             Designed to introduce the basics of aviation and space security to
-            players, these workshops will feature a series of challenges for all
-            skill levels, from introductory to advanced. We have crafted these
-            around a rich story for enhanced gameplay. To play, you will need a
-            Twitch account.{" "}
-            <b>You do not need a verified email address to play.</b> Our Twitch
-            is integrated with the Discord server to send updates on gameplay.
-            Access the rich web-enabled Virtual Reality environment from home at{" "}
-            <a target="_blank" rel="noreferrer" href="https://dds-virtual.com">
-              dds-virtual.com
-            </a>
-            .<b> No special VR equipment is required.</b>
-          </p>
-          <p className="defcon-sec3-p3">
-            <b>
-              The first 500 participants to complete one of the Bricks in the
-              Air, CPX SimpleSat or DDSat-1 challenges will receive a free
-              Bricks in the Air t-shirt!
-            </b>
+            players, these workshops featured a series of challenges for all
+            skill levels, from introductory to advanced. We crafted these around
+            a rich story for enhanced gameplay.
           </p>
         </div>
       </div>
@@ -236,43 +252,25 @@ const DefconPage: React.FC<PageProps<QueryResult>> = ({ data }) => {
               <div className="defcon-workshop-copy">
                 {/* <h3>Bricks In The Air (Aviation Workshops)</h3> */}
                 <p>
-                  In this series of four workshops, you will attempt to send
-                  messages to a mock LEGO® technic aircraft over I2C to
+                  In this series of four workshops, participants attempted to
+                  send messages to a mock LEGO® technic aircraft over I2C to
                   experiment with direct injection attacks on a data bus. This
-                  year, we’ve integrated the newly released Spike Prime robot
-                  from LEGO® bricks.
+                  year, we integrated the newly released Spike Prime robot from
+                  LEGO® bricks.
                 </p>
                 <p>
                   <b>Technical Level</b>: Introductory
                   <br />
                   <b>Coding Language</b>: C++, Python
                   <br />
-                  <b>Workshop Open</b>: August 6-9, 2020 from 10AM-6PM PST
-                  <br />
                 </p>
-                <p>The following kits will be featured in these workshops:</p>
+                <p>The following kits were used in these workshops:</p>
                 <p>
                   LEGO® Technic Cargo Plane 42025
                   <br />
                   LEGO® Technic Heavy Lift Helicopter 42052
                   <br />
                   LEGO® Technic Helicopter 9396
-                  <br />
-                </p>
-                <p>
-                  Twitch Channels
-                  <br />
-                  <a href="https://www.twitch.tv/biahueylewis">biahueylewis</a>
-                  <br />
-                  <a href="https://www.twitch.tv/biamadprops">biamadprops</a>
-                  <br />
-                  <a href="https://www.twitch.tv/biaspinderella">
-                    biaspinderella
-                  </a>
-                  <br />
-                  <a href="https://www.twitch.tv/biahellaprops">
-                    biahellaprops
-                  </a>
                   <br />
                 </p>
                 <p>
@@ -294,35 +292,15 @@ const DefconPage: React.FC<PageProps<QueryResult>> = ({ data }) => {
               <div className="defcon-workshop-copy defcon-ddsat-copy">
                 {/* <h3>CPX Simplesat</h3> */}
                 <p>
-                  CPX SimpleSat was built to allow you to experiment with
-                  attacking a mock satellite through a ground station, mimicking
-                  the types of commands used in Hack-a-Sat to gain control of
-                  the Satellite. No previous experience required.
+                  CPX SimpleSat was built to allow participants to experiment
+                  with attacking a mock satellite through a ground station,
+                  mimicking the types of commands used in Hack-a-Sat to gain
+                  control of the Satellite. No previous experience was required.
                 </p>
                 <p>
                   <b>Technical Level</b>: Introductory
                   <br />
                   <b>Coding Languages</b>: Python and CircuitPython
-                  <br />
-                  <b>Workshop Open</b>: August 6-9, 2020 from 10AM-6PM PST
-                  <br />
-                </p>
-                <p>
-                  Twitch Channels
-                  <br />
-                  <a href="https://www.twitch.tv/cpxsatamericas">
-                    cpxsatamericas
-                  </a>
-                  <br />
-                  <a href="https://www.twitch.tv/cpxsatafrica">cpxsatafrica</a>
-                  <br />
-                  <a href="https://www.twitch.tv/cpxsatasia">cpxsatasia</a>
-                  <br />
-                  <a href="https://www.twitch.tv/cpxsataustralia">
-                    cpxsataustralia
-                  </a>
-                  <br />
-                  <a href="https://www.twitch.tv/cpxsateurope">cpxsateurope</a>
                   <br />
                 </p>
                 <p>
@@ -344,8 +322,8 @@ const DefconPage: React.FC<PageProps<QueryResult>> = ({ data }) => {
               <div className="defcon-workshop-copy defcon-ddsat-copy">
                 {/* <h3>DDSAT-1</h3> */}
                 <p>
-                  Here you’ll get to experiment with RF exploitation by
-                  attacking a mock satellite over RF while it is talking to a
+                  Here participants got to experiment with RF exploitation by
+                  attacking a mock satellite over RF while it was talking to a
                   mock ground station.
                 </p>
                 <p>
@@ -353,11 +331,6 @@ const DefconPage: React.FC<PageProps<QueryResult>> = ({ data }) => {
                   <br />
                   <b>Coding Language</b>: Python
                   <br />
-                  <b>Workshop Open</b>: August 6-9, 2020 from 10AM-6PM PST
-                  <br />
-                </p>
-                <p>
-                  Twitch: <a href="https://www.twitch.tv/ddsat1">ddsat1</a>
                 </p>
                 <p>
                   Want to get smarter on SAT Hacking?{" "}
@@ -378,27 +351,13 @@ const DefconPage: React.FC<PageProps<QueryResult>> = ({ data }) => {
               <div className="defcon-workshop-copy defcon-nyansat-copy">
                 {/* <h3>NYANSAT</h3> */}
                 <p>
-                  Nyan-Sat consists of three fun, non-competitive challenges:
+                  Nyan-Sat consisted of three fun, non-competitive challenges:
                   building your own satellite tracking antenna, exploiting a
                   ground station modem, and participating in our live-streamed,
                   internet-accessible, community ground station event.
                 </p>
                 <p>
                   <b>Technical Level</b>: Intermediate - Advanced
-                  <br />
-                  <b>Workshop open</b>: July 7- August 9, 2020
-                  <br />
-                </p>
-                <p>
-                  <b>Get involved!</b>
-                </p>
-                <p>
-                  Discord:{" "}
-                  <a href="https://discord.gg/nsSMEdv">discord.gg/nsSMEdv</a>
-                  <br />
-                  Play Now: <a href="https://nyan-sat.com/">nyan-sat.com</a>
-                  <br />
-                  Twitch: <a href="https://www.twitch.tv/nyansat">nyansat</a>
                 </p>
               </div>
             </div>
