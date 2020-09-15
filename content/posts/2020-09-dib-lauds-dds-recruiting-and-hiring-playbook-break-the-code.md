@@ -5,16 +5,18 @@ date: 2020-09-15T16:50:09.713Z
 image: default-media-image.png
 summary: ...
 ---
-The Defense Innovation Board recommended the Defense Digital Service playbook for hiring and recruiting technical talent, *Break the Code*, to the Department of Defense at its quarterly public meeting on Tuesday, September 15. 
+The Defense Innovation Board recommended the Department of Defense take note of guidance pulled from the Defense Digital Service playbook for hiring and recruiting technical talent, *Break the Code*, at its quarterly public meeting on Tuesday, September 15. 
 
-The Defense Innovation Board provides recommendations from the private sector and academia to the Department of Defense and its military services. Current board members include Astrophysicist Neil Degrasse Tyson, Technical Advisor for Alphabet, Inc. Eric Schmidt, and Director of MIT's Computer Science and Artificial Intelligence Laboratory Daniela Rus, among others.
+The Defense Innovation Board, a committee of private-sector experts, provides recommendations from industry and academia to the Department of Defense and its military services.
 
-Quarterly public meetings are meant to xxx. The last two quarterly meetings have been conducted virtually due to the COVID-19 pandemic. 
+Like many events across the Department, this quarterly meeting was conducted virtually due to the COVID-19 pandemic. The Workforce, Behavior, and Culture subcommittee was asked to consider how the new norms like remote work introduced by the pandemic impact the Department. 
 
-SHOUT OUT
+Jennifer Palkha, subcommittee chair and Executive Director of Code for America called Defense Digital Service a "bright spot for productivity in this new world."
+
+The Defense Digital Service team transitioned to all-remote work in compliance with public health safety recommendations in March of 2020. In the preceding six months, the team has brought on thirty new employees.
 
 \[Video]
 
-Results speak for themselves: DDS has onboarded thirty new employees since March 2020, when the entire team transitioned to remote work to comply with safety standards during the pandemic.  
+The Board unanimously approved an addendum based on DDS best practices and tools for technical talent recruitment and remote work culture. 
 
 DDS will be breaking down its playbook as a series on dds.mil, posting biweekly tips and tricks to attracting top technical talent for the Department of Defense.
