@@ -5,11 +5,11 @@ date: 2020-09-15T16:50:09.713Z
 image: default-media-image.png
 summary: ...
 ---
-The Defense Innovation Board recommended the Department of Defense take note of guidance pulled from the Defense Digital Service playbook for hiring and recruiting technical talent, *Break the Code*, at its quarterly public meeting on Tuesday, September 15. 
+The Defense Innovation Board recommended the Department of Defense take note of guidance pulled from the Defense Digital Service playbook for hiring and recruiting technical talent at its quarterly public meeting on Tuesday, September 15. 
 
 The Defense Innovation Board, a committee of private-sector experts, provides recommendations from industry and academia to the Department of Defense and its military services.
 
-Like many events across the Department, this quarterly meeting was conducted virtually due to the COVID-19 pandemic. The Workforce, Behavior, and Culture subcommittee was asked to consider how the new norms like remote work introduced by the pandemic impact the Department. 
+Like many events across the Department, this quarterly meeting was virtual due to the COVID-19 pandemic. The Workforce, Behavior, and Culture subcommittee lead a discussion on how new norms like remote work introduced by the pandemic have impacted the Department. 
 
 Jennifer Palkha, subcommittee chair and Executive Director of Code for America called Defense Digital Service a "bright spot for productivity in this new world."
 
@@ -17,6 +17,6 @@ The Defense Digital Service team transitioned to all-remote work in compliance w
 
 \[Video]
 
-The Board unanimously approved an addendum based on DDS best practices and tools for technical talent recruitment and remote work culture. 
+The Board unanimously approved an [addendum](https://innovation.defense.gov/Portals/63/documents/Meeting%20Documents/September%2015%202020/DIB_Digital%20Talent_CLEARED.pdf?ver=2020-09-15-111827-080) based on Defense Digital Service's best practices and tools for technical talent recruitment and remote work culture. 
 
-DDS will be breaking down its playbook as a series on dds.mil, posting biweekly tips and tricks to attracting top technical talent for the Department of Defense.
+Defense Digital Service will be breaking down its playbook, *[Break the Code](https://dds.mil/DDS-BreakTheCode-Public.pdf)*, as a series on dds.mil, posting biweekly tips and tricks to attracting top technical talent for the Department of Defense.
