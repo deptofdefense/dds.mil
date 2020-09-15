@@ -1,6 +1,6 @@
 ---
 type: blog
-title: DIB Recommends DDS as model for remote work, recruiting tech talent for DoD
+title: DIB Recommends DDS as model for remote work, recruiting tech talent to DoD
 date: 2020-09-15T16:50:09.713Z
 image: default-media-image.png
 summary: ...
