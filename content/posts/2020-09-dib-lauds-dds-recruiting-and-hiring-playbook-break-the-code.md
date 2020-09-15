@@ -1,15 +1,15 @@
 ---
 type: blog
-title: DIB Lauds DDS Recruiting and Hiring Playbook, "Break the Code"
+title: DIB Recommends DDS as model for remote work, recruiting tech talent for DoD
 date: 2020-09-15T16:50:09.713Z
 image: default-media-image.png
 summary: ...
 ---
 The Defense Innovation Board recommended the Department of Defense take note of guidance pulled from the Defense Digital Service playbook for hiring and recruiting technical talent at its quarterly public meeting on Tuesday, September 15. 
 
-The Defense Innovation Board, a committee of private-sector experts, provides recommendations from industry and academia to the Department of Defense and its military services.
+The Defense Innovation Board, a committee of private-sector experts, provides recommendations from an industry and academic perspective to the Department of Defense and its military services.
 
-Like many events across the Department, this quarterly meeting was virtual due to the COVID-19 pandemic. The Workforce, Behavior, and Culture subcommittee lead a discussion on how new norms like remote work introduced by the pandemic have impacted the Department. 
+Like many recent events across the Department, this quarterly meeting was conducted virtually due to the COVID-19 pandemic. The Workforce, Behavior, and Culture subcommittee lead a discussion on how new norms like remote work introduced by the pandemic have impacted the Department. 
 
 Jennifer Palkha, subcommittee chair and Executive Director of Code for America called Defense Digital Service a "bright spot for productivity in this new world."
 
