@@ -15,7 +15,7 @@ Jennifer Palkha, subcommittee chair and Executive Director of Code for America c
 
 The Defense Digital Service team transitioned to all-remote work in compliance with public health safety recommendations in March of 2020. In the preceding six months, the team has brought on thirty new employees.
 
-"We've really loved hearing about the innovation and culture change in DoD, and we really want to highlight for leaders to consider how to standardize and integrate remote work to enable DoD to recruit and retain technical talent," Palkha added. 
+"We really want to highlight for leaders to consider how to standardize and integrate remote work to enable DoD to recruit and retain technical talent," Palkha said. 
 
 The Board unanimously approved an [addendum](https://innovation.defense.gov/Portals/63/documents/Meeting%20Documents/September%2015%202020/DIB_Digital%20Talent_CLEARED.pdf?ver=2020-09-15-111827-080) based on Defense Digital Service's best practices and tools for technical talent recruitment and remote work culture. 
 
