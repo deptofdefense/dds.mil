@@ -4,9 +4,9 @@ title: Defense Innovation Board recommends Defense Digital Service model for
   remote work and tech talent recruitment to Department of Defense
 date: 2020-09-15T16:50:09.713Z
 image: ../../media/dib-sept-meeting-dds-remote-work-.00_26_41_12.still001.jpg
-summary: The Board recommended the Department take note of guidance pulled from
-  the DDS playbook for how to attract and retain civilian workers with
-  specialized skills in digital technologies.
+summary: DDS will be breaking down its playbook, “Break the Code," in a
+  forthcoming series of biweekly posts highlighting tips and tricks to attract
+  top tech talent. Stay tuned!
 ---
 At its quarterly public meeting on Tuesday, September 15, the [Defense Innovation Board](https://innovation.defense.gov/) (DIB) recommended the Department of Defense (DoD) take note of guidance pulled from the Defense Digital Service (DDS) playbook, “Break the Code,” for how to attract and retain civilian workers with specialized skills in digital technologies.
 
