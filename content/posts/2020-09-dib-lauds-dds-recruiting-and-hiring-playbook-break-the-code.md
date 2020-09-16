@@ -13,7 +13,7 @@ Like many recent events across the Department, this quarterly meeting was conduc
 
 Jennifer Palkha, subcommittee chair and Executive Director of Code for America called Defense Digital Service a "bright spot for productivity in this new world."
 
-"They have seen staff able to really deliver on mission," Palkha said of Defense Digital Service and other Department organizations, "They're seeing increases in their own productivity."
+"They have seen staff able to really deliver on mission. They're seeing increases in their own productivity," Palkha said.
 
 The Defense Digital Service team transitioned to all-remote work in compliance with public health safety recommendations in March of 2020. In the preceding six months, the team has brought on thirty new employees.
 
