@@ -1,58 +1,57 @@
 {
-    "navigation": {
-      "title": "Portfolios",
-      "link": "/work/portfolios"
+  "navigation": {
+    "title": "Portfolios",
+    "link": "/work/portfolios"
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "heroImage": "header-ourwork.png",
+      "title": "Doing work that matters by focusing our time and energy on high-priority undertakings.",
+      "cta": "",
+      "ctaLink": ""
     },
-    "sections": [
-      {
-        "type": "hero",
-        "heroImage": "header-ourwork.png",
-        "title": "Doing work that matters by focusing our time and energy on high-priority undertakings.",
-        "cta": "",
-        "ctaLink": ""
-      },
-      {
-        "type": "markdownBody",
-        "mdMain": "### Portfolios\n\nThese sustained engagements are expansive and provide opportunities for DDS to champion long-term, large-scale change across the DoD.\n\n**Counter-UAS Program** \n\nDDS and the Defense Innovation Unit’s (DIU) Rogue Squadron team formally came together effective February 12, 2020. The Rogue Squadron team works out of DIU’s Mountain View office.\n\nRogue Squadron is a counter-small unmanned aerial systems (C-sUAS) group within Defense Digital Service (DDS). Rogue Squadron is composed of technical experts, laser-focused on providing cutting-edge, rapid-prototyped solutions at the speed of relevance based on real-time feedback and asks of the warfighter and partner-agencies in support of National Security.\n\nRogue Squadron has a strong history of equipping U.S. warfighters with the best sUAS and counter-sUAS (C-sUAS) solutions today and preparing them for future challenges. More than 200 organizations use Rogue Squadron software across the DoD and federal government, and its custom ground station tools are used in major DoD C-sUAS exercises and in-theater.\n\n- **Windtalker: Accurate Sensor Detection of sUAS**<br /> sUAS consistently violate airspace around DoD installations, but most of them lack any sUAS detection capability. In conjunction with Dowding, Windtalker operates in support of NORAD, U.S. Secret Service, SOCOM (CONUS & OCONUS), NAVAIR, CBP, FBI, U.S. forces in Kuwait, USAF, and USN public events. Windtalker is proceeding with additional Milspec testing and final modifications, transitioning this prototype sensor to product-ready for in-theater use.\n\n- **Dowding: User Interface for Situational Awareness**<br />Warfighters need a user interface (UI) that can detect sUAS, display results accurately, and utilize data to support the processing required to react and defeat sUAS threats.  Dowding gives drone analysts the ability to observe and assess drone activity from Windtalker and Porg sensors, which cover DJI and Parrot drones (>80% of the sUAS marketplace). Threat analysis and mobile capabilities are the essential next step for this product to address the need to make informed decisions  for mitigation of potential sUAS threats.\n\n- **Middleware: Establishing Data Standards & Integrations of Sensors & Systems**<br />Standardizing and aggregating C-sUAS sensor data output is an essential next step in support of machine-learning and system integration across the DoD. Middleware’s first project: **Labyrinth** will work to establish data standards for ingesting sensor data and aggregate all Windtalker data into a common repository. This data will then support a Common Operating Picture (COP) through Dowding across all DoD and partner agencies.  Following proof of concept, Labyrinth will incorporate additional sensor types (Radar, Acoustic, etc.) and additional learning to support further system integration. Through Labyrinth, standardized data can then be used for threat-engine analysis and mapped to other systems to support robust detect-display-defeat ecosystems, across the DoD and partner agencies.\n\n- **Rapid Response: Drone Education and Rapid Deployment of C-sUAS Technologies**<br />DDS frequently receives requests for detection and tracking capabilities in response to suspected and potential sUAS incursions. Our Rapid Response team can proactively work with organizations across the DoD to rapidly deploy C-sUAS detect/tracking infrastructure to under temporary or event-specific authorities as well as develop new tech to address existing critical gaps.\n\n- **Rizer: Safe Operations of Untrusted sUAS**<br />RIZER serves DoD, interagency, and FVEY for hardening DJI for blue force and C-UAS use. It has been running in production since mid-September 2017, having 1,100 customers to date across 290 DoD and USG organizations.\n\n<br />**Hack the Pentagon Program**\n\nDDS established the Hack the Pentagon program in November 2016 as the Federal Government’s first-ever bug bounty program. Following best practices from the private sector, bug bounties allow independent hackers to research and disclose security vulnerabilities on DoD assets (both external-facing websites/applications and certain sensitive internal systems), sometimes in exchange for financial reward. Participants go through background checks and can be citizens of any country except Iran, North Korea, China, and Russia. The Air Force, Army, and other military departments and DoD agencies now use bug bounties or crowdsourced hacking assessments as an optimal way to harness the depth and breadth of technical talent across the globe to help secure DoD’s digital assets. When Hack the Pentagon began, limited companies were operating in the space and most focused on either private assessments or public assessments. DDS stood up two IDIQs, or Indefinite Delivery Indefinite Quantity contracts, one for private bounties and one for public bounties. Since that time, the landscape has changed, and today companies work on both public and private challenges, obviating the need for a distinction. Beginning in FY 2020, DDS consolidated these separate contracts into a single multi-award IDIQ vehicle.\n\nIn 2016 the DoD also published its first vulnerability disclosure policy (VDP), which has resulted in the DoD Cyber Crime Center (DC3) receiving over 15,705 vulnerabilities as of April 2020 from 1,624 security researchers at no cost to the DoD. Find all ongoing activity for the VDP here: [https://hackerone.com/DeptOfDefense](https://hackerone.com/DeptOfDefense). DDS is currently engaged with OSD Policy to expand the VDP to include all DoD Information Systems to help further protect DoD assets and critical information infrastructure."
-      },
-      {
-        "type": "callToAction",
-        "mdMain": "**We're focused on hiring the best to serve the best.**\n\nInterested in proving hoodies, hackers, and nerds have an important role to play in furthering national defense missions?",
-        "cta": "APPLY TO DDS TODAY",
-        "ctaLink": "http://jobs.lever.co/dds",
-        "accent": true
-      }
-    ],
-    "sidenav": {
-      "includeSidenav": true,
-      "wrapSectionFirst": 2,
-      "wrapSectionLast": 2,
-      "menu": [
-        {
-          "text": "Overview",
-          "link": "/work"
-        },
-        {
-          "text": "Fire Fighting",
-          "link": "/work/fire-fighting"
-        },
-        {
-          "text": "Projects",
-          "link": "/work/projects"
-        },
-        {
-          "text": "Portfolios",
-          "link": "/work/portfolios"
-        },
-        {
-          "text": "Tech Navigators",
-          "link": "/work/tech-navigators"
-        },
-        {
-          "text": "DEF CON",
-          "link": "/defcon"
-        }
-      ]
+    {
+      "type": "markdownBody",
+      "mdMain": "### Portfolios\n\nThese sustained engagements are expansive and provide opportunities for DDS to champion long-term, large-scale change across the DoD.\n\n**Counter-UAS Program** \n\nDDS and the Defense Innovation Unit’s (DIU) Rogue Squadron team formally came together effective February 12, 2020. The Rogue Squadron team works out of DIU’s Mountain View office.\n\nRogue Squadron is a counter-small unmanned aerial systems (C-sUAS) group within Defense Digital Service (DDS). Rogue Squadron is composed of technical experts, laser-focused on providing cutting-edge, rapid-prototyped solutions at the speed of relevance based on real-time feedback and asks of the warfighter and partner-agencies in support of National Security.\n\nRogue Squadron has a strong history of equipping U.S. warfighters with the best sUAS and counter-sUAS (C-sUAS) solutions today and preparing them for future challenges. More than 200 organizations use Rogue Squadron software across the DoD and federal government, and its custom ground station tools are used in major DoD C-sUAS exercises and in-theater.\n\n* **Windtalker: Accurate Sensor Detection of sUAS**<br /> sUAS consistently violate airspace around DoD installations, but most of them lack any sUAS detection capability. In conjunction with Dowding, Windtalker operates in support of NORAD, U.S. Secret Service, SOCOM (CONUS & OCONUS), NAVAIR, CBP, FBI, U.S. forces in Kuwait, USAF, and USN public events. Windtalker is proceeding with additional Milspec testing and final modifications, transitioning this prototype sensor to product-ready for in-theater use.\n* **Dowding: User Interface for Situational Awareness**<br />Warfighters need a user interface (UI) that can detect sUAS, display results accurately, and utilize data to support the processing required to react and defeat sUAS threats.  Dowding gives drone analysts the ability to observe and assess drone activity from Windtalker and Porg sensors, which cover DJI and Parrot drones (>80% of the sUAS marketplace). Threat analysis and mobile capabilities are the essential next step for this product to address the need to make informed decisions  for mitigation of potential sUAS threats.\n* **Middleware: Establishing Data Standards & Integrations of Sensors & Systems**<br />Standardizing and aggregating C-sUAS sensor data output is an essential next step in support of machine-learning and system integration across the DoD. Middleware’s first project: **Labyrinth** will work to establish data standards for ingesting sensor data and aggregate all Windtalker data into a common repository. This data will then support a Common Operating Picture (COP) through Dowding across all DoD and partner agencies.  Following proof of concept, Labyrinth will incorporate additional sensor types (Radar, Acoustic, etc.) and additional learning to support further system integration. Through Labyrinth, standardized data can then be used for threat-engine analysis and mapped to other systems to support robust detect-display-defeat ecosystems, across the DoD and partner agencies.\n* **Rapid Response: Drone Education and Rapid Deployment of C-sUAS Technologies**<br />DDS frequently receives requests for detection and tracking capabilities in response to suspected and potential sUAS incursions. Our Rapid Response team can proactively work with organizations across the DoD to rapidly deploy C-sUAS detect/tracking infrastructure to under temporary or event-specific authorities as well as develop new tech to address existing critical gaps.\n\n<br />**Hack the Pentagon Program**\n\nDDS established the Hack the Pentagon program in November 2016 as the Federal Government’s first-ever bug bounty program. Following best practices from the private sector, bug bounties allow independent hackers to research and disclose security vulnerabilities on DoD assets (both external-facing websites/applications and certain sensitive internal systems), sometimes in exchange for financial reward. Participants go through background checks and can be citizens of any country except Iran, North Korea, China, and Russia. The Air Force, Army, and other military departments and DoD agencies now use bug bounties or crowdsourced hacking assessments as an optimal way to harness the depth and breadth of technical talent across the globe to help secure DoD’s digital assets. When Hack the Pentagon began, limited companies were operating in the space and most focused on either private assessments or public assessments. DDS stood up two IDIQs, or Indefinite Delivery Indefinite Quantity contracts, one for private bounties and one for public bounties. Since that time, the landscape has changed, and today companies work on both public and private challenges, obviating the need for a distinction. Beginning in FY 2020, DDS consolidated these separate contracts into a single multi-award IDIQ vehicle.\n\nIn 2016 the DoD also published its first vulnerability disclosure policy (VDP), which has resulted in the DoD Cyber Crime Center (DC3) receiving over 15,705 vulnerabilities as of April 2020 from 1,624 security researchers at no cost to the DoD. Find all ongoing activity for the VDP here: <https://hackerone.com/DeptOfDefense>. DDS is currently engaged with OSD Policy to expand the VDP to include all DoD Information Systems to help further protect DoD assets and critical information infrastructure."
+    },
+    {
+      "type": "callToAction",
+      "mdMain": "**We're focused on hiring the best to serve the best.**\n\nInterested in proving hoodies, hackers, and nerds have an important role to play in furthering national defense missions?",
+      "cta": "APPLY TO DDS TODAY",
+      "ctaLink": "http://jobs.lever.co/dds",
+      "accent": true
     }
+  ],
+  "sidenav": {
+    "includeSidenav": true,
+    "wrapSectionFirst": 2,
+    "wrapSectionLast": 2,
+    "menu": [
+      {
+        "text": "Overview",
+        "link": "/work"
+      },
+      {
+        "text": "Fire Fighting",
+        "link": "/work/fire-fighting"
+      },
+      {
+        "text": "Projects",
+        "link": "/work/projects"
+      },
+      {
+        "text": "Portfolios",
+        "link": "/work/portfolios"
+      },
+      {
+        "text": "Tech Navigators",
+        "link": "/work/tech-navigators"
+      },
+      {
+        "text": "DEF CON",
+        "link": "/defcon"
+      }
+    ]
   }
-  
+}
