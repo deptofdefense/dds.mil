@@ -216,6 +216,14 @@ const DefconPage: React.FC<PageProps<QueryResult>> = ({ data }) => {
                 To stay informed of what we’ll be hosting at DEF CON 29, follow
                 DDS on Twitter at @defensedigital or check back here.
               </p>
+              <div className="defcon-sec2-pad-vod" />
+              <div className="defcon-vod-container">
+                <iframe
+                  src="https://www.youtube.com/embed/E6qL4HdYGaQ"
+                  frameBorder="0"
+                  allowFullScreen
+                ></iframe>
+              </div>
             </div>
           </div>
         </div>
@@ -231,6 +239,27 @@ const DefconPage: React.FC<PageProps<QueryResult>> = ({ data }) => {
             skill levels, from introductory to advanced. We crafted these around
             a rich story for enhanced gameplay.
           </p>
+          <div className="defcon-sec3-vod-row">
+            <div className="defcon-vod-container">
+              <iframe
+                src="https://www.youtube.com/embed/qOjA25cqakw"
+                frameBorder="0"
+                width="560"
+                height="315"
+                allowFullScreen
+              ></iframe>
+            </div>
+            <div className="defcon-sec2-pad-vod" />
+            <div className="defcon-vod-container">
+              <iframe
+                src="https://www.youtube.com/embed/rfRBq4FQ7a8"
+                frameBorder="0"
+                width="560"
+                height="315"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
         </div>
       </div>
 
