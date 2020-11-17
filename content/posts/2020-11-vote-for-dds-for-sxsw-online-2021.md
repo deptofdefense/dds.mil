@@ -3,8 +3,8 @@ type: blog
 title: Vote for DDS for SXSW Online 2021
 date: 2020-11-17T14:20:41.127Z
 image: ../../media/21sxonline_facebook_1200x630.png
-summary: We’re thrilled to have submitted six unique panels for inclusion in the
-  digital line-up. Lucky for us, the public gets a chance to shape next year’s
+summary: We're thrilled to have submitted six unique panels for inclusion in the
+  digital line-up. Lucky for us, the public gets a chance to shape next year's
   agenda.
 ---
 While 2020 hasn’t been the year for getting out, that doesn’t mean we haven’t been diligently working on some incredible projects with the U.S. military service branches. Wondering how we’ve focused our efforts working remotely?
