@@ -2,7 +2,7 @@
 type: blog
 title: Taking the Oath of Office from Home Is the New Normal
 date: 2020-11-25T14:31:00.000Z
-image: media/blog-onboarding.png
+image: blog-onboarding.png
 summary: When 80 percent of the Pentagon's workforce were mandated to work from
   home at the start of the COVID-19 pandemic, most of the federal government was
   not prepared to onboard new employees remotely. With the right tools and
