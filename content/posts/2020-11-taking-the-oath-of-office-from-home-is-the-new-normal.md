@@ -11,7 +11,7 @@ summary: When 80 percent of the Pentagon's workforce were mandated to work from
 ---
 Every federal employee has the same first official act: with a hand over heart and eyes on the American flag, they take the oath of office. When 80 percent of the Pentagon's workforce were mandated to work from home at the start of the COVID-19 pandemic, the Washington Headquarters Service (WHS) Personnel Services Division (PSD), as well as most of the federal government was not prepared to onboard new employees remotely.
 
-In March 2020, Kristi Crear, DDS Human Resource (HR) People Operations Lead, partnered with PSD to make the onboarding process virtual. According to Crear, “The idea was that with the right tools and virtual capabilities, new hires to the Department of Defense (DoD) would still be able to officially join and participate in the momentous first act of the official oath while remote and onboard to complete their mission operations during the pandemic,
+In March 2020, Kristi Crear, DDS Human Resource (HR) People Operations Lead, partnered with PSD to make the onboarding process virtual. According to Crear, “The idea was that with the right tools and virtual capabilities, new hires to the Department of Defense (DoD) would still be able to participate in the momentous first act of the oath while remote, and complete their mission operations during the pandemic."
 
 Due to outdated restrictions, PSD didn’t have computers with working cameras or microphones, a necessity in the new normal of work in 2020. After procuring special policy guidance from DDS partners in the Office of Personnel Management, Crear was able to provide the guidance to PSD along with modern PCs and software licenses for digital tools, such as Slack.
 
