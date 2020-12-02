@@ -19,6 +19,6 @@ Katie Olson, DDS Deputy Director, sees a silver lining in all of this. "What's c
 
 Once the Division's human resources specialists were trained on the new tools, remote onboarding within the Pentagon became a smooth and continuous process.
 
-To date, DDS helped the PSD to virtually onboard approximately 1000 employees. Crear stated that “this has been a great partnership that has helped propel our partners further toward the future of work since according to the Bureau of Labor Statistics 73 percent of teams are projected to have remote employees by 2028”.
+To date, DDS has helped the PSD virtually onboard approximately 1,000 DoD employees, including 38 new DDS employees. According to Crear, “This has been a great partnership that has helped propel our partners toward the future of work because, according to the Bureau of Labor Statistics, 73 percent of teams are projected to have remote employees by 2028."
 
-**While DDS has successfully remotely onboarded over 38 new employees since March 2020, we are not done yet! We’re constantly on the lookout for new talent. If you are a data scientist, a software engineer, or a UX/UI designer, [reach out](https://dds.mil/join-us)! You can join our SWAT team of nerds and help us defend the nation one well-designed product at a time.**
+**While DDS has successfully remotely onboarded dozens of new employees to our own team since March 2020, we are not done yet! We’re constantly on the lookout for new talent. If you are a data scientist, software engineer, product manager, or UX/UI designer, [reach out](https://dds.mil/join-us)! You can join our SWAT team of nerds and help us defend the nation one well-designed product at a time.**
