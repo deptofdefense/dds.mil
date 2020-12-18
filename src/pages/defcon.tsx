@@ -224,6 +224,19 @@ const DefconPage: React.FC<PageProps<QueryResult>> = ({ data }) => {
                   allowFullScreen
                 ></iframe>
               </div>
+              <p>
+                <b> Behind the Scenes</b>
+                <br />
+  Check out this video for a look into how we pushed Twitch to new limits of interactivity and gameplay. Green screens, microcontrollers, Python chatbots, and infrared all made these remote hacking workshops possible.
+              </p>
+              <div className="defcon-sec2-pad-vod" />
+              <div className="defcon-vod-container">
+                <iframe
+                  src="https://www.youtube.com/embed/7Hfs7ygLXYE"
+                  frameBorder="0"
+                  allowFullScreen
+                ></iframe>
+              </div>
             </div>
           </div>
         </div>
