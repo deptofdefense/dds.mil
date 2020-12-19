@@ -268,7 +268,7 @@
     clip-path: polygon(0 0, 100% 8%, 100% 75%, 0 100%);
 
     @media screen and (max-width: 1200px) {
-      clip-path: polygon(0 0, 100% 6%, 100% 75%, 0 100%);
+      clip-path: polygon(0 0, 100% 5%, 100% 75%, 0 100%);
     }
   }
 
@@ -283,7 +283,7 @@
     clip-path: polygon(0 0, 100% 8%, 100% 75%, 0 100%);
 
     @media screen and (max-width: 1200px) {
-      clip-path: polygon(0 0, 100% 7%, 100% 75%, 0 100%);
+      clip-path: polygon(0 0, 100% 6%, 100% 75%, 0 100%);
     }
   }
 
@@ -431,6 +431,11 @@
 
           a:hover {
             text-decoration: underline;
+          }
+          
+          b {
+            display: inline-block;
+            margin: 15px 0;
           }
         }
       }
