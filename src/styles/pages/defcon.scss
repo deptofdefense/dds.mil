@@ -265,7 +265,7 @@
     height: 100%;
     background: #090f3c;
     z-index: 10;
-    clip-path: polygon(0 0, 100% 10%, 100% 75%, 0 100%);
+    clip-path: polygon(0 0, 100% 8%, 100% 75%, 0 100%);
 
     @media screen and (max-width: 1200px) {
       clip-path: polygon(0 0, 100% 6%, 100% 75%, 0 100%);
@@ -280,7 +280,7 @@
     height: 100%;
     background: #1e021f;
     z-index: 12;
-    clip-path: polygon(0 0, 100% 10%, 100% 75%, 0 100%);
+    clip-path: polygon(0 0, 100% 8%, 100% 75%, 0 100%);
 
     @media screen and (max-width: 1200px) {
       clip-path: polygon(0 0, 100% 7%, 100% 75%, 0 100%);
@@ -325,7 +325,7 @@
     align-items: center;
     position: relative;
     z-index: 13;
-    clip-path: polygon(0 0, 100% 11%, 100% 94%, 0 100%);
+    clip-path: polygon(0 0, 100% 9%, 100% 94%, 0 100%);
 
     @media screen and (max-width: 1200px) {
       clip-path: polygon(0 0, 100% 8%, 100% 96%, 0 100%);
