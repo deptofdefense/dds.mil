@@ -9,11 +9,9 @@ summary: "The truth is that many uniformed officers engage in ethical hacking
 ---
 How does a serviceman or woman get involved with security research? Don’t hackers belong to a mysterious subculture that doesn’t match the culture of government? The truth is that many uniformed officers engage in ethical hacking both on and off duty! Air Force Master Sergeant Johnathan Miranda is one of them.
 
-Master Sergeant Miranda is a Cyber Warfare Operator assigned to the Defense Information Systems Agency (DISA). Miranda previously led a team of enterprise-scoped threat hunters focused on finding a red team and nation-state activity on the Air Force network for the Air Force Computer Emergency Response Team (AFCERT). In his free time, he participates in bug bounty programs as a “bug hunter.” When not hunting bugs, he is optimizing his bug hunting workflows and automated tests. associated automation.
+Master Sergeant Miranda is a Cyber Warfare Operator assigned to the Defense Information Systems Agency (DISA). Miranda previously led a team of enterprise-scoped threat hunters focused on finding a red team and nation-state activity on the Air Force network for the Air Force Computer Emergency Response Team (AFCERT). In his free time, he participates in bug bounty programs as a “bug hunter.” When not hunting bugs, he is optimizing his bug hunting workflows and automated tests.
 
 The following is an interview with Master Sergeant Miranda about his experience as a military hacker.
-
-
 
 #### **1. When did you get started with bug bounties?**
 
@@ -42,7 +40,5 @@ There's a vast community of researchers that want to help protect our systems, a
 #### 7. Will you be participating in Hack the Army 3.0?
 
 Yes! I am very excited to participate in Hack the Army 3.0. I took a couple of days of leave to hack on the program and plan to participate throughout the entire event.
-
-
 
 Hack the Army 3.0 program will run from January 6 until February 17, 2021. If you’ve got the skills and are ready to dive in like Master Sergeant Miranda did, [apply now](https://www.hackerone.com/dds-apply)!
