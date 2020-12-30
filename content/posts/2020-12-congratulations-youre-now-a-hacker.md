@@ -15,7 +15,7 @@ The following is an interview with Master Sergeant Miranda about his experience 
 
 #### **1. When did you get started with bug bounties?**
 
-I started around 15 months ago; Hack the Army 2.0 was the first time I participated in any bug bounty program. Participating in Hack the Army 2.0 and Hack the Air Force 4.0 events got me started down the path of bug bounties. In the fall of 2019, I had an unexpected change in my work roles, and that drove me to dive headfirst into bug bounties during my time off. I needed something to channel the desire to do deeply technical work, and bug bounties filled that gap. After spending time exploring the different platforms, I became involved with the bug bounty community and was hooked. Now I spend all my free time on bug bounties.
+I started around 15 months ago; [Hack the Army 2.0](https://www.nextgov.com/cybersecurity/2019/10/who-wants-hack-army-again/160518/) was the first time I participated in any bug bounty program. Participating in Hack the Army 2.0 and [Hack the Air Force 4.0](https://www.fifthdomain.com/2020/04/15/ethical-hackers-find-hundreds-of-vulnerabilities-during-latest-air-force-bug-bounty/) events got me started down the path of bug bounties. In the fall of 2019, I had an unexpected change in my work roles, and that drove me to dive headfirst into bug bounties during my time off. I needed something to channel the desire to do deeply technical work, and bug bounties filled that gap. After spending time exploring the different platforms, I became involved with the bug bounty community and was hooked. Now I spend all my free time on bug bounties.
 
 #### 2. Why did you participate in Hack the Army 2.0? What did you come away with from the experience?
 
@@ -39,6 +39,6 @@ There's a vast community of researchers that want to help protect our systems, a
 
 #### 7. Will you be participating in Hack the Army 3.0?
 
-Yes! I am very excited to participate in Hack the Army 3.0. I took a couple of days of leave to hack on the program and plan to participate throughout the entire event.
+Yes! I am very excited to participate in [Hack the Army 3.0](https://www.army.mil/article/240719/hack_the_army_3_0_furthers_innovative_bug_bounty_program_to_defend_networks_data). I took a couple of days of leave to hack on the program and plan to participate throughout the entire event.
 
 Hack the Army 3.0 program will run from January 6 until February 17, 2021. If you’ve got the skills and are ready to dive in like Master Sergeant Miranda did, [apply now](https://www.hackerone.com/dds-apply)!
