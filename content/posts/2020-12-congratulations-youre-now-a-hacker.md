@@ -19,7 +19,7 @@ I started around 15 months ago; Hack the Army 2.0 was the first time I participa
 
 #### 2. Why did you participate in Hack the Army 2.0? What did you come away with from the experience?
 
-Bug bounties were always interesting to me. When I heard about Hack the Army 2.0, I just had to give it a shot. I worked with a DDSer on a project back in San Antonio, so through the power of "sending a random email," I just asked if there was a way I could participate. A couple of days later, I received an invite and had the opportunity to hack on the program. Once I was in the program, I found it very overwhelming since I had no experience.
+Bug bounties were always interesting to me. When I heard about Hack the Army 2.0, I just had to give it a shot. I worked with a DDSer on a project back in San Antonio, so through the power of "sending a random email," I just asked if there was a way I could participate. A couple of days later, I received an invite and had the opportunity to hack on the program. 
 
 #### 3. Does hacking overlap with your work at all, considering interests, expertise, or skill set? If so, how? If not, why do you do it?
 
