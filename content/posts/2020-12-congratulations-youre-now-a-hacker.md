@@ -2,7 +2,7 @@
 type: blog
 title: Congratulations, you're now a "Hacker"
 date: 2020-12-30T16:26:54.819Z
-image: ../../media/img-1647-1-.jpg
+image: img-1647-1-.jpg
 summary: "The truth is that many uniformed officers engage in ethical hacking
   both on and off duty! Air Force Master Sergeant Johnathan Miranda is one of
   them. "
