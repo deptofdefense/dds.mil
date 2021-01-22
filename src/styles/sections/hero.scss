@@ -28,6 +28,12 @@
       min-height: 225px;
     }
 
+  .video {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      padding-top: 56.25%;
+    }
     .hero-card {
       background-color: rgba(color("blue-warm-70v"), 0.9);
       padding: units(5) units(3);
