@@ -27,15 +27,15 @@
       padding: units(5) 0;
       min-height: 225px;
     }
+    @media screen and (max-width: 640px) {
+      display: none;
+    }
 
   .video {
       position: relative;
       overflow: hidden;
       width: 100%;
       padding-top: 56.25%;
-      @media screen and (min-width: 640px) {
-        margin-top: 20px;
-    }
     }
     .hero-card {
       background-color: rgba(color("blue-warm-70v"), 0.9);
