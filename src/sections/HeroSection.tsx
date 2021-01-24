@@ -3,7 +3,7 @@ import clsx from "clsx";
 import Img from "gatsby-image";
 import { SectionBase } from "types";
 import { useDefaultHeroImage } from "hooks";
-import { ConditionalLink } from "components";
+import { ConditionalLink, Video } from "components";
 
 export interface HeroSectionData extends SectionBase {
   type: "hero";
@@ -37,19 +37,13 @@ export const HeroSection: React.FC<HeroSectionData> = ({
         }
       />
       <div className={clsx("hero-inner", { "hero-inner-expanded": cta })}>
-        {title && (
-          <div className="hero-card">
-            <h1>{title}</h1>
-            {subtitle && <h2>{subtitle}</h2>}
-            {cta && (
-              <ConditionalLink to={ctaLink!}>
-                <button tabIndex={-1} className="hero-card-cta">
-                  {cta}
-                </button>
-              </ConditionalLink>
-            )}
-          </div>
-        )}
+      <div className="video">
+          <Video
+            videoSrcURL="https://player.vimeo.com/video/503904425?badge=0&amp;autopause=0&amp;quality=1080p"
+            videoTitle = {title ? title : ""}
+          />
+      </div>
+        
       </div>
     </div>
   );

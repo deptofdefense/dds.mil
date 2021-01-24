@@ -195,7 +195,7 @@ export const query = graphql`
         }
         heroImage {
           childImageSharp {
-            fluid(maxWidth: 1440, quality: 90) {
+            fluid(maxWidth: 1440, quality: 100) {
               ...GatsbyImageSharpFluid_withWebp
             }
           }
