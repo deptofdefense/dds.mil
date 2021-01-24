@@ -39,7 +39,7 @@ export const HeroSection: React.FC<HeroSectionData> = ({
       <div className={clsx("hero-inner", { "hero-inner-expanded": cta })}>
       <div className="video">
           <Video
-            videoSrcURL="https://player.vimeo.com/video/503904425?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+            videoSrcURL="https://player.vimeo.com/video/503904425?badge=0&amp;autopause=0&amp;quality=1080p"
             videoTitle = {title ? title : ""}
           />
       </div>
