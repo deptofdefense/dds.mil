@@ -12,10 +12,6 @@
       width: 100%;
       position: absolute !important;
     }
-    @media screen and (max-width: 640px) {
-      display: none !important;
-    }
-
   }
 
   .hero-inner {
@@ -32,12 +28,6 @@
       min-height: 225px;
     }
 
-  .video {
-      position: relative;
-      overflow: hidden;
-      width: 100%;
-      padding-top: 56.25%;
-    }
     .hero-card {
       background-color: rgba(color("blue-warm-70v"), 0.9);
       padding: units(5) units(3);
