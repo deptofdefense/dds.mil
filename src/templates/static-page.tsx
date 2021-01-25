@@ -3,6 +3,8 @@ import { graphql } from "gatsby";
 import { Layout, SEO, Sidebar, SidebarSection } from "components";
 import {
   HeroSection,
+  HeroSectionVideo,
+  HeroSectionVideoData,
   HeroSectionData,
   TextSection,
   TextSectionData,
@@ -32,6 +34,7 @@ import {
 
 type SectionData =
   | HeroSectionData
+  | HeroSectionVideoData
   | TextSectionData
   | IconSectionData
   | CategoryListSectionData
@@ -77,6 +80,8 @@ const SectionSwitch: React.FC<{ section: SectionData }> = ({ section }) => {
   switch (section.type) {
     case "hero":
       return <HeroSection {...section} />;
+    case "heroVideo":
+      return <HeroSectionVideo {...section} />;
     case "textWithCallout":
       return <TextSection {...section} />;
     case "iconSection":

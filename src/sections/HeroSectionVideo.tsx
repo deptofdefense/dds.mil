@@ -3,14 +3,12 @@ import clsx from "clsx";
 import Img from "gatsby-image";
 import { SectionBase } from "types";
 import { useDefaultHeroImage } from "hooks";
-import { ConditionalLink, Video } from "components";
+import { Video } from "components";
 
 export interface HeroSectionVideoData extends SectionBase {
-  type: "hero";
+  type: "heroVideo";
   title?: string;
-  subtitle?: string;
   cta?: string;
-  ctaLink?: string;
   heroImage?: {
     childImageSharp: {
       fluid: any;
@@ -18,7 +16,7 @@ export interface HeroSectionVideoData extends SectionBase {
   };
 }
 
-export const HeroSection: React.FC<HeroSectionVideoData> = ({
+export const HeroSectionVideo: React.FC<HeroSectionVideoData> = ({
   title,
   cta,
   heroImage,

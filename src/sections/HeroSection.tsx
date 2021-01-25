@@ -18,7 +18,7 @@ export interface HeroSectionData extends SectionBase {
   };
 }
 
-export const HeroSectionVideo: React.FC<HeroSectionData> = ({
+export const HeroSection: React.FC<HeroSectionData> = ({
   title,
   subtitle,
   cta,
