@@ -2,6 +2,7 @@ export * from "./RecentAnnouncements";
 export * from "./CategoryListSection";
 export * from "./CtaSection";
 export * from "./FeaturedMediaSection";
+export * from "./HeroSectionVideo";
 export * from "./HeroSection";
 export * from "./IconSection";
 export * from "./ImgSection";
