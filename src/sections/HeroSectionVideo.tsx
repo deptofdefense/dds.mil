@@ -24,7 +24,7 @@ export const HeroSectionVideo: React.FC<HeroSectionVideoData> = ({
   const defaultHeroImage = useDefaultHeroImage();
 
   return (
-    <div className="hero">
+    <div className="hero-video">
       <Img
         fluid={
           heroImage
@@ -32,7 +32,7 @@ export const HeroSectionVideo: React.FC<HeroSectionVideoData> = ({
             : defaultHeroImage.childImageSharp.fluid
         }
       />
-      <div className={clsx("hero-inner", { "hero-inner-expanded": cta })}>
+      <div className={clsx("hero-video-inner", { "hero-video-inner-expanded": cta })}>
       <div className="video">
           <Video
             videoSrcURL="https://player.vimeo.com/video/503904425?badge=0&amp;autopause=0&amp;quality=1080p"
