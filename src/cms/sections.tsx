@@ -39,6 +39,21 @@ const HeroSectionFields: PatchedField[] = [
   { ...CTALinkField, required: false },
 ];
 
+const HeroSectionVideoFields: PatchedField[] = [
+  {
+    label: "Image",
+    name: "heroImage",
+    widget: "image",
+    hint:
+      "Should be of high quality and appropriate aspect ratio for the hero image.",
+  },
+  {
+    ...TitleField,
+    required: false,
+    hint: "If included, render inside the image with a blue background.",
+  },
+];
+
 const TextWithCalloutSectionFields: PatchedField[] = [
   MdMainField,
   { ...MdCalloutField, required: false },
@@ -155,6 +170,11 @@ export const SectionList: PatchedField = {
       label: "Hero Section",
       name: "hero",
       fields: HeroSectionFields,
+    },
+    {
+      label: "Hero Section Video",
+      name: "heroVideo",
+      fields: HeroSectionVideoFields,
     },
     {
       label: "Text with Callout",

@@ -5,7 +5,7 @@
   },
   "sections": [
     {
-      "type": "hero",
+      "type": "heroVideo",
       "heroImage": "dds-hero-splash-high.png",
       "title": "Transforming technology within the Department of Defense",
       "cta": "ABOUT US",
