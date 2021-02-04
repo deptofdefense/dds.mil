@@ -26,3 +26,7 @@ Our projects cover a range of critical needs: bolstering cybersecurity, making i
 One of DDS’s projects early on in the pandemic was MyStatus.mil, a symptom checking tool that helps with preliminary evaluation of individuals with concerns or symptoms consistent with COVID-19 cases before they seek medical care in an effort to limit unnecessary exposure and to prolong the supply of personal protective equipment at military hospitals. Defense leadership reasoned that if service members could determine crews symptoms early, they could limit exposing others to the virus. This tool lets service members anonymously self-assess the likelihood that they have contracted the virus based on a series of simple health-related questions ([You can find the algorithm that powers it here](https://www.npmjs.com/package/@deptofdefense/covid19-calculator).)
 
 Just to be clear, we don’t hire just coders. Our team is diverse with a variety of skill sets. On the technical end, we have designers, product managers, bureaucracy hackers, and data scientists. Not to mention our operational staff, including attorneys, recruiters, and communications experts. It takes a lot of talent to make this work. If you want to have a cool government job that gives your career more meaning, [we invite you to apply](https://dds.mil/join-us.) for a tour of duty at the Defense Digital Service.
+
+
+
+**\-- Christopher Whitaker, DDS Digital Service Expert**
