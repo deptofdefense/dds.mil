@@ -2,7 +2,7 @@
 type: blog
 title: "Digital Services in the Trenches   "
 date: 2021-02-04T15:45:46.296Z
-image: default-media-image.png
+image: ../../media/harold-mendoza-6xafy_ae1lm-unsplash.jpg
 summary: It’s important to remember that the government is more than its elected
   officials. Thousands of civil servants across the country work at all levels
   of government, contributing time and talents to serve the public.
