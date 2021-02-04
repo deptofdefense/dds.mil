@@ -7,7 +7,7 @@ summary: It’s important to remember that the government is more than its elect
   officials. Thousands of civil servants across the country work at all levels
   of government, contributing time and talents to serve the public.
 ---
-“The government is us; we are the government, you and I.” — President Theodore Roosevelt
+“*The government is us; we are the government, you and I.*” — President Theodore Roosevelt
 
 It’s important to remember that the government is more than its elected officials. Thousands of civil servants across the country work at all levels of government, contributing time and talents to serve the public.
 
