@@ -20,6 +20,7 @@ export const PostCollection: CmsCollection = {
   label_singular: "Blog Post",
   description: "Blog Posts from the DDS team.",
   folder: "content/posts",
+  public_folder: "",
   slug: "{{year}}-{{month}}-{{slug}}",
   summary: entrySummaryFormat,
   create: true,
