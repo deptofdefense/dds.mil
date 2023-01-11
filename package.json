@@ -32,7 +32,7 @@
     "gatsby-remark-responsive-iframe": "^2.4.12",
     "gatsby-source-filesystem": "^2.3.24",
     "gatsby-transformer-json": "^2.4.11",
-    "gatsby-transformer-remark": "^2.8.28",
+    "gatsby-transformer-remark": "^5.25.1",
     "gatsby-transformer-sharp": "^2.5.13",
     "netlify-cms-app": "^2.12.19",
     "node-sass": "^4.14.1",
